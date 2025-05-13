@@ -1,0 +1,14 @@
+{
+    "source_list": [
+        {
+            "no": 1,
+            "name":"北海道",
+            "source_url": ""
+        },
+        {
+            "no": 8,
+            "name":"茨城県",
+            "source_url": "https://www.pref.ibaraki.jp/hokenfukushi/doshise/kanri/20190418.html"
+        }
+    ]
+}

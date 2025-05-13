@@ -1,0 +1,653 @@
+{
+    "pref_name":"ibaraki", 
+    "organizations": [
+        {
+            "id": 1,
+            "name": "NPO法人 ポチたま会",
+            "area": "茨城",
+            "url": "http://www7b.biglobe.ne.jp/~inu-neko/",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 2,
+            "name": "アニマル・ハート・レスキュー",
+            "area": "",
+            "url": "http://www.animal-heart-rescue.net/",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 3,
+            "name": "NPO法人 保健所の成犬・猫の譲渡を推進する会",
+            "area": "神奈川",
+            "url": "http://npo.seikenjoto.org",
+            "note": "飼えなくなった犬・猫のお引取りは致しません。",
+            "sns": [] 
+        },
+        {
+            "id": 4,
+            "name": "NPO法人 犬と猫のためのライフボート",
+            "area": "千葉",
+            "url": "https://www.lifeboat.or.jp",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 5,
+            "name": "ボーダーコリーレスキューネットワーク",
+            "area": "",
+            "url": "https://www.bcrn.jp/",
+            "note": "ボーダーコリーのみ",
+            "sns": [] 
+        },
+        {
+            "id": 6,
+            "name": "ファンパウズ",
+            "area": "神奈川",
+            "url": "https://www.instagram.com/funpaws1607/",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 7,
+            "name": "GUNDOG RESCUE CACI",
+            "area": "千葉",
+            "url": "https://cac-ichikawa.com/",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 8,
+            "name": "シェルティ・レスキュー",
+            "area": "東京",
+            "url": "http://www.help-sheltie.net",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 9,
+            "name": "個人活動家",
+            "area": "茨城:千葉",
+            "url": "",
+            "note": "茨城県、千葉県",
+            "sns": [] 
+        },
+        {
+            "id": 10,
+            "name": "GENTLE CREATURES",
+            "area": "",
+            "url": "",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 11,
+            "name": "NPO法人 動物愛護を考える茨城県民ネットワークCAPIN",
+            "area": "茨城",
+            "url": "https://www.capin.love",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 12,
+            "name": "一般社団法人 アルマ",
+            "area": "東京",
+            "url": "http://alma.or.jp/",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 13,
+            "name": "動物保護団体 ダンデライオン",
+            "area": "埼玉",
+            "url": "https://dandelion2008.jimdofree.com/",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 14,
+            "name": "NPO法人 ワンワンパーティクラブ",
+            "area": "",
+            "url": "http://www.wanwan.org/",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 15,
+            "name": "早川 満美子",
+            "area": "神奈川",
+            "url": "https://ameblo.jp/chuckychachacha",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 16,
+            "name": "イングリッシュコッカースパニエルレスキューネットワーク（ECSRN)",
+            "area": "",
+            "url": "",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 17,
+            "name": "ペットと暮らそう（一般社団法人 動物共生推進事業）",
+            "area": "",
+            "url": "http://with-pets.info/",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 18,
+            "name": "ジャックの里",
+            "area": "東京",
+            "url": "http://www.jfcj.net/jht/",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 19,
+            "name": "BJドッグレスキュー",
+            "area": "",
+            "url": "",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 20,
+            "name": "特定非営利活動法人 動物愛護団体 ANGELS",
+            "area": "滋賀",
+            "url": "http://angels2005.org/",
+            "note": "滋賀県",
+            "sns": [] 
+        },
+        {
+            "id": 21,
+            "name": "公益財団法人 ヒューマニン財団",
+            "area": "",
+            "url": "http://humanin.or.jp/",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 22,
+            "name": "特定非営利活動法人 捨て犬ゼロ",
+            "area": "東京",
+            "url": "https://www.pfirst.jp/protected_activities.html",
+            "note": "東京都",
+            "sns": [] 
+        },
+        {
+            "id": 23,
+            "name": "PEACE TAILS",
+            "area": "神奈川",
+            "url": "http://peacetails.org/",
+            "note": "神奈川県",
+            "sns": [] 
+        },
+        {
+            "id": 24,
+            "name": "個人活動家（T.K）",
+            "area": "茨城",
+            "url": "http://petsupport.jimdofree.com/",
+            "note": "茨城県",
+            "sns": [] 
+        },
+        {
+            "id": 25,
+            "name": "アンシャンテ",
+            "area": "千葉",
+            "url": "https://www.enchante-exo.com",
+            "note": "千葉県",
+            "sns": [] 
+        },
+        {
+            "id": 26,
+            "name": "個人活動家（チャコまま）",
+            "area": "茨城",
+            "url": "https://chakomama.net/",
+            "note": "茨城県",
+            "sns": [] 
+        },
+        {
+            "id": 27,
+            "name": "NPO法人 Tier Heim KOKUA",
+            "area": "",
+            "url": "http://tierheim-kokua.aloha703.com/",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 28,
+            "name": "特定非営利活動法人 家庭犬しつけ協会",
+            "area": "東京",
+            "url": "https://cdta.or.jp",
+            "note": "東京都",
+            "sns": [] 
+        },
+        {
+            "id": 29,
+            "name": "アグリドッグレスキュー",
+            "area": "埼玉",
+            "url": "https://aguri.nomaki.jp/",
+            "note": "埼玉県",
+            "sns": [] 
+        },
+        {
+            "id": 30,
+            "name": "認定特定非営利活動法人 キドックス",
+            "area": "茨城",
+            "url": "https://kidogs.org/",
+            "note": "茨城県",
+            "sns": [] 
+        },
+        {
+            "id": 31,
+            "name": "わんにゃんＭ’ｓ",
+            "area": "茨城",
+            "url": "https://wannyanms.wixsite.com/",
+            "note": "茨城県",
+            "sns": [] 
+        },
+        {
+            "id": 32,
+            "name": "たんぽぽの里",
+            "area": "",
+            "url": "https://tanpopo-nyans.amebaownd.com",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 33,
+            "name": "Team.ホーリーキャット",
+            "area": "茨城",
+            "url": "https://ameblo.jp/maron-mama",
+            "note": "茨城県",
+            "sns": [] 
+        },
+        {
+            "id": 34,
+            "name": "NPO法人 funnyCat&Dog",
+            "area": "",
+            "url": "https://cafe-funnycat.amebaownd.com/",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 35,
+            "name": "アイドッグレスキュー隊",
+            "area": "東京",
+            "url": "http://aidog.jpn.com/",
+            "note": "東京都",
+            "sns": [] 
+        },
+        {
+            "id": 36,
+            "name": "ＮＰＯ法人 いぬねこプロジェクト",
+            "area": "",
+            "url": "http://dcproject-s.org/",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 37,
+            "name": "一般社団法人 ベビーキャットレスキュー",
+            "area": "",
+            "url": "http://baby.cats.gr.jp/",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 38,
+            "name": "一般社団法人 Loveセラピープロジェクト ひいらぎチーム",
+            "area": "",
+            "url": "https://ameblo.jp/onosakie/entry12634452952.html",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 39,
+            "name": "個人活動家（DOT MITO）",
+            "area": "茨城",
+            "url": "https://ameblo.jp//hibisasumama/",
+            "note": "茨城県",
+            "sns": [] 
+        },
+        {
+            "id": 40,
+            "name": "中島 博美",
+            "area": "茨城",
+            "url": "https://www.instagram.com/fuuchannel/",
+            "note": "茨城県",
+            "sns": [] 
+        },
+        {
+            "id": 41,
+            "name": "藤和那須リゾート",
+            "area": "栃木",
+            "url": "https://www.nasuhai.co.jp/sos/",
+            "note": "栃木県",
+            "sns": [] 
+        },
+        {
+            "id": 42,
+            "name": "NPO法人 ニコ猫",
+            "area": "茨城",
+            "url": "",
+            "note": "茨城県",
+            "sns": [] 
+        },
+        {
+            "id": 43,
+            "name": "個人活動家",
+            "area": "茨城",
+            "url": "",
+            "note": "茨城県",
+            "sns": [] 
+        },
+        {
+            "id": 44,
+            "name": "個人活動家（N.U）",
+            "area": "千葉",
+            "url": "",
+            "note": "千葉県",
+            "sns": [] 
+        },
+        {
+            "id": 45,
+            "name": "個人活動家（C.K）",
+            "area": "東京",
+            "url": "",
+            "note": "東京都",
+            "sns": [] 
+        },
+        {
+            "id": 46,
+            "name": "メロードッグレスキュー",
+            "area": "埼玉",
+            "url": "https://www.mellowdogrescue.com",
+            "note": "埼玉県",
+            "sns": [] 
+        },
+        {
+            "id": 47,
+            "name": "いぬ助け",
+            "area": "千葉",
+            "url": "http://www.inudasuke.com",
+            "note": "千葉県",
+            "sns": [] 
+        },
+        {
+            "id": 48,
+            "name": "個人活動家（wish the dog happiness）",
+            "area": "東京",
+            "url": "https://ameblo.jp/ahchan0517",
+            "note": "東京都",
+            "sns": [] 
+        },
+        {
+            "id": 49,
+            "name": "NPO法人 KDP",
+            "area": "",
+            "url": "",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 50,
+            "name": "鯨岡 久美子（NEKOGOTO）",
+            "area": "茨城",
+            "url": "https://kujirahouse.localinfo.jp",
+            "note": "茨城県",
+            "sns": [] 
+        },
+        {
+            "id": 51,
+            "name": "特定非営利活動法人 キャットセイビア",
+            "area": "東京",
+            "url": "https://catsavior.com",
+            "note": "東京都",
+            "sns": [] 
+        },
+        {
+            "id": 52,
+            "name": "個人活動家（アニマルレスキューDaina）",
+            "area": "茨城",
+            "url": "https://www.youtube.com/@daina6937",
+            "note": "茨城県",
+            "sns": [] 
+        },
+        {
+            "id": 53,
+            "name": "Delacroix Dog Ranch",
+            "area": "群馬",
+            "url": "https://ddranch.jp",
+            "note": "群馬県",
+            "sns": [] 
+        },
+        {
+            "id": 54,
+            "name": "秋葉 雅子（板橋区猫の譲渡会）",
+            "area": "東京",
+            "url": "",
+            "note": "東京都",
+            "sns": [] 
+        },
+        {
+            "id": 55,
+            "name": "個人活動家",
+            "area": "千葉",
+            "url": "",
+            "note": "千葉県",
+            "sns": [] 
+        },
+        {
+            "id": 56,
+            "name": "礒﨑 正悟",
+            "area": "茨城",
+            "url": "https://wonderful-partner.com",
+            "note": "茨城県",
+            "sns": [] 
+        },
+        {
+            "id": 57,
+            "name": "個人活動家（ミニ）",
+            "area": "栃木",
+            "url": "https://ameblo.jp/lab-cha",
+            "note": "栃木県",
+            "sns": [] 
+        },
+        {
+            "id": 58,
+            "name": "にくきゅうライフ",
+            "area": "埼玉",
+            "url": "https://299life.wixsite.com/website",
+            "note": "埼玉県",
+            "sns": [] 
+        },
+        {
+            "id": 59,
+            "name": "にゃんこの大冒険",
+            "area": "",
+            "url": "http://witch912.cocolog-nifty.com",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 60,
+            "name": "一般財団法人 犬猫生活福祉財団",
+            "area": "東京",
+            "url": "http://inuneko-fukushi.or.jp",
+            "note": "東京都",
+            "sns": [] 
+        },
+        {
+            "id": 61,
+            "name": "個人活動家（Y.K）",
+            "area": "",
+            "url": "",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 62,
+            "name": "一般社団法人 ラフィンの家",
+            "area": "千葉",
+            "url": "https://ruffinnoie.com",
+            "note": "千葉県",
+            "sns": [] 
+        },
+        {
+            "id": 63,
+            "name": "個人活動家（O）",
+            "area": "",
+            "url": "",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 64,
+            "name": "個人活動家",
+            "area": "長野",
+            "url": "",
+            "note": "長野県",
+            "sns": [] 
+        },
+        {
+            "id": 65,
+            "name": "スモールライフプロテクション",
+            "area": "東京",
+            "url": "https://slpjapan.com",
+            "note": "東京都",
+            "sns": [] 
+        },
+        {
+            "id": 66,
+            "name": "東 日出一",
+            "area": "",
+            "url": "",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 67,
+            "name": "飯田 美恵",
+            "area": "",
+            "url": "http://instagram.com/kemikemi1206",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 68,
+            "name": "個人活動家（K.H）",
+            "area": "茨城",
+            "url": "",
+            "note": "茨城県",
+            "sns": [] 
+        },
+        {
+            "id": 69,
+            "name": "個人活動家（M.K）",
+            "area": "神奈川",
+            "url": "http://dog-salon-bell.moo.jp",
+            "note": "神奈川県",
+            "sns": [] 
+        },
+        {
+            "id": 70,
+            "name": "NPO法人 わんにゃんレスキューOHANA",
+            "area": "",
+            "url": "https://ohanakamisu.sakura.ne.jp/ohana/",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 71,
+            "name": "橋本 奈保",
+            "area": "茨城",
+            "url": "http://instagram.com/u6o12m6r5",
+            "note": "茨城県",
+            "sns": [] 
+        },
+        {
+            "id": 72,
+            "name": "NPO法人 Pooch Dog Rescue",
+            "area": "神奈川",
+            "url": "http://poochdogrescue.com",
+            "note": "神奈川県",
+            "sns": [] 
+        },
+        {
+            "id": 73,
+            "name": "個人活動家（M.E）",
+            "area": "茨城",
+            "url": "",
+            "note": "茨城県",
+            "sns": [] 
+        },
+        {
+            "id": 74,
+            "name": "ミャオ！ねこのおうち",
+            "area": "東京",
+            "url": "https://myaoneko.com",
+            "note": "東京都",
+            "sns": [] 
+        },
+        {
+            "id": 75,
+            "name": "個人活動家",
+            "area": "神奈川",
+            "url": "",
+            "note": "神奈川県",
+            "sns": [] 
+        },
+        {
+            "id": 76,
+            "name": "イオンペット株式会社",
+            "area": "千葉",
+            "url": "https://www.aeonpet.com/lifehouse/",
+            "note": "千葉県",
+            "sns": [] 
+        },
+        {
+            "id": 77,
+            "name": "中村 典子",
+            "area": "",
+            "url": "https://annies12forest.blog.fc2.com",
+            "note": "",
+            "sns": [] 
+        },
+        {
+            "id": 78,
+            "name": "個人活動家（M.U）",
+            "area": "茨城",
+            "url": "",
+            "note": "茨城県",
+            "sns": [] 
+        },
+        {
+            "id": 79,
+            "name": "個人活動家（S.I）",
+            "area": "東京",
+            "url": "",
+            "note": "東京都",
+            "sns": [] 
+        },
+        {
+            "id": 80,
+            "name": "一般社団法人 SUNNY CUDDLES",
+            "area": "東京",
+            "url": "http://www.sunny-cuddles.com",
+            "note": "東京都",
+            "sns": []
+        },
+        {
+            "id": 81,
+            "name": "ほごっこFUNFUN",
+            "area": "東京",
+            "url": "https://www.instagram.com/chocomama1123/",
+            "note": "東京都",
+            "sns": [] 
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+# docker-compose.yaml
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hogo-dog-react-app
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    ports:
+      - "5173:5173"
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+    stdin_open: true
+    tty: true

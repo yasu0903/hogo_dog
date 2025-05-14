@@ -1,0 +1,16 @@
+/* src/pages/Organizations/Organizations.module.css */
+
+/* 既存のスタイルはそのままで、以下を追加 */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

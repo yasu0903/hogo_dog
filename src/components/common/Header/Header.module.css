@@ -1,22 +1,15 @@
 /* src/components/common/Header/Header.module.css */
 
 .header {
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.headerContent {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .logo {
@@ -25,18 +18,21 @@
 }
 
 .logo a {
-  color: #333;
+  color: #2c3e50;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.logo a::before {
+  content: '🔍';
+  margin-right: 0.5rem;
+  font-size: 1.3rem;
 }
 
 .logo a:hover {
-  color: #4f46e5;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
+  color: #3498db;
 }
 
 .nav ul {
@@ -44,90 +40,57 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
-.nav li {
-  position: relative;
-}
-
-.nav a {
-  color: #555;
+.nav li a {
+  color: #7f8c8d;
   text-decoration: none;
   font-weight: 500;
-  padding: 0.5rem 0;
-  transition: color 0.3s ease;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  transition: all 0.2s;
 }
 
-.nav a:hover {
-  color: #4f46e5;
+.nav li a:hover {
+  color: #3498db;
+  background-color: #f8fafc;
 }
 
-.nav a.active {
-  color: #4f46e5;
+.nav li a.active {
+  color: #3498db;
+  background-color: #ebf5fb;
+  font-weight: 600;
 }
 
-.nav a.active::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #4f46e5;
-}
-
-.mobileMenuButton {
-  display: none;
-  background: none;
-  border: none;
-  color: #333;
-  font-size: 1.5rem;
-  cursor: pointer;
-  padding: 0.5rem;
-}
-
-/* レスポンシブ対応 */
+/* レスポンシブデザイン */
 @media (max-width: 768px) {
-  .mobileMenuButton {
-    display: block;
+  .header {
+    padding: 1rem 1.5rem;
   }
 
-  .nav {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 70%;
-    max-width: 300px;
-    height: 100vh;
-    background-color: white;
-    padding: 2rem 1rem;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-    transition: right 0.3s ease;
-    z-index: 1001;
+  .logo {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.8rem 1rem;
+    flex-direction: column;
+    gap: 0.8rem;
   }
 
-  .navOpen {
-    right: 0;
+  .logo {
+    font-size: 1.2rem;
   }
 
   .nav ul {
-    flex-direction: column;
-    gap: 1rem;
+    gap: 0.8rem;
   }
 
-  .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    display: none;
-  }
-
-  .backdropVisible {
-    display: block;
+  .nav li a {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.95rem;
   }
 }

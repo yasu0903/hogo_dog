@@ -1,59 +1,48 @@
 /* src/components/organizations/AreaFilter/AreaFilter.module.css */
-.filter {
-  margin: 1.5rem 0;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  background-color: #f5f5f5;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+.filterContainer {
+  width: 100%;
+  max-width: 400px; /* 最大幅を制限 */
 }
 
-.filter label {
+.filterLabel {
+  display: block;
+  margin-bottom: 0.6rem;
   font-weight: 600;
-  color: #333;
-  white-space: nowrap;
+  color: #34495e;
+  font-size: 0.95rem;
 }
 
-.select {
-  flex: 1;
-  padding: 0.75rem 1rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+.filterSelect {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
   background-color: white;
+  color: #2c3e50;
   font-size: 1rem;
-  color: #333;
-  cursor: pointer;
-  transition: border-color 0.3s, box-shadow 0.3s;
-  max-width: 300px;
+  transition: border-color 0.2s, box-shadow 0.2s;
   appearance: none;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%233498db' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: right 1rem center;
-  background-size: 1em;
+  background-position: right 0.8rem center;
+  background-size: 1rem;
+  padding-right: 2.5rem;
 }
 
-.select:focus {
+.filterSelect:focus {
   outline: none;
-  border-color: #4f46e5;
-  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
 }
 
-.select:hover {
-  border-color: #c0c0c0;
+.filterSelect option {
+  padding: 0.5rem;
 }
 
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
-  .filter {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-  
-  .select {
-    width: 100%;
-    max-width: none;
+  .filterContainer {
+    max-width: 100%; /* モバイルでは最大幅を解除 */
   }
 }

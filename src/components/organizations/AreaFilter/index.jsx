@@ -1,23 +1,19 @@
-// src/components/organizations/AreaFilter/index.jsx
+// src/components/organizations/AreaFilter.jsx
 import styles from './AreaFilter.module.css';
 
 const AreaFilter = ({ areas, selectedArea, onFilterChange }) => {
-  const handleChange = (e) => {
-    const value = e.target.value;
-    console.log('Selected area:', value);
-    onFilterChange(value);
-  };
-
   return (
-    <div className={styles.filter}>
-      <label htmlFor="area">エリアで絞り込み:</label>
+    <div className={styles.filterContainer}>
+      <label htmlFor="area-select" className={styles.filterLabel}>
+        エリアで絞り込み
+      </label>
       <select
-        id="area"
+        id="area-select"
         value={selectedArea}
-        onChange={handleChange}
-        className={styles.select}
+        onChange={(e) => onFilterChange(e.target.value)}
+        className={styles.filterSelect}
       >
-        <option value="">すべて</option>
+        <option value="">全エリア</option>
         {areas.map((area) => (
           <option key={area} value={area}>
             {area}

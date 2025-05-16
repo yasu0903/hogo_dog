@@ -1,6 +1,6 @@
 // src/components/common/Header/index.jsx
 import styles from './Header.module.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -10,8 +10,23 @@ const Header = () => {
       </div>
       <nav className={styles.nav}>
         <ul>
-          <li><Link to="/">ホーム</Link></li>
-          <li><Link to="/organizations">団体一覧</Link></li>
+          <li>
+            <NavLink 
+              to="/" 
+              className={({ isActive }) => isActive ? styles.active : undefined}
+              end
+            >
+              ホーム
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/organizations"
+              className={({ isActive }) => isActive ? styles.active : undefined}
+            >
+              団体一覧
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>

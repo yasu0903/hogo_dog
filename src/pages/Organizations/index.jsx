@@ -111,12 +111,13 @@ const Organizations = () => {
             selectedArea={selectedArea}
             onFilterChange={handleAreaChange}
           />
-          
+          {/*
           <PrefectureFilter
             prefectures={prefectures}
             selectedPrefecture={selectedPrefecture}
             onFilterChange={handlePrefectureChange}
           />
+          */}
         </div>
         
         <OrganizationList organizations={filteredOrganizations} />

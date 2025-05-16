@@ -1,0 +1,263 @@
+/* src/pages/OrganizationDetail/OrganizationDetail.module.css */
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f7fa;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.main {
+  max-width: 1200px;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  flex: 1;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #3498db;
+  position: relative;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  background-color: #f5f7fa;
+}
+
+.error {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.error main {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.error h1 {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+.backLink {
+  margin-bottom: 2rem;
+}
+
+.backLink a {
+  display: inline-flex;
+  align-items: center;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  background-color: #ecf0f1;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+}
+
+.backLink a:hover {
+  color: #2980b9;
+  background-color: #e0e7eb;
+}
+
+.backLink a::before {
+  content: "←";
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.organizationsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.orgItem {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #e1e8ed;
+  display: flex;
+  flex-direction: column;
+}
+
+.orgItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.orgItem h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #3498db;
+}
+
+.area {
+  display: inline-block;
+  background-color: #edf2f7;
+  color: #4a5568;
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.website {
+  margin: 1rem 0;
+}
+
+.website a {
+  display: inline-flex;
+  align-items: center;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: #ebf5fb;
+  transition: background-color 0.2s;
+}
+
+.website a:hover {
+  background-color: #d6eaf8;
+}
+
+.note {
+  background-color: #fffde7;
+  padding: 1rem;
+  border-left: 3px solid #ffd600;
+  margin: 1rem 0;
+  border-radius: 0 4px 4px 0;
+  color: #5d4037;
+}
+
+.snsLinks {
+  margin-top: 1.5rem;
+}
+
+.snsLinks h3 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.snsLinks h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1rem;
+  width: 4px;
+  background-color: #3498db;
+  border-radius: 2px;
+}
+
+.snsLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.snsLinks li {
+  margin-bottom: 0.8rem;
+  padding: 0.6rem 1rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.snsLinks li:last-child {
+  margin-bottom: 0;
+}
+
+.snsType {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #718096;
+  margin-right: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  background-color: #e2e8f0;
+  border-radius: 3px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.snsLinks a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.snsLinks a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .main {
+    padding: 1.5rem;
+    width: 95%;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .organizationsList {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .orgItem {
+    padding: 1.2rem;
+  }
+
+  .orgItem h2 {
+    font-size: 1.3rem;
+  }
+}

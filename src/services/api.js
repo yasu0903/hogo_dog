@@ -30,6 +30,32 @@ export const fetchPrefectures = async () => {
   }
 };
 
+export const fetchPrefectureiById = async (prefectureId) => {
+  try {
+    const response = await fetch('/data/prefecture.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    console.log('Fetched prefectures raw:', data);
+    
+    // データ構造に応じた処理
+    // {"prefecture_list": [{no: "01", name: "北海道", english_name: "hokkaido"}, ...]}
+    if (data && data.prefecture_list && Array.isArray(data.prefecture_list)) {
+      // プロパティ名を変換して返す
+
+      return data.prefecture_list.find(pref => pref.no === prefectureId  );
+      
+    }
+    
+    return [];
+  } catch (error) {
+    console.error('Error fetching prefectures:', error);
+    return [];
+  }
+};
+
+
 // エリア一覧を取得する関数
 export const getAreas = (prefectures) => {
   // 重複のないエリア一覧を取得

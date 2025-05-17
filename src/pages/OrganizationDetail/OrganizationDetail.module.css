@@ -197,21 +197,14 @@
   align-items: center;
 }
 
-.snsLinks li:last-child {
-  margin-bottom: 0;
-}
-
-.snsType {
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #718096;
+.snsLinks li .snsIcon {
   margin-right: 0.8rem;
-  padding: 0.2rem 0.5rem;
-  background-color: #e2e8f0;
-  border-radius: 3px;
-  min-width: 60px;
-  text-align: center;
+  font-size: 1.4rem;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .snsLinks a {
@@ -219,6 +212,7 @@
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
+  flex-grow: 1;
 }
 
 .snsLinks a:hover {
@@ -226,38 +220,35 @@
   text-decoration: underline;
 }
 
-/* レスポンシブデザイン */
-@media (max-width: 768px) {
-  .main {
-    padding: 1.5rem;
-    width: 95%;
-  }
-
-  .title {
-    font-size: 1.8rem;
-  }
-
-  .organizationsList {
-    grid-template-columns: 1fr;
-  }
+/* SNSタイプ別のアイコン色 */
+.snsIconTwitter {
+  color: #1DA1F2;
 }
 
-@media (max-width: 480px) {
-  .main {
-    padding: 1rem;
-    margin: 1rem auto;
-  }
+.snsIconFacebook {
+  color: #4267B2;
+}
 
-  .title {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
+.snsIconInstagram {
+  color: #C13584;
+}
 
-  .orgItem {
-    padding: 1.2rem;
-  }
+.snsIconYoutube {
+  color: #FF0000;
+}
 
-  .orgItem h2 {
-    font-size: 1.3rem;
-  }
+.snsIconLine {
+  color: #00c300;
+}
+
+.snsIconWebsite {
+  color: #0070f3;
+}
+
+.snsIconTiktok {
+  color: #021614;
+}
+
+.snsIconOther {
+  color: #6c757d;
 }

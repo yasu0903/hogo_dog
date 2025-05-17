@@ -1,6 +1,7 @@
 // src/components/organizations/OrganizationCard/index.jsx
 import { Link } from 'react-router-dom';
 import styles from './OrganizationCard.module.css';
+import { ORGANIZAION_CARD_MESSAGES } from '../../../constants/locales/ja';
 
 const OrganizationCard = ({ organization }) => {
   return (
@@ -14,18 +15,18 @@ const OrganizationCard = ({ organization }) => {
         {organization.sourceUrl && (
           <p>
             <a href={organization.sourceUrl} target="_blank" rel="noopener noreferrer">
-              公式情報
+              {ORGANIZAION_CARD_MESSAGES.SOURCE}
             </a>
           </p>
         )}
         {organization.organizationCount && (
-          <p>登録団体数: {organization.organizationCount}</p>
+          <p>{ORGANIZAION_CARD_MESSAGES.NUMBER_OF_REGISTERED_ORGANIZATION} {organization.organizationCount}</p>
         )}
       </div>
       
       <div className={styles.cardFooter}>
         <Link to={`/organizations/${organization.id}`} className={styles.link}>
-          詳細を見る
+          {ORGANIZAION_CARD_MESSAGES.LINK_TO_ORGANIZAION_DETAIL}
         </Link>
       </div>
     </div>

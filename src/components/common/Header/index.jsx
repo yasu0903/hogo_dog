@@ -1,12 +1,13 @@
 // src/components/common/Header/index.jsx
 import styles from './Header.module.css';
 import { Link, NavLink } from 'react-router-dom';
+import { HEADER_MESSAGES } from '../../../constants/locales/ja';
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <Link to="/">団体検索サイト</Link>
+        <Link to="/">{HEADER_MESSAGES.TITLE}</Link>
       </div>
       <nav className={styles.nav}>
         <ul>
@@ -16,7 +17,7 @@ const Header = () => {
               className={({ isActive }) => isActive ? styles.active : undefined}
               end
             >
-              ホーム
+              {HEADER_MESSAGES.HOME}
             </NavLink>
           </li>
           <li>
@@ -24,7 +25,7 @@ const Header = () => {
               to="/organizations"
               className={({ isActive }) => isActive ? styles.active : undefined}
             >
-              団体一覧
+              {HEADER_MESSAGES.ORGANIZATIONS}
             </NavLink>
           </li>
         </ul>

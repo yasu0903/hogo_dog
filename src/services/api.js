@@ -9,7 +9,6 @@ export const fetchPrefectures = async () => {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
-    console.log('Fetched prefectures raw:', data);
     
     // データ構造に応じた処理
     // {"prefecture_list": [{no: "01", name: "北海道", english_name: "hokkaido"}, ...]}
@@ -37,7 +36,6 @@ export const fetchPrefectureiById = async (prefectureId) => {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
-    console.log('Fetched prefectures raw:', data);
     
     // データ構造に応じた処理
     // {"prefecture_list": [{no: "01", name: "北海道", english_name: "hokkaido"}, ...]}
@@ -105,7 +103,6 @@ export const fetchOrganizations = async () => {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
-    console.log('Fetched sources raw:', data);
     
     // データ構造に応じた処理
     // {"source_list": [{no: "01", name: "北海道", source_url: ""}, ...]}
@@ -157,7 +154,6 @@ export const fetchOrganizationDetail = async (prefectureId) => {
       throw new Error(`HTTP error! status: ${orgResponse.status}`);
     }
     const orgData = await orgResponse.json();
-    console.log('Fetched organization details raw:', orgData);
     
     // データ構造に応じた処理
     // {no: "08", pref_name: "ibaraki", organizations: [{id: 1, name: "...", ...}]}

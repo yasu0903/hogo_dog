@@ -5,6 +5,8 @@ import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
 import { fetchOrganizationDetail, fetchPrefectureiById } from '../../services/api';
 import styles from './OrganizationDetail.module.css';
+import { ORGANIZAION_DETAIL_MESSAGES, COMMON_MESSAGES } from '../../constants/locales/ja';
+import { PAGINAION_CONSTANT } from '../../constants/pagination';
 
 // SNSタイプに応じたアイコンを取得する関数
 const getSnsIcon = (type) => {
@@ -38,17 +40,16 @@ const OrganizationDetail = () => {
   
   // ページネーション用の状態を追加
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(6); // 1ページに表示する団体数
+  const [itemsPerPage] = useState(PAGINAION_CONSTANT.NUM_PER_PAGE); // 1ページに表示する団体数
   
   useEffect(() => {
     const loadOrganization = async () => {
       try {
         const data = await fetchOrganizationDetail(id);
-        console.log('取得した団体詳細データ:', data);
         setOrganizations(data);
       } catch (error) {
         console.error('Error loading organization:', error);
-        setError('団体情報の読み込みに失敗しました');
+        setError(ORGANIZAION_DETAIL_MESSAGES.ERROR_FOR_ORGANIZAION_LOADING);
       } finally {
         setLoading(false);
       }
@@ -59,11 +60,10 @@ const OrganizationDetail = () => {
     const loadPrefecture = async () => {
       try {
         const data = await fetchPrefectureiById(id);
-        console.log('取得した都道府県データ:', data);
         setPrefecture(data);
       } catch (error) {
         console.error('Error loading prefectures:', error);
-        setError('都道府県情報の読み込みに失敗しました');
+        setError(ORGANIZAION_DETAIL_MESSAGES.ERROR_FOR_PREFECTURE_LOADING);
       } finally {
         setLoading(false);
       }
@@ -111,7 +111,7 @@ const OrganizationDetail = () => {
     let endPage = Math.min(totalPages, currentPage + 2);
     
     // 最低5ページ表示するための調整
-    if (endPage - startPage < 4) {
+    if (endPage - startPage < PAGINAION_CONSTANT.NUM_OF_DISPLAY_PAGES) {
       if (startPage === 1) {
         endPage = Math.min(5, totalPages);
       } else if (endPage === totalPages) {
@@ -130,7 +130,7 @@ const OrganizationDetail = () => {
           onClick={goToPrevPage}
           disabled={currentPage === 1}
         >
-          前へ
+          {ORGANIZAION_DETAIL_MESSAGES.BACK}
         </button>
         
         {startPage > 1 && (
@@ -172,14 +172,14 @@ const OrganizationDetail = () => {
           onClick={goToNextPage}
           disabled={currentPage === totalPages}
         >
-          次へ
+        {ORGANIZAION_DETAIL_MESSAGES.NEXT}
         </button>
       </div>
     );
   };
   
   if (loading) {
-    return <div className={styles.loading}>読み込み中...</div>;
+    return <div className={styles.loading}>{COMMON_MESSAGES.LOADING}</div>;
   }
   
   if (error) {
@@ -187,9 +187,9 @@ const OrganizationDetail = () => {
       <div className={styles.error}>
         <Header />
         <main className={styles.main}>
-          <h1>エラー</h1>
+          <h1>{COMMON_MESSAGES.ERROR}</h1>
           <p>{error}</p>
-          <Link to="/organizations">団体一覧に戻る</Link>
+          <Link to="/organizations">{ORGANIZAION_DETAIL_MESSAGES.BACK_TO_ORGANIZATION_LIST}</Link>
         </main>
         <Footer />
       </div>
@@ -201,8 +201,8 @@ const OrganizationDetail = () => {
       <div className={styles.container}>
         <Header />
         <main className={styles.main}>
-          <h1>団体が見つかりません</h1>
-          <Link to="/organizations">団体一覧に戻る</Link>
+          <h1>{ORGANIZAION_DETAIL_MESSAGES.ORGANIZAION_NOT_FOUND}</h1>
+          <Link to="/organizations">{ORGANIZAION_DETAIL_MESSAGES.BACK_TO_ORGANIZATION_LIST}</Link>
         </main>
         <Footer />
       </div>
@@ -216,7 +216,7 @@ const OrganizationDetail = () => {
         <h1 className={styles.title}>{`${prefecture.name}の団体一覧`}</h1>
         
         <div className={styles.backLink}>
-          <Link to="/organizations">団体一覧に戻る</Link>
+          <Link to="/organizations">{ORGANIZAION_DETAIL_MESSAGES.BACK_TO_ORGANIZATION_LIST}</Link>
         </div>
         
         {organizations.length > 0 && (
@@ -230,12 +230,12 @@ const OrganizationDetail = () => {
           {currentOrganizations.map(org => (
             <div key={org.id} className={styles.orgItem}>
               <h2>{org.name}</h2>
-              <p className={styles.area}>エリア: {org.area}</p>
+              <p className={styles.area}>{ORGANIZAION_DETAIL_MESSAGES.AREA}: {org.area}</p>
               
               {org.website && (
                 <p className={styles.website}>
                   <a href={org.website} target="_blank" rel="noopener noreferrer">
-                    ウェブサイト
+                    {ORGANIZAION_DETAIL_MESSAGES.WEBSITE} 
                   </a>
                 </p>
               )}
@@ -244,7 +244,7 @@ const OrganizationDetail = () => {
               
               {org.sns && org.sns.length > 0 && (
                 <div className={styles.snsLinks}>
-                  <h3>SNS</h3>
+                  <h3>{ORGANIZAION_DETAIL_MESSAGES.SNS}</h3>
                   <ul>
                     {org.sns.map((snsItem, index) => {
                       const { icon, className } = getSnsIcon(snsItem.type);

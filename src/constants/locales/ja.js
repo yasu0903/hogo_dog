@@ -24,6 +24,7 @@ export const FOOTER_MESSAGES = {
     TERMS_OF_SERVICE: '利用規約',
     X_URL: 'https://x.com/yasuch',
     INSTAGRAM_URL: 'https://www.instagram.com/yasuyuki.chida/',
+    GITHUB_URL: 'https://github.com/yasu0903',
 }
 
 export const HOME_MESSAGES = {

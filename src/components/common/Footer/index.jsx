@@ -2,6 +2,15 @@
 import styles from './Footer.module.css';
 import { Link } from 'react-router-dom';
 import { COMMON_MESSAGES, FOOTER_MESSAGES, ORGANIZAIONS_MESSAGES } from '../../../constants/locales/ja';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+  faXTwitter, 
+  faGithub, 
+  faInstagram, 
+  faYoutube, 
+  faLine, 
+  faTiktok 
+} from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -44,10 +53,13 @@ const Footer = () => {
           {/* SNSリンクを右端に配置 */}
           <div className={styles.social}>
             <a href={FOOTER_MESSAGES.X_URL} target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
-              X
+            <FontAwesomeIcon icon={faXTwitter} />
             </a>
             <a href={FOOTER_MESSAGES.INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
-              Instagram
+            <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a href={FOOTER_MESSAGES.GITHUB_URL} target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+            <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
         </div>

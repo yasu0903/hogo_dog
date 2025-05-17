@@ -19,6 +19,11 @@ export const FOOTER_MESSAGES = {
     HOME: 'ホーム',
     ORGANIZAIONS: '保護犬団体一覧',
     COPYRIGHT: '保護犬団体検索サイト All Rights Researved.',
+    LEGAL: '法的情報',
+    PRIVACY_POLICY: 'プライバシーポリシー',
+    TERMS_OF_SERVICE: '利用規約',
+    X_URL: 'https://x.com/yasuch',
+    INSTAGRAM_URL: 'https://www.instagram.com/yasuyuki.chida/',
 }
 
 export const HOME_MESSAGES = {

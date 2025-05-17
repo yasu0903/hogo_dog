@@ -14,19 +14,43 @@ const Footer = () => {
           <p className={styles.tagline}>{FOOTER_MESSAGES.DESCRIPTION}</p>
         </div>
         
-        <div className={styles.links}>
-          <div className={styles.linkSection}>
-            <h3>{FOOTER_MESSAGES.SITEMAP}</h3>
-            <ul>
-              <li><Link to="/">{FOOTER_MESSAGES.HOME}</Link></li>
-              <li><Link to="/organizations">{FOOTER_MESSAGES.ORGANIZAIONS}</Link></li>
-            </ul>
+        <div className={styles.linksContainer}>
+          <div className={styles.linkColumn}>
+            <div className={styles.linkSection}>
+              <h3>{FOOTER_MESSAGES.SITEMAP}</h3>
+              <ul>
+                <li><Link to="/">{FOOTER_MESSAGES.HOME}</Link></li>
+                <li><Link to="/organizations">{FOOTER_MESSAGES.ORGANIZAIONS}</Link></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className={styles.linkColumn}>
+            <div className={styles.linkSection}>
+              <h3>{FOOTER_MESSAGES.LEGAL}</h3>
+              <ul>
+                <li><Link to="/privacy-policy">{FOOTER_MESSAGES.PRIVACY_POLICY}</Link></li>
+                <li><Link to="/terms-of-service">{FOOTER_MESSAGES.TERMS_OF_SERVICE}</Link></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
       
       <div className={styles.bottom}>
-        <p className={styles.copyright}>&copy; {currentYear} {FOOTER_MESSAGES.COPYRIGHT}</p>
+        <div className={styles.bottomContent}>
+          <p className={styles.copyright}>&copy; {currentYear} {FOOTER_MESSAGES.COPYRIGHT}</p>
+          
+          {/* SNSリンクを右端に配置 */}
+          <div className={styles.social}>
+            <a href={FOOTER_MESSAGES.X_URL} target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+              X
+            </a>
+            <a href={FOOTER_MESSAGES.INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+              Instagram
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );

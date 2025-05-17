@@ -183,6 +183,7 @@ backend.tf
 
 # node
 node_modules/
+package-lock.json
 
 # public ディレクトリ内のすべてのファイルを除外
 /public/*

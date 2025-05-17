@@ -12,7 +12,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 2rem 2.5rem;
+  padding: 0 2rem 2rem;
 }
 
 .logoSection {
@@ -44,14 +44,17 @@
   line-height: 1.5;
 }
 
-.links {
+/* サイトマップと法的情報の横並び用スタイル */
+.linksContainer {
   display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
+  gap: 4rem; /* 間隔を広く取る */
+}
+
+.linkColumn {
+  flex-basis: auto;
 }
 
 .linkSection {
-  flex-basis: 200px;
   margin-bottom: 1.5rem;
 }
 
@@ -99,10 +102,65 @@
   color: #3498db;
 }
 
+/* 問い合わせ先スタイル */
+.contactSection {
+  flex-basis: 300px;
+}
+
+.contactSection h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.contactSection h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #3498db;
+}
+
+.contactSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contactSection li {
+  margin-bottom: 0.7rem;
+}
+
+.contactSection a {
+  color: #bdc3c7;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contactSection a:hover {
+  color: #3498db;
+}
+
+.contactInfo {
+  color: #95a5a6;
+  font-size: 0.9rem;
+}
+
+/* フッター下部スタイル更新 */
 .bottom {
   background-color: #1a252f;
   padding: 1.5rem 2rem;
-  text-align: center;
+}
+
+.bottomContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .copyright {
@@ -111,15 +169,46 @@
   margin: 0;
 }
 
+/* SNSリンクスタイル */
+.social {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.socialIcon {
+  color: #ecf0f1;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.socialIcon:hover {
+  color: #3498db;
+}
+
 /* レスポンシブデザイン */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .content {
-    padding: 0 1.5rem 2rem;
     flex-direction: column;
   }
   
-  .links {
-    gap: 2rem;
+  .linksContainer {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 0 1.5rem 2rem;
+  }
+  
+  .linksContainer {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .linkColumn {
+    margin-bottom: 0;
   }
 }
 
@@ -136,9 +225,13 @@
     font-size: 1.3rem;
   }
   
-  .links {
+  .bottomContent {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .social {
+    margin-top: 0.5rem;
   }
   
   .bottom {

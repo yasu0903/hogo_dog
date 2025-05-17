@@ -224,7 +224,8 @@ const OrganizationDetail = () => {
             <p>全{organizations.length}件中 {indexOfFirstItem + 1}-{Math.min(indexOfLastItem, organizations.length)}件を表示</p>
           </div>
         )}
-        
+        {totalPages > 1 && <Pagination />} 
+
         <div className={styles.organizationsList}>
           {currentOrganizations.map(org => (
             <div key={org.id} className={styles.orgItem}>

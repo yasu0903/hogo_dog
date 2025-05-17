@@ -252,13 +252,18 @@
 .snsIconOther {
   color: #6c757d;
 }
+
 .pagination {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin: 2rem 0;
   gap: 0.5rem;
   flex-wrap: wrap;
+}
+/* 下部ページネーションの余白を大きめに */
+.pagination + .organizationsList + .pagination {
+  margin-top: 3rem;
 }
 
 .pageButton {

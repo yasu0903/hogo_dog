@@ -1,4 +1,9 @@
-# ./modules/route53/outputs.tf - Route 53モジュールの出力
+# ./modules/acm_route53/outputs.tf - 統合モジュールの出力
+
+output "certificate_arn" {
+  description = "SSL証明書のARN"
+  value       = aws_acm_certificate.cert.arn
+}
 
 output "zone_id" {
   description = "Route 53ゾーンID"
@@ -8,9 +13,4 @@ output "zone_id" {
 output "nameservers" {
   description = "ホストゾーンのネームサーバー"
   value       = data.aws_route53_zone.zone.name_servers
-}
-
-output "certificate_validation" {
-  description = "証明書検証のステータス"
-  value       = aws_acm_certificate_validation.cert.id
 }

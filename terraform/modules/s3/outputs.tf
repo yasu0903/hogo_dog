@@ -1,13 +1,13 @@
-# ./modules/s3/outputs.tf - S3モジュールの出力
+# ./modules/s3/outputs.tf - 条件付き出力
 
 output "bucket_name" {
   description = "S3バケット名"
-  value       = aws_s3_bucket.website.id
+  value       = local.bucket_id
 }
 
 output "bucket_arn" {
   description = "S3バケットARN"
-  value       = aws_s3_bucket.website.arn
+  value       = local.bucket_arn
 }
 
 output "website_endpoint" {
@@ -17,5 +17,5 @@ output "website_endpoint" {
 
 output "bucket_regional_domain_name" {
   description = "S3バケットのリージョナルドメイン名"
-  value       = aws_s3_bucket.website.bucket_regional_domain_name
+  value       = local.bucket_regional_domain_name
 }

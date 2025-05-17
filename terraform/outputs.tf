@@ -1,4 +1,4 @@
-# outputs.tf - 出力変数
+# outputs.tf - 修正版
 
 output "website_bucket_name" {
   description = "ウェブサイトのS3バケット名"
@@ -27,5 +27,5 @@ output "alternate_website_url" {
 
 output "nameservers" {
   description = "Route 53ゾーンのネームサーバー（ドメインレジストラで設定する必要がある場合）"
-  value       = module.route53.nameservers
+  value       = module.acm_route53.nameservers
 }

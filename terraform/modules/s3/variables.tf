@@ -16,3 +16,9 @@ variable "error_document" {
   type        = string
   default     = "error.html"
 }
+
+variable "create_bucket" {
+  description = "バケットを作成するかどうか（falseの場合、既存バケットを使用）"
+  type        = bool
+  default     = true
+}

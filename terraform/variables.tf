@@ -29,6 +29,13 @@ variable "error_document" {
   default     = "error.html"
 }
 
+# 追加する変数
+variable "s3_create_bucket" {
+  description = "S3バケットを作成するかどうか（falseの場合、既存バケットを使用）"
+  type        = bool
+  default     = true
+}
+
 variable "index_content" {
   description = "インデックスページのHTMLコンテンツ（オプション）"
   type        = string

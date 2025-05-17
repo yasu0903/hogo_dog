@@ -7,6 +7,7 @@ aws_region  = "ap-northeast-1"  # 必要に応じて変更
 # オプション設定
 website_bucket_name   = null  # nullの場合、domain_nameが使用されます
 cloudfront_price_class = "PriceClass_100"  # ProceClass_All(最も高価)、ProceClass_200(中間)、ProceClass_100(最も安価)
+s3_create_bucket = false  # バケットを作成せず、既存のものを使用
 
 # インデックスとエラードキュメント設定
 index_document = "index.html"

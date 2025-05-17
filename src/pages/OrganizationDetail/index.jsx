@@ -36,6 +36,10 @@ const OrganizationDetail = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   
+  // ページネーション用の状態を追加
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(6); // 1ページに表示する団体数
+  
   useEffect(() => {
     const loadOrganization = async () => {
       try {
@@ -68,6 +72,111 @@ const OrganizationDetail = () => {
     loadPrefecture();
 
   }, [id]);
+  
+  // 表示すべき団体のインデックス計算
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentOrganizations = organizations.slice(indexOfFirstItem, indexOfLastItem);
+  
+  // 全ページ数を計算
+  const totalPages = Math.ceil(organizations.length / itemsPerPage);
+  
+  // ページ変更ハンドラー
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    // ページトップにスクロール
+    window.scrollTo(0, 0);
+  };
+  
+  // 前のページへ
+  const goToPrevPage = () => {
+    if (currentPage > 1) {
+      handlePageChange(currentPage - 1);
+    }
+  };
+  
+  // 次のページへ
+  const goToNextPage = () => {
+    if (currentPage < totalPages) {
+      handlePageChange(currentPage + 1);
+    }
+  };
+  
+  // ページネーションコンポーネント
+  const Pagination = () => {
+    const pageNumbers = [];
+    
+    // 表示するページ番号を決定
+    let startPage = Math.max(1, currentPage - 2);
+    let endPage = Math.min(totalPages, currentPage + 2);
+    
+    // 最低5ページ表示するための調整
+    if (endPage - startPage < 4) {
+      if (startPage === 1) {
+        endPage = Math.min(5, totalPages);
+      } else if (endPage === totalPages) {
+        startPage = Math.max(1, totalPages - 4);
+      }
+    }
+    
+    for (let i = startPage; i <= endPage; i++) {
+      pageNumbers.push(i);
+    }
+    
+    return (
+      <div className={styles.pagination}>
+        <button 
+          className={`${styles.pageButton} ${currentPage === 1 ? styles.disabled : ''}`}
+          onClick={goToPrevPage}
+          disabled={currentPage === 1}
+        >
+          前へ
+        </button>
+        
+        {startPage > 1 && (
+          <>
+            <button 
+              className={styles.pageButton} 
+              onClick={() => handlePageChange(1)}
+            >
+              1
+            </button>
+            {startPage > 2 && <span className={styles.ellipsis}>...</span>}
+          </>
+        )}
+        
+        {pageNumbers.map(number => (
+          <button
+            key={number}
+            className={`${styles.pageButton} ${currentPage === number ? styles.active : ''}`}
+            onClick={() => handlePageChange(number)}
+          >
+            {number}
+          </button>
+        ))}
+        
+        {endPage < totalPages && (
+          <>
+            {endPage < totalPages - 1 && <span className={styles.ellipsis}>...</span>}
+            <button 
+              className={styles.pageButton} 
+              onClick={() => handlePageChange(totalPages)}
+            >
+              {totalPages}
+            </button>
+          </>
+        )}
+        
+        <button 
+          className={`${styles.pageButton} ${currentPage === totalPages ? styles.disabled : ''}`}
+          onClick={goToNextPage}
+          disabled={currentPage === totalPages}
+        >
+          次へ
+        </button>
+      </div>
+    );
+  };
   
   if (loading) {
     return <div className={styles.loading}>読み込み中...</div>;
@@ -110,8 +219,14 @@ const OrganizationDetail = () => {
           <Link to="/organizations">団体一覧に戻る</Link>
         </div>
         
+        {organizations.length > 0 && (
+          <div className={styles.resultsInfo}>
+            <p>全{organizations.length}件中 {indexOfFirstItem + 1}-{Math.min(indexOfLastItem, organizations.length)}件を表示</p>
+          </div>
+        )}
+        
         <div className={styles.organizationsList}>
-          {organizations.map(org => (
+          {currentOrganizations.map(org => (
             <div key={org.id} className={styles.orgItem}>
               <h2>{org.name}</h2>
               <p className={styles.area}>エリア: {org.area}</p>
@@ -147,6 +262,9 @@ const OrganizationDetail = () => {
             </div>
           ))}
         </div>
+        
+        {/* ページネーションを表示（団体が複数ページに分かれる場合のみ） */}
+        {totalPages > 1 && <Pagination />}
       </main>
       <Footer />
     </div>

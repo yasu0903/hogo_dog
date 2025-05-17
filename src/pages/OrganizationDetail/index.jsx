@@ -1,4 +1,3 @@
-// src/pages/OrganizationDetail/index.jsx
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Header from '../../components/common/Header';
@@ -7,27 +6,37 @@ import { fetchOrganizationDetail, fetchPrefectureiById } from '../../services/ap
 import styles from './OrganizationDetail.module.css';
 import { ORGANIZAION_DETAIL_MESSAGES, COMMON_MESSAGES } from '../../constants/locales/ja';
 import { PAGINAION_CONSTANT } from '../../constants/pagination';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+  faXTwitter, 
+  faFacebookF, 
+  faInstagram, 
+  faYoutube, 
+  faLine, 
+  faTiktok 
+} from '@fortawesome/free-brands-svg-icons';
+import { faGlobe, faLink } from '@fortawesome/free-solid-svg-icons';
 
-// SNSタイプに応じたアイコンを取得する関数
+// SNSタイプに応じたFont Awesomeアイコンを取得する関数
 const getSnsIcon = (type) => {
   const lowerType = type.toLowerCase();
   
   if (lowerType.includes('twitter') || lowerType.includes('x')) {
-    return { icon: '𝕏', className: styles.snsIconTwitter };
+    return { icon: <FontAwesomeIcon icon={faXTwitter} />, className: styles.snsIconTwitter };
   } else if (lowerType.includes('facebook') || lowerType.includes('fb')) {
-    return { icon: 'ⓕ', className: styles.snsIconFacebook };
+    return { icon: <FontAwesomeIcon icon={faFacebookF} />, className: styles.snsIconFacebook };
   } else if (lowerType.includes('instagram') || lowerType.includes('insta')) {
-    return { icon: '📷', className: styles.snsIconInstagram };
+    return { icon: <FontAwesomeIcon icon={faInstagram} />, className: styles.snsIconInstagram };
   } else if (lowerType.includes('youtube') || lowerType.includes('yt')) {
-    return { icon: '▶️', className: styles.snsIconYoutube };
+    return { icon: <FontAwesomeIcon icon={faYoutube} />, className: styles.snsIconYoutube };
   } else if (lowerType.includes('line')) {
-    return { icon: '💬', className: styles.snsIconLine };
-  } else if (lowerType.includes('website') || lowerType.includes('site') || lowerType.includes('web') || lowerType.includes('blog'))   {
-    return { icon: '📃', className: styles.snsIconWebsite };
-  } else if (lowerType.includes('tiktok'))   {
-    return { icon: '🎵', className: styles.snsIconTiktok };
+    return { icon: <FontAwesomeIcon icon={faLine} />, className: styles.snsIconLine };
+  } else if (lowerType.includes('website') || lowerType.includes('site') || lowerType.includes('web') || lowerType.includes('blog')) {
+    return { icon: <FontAwesomeIcon icon={faGlobe} />, className: styles.snsIconWebsite };
+  } else if (lowerType.includes('tiktok')) {
+    return { icon: <FontAwesomeIcon icon={faTiktok} />, className: styles.snsIconTiktok };
   } else {
-    return { icon: '🔗', className: styles.snsIconOther };
+    return { icon: <FontAwesomeIcon icon={faLink} />, className: styles.snsIconOther };
   }
 };
 

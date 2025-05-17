@@ -69,8 +69,7 @@ export const ORGANIZAION_DETAIL_MESSAGES = {
     BACK_TO_ORGANIZATION_LIST: '戻る',
     ORGANIZAION_NOT_FOUND: '団体が見つかりません',
     AREA: 'エリア',
-    WEBSITE: 'ウェブサイト',
-    WEBSITE: 'ウェブサイト',
+    WEBSITE: '公式サイト',
     SNS: 'SNS'
 }
 

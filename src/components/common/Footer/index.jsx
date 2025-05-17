@@ -1,15 +1,12 @@
 // src/components/common/Footer/index.jsx
 import styles from './Footer.module.css';
 import { Link } from 'react-router-dom';
-import { COMMON_MESSAGES, FOOTER_MESSAGES, ORGANIZAIONS_MESSAGES } from '../../../constants/locales/ja';
+import { COMMON_MESSAGES, FOOTER_MESSAGES } from '../../../constants/locales/ja';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faXTwitter, 
   faGithub, 
   faInstagram, 
-  faYoutube, 
-  faLine, 
-  faTiktok 
 } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {

@@ -15,6 +15,7 @@ import {
   faLine, 
   faTiktok 
 } from '@fortawesome/free-brands-svg-icons';
+import { faDog, faHome } from '@fortawesome/free-solid-svg-icons';
 import { faGlobe, faLink } from '@fortawesome/free-solid-svg-icons';
 
 // SNSタイプに応じたFont Awesomeアイコンを取得する関数
@@ -244,12 +245,12 @@ const OrganizationDetail = () => {
               {org.website && (
                 <p className={styles.website}>
                   <a href={org.website} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faDog} />
+                    <FontAwesomeIcon icon={faHome} />
                     {ORGANIZAION_DETAIL_MESSAGES.WEBSITE} 
                   </a>
                 </p>
               )}
-              
-              {org.note && <p className={styles.note}>{org.note}</p>}
               
               {org.sns && org.sns.length > 0 && (
                 <div className={styles.snsLinks}>
@@ -269,6 +270,9 @@ const OrganizationDetail = () => {
                   </ul>
                 </div>
               )}
+
+            {org.note && <p className={styles.note}>{org.note}</p>}
+
             </div>
           ))}
         </div>

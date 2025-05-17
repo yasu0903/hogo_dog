@@ -12,7 +12,9 @@ const Home = () => {
       <main className={styles.main}>
         <h1 className={styles.title}>{HOME_MESSAGES.WELCOME}</h1>
         <p className={styles.description}>
-          {HOME_MESSAGES.DESCRIPTION}
+          {HOME_MESSAGES.DESCRIPTION1}
+           <br></br>
+          {HOME_MESSAGES.DESCRIPTION2}
         </p>
         
         <div className={styles.features}>

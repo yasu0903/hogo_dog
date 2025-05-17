@@ -6,7 +6,7 @@ import { TERMS_OF_SERVICE_CONST } from '../../constants/termsOfService';
 const TermsOfService = () => {
   // document.titleを使用してタイトルを設定
   React.useEffect(() => {
-    document.title = '利用規約 | 保護犬団体検索サイト';
+    document.title = TERMS_OF_SERVICE_CONST.TITLE;
   }, []);
   
   return (

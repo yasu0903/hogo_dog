@@ -1,5 +1,5 @@
 export const COMMON_MESSAGES = {
-    TITLE: '保護犬団体検索サイト',
+    TITLE: 'わんだーネット',
     LOADING: '読み込み中...',
     ERROR: 'エラーが発生しました',
     ERROR_WHILE_LOADING: 'データの読み込み中にエラーが発生しました',
@@ -9,16 +9,16 @@ export const COMMON_MESSAGES = {
 
 export const HEADER_MESSAGES = {
     HOME: 'ホーム',
-    ORGANIZATIONS: '保護犬団体一覧',
-    TITLE: '保護犬団体検索サイト'
+    ORGANIZATIONS: '検索',
+    TITLE: 'わんだーネット'
 }
 
 export const FOOTER_MESSAGES = {
-    DESCRIPTION: 'エリア毎の保護犬団体情報を簡単検索',
+    DESCRIPTION: 'エリア毎の動物愛護団体情報を簡単検索',
     SITEMAP: 'サイトマップ',
     HOME: 'ホーム',
-    ORGANIZAIONS: '保護犬団体一覧',
-    COPYRIGHT: '保護犬団体検索サイト All Rights Researved.',
+    ORGANIZAIONS: '動物愛護団体一覧',
+    COPYRIGHT: 'わんだーネット All Rights Researved.',
     LEGAL: '法的情報',
     PRIVACY_POLICY: 'プライバシーポリシー',
     TERMS_OF_SERVICE: '利用規約',
@@ -27,8 +27,9 @@ export const FOOTER_MESSAGES = {
 }
 
 export const HOME_MESSAGES = {
-    WELCOME: '保護犬団体検索サイトへようこそ',
-    DESCRIPTION: '全国の保護犬団体情報を簡単に検索できます。活動内容や連絡先などの詳細情報を確認できます。',
+    WELCOME: 'わんだーネットへようこそ',
+    DESCRIPTION1: '全国の動物愛護団体情報を簡単に検索できます。',
+    DESCRIPTION2: '活動内容や連絡先などの詳細情報を確認できます。',
     FEATURES: [
         {
             FEATURE: '簡単検索',
@@ -43,11 +44,11 @@ export const HOME_MESSAGES = {
             DESCRIPTION: '日本全国の団体情報を網羅しています',
         }
     ],
-    LINK_TO_ORGANIZATIONS: '団体一覧を見る'
+    LINK_TO_ORGANIZATIONS: '検索'
 }
 
 export const ORGANIZAIONS_MESSAGES = {
-    TITLE: '保護犬団体一覧',
+    TITLE: '団体一覧',
     ERROR_FOR_DATA_LOADING: 'データが読み込まれていません',
     ERROR_FOR_VALIDATION: 'データの形式が正しくありません',
     ERROR_FOR_NO_RESULTS: '該当する団体が見つかりません'
@@ -64,8 +65,8 @@ export const ORGANIZAION_DETAIL_MESSAGES = {
     ERROR_FOR_PREFECTURE_LOADING: '都道府県情報の読み込みに失敗しました',
     NEXT: '次へ',
     BACK: '前へ',
-    BACK_TO_ORGANIZATION_LIST: '保護犬団体一覧に戻る',
-    ORGANIZAION_NOT_FOUND: '保護犬団体が見つかりません',
+    BACK_TO_ORGANIZATION_LIST: '戻る',
+    ORGANIZAION_NOT_FOUND: '団体が見つかりません',
     AREA: 'エリア',
     WEBSITE: 'ウェブサイト',
     WEBSITE: 'ウェブサイト',

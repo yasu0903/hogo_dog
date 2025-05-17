@@ -5,7 +5,7 @@ import { PRIVACY_POLICY_CONST } from '../../constants/privacyPolicy';
 
 const PrivacyPolicy = () => {
   React.useEffect(() => {
-    document.title = 'プライバシーポリシー | 保護犬団体検索サイト';
+    document.title = PRIVACY_POLICY_CONST.TITLE;
   }, []);
   
   return (

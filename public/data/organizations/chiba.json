@@ -1,0 +1,357 @@
+{
+    "no": "12",
+    "pref_name": "chiba",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "NPO法人 犬と猫のためのライフボート",
+            "area": "千葉",
+            "url": "https://www.lifeboat.or.jp",
+            "note": "",
+            "sns": [
+                {
+                    "name": "https://www.lifeboat.or.jp/news/blog",
+                    "type": "blog",
+                    "url": "https://www.lifeboat.or.jp/news/blog"
+                },
+                {
+                    "name": "【保護犬・保護猫】犬と猫のためのライフボート",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/lifeboat_jp/"
+                },
+                {
+                    "name": "NPO法人犬と猫のためのライフボート",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/Lifeboat.org"
+                },
+                {
+                    "name": "犬と猫のためのライフボート",
+                    "type": "x",
+                    "url": "https://x.com/lifeboatjapan"
+                },
+                {
+                    "name": "【保護犬・保護猫】犬と猫のためのライフボート",
+                    "type": "threads",
+                    "url": "https://www.threads.com/@lifeboat_jp"
+                },
+                {
+                    "name": "NPO法人犬と猫のためのライフボート",
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/c/LifeboatJP"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "一般社団法人 アルマ",
+            "area": "東京",
+            "url": "http://alma.or.jp/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "紡いだ命 ～アルマ東京ティアハイム～",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/alma-soulmate/"
+                },
+                {
+                    "name": "ティアハイムの天使たち",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/alma-tt/"
+                },
+                {
+                    "name": "ティアハイムのきょうのにゃんこ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/alma-cats/"
+                },
+                {
+                    "name": "アルマ東京ティアハイム通信",
+                    "type": "blog",
+                    "url": "http://tierheim.blog.fc2.com/"
+                },
+                {
+                    "name": "アルマ東京ティアハイム",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/alma.tokyo/"
+                },
+                {
+                    "name": "アルマ保護猫シェルター・アスタマナーニャ",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/alma_hastamanana/"
+                },
+                {
+                    "name": "アルマ引き取り情報ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/alma-new/"
+                },
+                {
+                    "name": "NPO法人アルマ",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/npo.alma"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "ボーダーコリーレスキューネットワーク",
+            "area": "",
+            "url": "https://www.bcrn.jp/",
+            "note": "ボーダーコリーのみ",
+            "sns": [
+                {
+                    "name": "BCRN BLOG",
+                    "type": "blog",
+                    "url": "http://staffbcrn.blog38.fc2.com/"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "アグリドッグレスキュー",
+            "area": "埼玉",
+            "url": "https://aguri.nomaki.jp/",
+            "note": "埼玉県",
+            "sns": [
+                {
+                    "name": "アグリドッグレスキュー",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/aguriinuneko/"
+                },
+                {
+                    "name": "千代エル乙女の日常日記&アグリドッグレスキュー",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/chiyo-el-lovelove/"
+                },
+                {
+                    "name": "仮母はじめました！ ☆アグリドッグレスキュー☆",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/micteru/"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "GUNDOG RESCUE CACI",
+            "area": "千葉",
+            "url": "https://cac-ichikawa.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "GUNDOG RESCUE CACI",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/gundogrescuecaci/#"
+                },
+                {
+                    "name": "Gundog Rescue CACI",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/cacidog"
+                },
+                {
+                    "name": "GUNDOG RESCUE CACI",
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/channel/UCpFAMprYgKlMd8y2K7wXxLg"
+                },
+                {
+                    "name": "GUNDOG RESCUE CACI",
+                    "type": "x",
+                    "url": "https://x.com/RescueCaci"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "ちばわん",
+            "area": "千葉",
+            "url": "https://chibawan.net/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "ちばわん(犬猫保護)",
+                    "type": "x",
+                    "url": "https://x.com/chibawan_info"
+                },
+                {
+                    "name": "chibawan_dog",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/chibawan_dog/"
+                },
+                {
+                    "name": "chibawan_cat",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/chibawan_cat/"
+                },
+                {
+                    "name": "ちばわん",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/CHIBAWAN1"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "ビアディー・レスキュー・ネットワーク",
+            "area": "千葉",
+            "url": "https://www2u.biglobe.ne.jp/~BDN/BRN.html",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 8,
+            "name": "ふがふがレスキュークラブ",
+            "area": "千葉",
+            "url": "https://toysya.sakura.ne.jp/fuga/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "はなぺちゃフェスティバル事務局",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/hanapecha_festival"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Animal Rescue Chida",
+            "area": "千葉",
+            "url": "https://arch2013.org/index.html",
+            "note": "",
+            "sns": [
+                {
+                    "name": "小梅ロマンチカ(代表ブログ)",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/arch-koume/"
+                },
+                {
+                    "name": "ちばたりあんな(副代表ブログ)",
+                    "type": "blog",
+                    "url": "https://chibatarianna.jugem.jp/"
+                },
+                {
+                    "name": "ARCh アニマルレスキューちば",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/arch2013"
+                },
+                {
+                    "name": "ARCh アニマルレスキューちば",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/arch2013"
+                },
+                {
+                    "name": "ARCh アニマルレスキューちば",
+                    "type": "x",
+                    "url": "https://x.com/ARCh2013_staff"
+                },
+                {
+                    "name": "アニマルレスキューちば(ARCh)",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/animal_rescue_chiba/"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Doggy☆Days",
+            "area": "千葉",
+            "url": "",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 11,
+            "name": "theVOICE(ぼいす)",
+            "area": "千葉",
+            "url": "https://thevoice-japan.org/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "ぼいす",
+                    "type": "x",
+                    "url": "https://x.com/thevoice_japan"
+                },
+                {
+                    "name": "一般社団法人the VOICE(ぼいす)",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/thevoice.japan/"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "TSR(チームシュナウザーレスキュー)",
+            "area": "千葉",
+            "url": "https://tschnar.jimdofree.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "TSR BLOG",
+                    "type": "blog",
+                    "url": "https://teamschnauzerrescure.blogspot.com/"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "アイドッグレスキュー隊",
+            "area": "東京",
+            "url": "http://aidog.jpn.com/",
+            "note": "東京都",
+            "sns": [
+                {
+                    "name": "アイドッグ活動日記",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/aidog20141001/"
+                },
+                {
+                    "name": "アイドッグ・イベントブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/aidog-ibento/"
+                },
+                {
+                    "name": "アイドッグ・レスキュー隊",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/people/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%83%E3%82%B0%E3%83%AC%E3%82%B9%E3%82%AD%E3%83%A5%E3%83%BC%E9%9A%8A/100064362684571/"
+                },
+                {
+                    "name": "アイドッグ・レスキュー隊",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/aidog_rescue/"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "公益財団法人ヒューマニン財団",
+            "area": "千葉",
+            "url": "http://humanin.or.jp/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "公益財団法人 ヒューマニン財団 ",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/humaninfoundation/"
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "name": "ゆめネコ譲渡会",
+            "area": "千葉",
+            "url": "http://yume-neko.net/",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 16,
+            "name": "いぬ助け",
+            "area": "千葉",
+            "url": "http://www.inudasuke.com",
+            "note": "千葉県",
+            "sns": [
+                {
+                    "name": "いぬ助け",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/inudasuke/"
+                }
+            ]
+        }
+    ]
+}

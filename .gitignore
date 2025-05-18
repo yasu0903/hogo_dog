@@ -194,3 +194,6 @@ package-lock.json
 # ゴミファイル
 .DS_Store
 *Zone.Identifier
+
+# vite
+.vite/

@@ -19,7 +19,4 @@ export default defineConfig({
   },
   // JSONファイルが格納されているデータディレクトリを公開する
   publicDir: 'public',
-  build: {
-    outDir: 'public',
-  }
 });

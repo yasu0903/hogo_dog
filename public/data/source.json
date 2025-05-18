@@ -1,0 +1,17 @@
+{
+    "source_list": [
+        {
+            "no": "01",
+            "name":"北海道",
+            "source_url": ""
+        },
+        {
+            "no": "08",
+            "name":"茨城県",
+            "source_url": "https://www.pref.ibaraki.jp/hokenfukushi/doshise/kanri/20190418.html",
+            "pdf_url": "https://www.pref.ibaraki.jp/hokenfukushi/doshise/kanri/documents/toubora20250318.pdf",
+            "pdf_sha256": "9ff4c2a6bdc68f2e3bb6d59a21f16e361903d5278e1ca71e086cf99b95fef70b",
+            "organization_num": 81
+        }
+    ]
+}

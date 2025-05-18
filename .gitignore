@@ -172,3 +172,25 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# terragform
+*.tfvars
+*.tfstate.backup
+*.tfstate
+**/.terraform/*
+.terraform.lock.hcl
+backend.tf
+
+# node
+node_modules/
+package-lock.json
+
+# public ディレクトリ内のすべてのファイルを除外
+/public/*
+
+# public/data ディレクトリは管理対象に含める
+!/public/data/
+
+# ゴミファイル
+.DS_Store
+*Zone.Identifier

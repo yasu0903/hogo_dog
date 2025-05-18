@@ -1,0 +1,48 @@
+/* src/components/organizations/AreaFilter/AreaFilter.module.css */
+
+.filterContainer {
+  width: 100%;
+  max-width: 400px; /* 最大幅を制限 */
+}
+
+.filterLabel {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  color: #34495e;
+  font-size: 0.95rem;
+}
+
+.filterSelect {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  background-color: white;
+  color: #2c3e50;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%233498db' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-size: 1rem;
+  padding-right: 2.5rem;
+}
+
+.filterSelect:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.filterSelect option {
+  padding: 0.5rem;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .filterContainer {
+    max-width: 100%; /* モバイルでは最大幅を解除 */
+  }
+}

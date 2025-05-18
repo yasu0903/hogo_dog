@@ -1,0 +1,26 @@
+/* src/components/organizations/OrganizationList/OrganizationList.module.css */
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.noResults {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

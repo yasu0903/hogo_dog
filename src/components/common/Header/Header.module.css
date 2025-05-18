@@ -1,0 +1,96 @@
+/* src/components/common/Header/Header.module.css */
+
+.header {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo a {
+  color: #2c3e50;
+  text-decoration: none;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.logo a::before {
+  content: '🔍';
+  margin-right: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.logo a:hover {
+  color: #3498db;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.nav li a {
+  color: #7f8c8d;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.nav li a:hover {
+  color: #3498db;
+  background-color: #f8fafc;
+}
+
+.nav li a.active {
+  color: #3498db;
+  background-color: #ebf5fb;
+  font-weight: 600;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 1.5rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.8rem 1rem;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .nav ul {
+    gap: 0.8rem;
+  }
+
+  .nav li a {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.95rem;
+  }
+}

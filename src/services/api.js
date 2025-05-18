@@ -114,7 +114,7 @@ export const fetchOrganizations = async () => {
         prefecture_id: source.no,
         prefecture: source.name,
         sourceUrl: source.source_url,
-        pdfUrl: source.pdf_url,
+        fileUrl: source.file_url,
         organizationCount: source.organization_num
       }));
     }

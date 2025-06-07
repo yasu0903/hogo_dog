@@ -1,0 +1,193 @@
+{
+    "no": "13",
+    "pref_name": "tokyo",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特定非営利活動法人 保健所の成犬・猫の譲渡を推進する会",
+            "area": "東京",
+            "url": "http://npo.seikenjoto.org/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "保健所の成犬・猫の譲渡を推進する会🐾",
+                    "type": "x",
+                    "url": "https://twitter.com/NpoSeikenJouto"
+                },
+                {
+                    "name": "活動ニュース",
+                    "type": "blog",
+                    "url": "http://jouto.blog69.fc2.com/"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "NPO法人日本動物生命尊重の会",
+            "area": "東京",
+            "url": "https://www.alis1993.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "NPO法人日本動物生命尊重の会(A.L.I.S)",
+                    "type": "x",
+                    "url": "https://x.com/NPOALIS1?s=20&t=hO-J9oKxTWNuB4VP9Jch2A"
+                },
+                {
+                    "name": "NPO法人 日本動物生命尊重の会 A.L.I.S",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/npo_alis/"
+                },
+                {
+                    "name": "アリスの会alis",
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/channel/UCDYWMy2vrlOB3hV8MyrZq5Q"
+                },
+                {
+                    "name": "Npo法人 日本動物生命尊重の会 alis",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/people/Npo%E6%B3%95%E4%BA%BA-%E6%97%A5%E6%9C%AC%E5%8B%95%E7%89%A9%E7%94%9F%E5%91%BD%E5%B0%8A%E9%87%8D%E3%81%AE%E4%BC%9A-alis/100064368564674/"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "一般社団法人 アルマ",
+            "area": "東京",
+            "url": "http://alma.or.jp/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "紡いだ命 ～アルマ東京ティアハイム～",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/alma-soulmate/"
+                },
+                {
+                    "name": "ティアハイムの天使たち",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/alma-tt/"
+                },
+                {
+                    "name": "ティアハイムのきょうのにゃんこ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/alma-cats/"
+                },
+                {
+                    "name": "アルマ東京ティアハイム通信",
+                    "type": "blog",
+                    "url": "http://tierheim.blog.fc2.com/"
+                },
+                {
+                    "name": "アルマ東京ティアハイム",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/alma.tokyo/"
+                },
+                {
+                    "name": "アルマ保護猫シェルター・アスタマナーニャ",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/alma_hastamanana/"
+                },
+                {
+                    "name": "アルマ引き取り情報ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/alma-new/"
+                },
+                {
+                    "name": "NPO法人アルマ",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/npo.alma"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "イングリッシュコッカースパニエル・レスキューネットワーク",
+            "area": "",
+            "url": "http://ecsrn.com/",
+            "note": "イングリッシュ・コッカー",
+            "sns": [
+                {
+                    "name": "ECSRN",
+                    "type": "blog",
+                    "url": "https://ecsrn.exblog.jp/"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "CAJA(カヤ)の会",
+            "area": "東京",
+            "url": "https://cajadog.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "Cajaの会(カヤの会) ",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/cayanokai"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "特定非営利活動法人 フレンズ・オヴ・アニマルズ(FOA)",
+            "area": "東京",
+            "url": "",
+            "note": "",
+            "sns": [
+                {
+                    "name": "フレンズ・オブ・アニマルズ (FOA) ",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/friendsofanimals.jp"
+                },
+                {
+                    "name": "所属メンバーアカウント",
+                    "type": "x",
+                    "url": "https://twitter.com/wonderfulnya3"
+                },
+                {
+                    "name": "friendsofanimalsjp",
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/user/friendsofanimalsjp"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "ハッピーラブズ",
+            "area": "東京",
+            "url": "https://happylabs.info/",
+            "note": "ラブラドール・ゴールデン等",
+            "sns": [
+                {
+                    "name": "ハッピーラブズ",
+                    "type": "blog",
+                    "url": "https://happylabs.info/blog.html"
+                },
+                {
+                    "name": "レトリーバーレスキュー ハッピーラブズ",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/happylabsdogs"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Perro Dogs Home",
+            "area": "東京",
+            "url": "http://www.perro-dogshome.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "PerroDogsHome",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/perro_dogs_home/"
+                },
+                {
+                    "name": "Perro Dogs Home",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/perrodogshome"
+                }
+            ]
+        }
+    ]
+}

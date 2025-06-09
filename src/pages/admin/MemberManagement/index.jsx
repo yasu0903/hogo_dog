@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Header from '../../../components/common/Header';
 import Footer from '../../../components/common/Footer';
 import PermissionGuard from '../../../components/auth/PermissionGuard';
+import InviteMemberModal from '../../../components/admin/InviteMemberModal';
 import { usePermissions } from '../../../contexts/PermissionContext';
 import { permissionApi, permissionHelpers } from '../../../services/permissionApi';
 import styles from './MemberManagement.module.css';
@@ -23,6 +24,7 @@ const MemberManagement = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [roleFilter, setRoleFilter] = useState('all');
   const [statusFilter, setStatusFilter] = useState('all');
+  const [showInviteModal, setShowInviteModal] = useState(false);
 
   const targetOrgId = organizationId || currentOrgId;
 
@@ -158,6 +160,14 @@ const MemberManagement = () => {
     }
   };
 
+  const handleInviteSuccess = (inviteResult) => {
+    setSuccess(`${inviteResult.user.name}さんを${permissionHelpers.getRoleDisplayName(inviteResult.role)}として${inviteResult.type === 'email' ? '招待しました' : '追加しました'}。`);
+    setTimeout(() => setSuccess(null), 5000);
+    
+    // メンバー一覧を更新
+    loadMembers();
+  };
+
   const filteredMembers = members.filter(member => {
     const matchesSearch = member.user.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          member.user.email.toLowerCase().includes(searchTerm.toLowerCase());
@@ -255,7 +265,10 @@ const MemberManagement = () => {
                 </select>
               </div>
               
-              <button className={styles.inviteButton}>
+              <button 
+                className={styles.inviteButton}
+                onClick={() => setShowInviteModal(true)}
+              >
                 <span>👥</span>
                 メンバーを招待
               </button>
@@ -345,6 +358,14 @@ const MemberManagement = () => {
       </main>
       
       <Footer />
+
+      {/* 招待モーダル */}
+      <InviteMemberModal
+        isOpen={showInviteModal}
+        onClose={() => setShowInviteModal(false)}
+        organizationId={targetOrgId}
+        onSuccess={handleInviteSuccess}
+      />
     </div>
   );
 };

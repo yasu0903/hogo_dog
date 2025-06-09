@@ -112,6 +112,180 @@ export const permissionApi = {
       throw error;
     }
   },
+
+  // === 新しい招待機能API（モック実装） ===
+  
+  // ユーザー検索（組織管理者向け）
+  searchUsers: async (searchTerm, organizationId) => {
+    try {
+      // TODO: 実際のAPI実装時に置き換え
+      // const response = await api.get(`/organizations/${organizationId}/users/search`, {
+      //   params: { q: searchTerm }
+      // });
+      
+      // モック実装
+      const mockUsers = [
+        {
+          id: 'user-1',
+          name: '山田太郎',
+          email: 'yamada.taro@example.com',
+          created_at: '2024-01-01T00:00:00Z',
+          last_login: '2024-01-20T10:30:00Z'
+        },
+        {
+          id: 'user-2',
+          name: '佐藤花子',
+          email: 'sato.hanako@example.com',
+          created_at: '2024-01-05T00:00:00Z',
+          last_login: '2024-01-19T15:45:00Z'
+        },
+        {
+          id: 'user-3',
+          name: '田中次郎',
+          email: 'tanaka.jiro@example.com',
+          created_at: '2024-01-10T00:00:00Z',
+          last_login: '2024-01-18T09:15:00Z'
+        }
+      ];
+
+      // 検索フィルター適用
+      const filteredUsers = mockUsers.filter(user =>
+        user.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        user.email.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+
+      return filteredUsers;
+    } catch (error) {
+      console.error('ユーザー検索に失敗しました:', error);
+      throw error;
+    }
+  },
+
+  // メールアドレスでユーザー検索
+  getUserByEmail: async (email) => {
+    try {
+      // TODO: 実際のAPI実装時に置き換え
+      // const response = await api.get(`/users/search`, {
+      //   params: { email }
+      // });
+      
+      // モック実装
+      const mockUser = {
+        id: 'user-email-' + Date.now(),
+        name: 'メール太郎',
+        email: email,
+        created_at: new Date().toISOString(),
+        last_login: new Date().toISOString()
+      };
+
+      return mockUser;
+    } catch (error) {
+      console.error('メールでのユーザー検索に失敗しました:', error);
+      throw error;
+    }
+  },
+
+  // 招待メール送信
+  sendInviteEmail: async (inviteData) => {
+    try {
+      // TODO: 実際のAPI実装時に置き換え
+      // const response = await api.post('/user-organizations/invite', inviteData);
+      
+      // モック実装
+      const mockResponse = {
+        id: 'invite-' + Date.now(),
+        user_id: inviteData.user_id,
+        organization_id: inviteData.organization_id,
+        organization_role: inviteData.organization_role,
+        status: 'pending',
+        expires_at: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString(), // 7日後
+        created_at: new Date().toISOString()
+      };
+
+      // 実際の実装では、ここでメール送信も行われる
+      console.log('招待メール送信（モック）:', {
+        to: inviteData.user_email,
+        organization: inviteData.organization_name,
+        role: inviteData.organization_role
+      });
+
+      return mockResponse;
+    } catch (error) {
+      console.error('招待メール送信に失敗しました:', error);
+      throw error;
+    }
+  },
+
+  // 直接メンバー追加（既存のcreateを拡張）
+  addMemberDirectly: async (memberData) => {
+    try {
+      // TODO: 実際のAPI実装時に置き換え
+      // const response = await api.post('/user-organizations/create', memberData);
+      
+      // モック実装
+      const mockResponse = {
+        id: 'member-' + Date.now(),
+        user_id: memberData.user_id,
+        organization_id: memberData.organization_id,
+        organization_role: memberData.organization_role,
+        status: 'active',
+        created_at: new Date().toISOString(),
+        updated_at: new Date().toISOString()
+      };
+
+      return mockResponse;
+    } catch (error) {
+      console.error('メンバー直接追加に失敗しました:', error);
+      throw error;
+    }
+  },
+
+  // 招待ステータス一覧取得
+  getPendingInvites: async (organizationId) => {
+    try {
+      // TODO: 実際のAPI実装時に置き換え
+      // const response = await api.get(`/user-organizations/pending`, {
+      //   params: { organization_id: organizationId }
+      // });
+      
+      // モック実装
+      const mockInvites = [
+        {
+          id: 'invite-1',
+          user: {
+            id: 'user-pending-1',
+            name: '招待中太郎',
+            email: 'pending.taro@example.com'
+          },
+          organization_id: organizationId,
+          organization_role: 'member',
+          status: 'pending',
+          expires_at: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000).toISOString(),
+          created_at: '2024-01-20T10:00:00Z'
+        }
+      ];
+
+      return mockInvites;
+    } catch (error) {
+      console.error('保留中招待の取得に失敗しました:', error);
+      throw error;
+    }
+  },
+
+  // 招待取り消し
+  cancelInvite: async (inviteId) => {
+    try {
+      // TODO: 実際のAPI実装時に置き換え
+      // const response = await api.delete(`/user-organizations/invite/${inviteId}`);
+      
+      // モック実装
+      console.log('招待取り消し（モック）:', inviteId);
+      return { success: true };
+    } catch (error) {
+      console.error('招待取り消しに失敗しました:', error);
+      throw error;
+    }
+  },
 };
 
 // 権限チェック用ヘルパー関数

@@ -9,6 +9,36 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `npm run preview` - Preview production build locally
 - `npm run lint` - Run ESLint to check code quality
 
+## Environment Setup
+
+Create a `.env` file based on `.env.example` with your AWS Cognito configuration:
+
+```bash
+# AWS Cognito Configuration
+VITE_AWS_REGION=us-east-1
+VITE_AWS_USER_POOL_ID=us-east-1_xxxxxxxxx
+VITE_AWS_USER_POOL_WEB_CLIENT_ID=xxxxxxxxxxxxxxxxxxxxxxxxxx
+VITE_AWS_IDENTITY_POOL_ID=us-east-1:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+VITE_AWS_COGNITO_DOMAIN=your-domain.auth.us-east-1.amazoncognito.com
+VITE_APP_URL=http://localhost:5174
+```
+
+## Authentication Flow
+
+This application uses **Google OAuth only** through AWS Cognito for enhanced privacy:
+
+### Google Authentication (Only)
+- **OAuth Flow**: Users can only sign in with their Google account
+- **Privacy First**: No custom password storage - only Google name and email are used
+- **Redirect Handling**: Automatic redirect after successful authentication
+- **User Data**: Minimal data usage - only name and email from Google profile
+- **Session Management**: Secure token-based authentication via Cognito
+
+### Privacy Protection
+- **No Personal Data Storage**: The service doesn't store any personal information beyond what Google provides
+- **Google-Only Authentication**: Eliminates the need for users to create new accounts with personal details
+- **Minimal Data Usage**: Only email and name are used for authentication and display purposes
+
 ## Architecture Overview
 
 This is a React SPA for searching Japanese dog rescue organizations with geographic filtering capabilities.
@@ -83,10 +113,11 @@ This project is designed to support expansion beyond static organization listing
 - Improved user interface components
 - Advanced filtering and search features
 
-**Phase 3: User Experience**
-- User account management
-- Interactive features and feedback systems
-- Administrative interface improvements
+**Phase 3: User Experience** ✅ COMPLETED
+- AWS Cognito authentication integration
+- User registration with email verification
+- Adoption application management
+- User dashboard and application tracking
 
 ### Component Architecture
 The project follows a modular component structure that supports:

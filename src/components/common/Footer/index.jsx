@@ -38,7 +38,6 @@ const Footer = () => {
               <h3>ユーザー</h3>
               <ul>
                 <li><Link to="/login">ログイン</Link></li>
-                <li><Link to="/register">新規登録</Link></li>
                 <li><Link to="/dashboard">マイページ</Link></li>
               </ul>
             </div>

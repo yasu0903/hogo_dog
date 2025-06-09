@@ -172,13 +172,10 @@ const Adopt = () => {
         <main className={styles.main}>
           <div className={styles.loginRequired}>
             <h2>ログインが必要です</h2>
-            <p>里親申請を行うには、アカウントでログインしてください。</p>
+            <p>里親申請を行うには、Googleアカウントでログインしてください。</p>
             <div className={styles.authButtons}>
               <Link to="/login" className={styles.loginButton}>
-                ログイン
-              </Link>
-              <Link to="/register" className={styles.registerButton}>
-                新規登録
+                Googleでログイン
               </Link>
             </div>
           </div>

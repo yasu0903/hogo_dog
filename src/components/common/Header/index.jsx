@@ -76,9 +76,6 @@ const Header = () => {
               <Link to="/login" className={styles.loginButton}>
                 ログイン
               </Link>
-              <Link to="/register" className={styles.registerButton}>
-                新規登録
-              </Link>
             </div>
           )}
         </div>

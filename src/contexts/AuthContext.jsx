@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useReducer, useEffect } from 'react';
+import { getCurrentUser, signOut, fetchAuthSession, signInWithRedirect } from 'aws-amplify/auth';
 import { setAuthToken } from '../services/api';
 
 // 認証状態の初期値
@@ -18,6 +19,7 @@ const authActions = {
   LOGOUT: 'LOGOUT',
   CLEAR_ERROR: 'CLEAR_ERROR',
   SET_LOADING: 'SET_LOADING',
+  INIT_COMPLETE: 'INIT_COMPLETE',
 };
 
 // 認証リデューサー
@@ -66,6 +68,11 @@ const authReducer = (state, action) => {
         ...state,
         isLoading: action.payload,
       };
+    case authActions.INIT_COMPLETE:
+      return {
+        ...state,
+        isLoading: false,
+      };
     default:
       return state;
   }
@@ -78,70 +85,68 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [state, dispatch] = useReducer(authReducer, initialState);
 
-  // ローカルストレージからトークンを復元
-  useEffect(() => {
-    const restoreAuth = () => {
-      try {
-        const storedToken = localStorage.getItem('auth_token');
-        const storedUser = localStorage.getItem('auth_user');
-
-        if (storedToken && storedUser) {
-          const user = JSON.parse(storedUser);
-          setAuthToken(storedToken);
-          dispatch({
-            type: authActions.LOGIN_SUCCESS,
-            payload: { user, token: storedToken },
-          });
-        } else {
-          dispatch({ type: authActions.SET_LOADING, payload: false });
-        }
-      } catch (error) {
-        console.error('Error restoring auth:', error);
-        logout();
-      }
-    };
-
-    restoreAuth();
-  }, []);
-
-  // ログイン関数
-  const login = async (token, user) => {
+  // Google認証でのログイン
+  const loginWithGoogle = async () => {
     try {
       dispatch({ type: authActions.LOGIN_START });
-
-      // トークンをAPIクライアントに設定
-      setAuthToken(token);
-
-      // ローカルストレージに保存
-      localStorage.setItem('auth_token', token);
-      localStorage.setItem('auth_user', JSON.stringify(user));
-
-      dispatch({
-        type: authActions.LOGIN_SUCCESS,
-        payload: { user, token },
-      });
-
+      await signInWithRedirect({ provider: 'Google' });
+      // リダイレクト後の処理は初期化時に実行される
       return { success: true };
     } catch (error) {
-      dispatch({
-        type: authActions.LOGIN_FAILURE,
-        payload: error.message || 'ログインに失敗しました',
-      });
+      dispatch({ type: authActions.LOGIN_FAILURE, payload: error.message });
       return { success: false, error: error.message };
     }
   };
 
-  // ログアウト関数
-  const logout = () => {
-    // ローカルストレージから削除
-    localStorage.removeItem('auth_token');
-    localStorage.removeItem('auth_user');
-
-    // APIクライアントからトークンを削除
-    setAuthToken(null);
-
-    dispatch({ type: authActions.LOGOUT });
+  // ログアウト関数（Cognito対応）
+  const logout = async () => {
+    try {
+      await signOut();
+      setAuthToken(null);
+      localStorage.removeItem('auth_token');
+      localStorage.removeItem('auth_user');
+      dispatch({ type: authActions.LOGOUT });
+    } catch (error) {
+      console.error('Logout error:', error);
+      // ローカルストレージはクリアする
+      setAuthToken(null);
+      localStorage.removeItem('auth_token');
+      localStorage.removeItem('auth_user');
+      dispatch({ type: authActions.LOGOUT });
+    }
   };
+
+  // 初期化時にCognitoセッションを確認
+  useEffect(() => {
+    const checkAuthState = async () => {
+      try {
+        const user = await getCurrentUser();
+        const session = await fetchAuthSession();
+        
+        if (user && session.tokens) {
+          const token = session.tokens.accessToken.toString();
+          const userData = {
+            id: user.userId,
+            name: user.signInDetails?.loginId || user.username || 'User',
+            email: user.signInDetails?.loginId || user.username || ''
+          };
+          
+          setAuthToken(token);
+          localStorage.setItem('auth_token', token);
+          localStorage.setItem('auth_user', JSON.stringify(userData));
+          dispatch({ type: authActions.LOGIN_SUCCESS, payload: { user: userData, token } });
+        }
+      } catch (error) {
+        // ユーザーがサインインしていない
+        localStorage.removeItem('auth_token');
+        localStorage.removeItem('auth_user');
+      }
+      
+      dispatch({ type: authActions.INIT_COMPLETE });
+    };
+    
+    checkAuthState();
+  }, []);
 
   // エラークリア関数
   const clearError = () => {
@@ -150,7 +155,7 @@ export const AuthProvider = ({ children }) => {
 
   const value = {
     ...state,
-    login,
+    loginWithGoogle,
     logout,
     clearError,
   };

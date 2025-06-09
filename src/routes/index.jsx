@@ -13,6 +13,8 @@ import Dashboard from '../pages/Dashboard';
 import PrivacyPolicy from '../pages/PrivacyPlicy';
 import TermsOfService from '../pages/TermsOfService';
 import ProtectedRoute from '../components/auth/ProtectedRoute';
+import AdminProtectedRoute from '../components/auth/AdminProtectedRoute';
+import MemberManagement from '../pages/admin/MemberManagement';
 
 const router = createBrowserRouter([
   {
@@ -61,6 +63,21 @@ const router = createBrowserRouter([
   {
     path: '/dashboard',
     element: <ProtectedRoute element={<Dashboard />} />,
+  },
+  // 管理者専用ページ
+  {
+    path: '/admin/members',
+    element: <AdminProtectedRoute 
+      element={<MemberManagement />} 
+      organizationRole="admin" 
+    />,
+  },
+  {
+    path: '/admin/members/:organizationId',
+    element: <AdminProtectedRoute 
+      element={<MemberManagement />} 
+      organizationRole="admin" 
+    />,
   },
   // 静的ページ
   {

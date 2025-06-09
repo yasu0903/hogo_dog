@@ -14,6 +14,9 @@ const apiClient = axios.create({
   },
 });
 
+// apiClientをエクスポート
+export const api = apiClient;
+
 // レスポンスインターセプター（エラーハンドリング）
 apiClient.interceptors.response.use(
   (response) => response,

@@ -291,14 +291,15 @@ const AnimalDetail = () => {
 
               {/* アクション */}
               <div className={styles.actions}>
-                {animal.status === 'available' && (
+                {/* 初期リリースから除外 - 里親申請機能 */}
+                {/* {animal.status === 'available' && (
                   <Link 
                     to={`/adopt/${animal.id}`}
                     className={styles.adoptButton}
                   >
                     この子の里親になる
                   </Link>
-                )}
+                )} */}
                 <Link to="/animals" className={styles.backToListButton}>
                   動物一覧に戻る
                 </Link>

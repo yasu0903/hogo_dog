@@ -112,14 +112,15 @@ const AnimalCard = ({ animal }) => {
           >
             詳細を見る
           </Link>
-          {animal.status === 'available' && (
+          {/* 初期リリースから除外 - 里親申請機能 */}
+          {/* {animal.status === 'available' && (
             <Link 
               to={`/adopt/${animal.id}`} 
               className={styles.adoptLink}
             >
               里親申請
             </Link>
-          )}
+          )} */}
         </div>
       </div>
     </div>

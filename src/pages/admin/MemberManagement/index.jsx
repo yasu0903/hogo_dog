@@ -4,6 +4,7 @@ import Header from '../../../components/common/Header';
 import Footer from '../../../components/common/Footer';
 import PermissionGuard from '../../../components/auth/PermissionGuard';
 import InviteMemberModal from '../../../components/admin/InviteMemberModal';
+import EditMemberModal from '../../../components/admin/EditMemberModal';
 import { usePermissions } from '../../../contexts/PermissionContext';
 import { permissionApi, permissionHelpers } from '../../../services/permissionApi';
 import styles from './MemberManagement.module.css';
@@ -25,6 +26,8 @@ const MemberManagement = () => {
   const [roleFilter, setRoleFilter] = useState('all');
   const [statusFilter, setStatusFilter] = useState('all');
   const [showInviteModal, setShowInviteModal] = useState(false);
+  const [editingMember, setEditingMember] = useState(null);
+  const [showEditModal, setShowEditModal] = useState(false);
 
   const targetOrgId = organizationId || currentOrgId;
 
@@ -45,70 +48,18 @@ const MemberManagement = () => {
       setLoading(true);
       setError(null);
 
-      // 実際のAPI呼び出し（現在はモックデータ）
-      const mockMembers = [
-        {
-          id: '1',
-          user_id: 'user-1',
-          organization_id: targetOrgId,
-          organization_role: 'superuser',
-          status: 'active',
-          created_at: '2024-01-01T00:00:00Z',
-          updated_at: '2024-01-01T00:00:00Z',
-          user: {
-            id: 'user-1',
-            name: '田中太郎',
-            email: 'tanaka@example.com',
-          }
-        },
-        {
-          id: '2',
-          user_id: 'user-2',
-          organization_id: targetOrgId,
-          organization_role: 'admin',
-          status: 'active',
-          created_at: '2024-01-10T00:00:00Z',
-          updated_at: '2024-01-10T00:00:00Z',
-          user: {
-            id: 'user-2',
-            name: '佐藤花子',
-            email: 'sato@example.com',
-          }
-        },
-        {
-          id: '3',
-          user_id: 'user-3',
-          organization_id: targetOrgId,
-          organization_role: 'member',
-          status: 'active',
-          created_at: '2024-01-15T00:00:00Z',
-          updated_at: '2024-01-15T00:00:00Z',
-          user: {
-            id: 'user-3',
-            name: '山田次郎',
-            email: 'yamada@example.com',
-          }
-        },
-        {
-          id: '4',
-          user_id: 'user-4',
-          organization_id: targetOrgId,
-          organization_role: 'member',
-          status: 'pending',
-          created_at: '2024-01-20T00:00:00Z',
-          updated_at: '2024-01-20T00:00:00Z',
-          user: {
-            id: 'user-4',
-            name: '鈴木三郎',
-            email: 'suzuki@example.com',
-          }
-        }
-      ];
-
-      setMembers(mockMembers);
+      // 実際のAPI呼び出し
+      const membersData = await permissionApi.getOrganizationMembers(targetOrgId);
+      setMembers(membersData);
     } catch (error) {
       console.error('メンバー一覧の取得に失敗しました:', error);
-      setError('メンバー一覧の取得に失敗しました。');
+      setError('メンバー一覧の取得に失敗しました。再度お試しください。');
+      
+      // エラー時のフォールバック（開発用）
+      if (process.env.NODE_ENV === 'development') {
+        const fallbackMembers = [];
+        setMembers(fallbackMembers);
+      }
     } finally {
       setLoading(false);
     }
@@ -119,22 +70,16 @@ const MemberManagement = () => {
       setError(null);
       
       // 実際のAPI呼び出し
-      // await permissionApi.updateMemberRole(memberId, { organization_role: newRole });
+      await permissionApi.updateMemberRole(memberId, { organization_role: newRole });
       
-      // モック実装：ローカル状態を更新
-      setMembers(prevMembers =>
-        prevMembers.map(member =>
-          member.id === memberId
-            ? { ...member, organization_role: newRole, updated_at: new Date().toISOString() }
-            : member
-        )
-      );
+      // 成功時はメンバー一覧を再読み込み
+      await loadMembers();
       
       setSuccess('メンバーの権限を更新しました。');
       setTimeout(() => setSuccess(null), 3000);
     } catch (error) {
       console.error('権限更新に失敗しました:', error);
-      setError('権限更新に失敗しました。');
+      setError('権限更新に失敗しました。再度お試しください。');
     }
   };
 
@@ -147,22 +92,37 @@ const MemberManagement = () => {
       setError(null);
       
       // 実際のAPI呼び出し
-      // await permissionApi.removeMember(memberId);
+      await permissionApi.removeMember(memberId);
       
-      // モック実装：ローカル状態から削除
-      setMembers(prevMembers => prevMembers.filter(member => member.id !== memberId));
+      // 成功時はメンバー一覧を再読み込み
+      await loadMembers();
       
       setSuccess('メンバーを削除しました。');
       setTimeout(() => setSuccess(null), 3000);
     } catch (error) {
       console.error('メンバー削除に失敗しました:', error);
-      setError('メンバー削除に失敗しました。');
+      setError('メンバー削除に失敗しました。再度お試しください。');
     }
   };
 
   const handleInviteSuccess = (inviteResult) => {
     setSuccess(`${inviteResult.user.name}さんを${permissionHelpers.getRoleDisplayName(inviteResult.role)}として${inviteResult.type === 'email' ? '招待しました' : '追加しました'}。`);
     setTimeout(() => setSuccess(null), 5000);
+    
+    // メンバー一覧を更新
+    loadMembers();
+  };
+
+  const handleEditMember = (member) => {
+    setEditingMember(member);
+    setShowEditModal(true);
+  };
+
+  const handleEditSuccess = () => {
+    setShowEditModal(false);
+    setEditingMember(null);
+    setSuccess('メンバーの権限を更新しました。');
+    setTimeout(() => setSuccess(null), 3000);
     
     // メンバー一覧を更新
     loadMembers();
@@ -332,6 +292,7 @@ const MemberManagement = () => {
                           <div className={styles.actionButtons}>
                             <button
                               className={`${styles.actionButton} ${styles.editButton}`}
+                              onClick={() => handleEditMember(member)}
                               disabled={!canManageSpecificMember(member.organization_role)}
                               title="権限を編集"
                             >
@@ -365,6 +326,14 @@ const MemberManagement = () => {
         onClose={() => setShowInviteModal(false)}
         organizationId={targetOrgId}
         onSuccess={handleInviteSuccess}
+      />
+
+      {/* 編集モーダル */}
+      <EditMemberModal
+        isOpen={showEditModal}
+        onClose={() => setShowEditModal(false)}
+        member={editingMember}
+        onSuccess={handleEditSuccess}
       />
     </div>
   );

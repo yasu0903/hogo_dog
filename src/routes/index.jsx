@@ -7,9 +7,9 @@ import Animals from '../pages/Animals';
 import AnimalDetail from '../pages/AnimalDetail';
 import Shelters from '../pages/Shelters';
 import ShelterDetail from '../pages/ShelterDetail';
-import Adopt from '../pages/Adopt';
+// import Adopt from '../pages/Adopt';  // 初期リリースから除外
 import Login from '../pages/Login';
-import Dashboard from '../pages/Dashboard';
+// import Dashboard from '../pages/Dashboard';  // 初期リリースから除外
 import PrivacyPolicy from '../pages/PrivacyPlicy';
 import TermsOfService from '../pages/TermsOfService';
 import ProtectedRoute from '../components/auth/ProtectedRoute';
@@ -47,23 +47,25 @@ const router = createBrowserRouter([
     path: '/shelters/:id',
     element: <ShelterDetail />,
   },
-  {
-    path: '/adopt',
-    element: <Adopt />,
-  },
-  {
-    path: '/adopt/:animalId',
-    element: <Adopt />,
-  },
+  // 初期リリースから除外 - 申請機能
+  // {
+  //   path: '/adopt',
+  //   element: <Adopt />,
+  // },
+  // {
+  //   path: '/adopt/:animalId',
+  //   element: <Adopt />,
+  // },
   // 認証関連ページ
   {
     path: '/login',
     element: <Login />,
   },
-  {
-    path: '/dashboard',
-    element: <ProtectedRoute element={<Dashboard />} />,
-  },
+  // 初期リリースから除外 - ダッシュボード（申請管理）
+  // {
+  //   path: '/dashboard',
+  //   element: <ProtectedRoute element={<Dashboard />} />,
+  // },
   // 管理者専用ページ
   {
     path: '/admin/members',

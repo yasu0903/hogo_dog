@@ -42,34 +42,20 @@ const InviteMemberModal = ({ isOpen, onClose, organizationId, onSuccess }) => {
       setSearching(true);
       setError(null);
 
-      // TODO: 実際のAPI実装時に置き換え
-      // const results = await permissionApi.searchUsers(searchTerm, targetOrgId);
+      // 実際のAPI呼び出し
+      const results = await permissionApi.searchUsers(searchTerm, targetOrgId);
       
-      // モック実装
-      const mockUsers = [
-        {
-          id: 'user-search-1',
-          name: '検索太郎',
-          email: 'search.taro@example.com',
-          created_at: '2024-01-01T00:00:00Z'
-        },
-        {
-          id: 'user-search-2', 
-          name: '検索花子',
-          email: 'search.hanako@example.com',
-          created_at: '2024-01-02T00:00:00Z'
-        }
-      ].filter(user => 
-        user.name.includes(searchTerm) || 
-        user.email.includes(searchTerm)
-      );
-
-      setSearchResults(mockUsers);
+      setSearchResults(results);
       setSelectedUser(null);
 
     } catch (error) {
       console.error('ユーザー検索エラー:', error);
-      setError('ユーザー検索に失敗しました。');
+      setError('ユーザー検索に失敗しました。再度お試しください。');
+      
+      // エラー時のフォールバック（開発用）
+      if (process.env.NODE_ENV === 'development') {
+        setSearchResults([]);
+      }
     } finally {
       setSearching(false);
     }
@@ -82,22 +68,15 @@ const InviteMemberModal = ({ isOpen, onClose, organizationId, onSuccess }) => {
       setLoading(true);
       setError(null);
 
-      // TODO: 実際のAPI実装時に置き換え
-      // const user = await permissionApi.getUserByEmail(emailAddress);
+      // 実際のAPI呼び出し
+      const user = await permissionApi.getUserByEmail(emailAddress);
       
-      // モック実装
-      const mockUser = {
-        id: 'user-email-1',
-        name: 'メール太郎',
-        email: emailAddress,
-        created_at: '2024-01-01T00:00:00Z'
-      };
-
-      setSelectedUser(mockUser);
+      setSelectedUser(user);
 
     } catch (error) {
       console.error('ユーザー検索エラー:', error);
       setError('指定されたメールアドレスのユーザーが見つかりません。');
+      setSelectedUser(null);
     } finally {
       setLoading(false);
     }
@@ -125,28 +104,31 @@ const InviteMemberModal = ({ isOpen, onClose, organizationId, onSuccess }) => {
         invite_type: inviteType
       };
 
-      // TODO: 実際のAPI実装時に置き換え
-      // if (inviteType === 'email') {
-      //   await permissionApi.sendInviteEmail(inviteData);
-      // } else {
-      //   await permissionApi.addMemberDirectly(inviteData);
-      // }
-
-      // モック実装
-      console.log('招待データ:', inviteData);
+      let result;
+      
+      // 実際のAPI呼び出し
+      if (inviteType === 'email') {
+        result = await permissionApi.sendInviteEmail({
+          ...inviteData,
+          user_email: selectedUser.email
+        });
+      } else {
+        result = await permissionApi.addMemberDirectly(inviteData);
+      }
       
       // 成功時の処理
       onSuccess && onSuccess({
         user: selectedUser,
         role: selectedRole,
-        type: inviteType
+        type: inviteType,
+        result
       });
       
       onClose();
 
     } catch (error) {
       console.error('招待送信エラー:', error);
-      setError('招待の送信に失敗しました。');
+      setError('招待の送信に失敗しました。再度お試しください。');
     } finally {
       setLoading(false);
     }

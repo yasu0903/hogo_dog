@@ -58,12 +58,13 @@ const Header = () => {
           {isAuthenticated ? (
             <div className={styles.userMenu}>
               <span className={styles.username}>こんにちは、{user?.name}さん</span>
-              <NavLink 
+              {/* 初期リリースから除外 - ダッシュボードリンク */}
+              {/* <NavLink 
                 to="/dashboard"
                 className={({ isActive }) => isActive ? styles.active : undefined}
               >
                 ダッシュボード
-              </NavLink>
+              </NavLink> */}
               <button 
                 onClick={handleLogout}
                 className={styles.logoutButton}

@@ -15,5 +15,14 @@ services:
     environment:
       - NODE_ENV=development
       - CHOKIDAR_USEPOLLING=true
+      - VITE_API_BASE_URL=http://hogo-dog-backend:8080
     stdin_open: true
     tty: true
+    networks:
+      - hogo-dog-network
+
+networks:
+  hogo-dog-network:
+    name: hogo-dog-network
+    driver: bridge
+    external: true

@@ -1,0 +1,10 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container h1 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}

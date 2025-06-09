@@ -1,0 +1,304 @@
+.gallery {
+  width: 100%;
+}
+
+.noPhotos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background: #f7fafc;
+  border-radius: 12px;
+  color: #4a5568;
+}
+
+.noPhotosIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.noPhotos p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.mainImage {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f7fafc;
+  margin-bottom: 1rem;
+}
+
+.mainImg {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.mainImg:hover {
+  transform: scale(1.02);
+}
+
+.mainImageControls {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: white;
+}
+
+.navButton {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navButton:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.navButton:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.imageCounter {
+  font-size: 0.875rem;
+  font-weight: 500;
+  min-width: 3rem;
+  text-align: center;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.5rem 0;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e0 #f7fafc;
+}
+
+.thumbnails::-webkit-scrollbar {
+  height: 6px;
+}
+
+.thumbnails::-webkit-scrollbar-track {
+  background: #f7fafc;
+  border-radius: 3px;
+}
+
+.thumbnails::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 3px;
+}
+
+.thumbnail {
+  position: relative;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: none;
+  padding: 0;
+}
+
+.thumbnail:hover {
+  border-color: #4299e1;
+}
+
+.thumbnail.active {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.2);
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.primaryBadge {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: #48bb78;
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 600;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* モーダル */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.modalContent {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalImg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.closeButton {
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.modalNavButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalNavButton:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modalNavButton.prev {
+  left: -4rem;
+}
+
+.modalNavButton.next {
+  right: -4rem;
+}
+
+.modalCounter {
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .mainImg {
+    height: 300px;
+  }
+  
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .modal {
+    padding: 1rem;
+  }
+  
+  .modalNavButton.prev {
+    left: -2rem;
+  }
+  
+  .modalNavButton.next {
+    right: -2rem;
+  }
+  
+  .closeButton {
+    top: -2rem;
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .modalCounter {
+    bottom: -2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainImg {
+    height: 250px;
+  }
+  
+  .modalNavButton {
+    display: none;
+  }
+  
+  .closeButton {
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .modalCounter {
+    bottom: 1rem;
+  }
+}

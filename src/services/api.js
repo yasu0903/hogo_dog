@@ -1,5 +1,31 @@
 // src/services/api.js
-// JSONファイルからデータを取得する関数
+import axios from 'axios';
+
+// API設定
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080';
+const API_VERSION = import.meta.env.VITE_API_VERSION || 'v1';
+
+// axios インスタンス作成
+const apiClient = axios.create({
+  baseURL: `${API_BASE_URL}/api/${API_VERSION}`,
+  timeout: 10000,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
+
+// レスポンスインターセプター（エラーハンドリング）
+apiClient.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    console.error('API Error:', error);
+    return Promise.reject(error);
+  }
+);
+
+// =============================================================================
+// 静的組織データ関数（既存機能 - 情報提供団体）
+// =============================================================================
 
 // 都道府県データを取得
 export const fetchPrefectures = async () => {
@@ -172,5 +198,106 @@ export const fetchOrganizationDetail = async (prefectureId) => {
   } catch (error) {
     console.error(`Error fetching organization detail for ${prefectureId}:`, error);
     return [];
+  }
+};
+
+// =============================================================================
+// 動的組織データ関数（新機能 - 運営団体・動物管理）
+// =============================================================================
+
+// 認証トークンを設定
+export const setAuthToken = (token) => {
+  if (token) {
+    apiClient.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+  } else {
+    delete apiClient.defaults.headers.common['Authorization'];
+  }
+};
+
+// 運営団体一覧を取得
+export const fetchShelters = async () => {
+  try {
+    const response = await apiClient.get('/organizations');
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching shelters:', error);
+    throw error;
+  }
+};
+
+// 特定の運営団体を取得
+export const fetchShelterById = async (shelterId) => {
+  try {
+    const response = await apiClient.get(`/organizations/${shelterId}`);
+    return response.data;
+  } catch (error) {
+    console.error(`Error fetching shelter ${shelterId}:`, error);
+    throw error;
+  }
+};
+
+// 動物一覧を取得
+export const fetchAnimals = async (params = {}) => {
+  try {
+    const response = await apiClient.get('/animals', { params });
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching animals:', error);
+    throw error;
+  }
+};
+
+// 特定の動物を取得
+export const fetchAnimalById = async (animalId) => {
+  try {
+    const response = await apiClient.get(`/animals/${animalId}`);
+    return response.data;
+  } catch (error) {
+    console.error(`Error fetching animal ${animalId}:`, error);
+    throw error;
+  }
+};
+
+// 動物の写真一覧を取得
+export const fetchAnimalPhotos = async (animalId) => {
+  try {
+    const response = await apiClient.get(`/animals/${animalId}/photos`);
+    return response.data;
+  } catch (error) {
+    console.error(`Error fetching photos for animal ${animalId}:`, error);
+    throw error;
+  }
+};
+
+// 里親申請を作成
+export const createApplication = async (applicationData) => {
+  try {
+    const response = await apiClient.post('/applications', applicationData);
+    return response.data;
+  } catch (error) {
+    console.error('Error creating application:', error);
+    throw error;
+  }
+};
+
+// ユーザー登録
+export const createUser = async (userData) => {
+  try {
+    const response = await apiClient.post('/users', userData);
+    return response.data;
+  } catch (error) {
+    console.error('Error creating user:', error);
+    throw error;
+  }
+};
+
+// ユーザー情報を取得
+export const fetchUserById = async (userId) => {
+  try {
+    const response = await apiClient.get(`/users/${userId}`);
+    return response.data;
+  } catch (error) {
+    console.error(`Error fetching user ${userId}:`, error);
+    throw error;
   }
 };

@@ -35,7 +35,13 @@
   color: #3498db;
 }
 
-.nav ul {
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mainNav {
   display: flex;
   list-style: none;
   margin: 0;
@@ -43,7 +49,7 @@
   gap: 1.5rem;
 }
 
-.nav li a {
+.mainNav li a {
   color: #7f8c8d;
   text-decoration: none;
   font-weight: 500;
@@ -52,45 +58,161 @@
   transition: all 0.2s;
 }
 
-.nav li a:hover {
+.mainNav li a:hover {
   color: #3498db;
   background-color: #f8fafc;
 }
 
-.nav li a.active {
+.mainNav li a.active {
   color: #3498db;
   background-color: #ebf5fb;
   font-weight: 600;
+}
+
+.authSection {
+  display: flex;
+  align-items: center;
+}
+
+.userMenu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.username {
+  color: #4a5568;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.userMenu a {
+  color: #4299e1;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.userMenu a:hover,
+.userMenu a.active {
+  background: #ebf8ff;
+  color: #3182ce;
+}
+
+.logoutButton {
+  background: #e2e8f0;
+  color: #4a5568;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.logoutButton:hover {
+  background: #cbd5e0;
+}
+
+.authButtons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.loginButton {
+  color: #4299e1;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.loginButton:hover {
+  background: #ebf8ff;
+  color: #3182ce;
+}
+
+.registerButton {
+  background: #4299e1;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.registerButton:hover {
+  background: #3182ce;
 }
 
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
   .header {
     padding: 1rem 1.5rem;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .logo {
     font-size: 1.3rem;
+  }
+  
+  .nav {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .mainNav {
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .userMenu {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .username {
+    order: -1;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .header {
     padding: 0.8rem 1rem;
-    flex-direction: column;
-    gap: 0.8rem;
   }
 
   .logo {
     font-size: 1.2rem;
   }
 
-  .nav ul {
+  .mainNav {
     gap: 0.8rem;
   }
 
-  .nav li a {
+  .mainNav li a {
     padding: 0.4rem 0.6rem;
     font-size: 0.95rem;
+  }
+  
+  .authButtons {
+    gap: 0.5rem;
+  }
+  
+  .loginButton,
+  .registerButton {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
   }
 }

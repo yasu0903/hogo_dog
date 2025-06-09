@@ -10,6 +10,9 @@ export const COMMON_MESSAGES = {
 export const HEADER_MESSAGES = {
     HOME: 'ホーム',
     ORGANIZATIONS: '検索',
+    ANIMALS: '保護動物',
+    SHELTERS: '運営団体',
+    ADOPT: '里親申請',
     TITLE: 'わんだーネット'
 }
 

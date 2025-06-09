@@ -27,6 +27,19 @@ const Footer = () => {
               <ul>
                 <li><Link to="/">{FOOTER_MESSAGES.HOME}</Link></li>
                 <li><Link to="/organizations">{FOOTER_MESSAGES.ORGANIZAIONS}</Link></li>
+                <li><Link to="/animals">動物を探す</Link></li>
+                <li><Link to="/shelters">保護団体</Link></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className={styles.linkColumn}>
+            <div className={styles.linkSection}>
+              <h3>ユーザー</h3>
+              <ul>
+                <li><Link to="/login">ログイン</Link></li>
+                <li><Link to="/register">新規登録</Link></li>
+                <li><Link to="/dashboard">マイページ</Link></li>
               </ul>
             </div>
           </div>

@@ -101,6 +101,12 @@ export const AuthProvider = ({ children }) => {
   // ログアウト関数（Cognito対応）
   const logout = async () => {
     try {
+      // 開発モードのクリア
+      if (import.meta.env.VITE_NODE_ENV === 'development') {
+        localStorage.removeItem('dev-user-mode');
+        localStorage.removeItem('dev-current-user');
+      }
+
       await signOut();
       setAuthToken(null);
       localStorage.removeItem('auth_token');
@@ -112,6 +118,13 @@ export const AuthProvider = ({ children }) => {
       setAuthToken(null);
       localStorage.removeItem('auth_token');
       localStorage.removeItem('auth_user');
+      
+      // 開発モードのクリア
+      if (import.meta.env.VITE_NODE_ENV === 'development') {
+        localStorage.removeItem('dev-user-mode');
+        localStorage.removeItem('dev-current-user');
+      }
+      
       dispatch({ type: authActions.LOGOUT });
     }
   };
@@ -119,6 +132,41 @@ export const AuthProvider = ({ children }) => {
   // 初期化時にCognitoセッションを確認
   useEffect(() => {
     const checkAuthState = async () => {
+      // 開発環境での復元チェック
+      if (import.meta.env.VITE_NODE_ENV === 'development') {
+        const devMode = localStorage.getItem('dev-user-mode');
+        const savedUser = localStorage.getItem('dev-current-user');
+        
+        if (devMode === 'true' && savedUser) {
+          try {
+            const user = JSON.parse(savedUser);
+            const devToken = 'test-token';
+            
+            setAuthToken(devToken);
+            dispatch({ 
+              type: authActions.LOGIN_SUCCESS, 
+              payload: { 
+                user: {
+                  id: user.id,
+                  name: user.name,
+                  email: user.email,
+                  role: user.role,
+                  organizationRole: user.organizationRole,
+                  organizationId: user.organizationId
+                }, 
+                token: devToken 
+              } 
+            });
+            console.log('🔧 [DEV] 開発用ユーザー復元:', user.name);
+            return;
+          } catch (error) {
+            console.error('開発用ユーザー復元エラー:', error);
+            localStorage.removeItem('dev-user-mode');
+            localStorage.removeItem('dev-current-user');
+          }
+        }
+      }
+
       try {
         const user = await getCurrentUser();
         const session = await fetchAuthSession();
@@ -153,11 +201,39 @@ export const AuthProvider = ({ children }) => {
     dispatch({ type: authActions.CLEAR_ERROR });
   };
 
+  // 開発用のユーザー設定関数
+  const setDevUser = (user) => {
+    if (import.meta.env.VITE_NODE_ENV === 'development') {
+      const devToken = 'test-token';
+      setAuthToken(devToken);
+      localStorage.setItem('dev-user-mode', 'true');
+      localStorage.setItem('dev-current-user', JSON.stringify(user));
+      
+      dispatch({ 
+        type: authActions.LOGIN_SUCCESS, 
+        payload: { 
+          user: {
+            id: user.id,
+            name: user.name,
+            email: user.email,
+            role: user.role,
+            organizationRole: user.organizationRole,
+            organizationId: user.organizationId
+          }, 
+          token: devToken 
+        } 
+      });
+    }
+  };
+
   const value = {
     ...state,
+    currentUser: state.user, // useAuth().currentUser でアクセス可能にする
+    isAuthenticated: state.isAuthenticated,
     loginWithGoogle,
     logout,
     clearError,
+    setDevUser, // 開発用
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

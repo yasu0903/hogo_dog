@@ -83,9 +83,17 @@ The application separates two distinct types of data:
 #### 🐕 Animal Adoption System
 - **Live Animal Listings**: Real-time data from shelter management backend
 - **Google Authentication**: Secure, privacy-focused user accounts
-- **Adoption Applications**: Comprehensive form with validation
-- **Application Tracking**: User dashboard with status management
-- **Photo Galleries**: Multi-image display with modal view
+- **Advanced Photo Management**: Multi-photo upload with drag & drop sorting
+- **Photo Upload Features**: 
+  - Drag & drop multiple files simultaneously
+  - Real-time preview with modal view
+  - Interactive photo reordering using react-beautiful-dnd
+  - Primary photo selection
+  - Upload progress tracking
+  - File validation and error handling
+- **User Management**: Personal profile pages and settings
+- **Admin Dashboard**: Comprehensive management interface for organizations
+- **Member Management**: Role-based access control and invitation system
 
 #### 🛡️ Security & Privacy
 - **Protected Routes**: Authentication-gated access to sensitive features
@@ -110,11 +118,20 @@ src/
 │   │   ├── AnimalCard/      # Animal listing item
 │   │   ├── AnimalFilter/    # Search and filter controls
 │   │   ├── AnimalGallery/   # Photo gallery with modal
-│   │   └── AnimalList/      # Animal listings grid
-│   └── auth/                # Authentication components
-│       └── ProtectedRoute/  # Route access control
+│   │   ├── AnimalList/      # Animal listings grid
+│   │   ├── PhotoUpload/     # Multi-photo upload with drag & drop
+│   │   ├── PhotoPreview/    # Photo preview with modal view
+│   │   └── PhotoSorter/     # Drag & drop photo reordering
+│   ├── auth/                # Authentication components
+│   │   ├── ProtectedRoute/  # Route access control
+│   │   ├── AdminProtectedRoute/ # Admin-only route protection
+│   │   └── PermissionGuard/ # Permission-based component access
+│   └── admin/               # Admin management components
+│       ├── InviteMemberModal/ # Member invitation modal
+│       └── EditMemberModal/   # Member role editing modal
 ├── contexts/
-│   └── AuthContext.jsx     # Global authentication state
+│   ├── AuthContext.jsx     # Global authentication state
+│   └── PermissionContext.jsx # Organization permission management
 ├── pages/                   # Route-level components
 │   ├── Home/               # Landing page
 │   ├── Organizations/      # Static organization search
@@ -123,15 +140,23 @@ src/
 │   ├── AnimalDetail/       # Individual animal pages
 │   ├── Shelters/           # Active shelter listings
 │   ├── ShelterDetail/      # Active shelter details
-│   ├── Adopt/              # Adoption application form
+│   ├── Adopt/              # Adoption application form (commented out)
 │   ├── Login/              # Google authentication
-│   ├── Dashboard/          # User application management
+│   ├── MyPage/             # User profile and settings
+│   ├── Dashboard/          # User application management (commented out)
 │   ├── PrivacyPolicy/      # Privacy information
-│   └── TermsOfService/     # Terms and conditions
+│   ├── TermsOfService/     # Terms and conditions
+│   └── admin/              # Admin pages
+│       ├── AdminDashboard/ # Administrative overview dashboard
+│       └── MemberManagement/ # Organization member management
 ├── services/
-│   └── api.js              # Centralized data fetching
+│   ├── api.js              # Centralized data fetching
+│   └── permissionApi.js    # Permission and member management API
 ├── constants/
-│   └── locales/ja.js       # Japanese text constants
+│   ├── locales/ja.js       # Japanese text constants
+│   ├── pagination.js       # Pagination constants
+│   ├── privacyPolicy.js    # Privacy policy content
+│   └── termsOfService.js   # Terms of service content
 └── routes/
     └── index.jsx           # Application routing
 ```
@@ -153,6 +178,23 @@ All data fetching is centralized in `src/services/api.js`:
 - `fetchShelterById(id)` - Shelter details and animals
 - `createApplication(data)` - Submit adoption applications
 - `fetchUserApplications()` - User's application history
+- `fetchUserById(userId)` - User profile information
+- `fetchAnimalPhotos(animalId)` - Animal photo gallery
+- `createUser(userData)` - User registration
+- `setAuthToken(token)` - Set API authentication token
+
+### Photo Management API Functions
+- **Photo Upload**: S3 presigned URL workflow
+  - Get upload URL: `POST /animals/{animalId}/photos/upload-url`
+  - Upload to S3: Direct file upload via presigned URL
+  - Register metadata: `POST /animals/{animalId}/photos`
+- **Photo Management**: Full CRUD operations
+  - List photos: `GET /animals/{animalId}/photos`
+  - Get photo: `GET /animals/{animalId}/photos/{photoId}`
+  - Update photo: `PUT /animals/{animalId}/photos/{photoId}`
+  - Delete photo: `DELETE /animals/{animalId}/photos/{photoId}`
+  - Set primary: `PUT /animals/{animalId}/photos/{photoId}/set-primary`
+  - Reorder photos: `PUT /animals/{animalId}/photos/reorder`
 
 ### Error Handling
 - **Graceful Degradation**: API failures fall back to mock data
@@ -221,7 +263,21 @@ npm run test:coverage     # Coverage report
 - Privacy-focused design implementation
 - Comprehensive test suite
 
-### 🔄 Phase 4: Deployment & Optimization (PENDING)
+### ✅ Phase 4: Advanced Features (COMPLETED)
+- **Multi-Photo Upload System**: Complete drag & drop photo management
+  - React Beautiful DND integration for intuitive reordering
+  - Real-time preview with modal gallery view
+  - Primary photo selection and management
+  - Upload progress tracking with error handling
+  - File validation (format, size, type checking)
+- **User Management Pages**: 
+  - Personal user profile page (`/mypage`) with settings
+  - Admin dashboard (`/admin`) with organization statistics
+  - Member management system with role-based permissions
+- **Enhanced Routing**: Protected routes for user and admin areas
+- **Component Architecture**: Modular photo management components
+
+### 🔄 Phase 5: Deployment & Optimization (PENDING)
 - Production environment setup
 - AWS Cognito configuration
 - Performance optimization
@@ -287,6 +343,16 @@ This frontend integrates with `hogo_dog_backend` (Go/AWS Lambda) for:
 - `POST /api/v1/applications` - Submit applications
 - `GET /api/v1/applications` - User applications
 - `GET /api/v1/shelters` - Active shelters
+- `GET /api/v1/users/:id` - User profile information
+- `POST /api/v1/users` - Create user account
+- **Photo Management Endpoints**:
+  - `POST /api/v1/animals/:id/photos/upload-url` - Get S3 upload URL
+  - `POST /api/v1/animals/:id/photos` - Register photo metadata
+  - `GET /api/v1/animals/:id/photos` - List animal photos
+  - `PUT /api/v1/animals/:id/photos/:photoId` - Update photo
+  - `DELETE /api/v1/animals/:id/photos/:photoId` - Delete photo
+  - `PUT /api/v1/animals/:id/photos/:photoId/set-primary` - Set primary photo
+  - `PUT /api/v1/animals/:id/photos/reorder` - Reorder photos
 
 ## Deployment Notes
 
@@ -304,4 +370,57 @@ This frontend integrates with `hogo_dog_backend` (Go/AWS Lambda) for:
 - Set up automated testing pipeline
 - Configure backup and recovery procedures
 
-This architecture ensures a secure, privacy-focused, and scalable animal adoption platform that connects rescue organizations with caring adopters while maintaining the highest standards of user data protection.
+## Latest Updates (December 2024)
+
+### 📸 Advanced Photo Management System
+The application now features a comprehensive photo management system with the following capabilities:
+
+#### PhotoUpload Component (`/src/components/animals/PhotoUpload/`)
+- **Multi-file Selection**: Support for selecting multiple images simultaneously
+- **Drag & Drop Interface**: Intuitive file dropping with visual feedback
+- **Real-time Validation**: File format, size, and type checking
+- **Upload Progress**: Individual file progress tracking with error handling
+- **Primary Photo Selection**: Users can designate main photos before upload
+
+#### PhotoPreview Component (`/src/components/animals/PhotoPreview/`)
+- **Grid Layout**: Clean, responsive photo gallery
+- **Modal View**: Click-to-expand with detailed information
+- **Interactive Controls**: Set primary photo, delete images
+- **File Information**: Display file name, size, and format details
+
+#### PhotoSorter Component (`/src/components/animals/PhotoSorter/`)
+- **React Beautiful DND**: Smooth drag-and-drop reordering
+- **Visual Feedback**: Clear visual cues during drag operations
+- **Alternative Controls**: Arrow buttons for precise positioning
+- **Order Display**: Numbered sequence for clarity
+
+#### Integration Features
+- **S3 Presigned URLs**: Secure direct-to-S3 upload workflow
+- **Backend Synchronization**: Automatic metadata registration
+- **Error Recovery**: Graceful handling of upload failures
+- **Mobile Responsive**: Touch-friendly interface for mobile devices
+
+### 👥 User and Admin Management
+
+#### User Profile System
+- **MyPage** (`/mypage`): Personal profile with user information and notification settings
+- **Profile Display**: User name, email, phone, and address information
+- **Notification Preferences**: Configurable email notification settings
+
+#### Administrative Interface
+- **Admin Dashboard** (`/admin`): Statistical overview and quick actions
+- **Member Management** (`/admin/members`): Role-based team management
+- **Permission System**: Granular access control for organization features
+
+### 🛡️ Enhanced Security and Routing
+- **Route Protection**: Separate guards for user and admin areas
+- **Permission Context**: Centralized permission management
+- **Role-based Access**: Flexible permission system for organizations
+
+### 🎨 User Experience Improvements
+- **Responsive Design**: Mobile-first approach across all new components
+- **Accessibility**: Proper ARIA labels and keyboard navigation
+- **Visual Consistency**: Unified design language and component styling
+- **Performance**: Optimized rendering and state management
+
+This architecture ensures a secure, privacy-focused, and scalable animal adoption platform that connects rescue organizations with caring adopters while maintaining the highest standards of user data protection and providing an exceptional user experience for photo management and organizational administration.

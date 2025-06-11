@@ -1,0 +1,555 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+.header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #e1e8ed;
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header h1 {
+  color: #1a365d;
+  margin-bottom: 0.5rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.header p {
+  color: #4a5568;
+  font-size: 1.125rem;
+}
+
+.backButton {
+  background: #4299e1;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.backButton:hover {
+  background: #3182ce;
+}
+
+.loading {
+  text-align: center;
+  padding: 4rem;
+  font-size: 1.25rem;
+  color: #4a5568;
+}
+
+.error {
+  background-color: #fed7d7;
+  border: 1px solid #fc8181;
+  color: #742a2a;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.retryButton {
+  background: #e53e3e;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.retryButton:hover {
+  background: #c53030;
+}
+
+/* フィルターセクション */
+.filtersSection {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.searchBox {
+  flex: 1;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: white;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+}
+
+.filterSelect {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background: white;
+  font-size: 1rem;
+  min-width: 160px;
+}
+
+.filterSelect:focus {
+  outline: none;
+  border-color: #3182ce;
+}
+
+/* 統計バー */
+.statsBar {
+  display: flex;
+  gap: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  margin-bottom: 2rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.statNumber {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a365d;
+}
+
+.statLabel {
+  font-size: 0.875rem;
+  color: #4a5568;
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+/* ユーザーセクション */
+.usersSection h2 {
+  color: #1a365d;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 3rem;
+  color: #4a5568;
+  background: white;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+}
+
+.usersList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.userCard {
+  background: white;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.userCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.userHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  border-bottom: 1px solid #f7fafc;
+}
+
+.userTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.userBasicInfo h3 {
+  color: #1a365d;
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.userEmail {
+  color: #4a5568;
+  font-size: 0.875rem;
+}
+
+.userBadges {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.statusBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.statusBadge.active {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.statusBadge.suspended {
+  background: #fed7d7;
+  color: #742a2a;
+}
+
+.statusBadge.inactive {
+  background: #e2e8f0;
+  color: #4a5568;
+}
+
+.roleBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.roleBadge.superuser {
+  background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.roleBadge.admin {
+  background: #fef5e7;
+  color: #744210;
+}
+
+.roleBadge.user {
+  background: #ebf8ff;
+  color: #2a4365;
+}
+
+.userActions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.actionButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.actionButton.suspend {
+  background: #ed8936;
+  color: white;
+}
+
+.actionButton.suspend:hover {
+  background: #dd6b20;
+}
+
+.actionButton.activate {
+  background: #48bb78;
+  color: white;
+}
+
+.actionButton.activate:hover {
+  background: #38a169;
+}
+
+.actionButton.promote {
+  background: #667eea;
+  color: white;
+}
+
+.actionButton.promote:hover {
+  background: #5a67d8;
+}
+
+.actionButton.demote {
+  background: #a0aec0;
+  color: white;
+}
+
+.actionButton.demote:hover {
+  background: #718096;
+}
+
+.actionButton.view {
+  background: #edf2f7;
+  color: #4a5568;
+}
+
+.actionButton.view:hover {
+  background: #e2e8f0;
+}
+
+.userDetails {
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+.userInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.userMeta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f7fafc;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.infoLabel {
+  font-weight: 500;
+  color: #4a5568;
+  min-width: fit-content;
+}
+
+.userId {
+  font-family: monospace;
+  background: #f7fafc;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+}
+
+/* モーダル */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal h3 {
+  color: #1a365d;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.modal p {
+  color: #4a5568;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.warningNote {
+  background: #fffbf0;
+  border: 1px solid #f6e05e;
+  color: #744210;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.modalActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.cancelButton {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #d1d5db;
+  background: white;
+  color: #4a5568;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.cancelButton:hover {
+  background: #f7fafc;
+}
+
+.confirmButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.confirmButton.suspend {
+  background: #ed8936;
+}
+
+.confirmButton.suspend:hover {
+  background: #dd6b20;
+}
+
+.confirmButton.activate {
+  background: #48bb78;
+}
+
+.confirmButton.activate:hover {
+  background: #38a169;
+}
+
+.confirmButton.makeAdmin {
+  background: #667eea;
+}
+
+.confirmButton.makeAdmin:hover {
+  background: #5a67d8;
+}
+
+.confirmButton.makeUser {
+  background: #a0aec0;
+}
+
+.confirmButton.makeUser:hover {
+  background: #718096;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+  
+  .headerTop {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .filtersSection {
+    flex-direction: column;
+  }
+  
+  .filters {
+    flex-direction: column;
+  }
+  
+  .statsBar {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .userHeader {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .userTitle {
+    width: 100%;
+  }
+  
+  .userActions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  .userInfo,
+  .userMeta {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .actionButton {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.75rem;
+  }
+  
+  .modal {
+    padding: 1.5rem;
+  }
+  
+  .modalActions {
+    flex-direction: column;
+  }
+  
+  .userBadges {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

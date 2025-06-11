@@ -15,8 +15,12 @@ import TermsOfService from '../pages/TermsOfService';
 import MyPage from '../pages/MyPage';
 import ProtectedRoute from '../components/auth/ProtectedRoute';
 import AdminProtectedRoute from '../components/auth/AdminProtectedRoute';
+import SuperuserProtectedRoute from '../components/auth/SuperuserProtectedRoute';
 import MemberManagement from '../pages/admin/MemberManagement';
 import AdminDashboard from '../pages/admin/AdminDashboard';
+import SystemDashboard from '../pages/admin/SystemDashboard';
+import SystemOrganizations from '../pages/admin/SystemOrganizations';
+import SystemUsers from '../pages/admin/SystemUsers';
 
 const router = createBrowserRouter([
   {
@@ -100,6 +104,50 @@ const router = createBrowserRouter([
     element: <AdminProtectedRoute 
       element={<MemberManagement />} 
       organizationRole="admin" 
+    />,
+  },
+  // 静的ページ
+  // スーパーユーザー専用ページ
+  {
+    path: '/system-admin',
+    element: <SuperuserProtectedRoute 
+      element={<SystemDashboard />} 
+      requireSuperuser={true} 
+    />,
+  },
+  {
+    path: '/system-admin/dashboard',
+    element: <SuperuserProtectedRoute 
+      element={<SystemDashboard />} 
+      requireSuperuser={true} 
+    />,
+  },
+  {
+    path: '/system-admin/organizations',
+    element: <SuperuserProtectedRoute 
+      element={<SystemOrganizations />} 
+      requireSuperuser={true} 
+    />,
+  },
+  {
+    path: '/system-admin/organizations/:organizationId',
+    element: <SuperuserProtectedRoute 
+      element={<SystemOrganizations />} 
+      requireSuperuser={true} 
+    />,
+  },
+  {
+    path: '/system-admin/users',
+    element: <SuperuserProtectedRoute 
+      element={<SystemUsers />} 
+      requireSuperuser={true} 
+    />,
+  },
+  {
+    path: '/system-admin/users/:userId',
+    element: <SuperuserProtectedRoute 
+      element={<SystemUsers />} 
+      requireSuperuser={true} 
     />,
   },
   // 静的ページ

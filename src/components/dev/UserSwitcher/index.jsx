@@ -7,6 +7,7 @@ const UserSwitcher = () => {
   const { currentUser, logout: authLogout, setDevUser } = useAuth();
   const [isExpanded, setIsExpanded] = useState(false);
   
+  // 開発用のテストユーザー - 本番環境では使用されません
   const mockUsers = [
     { 
       id: 'dev-user-normal', 
@@ -41,9 +42,9 @@ const UserSwitcher = () => {
     { 
       id: 'dev-user-superuser', 
       name: '管理太郎', 
-      email: 'superuser@example.com',
+      email: 'admin@example.com',
       role: 'superuser',
-      description: 'スーパーユーザー',
+      description: 'システム管理者',
       organizationId: 'dev-org-123',
       organizationRole: 'superuser',
       backendToken: 'dev-token-superuser'

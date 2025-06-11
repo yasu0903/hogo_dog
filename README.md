@@ -101,7 +101,7 @@ When `VITE_NODE_ENV=development` is set, the application includes additional dev
   - Normal User (no organization access)
   - Organization Member (basic organization features)
   - Organization Admin (full organization management)
-  - System Superuser (system-wide permissions)
+  - System Administrator (system management features)
 - **🧪 API Testing**: Built-in API permission testing for each user role
 - **🔐 Backend Integration**: Real permission validation with backend services
 
@@ -171,12 +171,12 @@ This application prioritizes user privacy through:
 - **OAuth Integration**: Users authenticate via established OAuth providers
 - **No Password Storage**: Eliminates the need for custom password management
 - **Privacy-First Design**: Minimal data collection (name and email only)
-- **Secure Token Management**: JWT-based session handling with automatic refresh
+- **Secure Token Management**: JWT-based session handling
 
 ### Development Environment
 - **Role Simulation**: Test different user permissions without multiple accounts
 - **Permission Validation**: Real-time backend permission testing
-- **Secure Testing**: Development tokens with role-specific access levels
+- **Development Testing**: Safe testing environment with mock data
 
 ## Deployment
 
@@ -189,13 +189,34 @@ The project includes Terraform configurations for AWS deployment:
 
 See `terraform/` directory for infrastructure code.
 
+## Security Considerations
+
+This application handles sensitive data related to animal welfare organizations and users. Please observe the following security practices:
+
+### Environment Variables
+- **Never commit `.env` files** containing real credentials
+- Use `.env.example` as a template for required environment variables
+- Configure proper authentication credentials for production deployment
+
+### Development Mode
+- Development tools are automatically disabled in production builds
+- Test credentials in development mode are not valid for production use
+- Always use secure, production-grade authentication in live deployments
+
+### Data Privacy
+- User data collection is minimal (name and email only)
+- All authentication is handled through secure OAuth providers
+- No sensitive personal information is stored in the application
+
 ## Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
-4. Run linting: `npm run lint`
-5. Submit a pull request
+4. Ensure no sensitive information is included in commits
+5. Run linting: `npm run lint`
+6. Test with development environment variables only
+7. Submit a pull request
 
 ## License
 

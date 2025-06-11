@@ -18,14 +18,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Environment Setup
 
-Create a `.env` file based on `.env.example` with your AWS Cognito configuration:
+Create a `.env` file based on `.env.example` with your authentication configuration:
 
 ```bash
 # Backend API Configuration
 VITE_API_BASE_URL=http://localhost:8080
 VITE_API_VERSION=v1
 
-# AWS Cognito Configuration
+# Authentication Configuration
 VITE_AWS_REGION=us-east-1
 VITE_AWS_USER_POOL_ID=us-east-1_xxxxxxxxx
 VITE_AWS_USER_POOL_WEB_CLIENT_ID=xxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -35,20 +35,20 @@ VITE_AWS_COGNITO_DOMAIN=your-domain.auth.us-east-1.amazoncognito.com
 # Application URL (for OAuth redirects)
 VITE_APP_URL=http://localhost:5174
 
-# Development settings
+# Development settings (enables user role testing)
 VITE_NODE_ENV=development
 ```
 
 ## Authentication & Privacy
 
-This application prioritizes user privacy by using **Google OAuth exclusively** through AWS Cognito:
+This application prioritizes user privacy by using **Google OAuth exclusively** through secure authentication services:
 
 ### Google Authentication (Only)
 - **OAuth Flow**: Users can only sign in with their Google account
 - **Privacy First**: No custom password storage - only Google name and email are used
 - **Redirect Handling**: Automatic redirect after successful authentication
 - **User Data**: Minimal data usage - only name and email from Google profile
-- **Session Management**: Secure token-based authentication via Cognito
+- **Session Management**: Secure token-based authentication via AWS managed services
 
 ### Privacy Protection
 - **No Personal Data Storage**: The service doesn't store any personal information beyond what Google provides

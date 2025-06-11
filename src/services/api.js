@@ -304,3 +304,62 @@ export const fetchUserById = async (userId) => {
     throw error;
   }
 };
+
+// 全ユーザー一覧を取得（管理者機能用）
+export const fetchUsers = async () => {
+  try {
+    const response = await apiClient.get('/users');
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching users:', error);
+    throw error;
+  }
+};
+
+// ユーザー存在確認（認証ユーザーIDで検索）
+export const checkUserExists = async (cognitoUserId) => {
+  try {
+    const response = await apiClient.get(`/users/search?cognito_user_id=${cognitoUserId}`);
+    return {
+      exists: true,
+      user: response.data.data
+    };
+  } catch (error) {
+    if (error.response && error.response.status === 404) {
+      return { exists: false, user: null };
+    }
+    console.error('Error checking user existence:', error);
+    throw error;
+  }
+};
+
+// 初回ログイン時の自動ユーザー登録
+export const registerUserIfNotExists = async (authUser) => {
+  try {
+    // まずユーザーの存在確認
+    const checkResult = await checkUserExists(authUser.userId);
+    
+    if (checkResult.exists) {
+      console.log('既存ユーザー:', checkResult.user);
+      return { isNewUser: false, user: checkResult.user };
+    }
+    
+    // 新規ユーザーの場合は登録
+    const userData = {
+      cognito_user_id: authUser.userId,
+      display_name: authUser.name || authUser.username || '',
+      email: authUser.email || authUser.signInDetails?.loginId || '',
+      timezone: 'Asia/Tokyo',
+      language: 'ja',
+      status: 'active'
+    };
+    
+    console.log('新規ユーザー登録:', userData);
+    const newUser = await createUser(userData);
+    
+    return { isNewUser: true, user: newUser.data };
+  } catch (error) {
+    console.error('Error in user registration process:', error);
+    throw error;
+  }
+};

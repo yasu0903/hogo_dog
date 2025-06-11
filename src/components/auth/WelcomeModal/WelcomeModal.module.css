@@ -1,0 +1,300 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 1rem;
+}
+
+.modal {
+  background: white;
+  border-radius: 1rem;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem 1rem 2rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.modalHeader h2 {
+  color: #1a365d;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #718096;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+
+.closeButton:hover {
+  background: #f7fafc;
+  color: #4a5568;
+}
+
+.modalBody {
+  padding: 2rem;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepContent {
+  text-align: center;
+  width: 100%;
+}
+
+.welcomeIcon,
+.startIcon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.stepContent p {
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.stepContent strong {
+  color: #1a365d;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.featureIcon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.feature h4 {
+  color: #1a365d;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.feature p {
+  color: #4a5568;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+  display: inline-block;
+  text-align: center;
+}
+
+.primaryButton {
+  background: linear-gradient(45deg, #4299e1 0%, #3182ce 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(66, 153, 225, 0.3);
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(66, 153, 225, 0.4);
+}
+
+.secondaryButton {
+  background: #edf2f7;
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+}
+
+.secondaryButton:hover {
+  background: #e2e8f0;
+  color: #2d3748;
+}
+
+.modalFooter {
+  padding: 1.5rem 2rem 2rem 2rem;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stepIndicator {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.stepDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  transition: all 0.3s;
+}
+
+.stepDot.active {
+  background: #4299e1;
+  transform: scale(1.2);
+}
+
+.stepDot.completed {
+  background: #48bb78;
+}
+
+.navigationButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.navButton {
+  padding: 0.5rem 1rem;
+  background: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.navButton:hover {
+  background: #3182ce;
+  transform: translateY(-1px);
+}
+
+.navButton:active {
+  transform: translateY(0);
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .modalOverlay {
+    padding: 0.5rem;
+  }
+  
+  .modal {
+    max-height: 95vh;
+  }
+  
+  .modalHeader,
+  .modalBody,
+  .modalFooter {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .modalHeader h2 {
+    font-size: 1.25rem;
+  }
+  
+  .featureList {
+    max-width: none;
+  }
+  
+  .actionButtons {
+    flex-direction: column;
+  }
+  
+  .modalFooter {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .navigationButtons {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .navButton {
+    flex: 1;
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcomeIcon,
+  .startIcon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .stepContent p {
+    font-size: 1rem;
+  }
+  
+  .feature {
+    align-items: center;
+  }
+  
+  .featureIcon {
+    font-size: 1.25rem;
+  }
+  
+  .feature h4 {
+    font-size: 1rem;
+  }
+  
+  .feature p {
+    font-size: 0.875rem;
+  }
+}

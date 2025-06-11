@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useReducer, useEffect } from 'react';
 import { getCurrentUser, signOut, fetchAuthSession, signInWithRedirect } from 'aws-amplify/auth';
-import { setAuthToken } from '../services/api';
+import { setAuthToken, registerUserIfNotExists } from '../services/api';
 
 // 認証状態の初期値
 const initialState = {
@@ -173,16 +173,50 @@ export const AuthProvider = ({ children }) => {
         
         if (user && session.tokens) {
           const token = session.tokens.accessToken.toString();
-          const userData = {
-            id: user.userId,
-            name: user.signInDetails?.loginId || user.username || 'User',
-            email: user.signInDetails?.loginId || user.username || ''
-          };
           
+          // 認証トークンをセット
           setAuthToken(token);
-          localStorage.setItem('auth_token', token);
-          localStorage.setItem('auth_user', JSON.stringify(userData));
-          dispatch({ type: authActions.LOGIN_SUCCESS, payload: { user: userData, token } });
+          
+          try {
+            // バックエンドでユーザー存在確認・自動登録
+            const registrationResult = await registerUserIfNotExists(user);
+            
+            const userData = {
+              id: registrationResult.user.id,
+              cognitoUserId: user.userId,
+              name: registrationResult.user.display_name || user.signInDetails?.loginId || user.username || 'User',
+              email: registrationResult.user.email || user.signInDetails?.loginId || user.username || '',
+              isNewUser: registrationResult.isNewUser
+            };
+            
+            localStorage.setItem('auth_token', token);
+            localStorage.setItem('auth_user', JSON.stringify(userData));
+            dispatch({ type: authActions.LOGIN_SUCCESS, payload: { user: userData, token } });
+            
+            if (registrationResult.isNewUser) {
+              console.log('✅ 新規ユーザーとして登録されました:', userData);
+            } else {
+              console.log('✅ 既存ユーザーとしてログインしました:', userData);
+            }
+            
+          } catch (backendError) {
+            console.error('バックエンドユーザー登録でエラーが発生しました:', backendError);
+            
+            // バックエンドエラーの場合でも認証情報は保持（フロントエンド機能は使用可能）
+            const fallbackUserData = {
+              id: user.userId,
+              cognitoUserId: user.userId,
+              name: user.signInDetails?.loginId || user.username || 'User',
+              email: user.signInDetails?.loginId || user.username || '',
+              isNewUser: null // バックエンド連携失敗
+            };
+            
+            localStorage.setItem('auth_token', token);
+            localStorage.setItem('auth_user', JSON.stringify(fallbackUserData));
+            dispatch({ type: authActions.LOGIN_SUCCESS, payload: { user: fallbackUserData, token } });
+            
+            console.warn('⚠️ バックエンド連携に失敗しましたが、フロントエンド認証は有効です');
+          }
         }
       } catch (error) {
         // ユーザーがサインインしていない

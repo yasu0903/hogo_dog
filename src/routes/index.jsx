@@ -12,9 +12,11 @@ import Login from '../pages/Login';
 // import Dashboard from '../pages/Dashboard';  // 初期リリースから除外
 import PrivacyPolicy from '../pages/PrivacyPlicy';
 import TermsOfService from '../pages/TermsOfService';
+import MyPage from '../pages/MyPage';
 import ProtectedRoute from '../components/auth/ProtectedRoute';
 import AdminProtectedRoute from '../components/auth/AdminProtectedRoute';
 import MemberManagement from '../pages/admin/MemberManagement';
+import AdminDashboard from '../pages/admin/AdminDashboard';
 
 const router = createBrowserRouter([
   {
@@ -61,12 +63,31 @@ const router = createBrowserRouter([
     path: '/login',
     element: <Login />,
   },
+  // ユーザーマイページ
+  {
+    path: '/mypage',
+    element: <ProtectedRoute element={<MyPage />} />,
+  },
   // 初期リリースから除外 - ダッシュボード（申請管理）
   // {
   //   path: '/dashboard',
   //   element: <ProtectedRoute element={<Dashboard />} />,
   // },
   // 管理者専用ページ
+  {
+    path: '/admin',
+    element: <AdminProtectedRoute 
+      element={<AdminDashboard />} 
+      organizationRole="admin" 
+    />,
+  },
+  {
+    path: '/admin/dashboard',
+    element: <AdminProtectedRoute 
+      element={<AdminDashboard />} 
+      organizationRole="admin" 
+    />,
+  },
   {
     path: '/admin/members',
     element: <AdminProtectedRoute 

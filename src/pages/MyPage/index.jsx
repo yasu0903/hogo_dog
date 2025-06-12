@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
 import { useAuth } from '../../contexts/AuthContext';
-import { fetchUserById } from '../../services/api';
+import { fetchUserById, deleteUser } from '../../services/api';
 import styles from './MyPage.module.css';
 
 const MyPage = () => {
-  const { currentUser, isAuthenticated } = useAuth();
+  const { currentUser, isAuthenticated, logout } = useAuth();
   const [userProfile, setUserProfile] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
 
   useEffect(() => {
     const loadUserProfile = async () => {
@@ -26,6 +27,30 @@ const MyPage = () => {
         setLoading(false);
       }
     };
+
+  const handleDeleteAccount = async () => {
+    try {
+      const confirmed = confirm('最終確認：本当にアカウントを削除しますか？この操作は取り消すことができません。');
+      if (!confirmed) return;
+
+      await deleteUser(currentUser.id);
+      
+      alert('アカウントが正常に削除されました。ご利用ありがとうございました。');
+      setShowDeleteConfirm(false);
+      
+      logout();
+      window.location.href = '/';
+      
+    } catch (err) {
+      console.error('Failed to delete account:', err);
+      
+      if (err.response?.status === 404) {
+        alert('アカウントが見つかりませんでした。');
+      } else {
+        alert('アカウント削除に失敗しました。管理者にお問い合わせください。');
+      }
+    }
+  };
 
     loadUserProfile();
   }, [currentUser, isAuthenticated]);
@@ -137,8 +162,50 @@ const MyPage = () => {
             <button className={styles.notificationButton}>
               通知設定を変更
             </button>
+            <button 
+              className={styles.deleteButton}
+              onClick={() => setShowDeleteConfirm(true)}
+            >
+              アカウントを削除
+            </button>
           </div>
         </section>
+
+        {/* 退会確認ダイアログ */}
+        {showDeleteConfirm && (
+          <div className={styles.modal}>
+            <div className={styles.modalContent}>
+              <h3>アカウント削除の確認</h3>
+              <div className={styles.confirmMessage}>
+                <p>アカウントを削除すると、以下のデータが完全に削除されます：</p>
+                <ul>
+                  <li>プロフィール情報</li>
+                  <li>申請履歴</li>
+                  <li>通知設定</li>
+                  <li>その他のアカウント関連データ</li>
+                </ul>
+                <p className={styles.warning}>
+                  <strong>この操作は取り消すことができません。</strong>
+                </p>
+                <p>本当にアカウントを削除しますか？</p>
+              </div>
+              <div className={styles.modalActions}>
+                <button 
+                  className={styles.cancelButton}
+                  onClick={() => setShowDeleteConfirm(false)}
+                >
+                  キャンセル
+                </button>
+                <button 
+                  className={styles.confirmDeleteButton}
+                  onClick={handleDeleteAccount}
+                >
+                  削除する
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

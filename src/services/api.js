@@ -217,6 +217,17 @@ export const setAuthToken = (token) => {
   }
 };
 
+// ユーザー削除（退会）
+export const deleteUser = async (userId) => {
+  try {
+    const response = await apiClient.delete(`/users/${userId}`);
+    return response.data;
+  } catch (error) {
+    console.error('ユーザー削除API呼び出しエラー:', error);
+    throw error;
+  }
+};
+
 // 運営団体一覧を取得
 export const fetchShelters = async () => {
   try {

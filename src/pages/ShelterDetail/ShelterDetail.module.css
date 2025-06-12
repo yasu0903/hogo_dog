@@ -2,9 +2,380 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
-.container h1 {
-  color: #2c3e50;
+/* ヘッダーエリア */
+.header {
+  margin-bottom: 2rem;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.breadcrumbLink {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbLink:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.breadcrumbSeparator {
+  color: #95a5a6;
+}
+
+.breadcrumbCurrent {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* メインコンテンツ */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* シェルター情報セクション */
+.shelterInfo {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e1e8ed;
+}
+
+.shelterHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.shelterName {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.shelterMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.animalCount,
+.establishedDate {
+  background: #ecf0f1;
+  color: #2c3e50;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.animalCount {
+  background: #e8f8f5;
+  color: #27ae60;
+}
+
+.shelterDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.description {
+  margin-bottom: 1.5rem;
+}
+
+.description h3 {
+  color: #2c3e50;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3498db;
+}
+
+.description p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contactInfo,
+.features {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.contactInfo h3,
+.features h3 {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.contactItem {
+  margin-bottom: 0.75rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.contactItem:last-child {
+  margin-bottom: 0;
+}
+
+.contactItem strong {
+  color: #2c3e50;
+  display: inline-block;
+  min-width: 80px;
+}
+
+.emailLink,
+.websiteLink {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.emailLink:hover,
+.websiteLink:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.featureList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.featureTag {
+  background: #3498db;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.adoptionPolicy {
+  background: #fff3cd;
+  border: 1px solid #fecba1;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.adoptionPolicy h3 {
+  color: #856404;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.adoptionPolicy p {
+  color: #856404;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 動物セクション */
+.animalsSection {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e1e8ed;
+}
+
+.animalsHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.animalsHeader h2 {
+  color: #2c3e50;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.animalsCount {
+  background: #e8f8f5;
+  color: #27ae60;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.animalsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.animalsLoading,
+.noAnimals {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.noAnimals {
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px dashed #dee2e6;
+}
+
+/* 状態表示 */
+.loading,
+.error,
+.notFound {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.loading {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.error,
+.notFound {
+  color: #e74c3c;
+}
+
+.error h2,
+.notFound h2 {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.backLink {
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.backLink:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 1024px) {
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .animalsList {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .shelterInfo,
+  .animalsSection {
+    padding: 1.5rem;
+  }
+  
+  .shelterHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .shelterName {
+    font-size: 2rem;
+  }
+  
+  .shelterMeta {
+    flex-direction: row;
+    align-items: center;
+    align-self: flex-start;
+  }
+  
+  .breadcrumb {
+    flex-wrap: wrap;
+  }
+  
+  .animalsList {
+    grid-template-columns: 1fr;
+  }
+  
+  .animalsHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+  
+  .shelterInfo,
+  .animalsSection {
+    padding: 1rem;
+  }
+  
+  .shelterName {
+    font-size: 1.75rem;
+  }
+  
+  .contactInfo,
+  .features {
+    padding: 1rem;
+  }
+  
+  .adoptionPolicy {
+    padding: 1rem;
+  }
 }

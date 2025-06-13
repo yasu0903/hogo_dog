@@ -1,0 +1,57 @@
+# ==============================================
+# HogoDog Frontend Terraform Variables (開発環境)
+# ==============================================
+# このファイルをコピーしてterraform.tfvarsとして使用してください
+# cp terraform.tfvars.example terraform.tfvars
+
+# ====================
+# プロジェクト基本設定
+# ====================
+project_name = "hogo-dog"
+
+# ====================
+# ドメイン設定
+# ====================
+# 本番ドメインを指定（開発環境では自動的に dev.hogodog.jp になります）
+domain_name = "hogodog.jp"
+
+# ====================
+# AWS設定
+# ====================
+aws_region = "ap-northeast-1"
+
+# ====================
+# S3設定
+# ====================
+# S3バケット名（null の場合、dev.hogodog.jp が使用されます）
+website_bucket_name = null
+
+# ====================
+# コンテンツ設定
+# ====================
+index_document = "index.html"
+error_document = "error.html"
+
+# カスタムコンテンツ（null の場合、開発環境用デフォルトが使用されます）
+index_content = null
+error_content = null
+
+# ====================
+# 環境変数での上書き設定
+# ====================
+# 以下の環境変数で上書き可能:
+# - TF_VAR_project_name
+# - TF_VAR_domain_name
+# - TF_VAR_aws_region
+# - TF_VAR_website_bucket_name
+# - TF_VAR_index_content
+# - TF_VAR_error_content
+
+# ====================
+# 開発環境の特徴
+# ====================
+# - ドメイン: dev.hogodog.jp
+# - CloudFront価格クラス: PriceClass_100（最安）
+# - S3バケット: 自動作成
+# - デフォルトコンテンツ: 開発環境用プレースホルダー
+# - SSL証明書: Let's Encrypt（ACM経由）

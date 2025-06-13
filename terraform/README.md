@@ -1,196 +1,140 @@
-# S3 静的ウェブサイトホスティング Terraformプロジェクト
+# HogoDog Frontend Infrastructure
 
-このTerraformプロジェクトは、AWSを使用して静的ウェブサイトを構築・デプロイするための完全な環境を提供します。S3、CloudFront、ACM証明書、Route 53を組み合わせて、セキュアかつ高速なウェブサイトホスティングを実現します。
+React SPAのためのTerraform構成（S3 + CloudFront + Route 53）
 
-## 機能
-
-- **S3バケット** - 静的ウェブサイトコンテンツのホスティング
-- **CloudFront** - CDNによるグローバルな配信とHTTPS対応
-- **ACM証明書** - SSL/TLS証明書の自動発行と管理
-- **Route 53** - ドメインのDNS設定とルーティング
-- **柔軟な設定** - 既存のリソースや新規リソースの両対応
-
-## 前提条件
-
-- AWS CLIがインストールされ、設定済み
-- Terraformがインストール済み (v1.0.0以上を推奨)
-- 取得済みのドメイン名
-- Route 53でホストされたゾーンが作成済み
-
-## プロジェクト構造
+## 🏗️ アーキテクチャ
 
 ```
-.
-├── README.md                    # プロジェクト説明書
-├── main.tf                      # メインのTerraformファイル
-├── variables.tf                 # 変数定義
-├── outputs.tf                   # 出力定義
-├── terraform.tfvars             # 変数値の設定ファイル (各自でカスタマイズ)
-├── backend.tf                   # リモート状態管理設定 (オプショナル)
-├── modules/
-│   ├── s3/                      # S3バケットモジュール 
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   └── outputs.tf
-│   ├── acm_route53/             # ACM証明書モジュール
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   └── outputs.tf
-│   ├── cloudfront/              # CloudFrontモジュール
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   ├── providers.tf
-│   │   └── outputs.tf
-│   ├── route53_records/         # Route 53レコードモジュール
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   └── outputs.tf
-│   └── content/                 # サンプルコンテンツモジュール（オプショナル）
-│       ├── main.tf
-│       ├── variables.tf
-│       └── outputs.tf
+📦 HogoDog Frontend Infrastructure
+├── 🌐 CloudFront (CDN)
+├── 📄 S3 (Static Website Hosting)
+├── 🔒 ACM (SSL Certificate)
+└── 🔗 Route 53 (DNS Management)
 ```
 
-## 使用方法
+## 📁 構成
 
-### 1. 設定ファイルのカスタマイズ
-
-`terraform.tfvars` ファイルを作成し、必要な変数を設定します：
-
-```hcl
-# 基本設定
-domain_name = "あなたのドメイン.com"  # 必須: 取得済みドメイン名
-aws_region  = "ap-northeast-1"       # オプショナル: デフォルトは東京リージョン
-
-# S3バケット設定
-website_bucket_name = "example-website"  # オプショナル: 指定がなければドメイン名が使用される
-s3_create_bucket    = true               # オプショナル: falseの場合は既存バケットを使用
-
-# CloudFront設定
-cloudfront_price_class = "PriceClass_100"  # オプショナル: 100(北米・欧州), 200(+アジア), All(全世界)
-
-# コンテンツ設定
-index_document = "index.html"   # オプショナル: インデックスドキュメント
-error_document = "error.html"   # オプショナル: エラードキュメント
+```
+terraform/
+├── environments/
+│   ├── dev/                      # 開発環境 (dev.hogodog.jp)
+│   │   ├── main.tf              # 開発環境メイン設定
+│   │   ├── terraform.tfvars.example  # 設定例
+│   │   └── backend.hcl.example  # バックエンド設定例
+│   └── prod/                     # 本番環境 (hogodog.jp)
+│       ├── main.tf              # 本番環境メイン設定
+│       ├── terraform.tfvars.example  # 設定例
+│       └── backend.hcl.example  # バックエンド設定例
+├── shared/                       # 共通設定
+├── modules/                      # 再利用可能モジュール
+└── .terraform-version
 ```
 
-### 2. デプロイメント
+## 🚀 使用方法
 
-以下のコマンドを実行して、インフラをデプロイします：
+### 1. 設定ファイル準備
 
 ```bash
-# 初期化
-terraform init
+# 開発環境
+cd terraform/environments/dev
 
-# 実行計画の確認
-terraform plan
+# terraform.tfvarsファイルを作成
+cp terraform.tfvars.example terraform.tfvars
+# ← 実際の値を編集
 
-# デプロイ実行
-terraform apply
+# バックエンド設定ファイルを作成
+cp backend.hcl.example backend.hcl
+# ← 実際のS3バケット名等を編集
 ```
 
-### 3. 既存リソースの活用
-
-既存のS3バケットを使用したい場合は、`terraform.tfvars`に以下を設定します：
-
-```hcl
-s3_create_bucket = false          # バケットを新規作成せず、既存のものを使用
-website_bucket_name = "既存のバケット名"  # 既存のS3バケット名
-```
-
-### 4. 削除
-
-インフラストラクチャを削除する場合は、以下のコマンドを実行します：
+### 2. Terraform実行（簡単版）
 
 ```bash
-terraform destroy
+# 開発環境
+cd terraform/environments/dev
+
+terraform init -backend-config=backend.hcl
+terraform plan -var-file="terraform.tfvars"
+terraform apply -var-file="terraform.tfvars"
+
+# 本番環境
+cd ../prod
+
+# 本番環境も同様に設定ファイルを準備
+cp terraform.tfvars.example terraform.tfvars
+cp backend.hcl.example backend.hcl
+# ← 本番環境用の値を編集
+
+terraform init -backend-config=backend.hcl
+terraform plan -var-file="terraform.tfvars"
+terraform apply -var-file="terraform.tfvars"
 ```
 
-**注意**: この操作は関連するすべてのリソースを削除します。本番環境での実行には十分注意してください。
+## 🌍 環境別設定
 
-## 実行時間の目安
+### 開発環境 (dev.hogodog.jp)
+- **CloudFront**: PriceClass_100 (最安)
+- **S3バケット**: 自動作成
+- **デフォルトコンテンツ**: 開発用プレースホルダー
 
-- **S3バケット作成**: 数秒〜1分
-- **ACM証明書作成と検証**: 5〜15分
-- **CloudFront配信の作成**: 10〜30分
-- **Route 53レコードの設定**: 数秒〜数分
-- **CloudFront削除**: 15〜40分
+### 本番環境 (hogodog.jp)
+- **CloudFront**: PriceClass_All (全世界配信)
+- **S3バケット**: 既存バケット使用推奨
+- **高性能設定**
 
-## 必要なIAMポリシー
+## 📄 出力値
 
-このプロジェクトを実行するIAMユーザーには、以下の権限が必要です：
+デプロイ後、以下の値が出力されます：
 
-- S3へのフルアクセス
-  - バケット作成/削除/設定、オブジェクト管理
-- CloudFrontへのフルアクセス
-  - ディストリビューション作成/削除/更新
-- ACMへのフルアクセス
-  - 証明書作成/検証/管理
-- Route 53への権限
-  - ホストゾーン読み取り、レコード作成/削除
+```bash
+terraform output
+```
 
-## tfstate管理
+- `website_url`: WebサイトURL
+- `cloudfront_distribution_id`: CloudFront配信ID
+- `s3_bucket_name`: S3バケット名
 
-状態ファイル(tfstate)は以下のいずれかの方法で管理することを推奨します：
+## 🗑️ リソース削除
 
-1. **Terraform Cloud**: 個人無料プランで十分（推奨）
-2. **S3 + DynamoDB**: リモート状態管理を自己管理する場合
+```bash
+cd terraform/environments/dev  # または prod
+terraform destroy -var-file="terraform.tfvars"
+```
 
-Terraform Cloudを使用する場合は、以下のように`terraform.tf`ファイルを作成します：
+## 📝 注意事項
 
+1. **ドメイン**: 事前にRoute 53でホストゾーンを作成
+2. **S3バケット**: 本番環境では既存バケット使用を推奨  
+3. **SSL証明書**: ACMで自動管理（us-east-1リージョン）
+4. **機密情報**: `.tfvars`および`backend.hcl`ファイルはGit管理対象外
+5. **バックエンド設定**: S3バケットは事前に作成済みであることを前提
+
+## 🔧 設定ファイル例
+
+### backend.hcl例
 ```hcl
-terraform {
-  cloud {
-    organization = "あなたの組織名"
-    workspaces {
-      name = "静的ウェブサイト"
-    }
-  }
+bucket = "your-terraform-state-bucket"
+key    = "hogo-dog-frontend/dev/terraform.tfstate"  # 環境に応じて変更
+region = "ap-northeast-1"
+
+# オプション: ステートロック用
+# dynamodb_table = "terraform-state-locks"
+# encrypt = true
+```
+
+### terraform.tfvars例
+```hcl
+project_name = "hogo-dog"
+environment  = "dev"  # 本番環境では "prod"
+domain_name  = "dev.hogodog.jp"  # 本番環境では "hogodog.jp"
+
+# Route53
+route53_zone_id = "Z1234567890ABC"
+
+# タグ
+tags = {
+  Project     = "HogoDog"
+  Environment = "dev"
+  ManagedBy   = "terraform"
 }
 ```
-
-## カスタマイズ
-
-### コンテンツのデプロイ
-
-デフォルトでは基本的なサンプルHTMLファイルがデプロイされます。実際のウェブサイトファイルをデプロイするには：
-
-1. content モジュールのサンプルファイル生成を無効化
-2. 別のデプロイ方法（CI/CD、AWS CLI、S3 コンソールなど）でコンテンツをアップロード
-
-### 追加機能
-
-このプロジェクトは拡張が可能です。以下の機能を必要に応じて追加できます：
-
-- AWS WAF によるセキュリティ強化
-- Lambda@Edge による高度なルーティングやコンテンツ処理
-- CloudWatch によるモニタリングとアラート設定
-- CI/CD パイプラインによるコンテンツ自動デプロイ
-
-## トラブルシューティング
-
-### よくある問題
-
-1. **S3バケットが既に存在する**:
-   - `s3_create_bucket = false` を設定して既存バケットを使用
-
-2. **ACM証明書の検証タイムアウト**:
-   - DNSレコードが正しく作成されているか確認
-   - ACMコンソールで手動検証を試行
-
-3. **CloudFrontデプロイに時間がかかる**:
-   - 通常の動作です。最大30分程度かかることがあります
-
-4. **Route 53レコードで「no hosted zone found」エラー**:
-   - 正しいドメイン名でホストゾーンが作成されていることを確認
-
-5. **PermissionDenied エラー**:
-   - IAMユーザーに必要な権限が付与されているか確認
-
-## ライセンス
-
-このプロジェクトは MIT ライセンスの下で提供されています。
-
-## 貢献
-
-問題報告や機能提案は GitHub Issues を通じてお願いします。プルリクエストも歓迎します。

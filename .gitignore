@@ -19,6 +19,7 @@ build/
 .env.test.local
 .env.production.local
 .env.*.local
+.env.terraform
 
 # Vite
 .vite/
@@ -82,12 +83,24 @@ out
 .nyc_output
 
 # Terraform
-*.tfvars
-*.tfstate.backup
-*.tfstate
-**/.terraform/*
-.terraform.lock.hcl
-backend.tf
+terraform/**/*.tfvars
+terraform/**/*.tfstate
+terraform/**/*.tfstate.*
+terraform/**/*.tfplan
+terraform/**/backend.hcl
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/**/override.tf
+terraform/**/override.tf.json
+terraform/**/*_override.tf
+terraform/**/*_override.tf.json
+
+# Old terraform files (cleanup)
+terraform/main.tf
+terraform/variables.tf
+terraform/outputs.tf
+terraform/backend.tf.sample
+terraform/terraform.tfvars.sample
 
 # AWS credentials and config (if accidentally placed in project)
 .aws/

@@ -1,0 +1,76 @@
+# ==============================================
+# HogoDog Frontend Terraform Variables (本番環境)
+# ==============================================
+# このファイルをコピーしてterraform.tfvarsとして使用してください
+# cp terraform.tfvars.example terraform.tfvars
+
+# ====================
+# プロジェクト基本設定
+# ====================
+project_name = "hogo-dog"
+
+# ====================
+# ドメイン設定
+# ====================
+domain_name = "hogodog.jp"
+
+# ====================
+# AWS設定
+# ====================
+aws_region = "ap-northeast-1"
+
+# ====================
+# S3設定
+# ====================
+# S3バケット名（null の場合、hogodog.jp が使用されます）
+website_bucket_name = null
+
+# 既存バケットを使用（false）または新規作成（true）
+s3_create_bucket = false
+
+# ====================
+# CloudFront設定
+# ====================
+# 価格クラス: PriceClass_All（最高性能）, PriceClass_200（中間）, PriceClass_100（最安）
+cloudfront_price_class = "PriceClass_All"
+
+# ====================
+# コンテンツ設定
+# ====================
+index_document = "index.html"
+error_document = "error.html"
+
+# カスタムコンテンツ（null の場合、デフォルトコンテンツが使用されます）
+index_content = null
+error_content = null
+
+# ====================
+# 環境変数での上書き設定
+# ====================
+# 以下の環境変数で上書き可能:
+# - TF_VAR_project_name
+# - TF_VAR_domain_name
+# - TF_VAR_aws_region
+# - TF_VAR_website_bucket_name
+# - TF_VAR_s3_create_bucket
+# - TF_VAR_cloudfront_price_class
+# - TF_VAR_index_content
+# - TF_VAR_error_content
+
+# ====================
+# 本番環境の特徴
+# ====================
+# - ドメイン: hogodog.jp
+# - CloudFront価格クラス: PriceClass_All（全世界配信）
+# - S3バケット: 既存バケット使用推奨
+# - SSL証明書: ACM管理（自動更新）
+# - Route 53: DNSレコード自動管理
+# - パフォーマンス最適化: 本番運用向け設定
+
+# ====================
+# セキュリティ推奨事項
+# ====================
+# 1. S3バケットは事前に作成・設定しておく
+# 2. CloudFrontの価格クラスは予算に応じて調整
+# 3. 独自ドメインのDNS設定を確認
+# 4. SSL証明書の有効期限監視を設定

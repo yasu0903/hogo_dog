@@ -1,0 +1,96 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches: [ master ]
+    tags: [ 'v*' ]
+  workflow_dispatch:
+
+jobs:
+  deploy-prod:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Run tests before production deploy
+      run: |
+        npm run lint
+        npm run test
+        
+    - name: Build for production
+      run: npm run build
+      env:
+        # Production environment variables
+        VITE_API_BASE_URL: ${{ secrets.PROD_API_BASE_URL }}
+        VITE_AWS_REGION: ${{ secrets.PROD_AWS_REGION }}
+        VITE_AWS_USER_POOL_ID: ${{ secrets.PROD_AWS_USER_POOL_ID }}
+        VITE_AWS_USER_POOL_WEB_CLIENT_ID: ${{ secrets.PROD_AWS_USER_POOL_WEB_CLIENT_ID }}
+        VITE_AWS_IDENTITY_POOL_ID: ${{ secrets.PROD_AWS_IDENTITY_POOL_ID }}
+        VITE_AWS_COGNITO_DOMAIN: ${{ secrets.PROD_AWS_COGNITO_DOMAIN }}
+        VITE_APP_URL: https://hogodog.jp
+        VITE_NODE_ENV: production
+        
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ap-northeast-1
+        
+    - name: Deploy to S3 (Production)
+      run: |
+        aws s3 sync ./dist s3://${{ secrets.PROD_S3_BUCKET_NAME }} \
+          --delete \
+          --exact-timestamps \
+          --cache-control "public, max-age=31536000" \
+          --exclude "*.html" \
+          --exclude "service-worker.js"
+        
+        # HTML files with shorter cache
+        aws s3 sync ./dist s3://${{ secrets.PROD_S3_BUCKET_NAME }} \
+          --exact-timestamps \
+          --cache-control "public, max-age=0, must-revalidate" \
+          --include "*.html" \
+          --include "service-worker.js"
+        
+    - name: Invalidate CloudFront (Production)
+      run: |
+        aws cloudfront create-invalidation \
+          --distribution-id ${{ secrets.PROD_CLOUDFRONT_DISTRIBUTION_ID }} \
+          --paths "/*"
+        
+    - name: Create GitHub Release (on tag)
+      if: startsWith(github.ref, 'refs/tags/')
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        body: |
+          ## Production Deployment
+          
+          🚀 **Deployed to:** https://hogodog.jp
+          📦 **Build:** ${{ github.sha }}
+          🌟 **Features:** See commit history for details
+          
+          ## Infrastructure
+          - S3 Bucket: ${{ secrets.PROD_S3_BUCKET_NAME }}
+          - CloudFront Distribution: ${{ secrets.PROD_CLOUDFRONT_DISTRIBUTION_ID }}
+        draft: false
+        prerelease: false
+        
+    - name: Deployment notification
+      run: |
+        echo "🎉 Production deployment completed!"
+        echo "Website: https://hogodog.jp"

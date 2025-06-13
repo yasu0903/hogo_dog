@@ -2,6 +2,10 @@
 
 A comprehensive web application for connecting Japanese dog rescue organizations with potential adopters. Built with React and Vite, this platform features both static organization discovery and dynamic animal adoption management with secure authentication.
 
+## 🌟 Overview
+
+HogoDog bridges the gap between animal rescue organizations and caring families across Japan. The platform combines efficient organization discovery with a full-featured adoption management system, ensuring both rescuers and adopters have the tools they need to find perfect matches.
+
 ## Features
 
 ### 🔍 Organization Discovery
@@ -54,17 +58,17 @@ Create a `.env` file based on `.env.example` with your configuration:
 VITE_API_BASE_URL=http://localhost:8080
 VITE_API_VERSION=v1
 
-# Authentication Configuration
-VITE_AWS_REGION=us-east-1
-VITE_AWS_USER_POOL_ID=us-east-1_xxxxxxxxx
-VITE_AWS_USER_POOL_WEB_CLIENT_ID=xxxxxxxxxxxxxxxxxxxxxxxxxx
-VITE_AWS_IDENTITY_POOL_ID=us-east-1:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-VITE_AWS_COGNITO_DOMAIN=your-domain.auth.us-east-1.amazoncognito.com
+# Authentication Configuration (Configure with your AWS Cognito settings)
+VITE_AWS_REGION=ap-northeast-1
+VITE_AWS_USER_POOL_ID=your-user-pool-id
+VITE_AWS_USER_POOL_WEB_CLIENT_ID=your-client-id
+VITE_AWS_IDENTITY_POOL_ID=your-identity-pool-id
+VITE_AWS_COGNITO_DOMAIN=your-cognito-domain
 
 # Application URL (for OAuth redirects)
-VITE_APP_URL=http://localhost:5174
+VITE_APP_URL=http://localhost:5173
 
-# Development settings (affects user role testing)
+# Development settings (enables advanced development tools)
 VITE_NODE_ENV=development
 ```
 
@@ -92,6 +96,21 @@ npm run dev
 ```
 
 The application will be available at `http://localhost:5173`
+
+## Architecture
+
+### Frontend Architecture
+- **React 18** with modern hooks and concurrent features
+- **Vite** for fast development and optimized production builds
+- **React Router** for client-side routing with protected routes
+- **CSS Modules** for scoped styling and maintainable CSS
+- **React Beautiful DND** for intuitive drag-and-drop interfaces
+
+### Backend Integration
+- **RESTful API** communication with `hogo_dog_backend`
+- **JWT Authentication** for secure API access
+- **Real-time Data** synchronization for animal listings and applications
+- **S3 Integration** for photo storage and management
 
 ### Development Mode Features
 
@@ -180,43 +199,93 @@ This application prioritizes user privacy through:
 
 ## Deployment
 
-The project includes Terraform configurations for AWS deployment:
+### Infrastructure as Code
+The project uses Terraform for AWS infrastructure management:
 
-- **S3**: Static website hosting with secure bucket policies
-- **CloudFront**: CDN distribution with HTTPS enforcement
+- **S3 + CloudFront**: Static website hosting with global CDN
 - **Route53**: DNS management with health checks
 - **ACM**: SSL certificates with automatic renewal
+- **Environment Separation**: Dedicated dev/staging/prod environments
 
-See `terraform/` directory for infrastructure code.
+### Deployment Process
+```bash
+# Deploy to development
+cd terraform/environments/dev
+cp backend.hcl.example backend.hcl
+cp terraform.tfvars.example terraform.tfvars
+# Configure your settings
+terraform init -backend-config=backend.hcl
+terraform apply
+
+# Deploy to production
+cd ../prod
+# Configure production settings
+terraform init -backend-config=backend.hcl
+terraform apply
+```
+
+### CI/CD Pipeline
+- **GitHub Actions** for automated deployment
+- **Environment-specific** builds and configurations
+- **Automatic** CloudFront cache invalidation
+- **Production** deployment protection with approval gates
+
+See `terraform/` directory and `.github/workflows/` for complete infrastructure and deployment code.
 
 ## Security Considerations
 
 This application handles sensitive data related to animal welfare organizations and users. Please observe the following security practices:
 
 ### Environment Variables
-- **Never commit `.env` files** containing real credentials
+- **Never commit `.env` files** containing real configuration
 - Use `.env.example` as a template for required environment variables
-- Configure proper authentication credentials for production deployment
+- Store sensitive configuration in secure environment variable management systems
 
 ### Development Mode
 - Development tools are automatically disabled in production builds
-- Test credentials in development mode are not valid for production use
-- Always use secure, production-grade authentication in live deployments
+- Development configuration is separate from production settings
+- Always use production-grade authentication and security measures in live deployments
 
 ### Data Privacy
-- User data collection is minimal (name and email only)
-- All authentication is handled through secure OAuth providers
-- No sensitive personal information is stored in the application
+- **Minimal Data Collection**: Only essential user information (name and email)
+- **OAuth Authentication**: No password storage, delegated to trusted providers
+- **Secure Transmission**: All data encrypted in transit with HTTPS
+- **Access Control**: Role-based permissions for sensitive operations
 
 ## Contributing
 
 1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Ensure no sensitive information is included in commits
-5. Run linting: `npm run lint`
-6. Test with development environment variables only
-7. Submit a pull request
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Install dependencies: `npm install`
+4. Make your changes following the existing code style
+5. Run tests: `npm run test`
+6. Run linting: `npm run lint`
+7. Ensure no sensitive information is included in commits
+8. Test with development environment variables only
+9. Submit a pull request with a clear description
+
+### Development Guidelines
+- Follow React best practices and hooks patterns
+- Write tests for new features using Vitest
+- Use CSS Modules for component styling
+- Maintain accessibility standards (ARIA labels, keyboard navigation)
+- Ensure responsive design works across devices
+
+## Testing
+
+```bash
+# Run all tests
+npm run test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Run tests with UI
+npm run test:ui
+
+# Generate coverage report
+npm run test:coverage
+```
 
 ## License
 

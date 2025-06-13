@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**HogoDog** is a React SPA for connecting Japanese dog rescue organizations with potential adopters. The application features a dual-architecture approach with static organization information and dynamic animal adoption management.
+**HogoDog (わんだーネット)** is a comprehensive React SPA that connects Japanese dog rescue organizations with potential adopters. The application features a sophisticated dual-architecture approach combining static organization information with dynamic animal adoption management, built with modern web technologies and secure authentication systems.
 
 ## Development Commands
 
@@ -25,17 +25,17 @@ Create a `.env` file based on `.env.example` with your authentication configurat
 VITE_API_BASE_URL=http://localhost:8080
 VITE_API_VERSION=v1
 
-# Authentication Configuration
-VITE_AWS_REGION=us-east-1
-VITE_AWS_USER_POOL_ID=us-east-1_xxxxxxxxx
-VITE_AWS_USER_POOL_WEB_CLIENT_ID=xxxxxxxxxxxxxxxxxxxxxxxxxx
-VITE_AWS_IDENTITY_POOL_ID=us-east-1:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-VITE_AWS_COGNITO_DOMAIN=your-domain.auth.us-east-1.amazoncognito.com
+# Authentication Configuration (AWS Cognito)
+VITE_AWS_REGION=ap-northeast-1
+VITE_AWS_USER_POOL_ID=your-user-pool-id
+VITE_AWS_USER_POOL_WEB_CLIENT_ID=your-client-id
+VITE_AWS_IDENTITY_POOL_ID=your-identity-pool-id
+VITE_AWS_COGNITO_DOMAIN=your-cognito-domain
 
 # Application URL (for OAuth redirects)
-VITE_APP_URL=http://localhost:5174
+VITE_APP_URL=http://localhost:5173
 
-# Development settings (enables user role testing)
+# Development settings (enables advanced development tools)
 VITE_NODE_ENV=development
 ```
 
@@ -43,18 +43,18 @@ VITE_NODE_ENV=development
 
 This application prioritizes user privacy by using **Google OAuth exclusively** through secure authentication services:
 
-### Google Authentication (Only)
-- **OAuth Flow**: Users can only sign in with their Google account
-- **Privacy First**: No custom password storage - only Google name and email are used
-- **Redirect Handling**: Automatic redirect after successful authentication
-- **User Data**: Minimal data usage - only name and email from Google profile
-- **Session Management**: Secure token-based authentication via AWS managed services
+### OAuth Authentication
+- **Google OAuth Integration**: Users authenticate via Google OAuth through AWS Cognito
+- **Privacy-First Design**: No password storage - delegated authentication
+- **Secure Redirect Handling**: Automatic redirect after successful authentication
+- **Minimal Data Collection**: Only name and email from OAuth provider
+- **Session Management**: JWT-based secure token management
 
 ### Privacy Protection
-- **No Personal Data Storage**: The service doesn't store any personal information beyond what Google provides
-- **Google-Only Authentication**: Eliminates the need for users to create new accounts with personal details
-- **Minimal Data Usage**: Only email and name are used for authentication and display purposes
-- **No Email/Password Registration**: Completely removed to prevent personal data collection
+- **Minimal Data Storage**: Only essential user information (name and email)
+- **OAuth Delegation**: No password management - handled by trusted providers
+- **Secure Transmission**: All data encrypted in transit with HTTPS
+- **Access Control**: Role-based permissions for sensitive operations
 
 ## Application Architecture
 
@@ -423,4 +423,79 @@ The application now features a comprehensive photo management system with the fo
 - **Visual Consistency**: Unified design language and component styling
 - **Performance**: Optimized rendering and state management
 
-This architecture ensures a secure, privacy-focused, and scalable animal adoption platform that connects rescue organizations with caring adopters while maintaining the highest standards of user data protection and providing an exceptional user experience for photo management and organizational administration.
+## Deployment and Infrastructure
+
+### Terraform Infrastructure
+The project uses Infrastructure as Code (Terraform) for AWS deployment:
+
+```
+terraform/
+├── environments/
+│   ├── dev/                    # Development environment
+│   └── prod/                   # Production environment
+├── shared/                     # Common configurations
+└── modules/                    # Reusable infrastructure components
+```
+
+### Deployment Commands
+```bash
+# Development deployment
+cd terraform/environments/dev
+cp backend.hcl.example backend.hcl
+cp terraform.tfvars.example terraform.tfvars
+terraform init -backend-config=backend.hcl
+terraform apply
+
+# Production deployment
+cd ../prod
+terraform init -backend-config=backend.hcl
+terraform apply
+```
+
+### CI/CD Pipeline
+- **GitHub Actions** for automated deployment
+- **Environment-specific** configurations
+- **S3 + CloudFront** for static hosting
+- **Route53** for DNS management
+
+## Security Best Practices
+
+### Environment Configuration
+- Never commit `.env` files with real configuration
+- Use `.env.example` as template
+- Store sensitive data in secure environment management systems
+- Separate development and production configurations
+
+### Authentication Security
+- OAuth-only authentication (no password storage)
+- JWT token-based session management
+- Role-based access control for admin features
+- Secure HTTPS transmission for all data
+
+### Code Security
+- Input validation on all user inputs
+- XSS protection through React's built-in escaping
+- CSRF protection through SameSite cookies
+- Secure API communication with proper error handling
+
+## Development Best Practices
+
+### Code Style
+- Use functional components with React hooks
+- Implement CSS Modules for scoped styling
+- Follow React best practices and patterns
+- Write comprehensive tests with Vitest
+
+### Performance
+- Optimize bundle size with Vite's tree shaking
+- Implement lazy loading for route-based code splitting
+- Use React.memo for expensive component renders
+- Optimize images and assets for web delivery
+
+### Accessibility
+- Implement proper ARIA labels and roles
+- Ensure keyboard navigation support
+- Maintain sufficient color contrast ratios
+- Test with screen readers and accessibility tools
+
+This architecture ensures a secure, privacy-focused, and scalable animal adoption platform that connects rescue organizations with caring adopters while maintaining the highest standards of user data protection and providing an exceptional user experience.

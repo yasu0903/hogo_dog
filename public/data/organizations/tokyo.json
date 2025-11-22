@@ -298,7 +298,13 @@
             "area": "東京",
             "url": "http://dogshelter.jp/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "Dog Shelter スタッフブログ",
+                    "type": "blog",
+                    "url": "http://dogshelter.jp/blog/"
+                }
+            ]
         },
         {
             "id": 27,
@@ -338,7 +344,18 @@
             "area": "東京",
             "url": "http://kens-house.com/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "ケンの家 東京支部ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/mokomoko-07/"
+                },
+                {
+                    "name": "ケンの家 X",
+                    "type": "x",
+                    "url": "https://twitter.com/kennoyeah"
+                }
+            ]
         },
         {
             "id": 38,
@@ -354,7 +371,18 @@
             "area": "東京",
             "url": "https://www.aeonpet.com/lifehouse/about/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "ペテモ公式Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/petemo_official/"
+                },
+                {
+                    "name": "ペテモ公式YouTube",
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/channel/UCmylbkoZWecS0_6IYNg_a1g"
+                }
+            ]
         },
         {
             "id": 41,
@@ -362,7 +390,18 @@
             "area": "東京",
             "url": "http://aguri.nomaki.jp/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "アグリ犬猫里親会ブログ",
+                    "type": "blog",
+                    "url": "http://ameblo.jp/aguriinuneko/"
+                },
+                {
+                    "name": "アグリドッグレスキュー Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/aguridogrescue/"
+                }
+            ]
         },
         {
             "id": 42,
@@ -370,7 +409,18 @@
             "area": "東京",
             "url": "http://gogogroomers.club/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "GO GO GROOMERS ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/gogogromers/"
+                },
+                {
+                    "name": "GO GO GROOMERS Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/GOGOgroomers-700258293378416/"
+                }
+            ]
         },
         {
             "id": 43,
@@ -378,7 +428,13 @@
             "area": "東京",
             "url": "https://ameblo.jp/once-more-field/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "ワン・モア・フィールド ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/once-more-field/"
+                }
+            ]
         },
         {
             "id": 45,
@@ -394,7 +450,18 @@
             "area": "東京",
             "url": "http://thevoice-japan.org/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "THE VOICE Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/thevoice.japan/"
+                },
+                {
+                    "name": "THE VOICE Instagram (the_voice_animalrescue)",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/the_voice_animalrescue/"
+                }
+            ]
         },
         {
             "id": 48,
@@ -410,7 +477,13 @@
             "area": "東京",
             "url": "http://aidog.jpn.com/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "アイドッグ・レスキュー隊 ブログ",
+                    "type": "blog",
+                    "url": "http://ameblo.jp/aidog20141001/"
+                }
+            ]
         },
         {
             "id": 50,
@@ -426,7 +499,23 @@
             "area": "東京",
             "url": "http://tierheim-kokua.aloha703.com/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "Tier Heim KOKUA ブログ",
+                    "type": "blog",
+                    "url": "http://ameblo.jp/aloha703703/"
+                },
+                {
+                    "name": "Tier Heim KOKUA Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/Tierheim.kokua/"
+                },
+                {
+                    "name": "Tier Heim KOKUA Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/tierheim_kokua/"
+                }
+            ]
         },
         {
             "id": 52,
@@ -434,7 +523,18 @@
             "area": "東京",
             "url": "http://humanin.or.jp/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "ヒューマニン財団 ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/humanin/"
+                },
+                {
+                    "name": "ヒューマニン財団 Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/humaninfoundation/"
+                }
+            ]
         },
         {
             "id": 53,
@@ -442,7 +542,18 @@
             "area": "東京",
             "url": "http://help-sheltie.net/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "シェルティ・レスキュー ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/help-shelties/"
+                },
+                {
+                    "name": "シェルティ・レスキュー X",
+                    "type": "x",
+                    "url": "https://twitter.com/sheltie_rescue/"
+                }
+            ]
         },
         {
             "id": 55,
@@ -450,7 +561,13 @@
             "area": "東京",
             "url": "http://cdta.or.jp/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "家庭犬しつけ協会 Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/kateikensitsuke_kyoukai"
+                }
+            ]
         },
         {
             "id": 56,
@@ -458,7 +575,28 @@
             "area": "東京",
             "url": "https://tokyocatseye.com/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "東京キャッツアイ ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/tokyo-catseye/"
+                },
+                {
+                    "name": "東京キャッツアイ X",
+                    "type": "x",
+                    "url": "https://twitter.com/tokyocatseye"
+                },
+                {
+                    "name": "東京キャッツアイ Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/tokyocatseye2017/"
+                },
+                {
+                    "name": "東京キャッツアイ YouTube",
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/embed/D3nGPSM98Ng"
+                }
+            ]
         },
         {
             "id": 57,
@@ -474,7 +612,13 @@
             "area": "東京",
             "url": "http://125chiisanate.main.jp/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "台東１２５小さな手 ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/125125taito"
+                }
+            ]
         },
         {
             "id": 61,
@@ -482,7 +626,13 @@
             "area": "東京",
             "url": "https://ameblo.jp/team-rose-cats/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "府中猫の会 ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/team-rose-cats/"
+                }
+            ]
         },
         {
             "id": 62,
@@ -490,7 +640,13 @@
             "area": "東京",
             "url": "https://ameblo.jp/nesutaneko/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "ネスタ猫の会 ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/nesutaneko/"
+                }
+            ]
         },
         {
             "id": 63,
@@ -506,7 +662,13 @@
             "area": "東京",
             "url": "https://peaceboat.localinfo.jp/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "PEACE BOAT Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/peace_boat/"
+                }
+            ]
         },
         {
             "id": 65,
@@ -522,7 +684,23 @@
             "area": "東京",
             "url": "https://s-p-a.jp/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "SPA Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/spanimals/"
+                },
+                {
+                    "name": "SPA X",
+                    "type": "x",
+                    "url": "https://twitter.com/npo_spanimals"
+                },
+                {
+                    "name": "SPA Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/s.p.a__official/"
+                }
+            ]
         },
         {
             "id": 67,
@@ -530,7 +708,13 @@
             "area": "東京",
             "url": "https://ameblo.jp/to-chi-hogoneko/",
             "note": "",
-            "sns": []
+            "sns": [
+                {
+                    "name": "とーち保護猫の会 ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/to-chi-hogoneko/"
+                }
+            ]
         }
     ]
 }

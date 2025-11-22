@@ -1,0 +1,486 @@
+{
+    "no": "11",
+    "pref_name": "saitama",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特定非営利活動法人 funny Cat & Dog",
+            "area": "埼玉",
+            "url": "http://cafe-funnycat.amebaownd.com/",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 2,
+            "name": "一般社団法人 彩の猫",
+            "area": "埼玉",
+            "url": "http://sainoneko.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "彩の猫 ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/170freinds/"
+                },
+                {
+                    "name": "彩の猫 X",
+                    "type": "x",
+                    "url": "https://twitter.com/nekocyansainyan"
+                },
+                {
+                    "name": "彩の猫 Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/inc.sainoneko/"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "またたび家",
+            "area": "埼玉",
+            "url": "http://matatabike.web.fc2.com/index.html",
+            "note": "",
+            "sns": [
+                {
+                    "name": "またたび家 ブログ",
+                    "type": "blog",
+                    "url": "http://ameblo.jp/nyancoouchisagashi22/"
+                },
+                {
+                    "name": "またたび家 Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/matatabike/"
+                },
+                {
+                    "name": "またたび家 Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/matatabike22/"
+                },
+                {
+                    "name": "またたび家 X",
+                    "type": "x",
+                    "url": "https://twitter.com/matatabike22/"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "わんにゃん小梅保育園(FARCO)",
+            "area": "埼玉",
+            "url": "https://ameblo.jp/catsheartfarco/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "わんにゃん小梅保育園 ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/catsheartfarco/"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "しっぽたちの物語",
+            "area": "埼玉",
+            "url": "",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 6,
+            "name": "ぼるとの隠れ家",
+            "area": "埼玉",
+            "url": "http://ramu-ah.com/custom3.html",
+            "note": "",
+            "sns": [
+                {
+                    "name": "ぼるとの隠れ家 Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/ramu_animal_hospital/"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "一般社団法人 アニマルエイド",
+            "area": "埼玉",
+            "url": "http://animal88.net/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "アニマルエイド ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/animalaid-jimunikki/"
+                },
+                {
+                    "name": "アニマルエイド Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/animal__aid/"
+                },
+                {
+                    "name": "アニマルエイド X",
+                    "type": "x",
+                    "url": "https://twitter.com/anieionisibako"
+                },
+                {
+                    "name": "アニマルエイド YouTube",
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/@youtu9515"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "アグリドッグレスキュー",
+            "area": "埼玉",
+            "url": "http://aguri.nomaki.jp/menu.html",
+            "note": "",
+            "sns": [
+                {
+                    "name": "アグリ犬猫里親会 ブログ",
+                    "type": "blog",
+                    "url": "http://ameblo.jp/aguriinuneko/"
+                },
+                {
+                    "name": "アグリドッグレスキュー Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/aguridogrescue/"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "restartdog LIEN",
+            "area": "埼玉",
+            "url": "https://ameblo.jp/liendog/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "restartdog LIEN ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/liendog/"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "一般社団法人 アルマ",
+            "area": "埼玉",
+            "url": "http://alma.or.jp/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "紡いだ命 ～アルマ東京ティアハイム～",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/alma-soulmate/"
+                },
+                {
+                    "name": "ティアハイムの天使たち",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/alma-tt/"
+                },
+                {
+                    "name": "ティアハイムのきょうのにゃんこ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/alma-cats/"
+                },
+                {
+                    "name": "アルマ東京ティアハイム通信",
+                    "type": "blog",
+                    "url": "http://tierheim.blog.fc2.com/"
+                },
+                {
+                    "name": "アルマ東京ティアハイム",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/alma.tokyo/"
+                },
+                {
+                    "name": "アルマ保護猫シェルター・アスタマナーニャ",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/alma_hastamanana/"
+                },
+                {
+                    "name": "アルマ引き取り情報ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/alma-new/"
+                },
+                {
+                    "name": "NPO法人アルマ",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/npo.alma"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "しっぽのしらべ",
+            "area": "埼玉",
+            "url": "http://sipponosirabe.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "しっぽのしらべ X",
+                    "type": "x",
+                    "url": "https://twitter.com/sipponosirabe"
+                },
+                {
+                    "name": "しっぽのしらべ Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/sipponosirabe/"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "一般社団法人 どうぶつ福祉a-hands",
+            "area": "埼玉",
+            "url": "https://www.a-hands.org/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "a-hands Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/ahands.jp/"
+                },
+                {
+                    "name": "a-hands Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/ahands_jp/"
+                },
+                {
+                    "name": "a-hands YouTube",
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/@a-hands"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "特定非営利活動法人 シリウス",
+            "area": "埼玉",
+            "url": "http://tierheim-saitama.org/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "シリウス Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/tierheim.saitama/"
+                },
+                {
+                    "name": "シリウス Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/tierheim.saitama/"
+                },
+                {
+                    "name": "シリウス YouTube",
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/channel/UCGUWB3eGdYfEzHtiuRBc28A"
+                },
+                {
+                    "name": "シリウス X",
+                    "type": "x",
+                    "url": "https://twitter.com/tierheimsaitama"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "イオンペット株式会社 LIFE HOUSE",
+            "area": "埼玉",
+            "url": "https://www.aeonpet.com/lifehouse/",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 15,
+            "name": "特定非営利活動法人 日本動物生命尊重の会 A.L.I.S",
+            "area": "埼玉",
+            "url": "https://www.alis1993.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "A.L.I.S Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/Npo%E6%B3%95%E4%BA%BA-%E6%97%A5%E6%9C%AC%E5%8B%95%E7%89%A9%E7%94%9F%E5%91%BD%E5%B0%8A%E9%87%8D%E3%81%AE%E4%BC%9A-alis-366346693458790"
+                },
+                {
+                    "name": "A.L.I.S Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/n_a.l.i.s?utm_source=ig_web_button_share_sheet"
+                },
+                {
+                    "name": "A.L.I.S YouTube",
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/channel/UCDYWMy2vrlOB3hV8MyrZq5Q"
+                },
+                {
+                    "name": "A.L.I.S X",
+                    "type": "x",
+                    "url": "https://twitter.com/NPOALIS1?s=20&t=hO-J9oKxTWNuB4VP9Jch2A"
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Angel's Tale シーズーレスキューネットワーク",
+            "area": "埼玉",
+            "url": "https://angelstale.net/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "Angel's Tale ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/angelstale0729/"
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "name": "特定非営利活動法人 ペット里親会",
+            "area": "埼玉",
+            "url": "https://www.petsatooyakai.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "ペット里親会 Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/PetSatooya"
+                },
+                {
+                    "name": "ペット里親会 Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/petsatooya/"
+                },
+                {
+                    "name": "ペット里親会 YouTube",
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/channel/UCopPoczBAl2O4q689tLtrJw"
+                },
+                {
+                    "name": "ペット里親会 X",
+                    "type": "x",
+                    "url": "https://twitter.com/PetSatooyakai"
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Hope to Life チームZERO",
+            "area": "埼玉",
+            "url": "http://hopetolife.jp/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "Hope to Life ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/hopetolife/"
+                },
+                {
+                    "name": "Hope to Life Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/hopetolife0"
+                },
+                {
+                    "name": "Hope to Life Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/panda3367umbrella/"
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "name": "特定非営利活動法人 Happy-Wildcats",
+            "area": "埼玉",
+            "url": "http://happy-wildcats.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "Happy-Wildcats ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/happy-wildcats/"
+                },
+                {
+                    "name": "Happy-Wildcats Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/happywildcats/"
+                },
+                {
+                    "name": "Happy-Wildcats Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/hwc_nya/"
+                },
+                {
+                    "name": "Happy-Wildcats YouTube",
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/@%E4%BF%9D%E8%AD%B7%E7%8C%AB%E6%96%BD%E8%A8%ADHWC"
+                },
+                {
+                    "name": "Happy-Wildcats X",
+                    "type": "x",
+                    "url": "https://twitter.com/hwc_nya"
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "name": "いぬとずっとハッピーアダプション部埼玉支部",
+            "area": "埼玉",
+            "url": "https://www.inutozutto.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "ハッピーアダプション部 ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/happyadoption/"
+                },
+                {
+                    "name": "ハッピーアダプション部 X",
+                    "type": "x",
+                    "url": "https://twitter.com/inutozutto"
+                },
+                {
+                    "name": "ハッピーアダプション部 Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/happy_adoption_dept/"
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "name": "シェルティ・レスキュー",
+            "area": "埼玉",
+            "url": "http://www.help-sheltie.net/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "シェルティ・レスキュー ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/help-shelties/"
+                },
+                {
+                    "name": "シェルティ・レスキュー YouTube",
+                    "type": "youtube",
+                    "url": "http://www.youtube.com/embed/sDjkJeDYowE?rel=0"
+                },
+                {
+                    "name": "シェルティ・レスキュー X",
+                    "type": "x",
+                    "url": "https://twitter.com/sheltie_rescue/"
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "name": "SCENTHOUND RESCUE",
+            "area": "埼玉",
+            "url": "https://ameblo.jp/scenthoundrescue/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "SCENTHOUND RESCUE ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/scenthoundrescue/"
+                }
+            ]
+        }
+    ]
+}

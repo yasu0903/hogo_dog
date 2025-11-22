@@ -1,0 +1,720 @@
+{
+    "no": "13",
+    "pref_name": "tokyo",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特定非営利活動法人 保健所の成犬・猫の譲渡を推進する会",
+            "area": "東京",
+            "url": "http://npo.seikenjoto.org/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "保健所の成犬・猫の譲渡を推進する会🐾",
+                    "type": "x",
+                    "url": "https://twitter.com/NpoSeikenJouto"
+                },
+                {
+                    "name": "活動ニュース",
+                    "type": "blog",
+                    "url": "http://jouto.blog69.fc2.com/"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "NPO法人日本動物生命尊重の会",
+            "area": "東京",
+            "url": "https://www.alis1993.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "NPO法人日本動物生命尊重の会(A.L.I.S)",
+                    "type": "x",
+                    "url": "https://x.com/NPOALIS1?s=20&t=hO-J9oKxTWNuB4VP9Jch2A"
+                },
+                {
+                    "name": "NPO法人 日本動物生命尊重の会 A.L.I.S",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/npo_alis/"
+                },
+                {
+                    "name": "アリスの会alis",
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/channel/UCDYWMy2vrlOB3hV8MyrZq5Q"
+                },
+                {
+                    "name": "Npo法人 日本動物生命尊重の会 alis",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/people/Npo%E6%B3%95%E4%BA%BA-%E6%97%A5%E6%9C%AC%E5%8B%95%E7%89%A9%E7%94%9F%E5%91%BD%E5%B0%8A%E9%87%8D%E3%81%AE%E4%BC%9A-alis/100064368564674/"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "一般社団法人 アルマ",
+            "area": "東京",
+            "url": "http://alma.or.jp/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "紡いだ命 ～アルマ東京ティアハイム～",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/alma-soulmate/"
+                },
+                {
+                    "name": "ティアハイムの天使たち",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/alma-tt/"
+                },
+                {
+                    "name": "ティアハイムのきょうのにゃんこ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/alma-cats/"
+                },
+                {
+                    "name": "アルマ東京ティアハイム通信",
+                    "type": "blog",
+                    "url": "http://tierheim.blog.fc2.com/"
+                },
+                {
+                    "name": "アルマ東京ティアハイム",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/alma.tokyo/"
+                },
+                {
+                    "name": "アルマ保護猫シェルター・アスタマナーニャ",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/alma_hastamanana/"
+                },
+                {
+                    "name": "アルマ引き取り情報ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/alma-new/"
+                },
+                {
+                    "name": "NPO法人アルマ",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/npo.alma"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "イングリッシュコッカースパニエル・レスキューネットワーク",
+            "area": "",
+            "url": "http://ecsrn.com/",
+            "note": "イングリッシュ・コッカー",
+            "sns": [
+                {
+                    "name": "ECSRN",
+                    "type": "blog",
+                    "url": "https://ecsrn.exblog.jp/"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "CAJA(カヤ)の会",
+            "area": "東京",
+            "url": "https://cajadog.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "Cajaの会(広島)",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/cayanokai"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "特定非営利活動法人 フレンズ・オヴ・アニマルズ(FOA)",
+            "area": "東京",
+            "url": "",
+            "note": "",
+            "sns": [
+                {
+                    "name": "フレンズ・オブ・アニマルズ (FOA) ",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/friendsofanimals.jp"
+                },
+                {
+                    "name": "所属メンバーアカウント",
+                    "type": "x",
+                    "url": "https://twitter.com/wonderfulnya3"
+                },
+                {
+                    "name": "friendsofanimalsjp",
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/user/friendsofanimalsjp"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "ハッピーラブズ",
+            "area": "東京",
+            "url": "https://happylabs.info/",
+            "note": "ラブラドール・ゴールデン等",
+            "sns": [
+                {
+                    "name": "ハッピーラブズ",
+                    "type": "blog",
+                    "url": "https://happylabs.info/blog.html"
+                },
+                {
+                    "name": "レトリーバーレスキュー ハッピーラブズ",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/happylabsdogs"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Perro Dogs Home",
+            "area": "東京",
+            "url": "http://www.perro-dogshome.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "PerroDogsHome",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/perro_dogs_home/"
+                },
+                {
+                    "name": "Perro Dogs Home",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/perrodogshome"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "HappyLabs",
+            "area": "東京",
+            "url": "https://happylabs.info/",
+            "note": "ゴールデンレトリバー",
+            "sns": [
+                {
+                    "name": "HappyLabs",
+                    "type": "x",
+                    "url": "https://x.com/happy_labs"
+                },
+                {
+                    "name": "HappyLabs",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/happylabs.info/"
+                },
+                {
+                    "name": "Happy Labs・レトリーバーレスキュー ハッピーラブズ",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/happylabsdogs"
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Queue",
+            "area": "東京",
+            "url": "http://www.perro-dogshome.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "Perro Dogs Home",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/perro_dogs_home/"
+                },
+                {
+                    "name": "Perro Dogs Home",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/perrodogshome"
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "name": "ふがふがれすきゅークラブ",
+            "area": "東京",
+            "url": "http://toysya.sakura.ne.jp/fuga/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "ふがふがれすきゅーInstagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/fugaresu/"
+                },
+                {
+                    "name": "ふがれすブログ",
+                    "type": "blog",
+                    "url": "http://fugares.blog42.fc2.com/"
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "name": "個人活動者（港）",
+            "area": "東京",
+            "url": "",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 24,
+            "name": "Angel's Tale シーズーレスキューネットワーク",
+            "area": "東京",
+            "url": "http://angelstale.net/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "Angel's Tale official blog",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/angelstale0729/"
+                },
+                {
+                    "name": "Angel's Tale Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/_Angels.Tale"
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "name": "ジャックの里",
+            "area": "東京",
+            "url": "http://www.jfcj.net/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "ジャックの里",
+                    "type": "facebook",
+                    "url": "http://www.facebook.com/jacks.home.town"
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "name": "Dog Shelter",
+            "area": "東京",
+            "url": "http://dogshelter.jp/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "Dog Shelter スタッフブログ",
+                    "type": "blog",
+                    "url": "http://dogshelter.jp/blog/"
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "name": "犬民宿舎 しろいぬの里",
+            "area": "東京",
+            "url": "",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 30,
+            "name": "わんにゃん小梅保育園(FARCO)",
+            "area": "東京",
+            "url": "https://sites.google.com/site/wannyanfarco/",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 31,
+            "name": "わんにゃんサポートクローバーの会",
+            "area": "東京",
+            "url": "",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 35,
+            "name": "CATWINGS",
+            "area": "東京",
+            "url": "",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 36,
+            "name": "一般社団法人ケンの家",
+            "area": "東京",
+            "url": "http://kens-house.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "ケンの家 東京支部ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/mokomoko-07/"
+                },
+                {
+                    "name": "ケンの家 X",
+                    "type": "x",
+                    "url": "https://twitter.com/kennoyeah"
+                }
+            ]
+        },
+        {
+            "id": 38,
+            "name": "ねこひと会",
+            "area": "東京",
+            "url": "",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 40,
+            "name": "イオンペット株式会社",
+            "area": "東京",
+            "url": "https://www.aeonpet.com/lifehouse/about/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "ペテモ公式Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/petemo_official/"
+                },
+                {
+                    "name": "ペテモ公式YouTube",
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/channel/UCmylbkoZWecS0_6IYNg_a1g"
+                }
+            ]
+        },
+        {
+            "id": 41,
+            "name": "特定非営利活動法人アグリドッグレスキュー",
+            "area": "東京",
+            "url": "http://aguri.nomaki.jp/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "アグリ犬猫里親会ブログ",
+                    "type": "blog",
+                    "url": "http://ameblo.jp/aguriinuneko/"
+                },
+                {
+                    "name": "アグリドッグレスキュー Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/aguridogrescue/"
+                }
+            ]
+        },
+        {
+            "id": 42,
+            "name": "GO GO GROOMERS",
+            "area": "東京",
+            "url": "http://gogogroomers.club/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "GO GO GROOMERS ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/gogogromers/"
+                },
+                {
+                    "name": "GO GO GROOMERS Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/GOGOgroomers-700258293378416/"
+                }
+            ]
+        },
+        {
+            "id": 43,
+            "name": "一般社団法人 ワン・モア・フィールド",
+            "area": "東京",
+            "url": "https://ameblo.jp/once-more-field/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "ワン・モア・フィールド ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/once-more-field/"
+                }
+            ]
+        },
+        {
+            "id": 45,
+            "name": "the VOICE(ぼいす)",
+            "area": "東京",
+            "url": "",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 46,
+            "name": "ＮＰＯ法人 どうぶつの福祉を考える会",
+            "area": "東京",
+            "url": "http://thevoice-japan.org/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "THE VOICE Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/thevoice.japan/"
+                },
+                {
+                    "name": "THE VOICE Instagram (the_voice_animalrescue)",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/the_voice_animalrescue/"
+                }
+            ]
+        },
+        {
+            "id": 48,
+            "name": "Loved One D",
+            "area": "東京",
+            "url": "",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 49,
+            "name": "アイドッグ・レスキュー隊",
+            "area": "東京",
+            "url": "http://aidog.jpn.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "アイドッグ・レスキュー隊 ブログ",
+                    "type": "blog",
+                    "url": "http://ameblo.jp/aidog20141001/"
+                }
+            ]
+        },
+        {
+            "id": 50,
+            "name": "ゆめネコ譲渡会",
+            "area": "東京",
+            "url": "http://yume-neko.net/",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 51,
+            "name": "特定非営利活動法人 Tier Heim KOKUA",
+            "area": "東京",
+            "url": "http://tierheim-kokua.aloha703.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "Tier Heim KOKUA ブログ",
+                    "type": "blog",
+                    "url": "http://ameblo.jp/aloha703703/"
+                },
+                {
+                    "name": "Tier Heim KOKUA Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/Tierheim.kokua/"
+                },
+                {
+                    "name": "Tier Heim KOKUA Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/tierheim_kokua/"
+                }
+            ]
+        },
+        {
+            "id": 52,
+            "name": "公益財団法人 ヒューマニン財団",
+            "area": "東京",
+            "url": "http://humanin.or.jp/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "ヒューマニン財団 ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/humanin/"
+                },
+                {
+                    "name": "ヒューマニン財団 Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/humaninfoundation/"
+                }
+            ]
+        },
+        {
+            "id": 53,
+            "name": "シェルティ・レスキュー",
+            "area": "東京",
+            "url": "http://help-sheltie.net/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "シェルティ・レスキュー ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/help-shelties/"
+                },
+                {
+                    "name": "シェルティ・レスキュー X",
+                    "type": "x",
+                    "url": "https://twitter.com/sheltie_rescue/"
+                }
+            ]
+        },
+        {
+            "id": 55,
+            "name": "特定非営利活動法人 家庭犬しつけ協会",
+            "area": "東京",
+            "url": "http://cdta.or.jp/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "家庭犬しつけ協会 Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/kateikensitsuke_kyoukai"
+                }
+            ]
+        },
+        {
+            "id": 56,
+            "name": "特定非営利活動法人 東京キャッツアイ",
+            "area": "東京",
+            "url": "https://tokyocatseye.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "東京キャッツアイ ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/tokyo-catseye/"
+                },
+                {
+                    "name": "東京キャッツアイ X",
+                    "type": "x",
+                    "url": "https://twitter.com/tokyocatseye"
+                },
+                {
+                    "name": "東京キャッツアイ Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/tokyocatseye2017/"
+                },
+                {
+                    "name": "東京キャッツアイ YouTube",
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/embed/D3nGPSM98Ng"
+                }
+            ]
+        },
+        {
+            "id": 57,
+            "name": "一般社団法人ベビーキャットレスキュー",
+            "area": "東京",
+            "url": "http://baby.cats.gr.jp/",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 60,
+            "name": "一般社団法人台東１２５小さな手",
+            "area": "東京",
+            "url": "http://125chiisanate.main.jp/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "台東１２５小さな手 ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/125125taito"
+                }
+            ]
+        },
+        {
+            "id": 61,
+            "name": "特定非営利活動法人府中猫の会",
+            "area": "東京",
+            "url": "https://ameblo.jp/team-rose-cats/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "府中猫の会 ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/team-rose-cats/"
+                }
+            ]
+        },
+        {
+            "id": 62,
+            "name": "ネスタ猫の会",
+            "area": "東京",
+            "url": "https://ameblo.jp/nesutaneko/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "ネスタ猫の会 ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/nesutaneko/"
+                }
+            ]
+        },
+        {
+            "id": 63,
+            "name": "むさしの地域猫の会",
+            "area": "東京",
+            "url": "https://www.musashinoneko.com/",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 64,
+            "name": "PEACE BOAT",
+            "area": "東京",
+            "url": "https://peaceboat.localinfo.jp/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "PEACE BOAT Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/peace_boat/"
+                }
+            ]
+        },
+        {
+            "id": 65,
+            "name": "まちワン",
+            "area": "東京",
+            "url": "https://machi-wan-dogs.amebaownd.com/",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 66,
+            "name": "特定非営利活動法人SPA",
+            "area": "東京",
+            "url": "https://s-p-a.jp/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "SPA Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/spanimals/"
+                },
+                {
+                    "name": "SPA X",
+                    "type": "x",
+                    "url": "https://twitter.com/npo_spanimals"
+                },
+                {
+                    "name": "SPA Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/s.p.a__official/"
+                }
+            ]
+        },
+        {
+            "id": 67,
+            "name": "とーち保護猫の会",
+            "area": "東京",
+            "url": "https://ameblo.jp/to-chi-hogoneko/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "とーち保護猫の会 ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/to-chi-hogoneko/"
+                }
+            ]
+        }
+    ]
+}

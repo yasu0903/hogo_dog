@@ -14,6 +14,14 @@
             "organization_num": 81
         },
         {
+            "no": "11",
+            "name":"埼玉県",
+            "source_url": "https://www.pref.saitama.lg.jp/b0716/doubutu-link-jyoutoninnteidanntai.html",
+            "file_url": "https://www.pref.saitama.lg.jp/b0716/doubutu-link-jyoutoninnteidanntai.html",
+            "sha256": "54bd7d71356c7c6f1b1757428d9ca562d4505fcc3e1d1dad106556776dd51731",
+            "organization_num": 22
+        },
+        {
             "no": "12",
             "name":"千葉県",
             "source_url": "https://www.pref.chiba.lg.jp/aigo/bora-katudou.html",

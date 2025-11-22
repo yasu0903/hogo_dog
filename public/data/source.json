@@ -20,6 +20,14 @@
             "file_url": "https://www.pref.chiba.lg.jp/aigo/bora-katudou.html",
             "sha256": "649a3d78065d65aaf3f2f26a3fa879ea3b0353ae5b68343d75f779353834587b",
             "organization_num": 16
+        },
+        {
+            "no": "13",
+            "name":"東京都",
+            "source_url": "https://wannyan.metro.tokyo.lg.jp/dantai-ichiran/",
+            "file_url": "https://wannyan.metro.tokyo.lg.jp/wp-content/uploads/2024/10/71d72c08c69d4e22df8835382e96bd8c-2.pdf",
+            "sha256": "e2890472c1df2fb3708b9b2a1d98cb1080d382ffcabec47b646e1b8b7c2d5646",
+            "organization_num": 47
         }
     ]
 }

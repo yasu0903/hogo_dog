@@ -4,7 +4,9 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/build_search_index.mjs",
     "dev": "vite",
+    "prebuild": "node scripts/build_search_index.mjs",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"

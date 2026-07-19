@@ -6,16 +6,31 @@
             "id": 1,
             "name": "宮城県犬猫里親探しの会バトンタッチ",
             "area": "宮城",
+            "city": "美里町・大和町・富谷市・涌谷町",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://batontouch.chu.jp/",
-            "note": "県公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "無責任な個人からの引取りは行っていません。里親探しのご相談・サポートは行っています。",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "特定非営利活動法人アニマルクラブ石巻",
             "area": "宮城",
+            "city": "石巻市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://a-c.sub.jp/",
-            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "",
             "sns": [
                 {
                     "name": "アニマルクラブ石巻 Facebook",
@@ -27,7 +42,8 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/animalclubishinomaki/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         }
     ]
 }

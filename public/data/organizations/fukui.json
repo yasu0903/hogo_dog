@@ -6,17 +6,33 @@
             "id": 1,
             "name": "特定非営利活動法人福井犬・猫を救う会",
             "area": "福井",
+            "city": "福井市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "http://www.fukui-dogcat.com/",
-            "note": "県公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "ふくい動物愛護管理支援センター協会",
             "area": "福井",
+            "city": "福井市・敦賀市・あわら市・坂井市・永平寺町・大野市・勝山市・鯖江市・越前市・越前町・南越前町・池田町・美浜町・若狭町・小浜市・おおい町・高浜町",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://www.fapscsite.com/",
-            "note": "県公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

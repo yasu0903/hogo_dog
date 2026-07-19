@@ -6,17 +6,32 @@
             "id": 1,
             "name": "waKwaKsun",
             "area": "香川",
+            "city": "高松市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://www.wakwak-sun.com/",
-            "note": "高松市で活動。県公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "保護施設を持たないため、保護できる数には限りがあります。",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "特定非営利活動法人BONにゃん",
             "area": "香川",
+            "city": "高松市",
+            "species": [
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "http://bonnyan0222.jp/",
-            "note": "高松市で活動。保護猫の活動が中心。県公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

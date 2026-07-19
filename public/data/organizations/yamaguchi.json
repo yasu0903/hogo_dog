@@ -6,25 +6,49 @@
             "id": 1,
             "name": "認定特定非営利活動法人ちびたまのしっぽ愛護会",
             "area": "山口",
+            "city": "長門市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://chibitama.or.jp/",
-            "note": "長門市で活動。県公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "現在、シェルターの収容可能数が限界のため、基本的には引き取りのご相談は受けておりません。",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "ケダマの会",
             "area": "山口",
+            "city": "田布施町",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://kedamanokai.org/",
-            "note": "田布施町で活動。県公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 3,
             "name": "特定非営利活動法人青い鳥動物愛護会",
             "area": "山口",
+            "city": "防府市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "http://aoitori-aigo.org/",
-            "note": "防府市で活動。県公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

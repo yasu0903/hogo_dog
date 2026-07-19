@@ -6,15 +6,28 @@
             "id": 1,
             "name": "特定非営利活動法人 funny Cat & Dog",
             "area": "埼玉",
-            "url": "http://cafe-funnycat.amebaownd.com/",
+            "city": "狭山市",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://cafe-funnycat.amebaownd.com/",
+            "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "一般社団法人 彩の猫",
             "area": "埼玉",
-            "url": "http://sainoneko.com/",
+            "city": "さいたま市",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://sainoneko.com/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -32,13 +45,20 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/inc.sainoneko/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 3,
             "name": "またたび家",
             "area": "埼玉",
+            "city": "川越市",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
             "url": "http://matatabike.web.fc2.com/index.html",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -61,13 +81,21 @@
                     "type": "x",
                     "url": "https://twitter.com/matatabike22/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 4,
             "name": "わんにゃん小梅保育園(FARCO)",
             "area": "埼玉",
+            "city": "坂戸市・川越市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
             "url": "https://ameblo.jp/catsheartfarco/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -75,13 +103,18 @@
                     "type": "blog",
                     "url": "https://ameblo.jp/catsheartfarco/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 5,
             "name": "しっぽたちの物語",
             "area": "埼玉",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "",
+            "caution": "",
             "note": "",
             "sns": []
         },
@@ -89,7 +122,14 @@
             "id": 6,
             "name": "ぼるとの隠れ家",
             "area": "埼玉",
+            "city": "蓮田市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
             "url": "http://ramu-ah.com/custom3.html",
+            "caution": "持病がある子が多いため、募集地域は蓮田市、白岡市、病院から車で15分圏内の方を優先としています。",
             "note": "",
             "sns": [
                 {
@@ -97,13 +137,21 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/ramu_animal_hospital/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 7,
             "name": "一般社団法人 アニマルエイド",
             "area": "埼玉",
-            "url": "http://animal88.net/",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://animal88.net/",
+            "caution": "猫の受け入れは有償であり、事前の相談が必要です。置き去りは絶対にしないでください。",
             "note": "",
             "sns": [
                 {
@@ -126,13 +174,20 @@
                     "type": "youtube",
                     "url": "https://www.youtube.com/@youtu9515"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 8,
             "name": "アグリドッグレスキュー",
             "area": "埼玉",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "http://aguri.nomaki.jp/menu.html",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -145,13 +200,20 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/aguridogrescue/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 9,
             "name": "restartdog LIEN",
             "area": "埼玉",
+            "city": "松伏町",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "https://ameblo.jp/liendog/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -159,13 +221,21 @@
                     "type": "blog",
                     "url": "https://ameblo.jp/liendog/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 10,
             "name": "一般社団法人 アルマ",
             "area": "埼玉",
-            "url": "http://alma.or.jp/",
+            "city": "目黒区・葛飾区",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://alma.or.jp/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -208,13 +278,20 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/npo.alma"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 11,
             "name": "しっぽのしらべ",
             "area": "埼玉",
-            "url": "http://sipponosirabe.com/",
+            "city": "上尾市・桶川市・北本市",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://sipponosirabe.com/",
+            "caution": "保護施設が無いため、成猫の受け入れはしていません。",
             "note": "",
             "sns": [
                 {
@@ -227,13 +304,21 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/sipponosirabe/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 12,
             "name": "一般社団法人 どうぶつ福祉a-hands",
             "area": "埼玉",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
             "url": "https://www.a-hands.org/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -251,13 +336,21 @@
                     "type": "youtube",
                     "url": "https://www.youtube.com/@a-hands"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 13,
             "name": "特定非営利活動法人 シリウス",
             "area": "埼玉",
-            "url": "http://tierheim-saitama.org/",
+            "city": "さいたま市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://tierheim-saitama.org/",
+            "caution": "電話窓口は設けられておらず、問い合わせはフォームにて受け付けています。",
             "note": "",
             "sns": [
                 {
@@ -280,21 +373,37 @@
                     "type": "x",
                     "url": "https://twitter.com/tierheimsaitama"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 14,
             "name": "イオンペット株式会社 LIFE HOUSE",
             "area": "埼玉",
+            "city": "千葉市・品川区・越谷市・茨木市・筑紫野市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
             "url": "https://www.aeonpet.com/lifehouse/",
+            "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 15,
             "name": "特定非営利活動法人 日本動物生命尊重の会 A.L.I.S",
             "area": "埼玉",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
             "url": "https://www.alis1993.com/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -317,13 +426,20 @@
                     "type": "x",
                     "url": "https://twitter.com/NPOALIS1?s=20&t=hO-J9oKxTWNuB4VP9Jch2A"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 16,
             "name": "Angel's Tale シーズーレスキューネットワーク",
             "area": "埼玉",
+            "city": "川崎市・横浜市・柏市・さいたま市・千葉市・川越市・川口市・横須賀市・越谷市・船橋市",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "https://angelstale.net/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -331,13 +447,21 @@
                     "type": "blog",
                     "url": "https://ameblo.jp/angelstale0729/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 17,
             "name": "特定非営利活動法人 ペット里親会",
             "area": "埼玉",
+            "city": "ふじみ野市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
             "url": "https://www.petsatooyakai.com/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -360,13 +484,20 @@
                     "type": "x",
                     "url": "https://twitter.com/PetSatooyakai"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 18,
             "name": "Hope to Life チームZERO",
             "area": "埼玉",
+            "city": "",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
             "url": "http://hopetolife.jp/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -384,13 +515,20 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/panda3367umbrella/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 19,
             "name": "特定非営利活動法人 Happy-Wildcats",
             "area": "埼玉",
-            "url": "http://happy-wildcats.com/",
+            "city": "蓮田市",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://happy-wildcats.com/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -418,13 +556,20 @@
                     "type": "x",
                     "url": "https://twitter.com/hwc_nya"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 20,
             "name": "いぬとずっとハッピーアダプション部埼玉支部",
             "area": "埼玉",
+            "city": "西東京市",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "https://www.inutozutto.com/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -442,13 +587,20 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/happy_adoption_dept/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 21,
             "name": "シェルティ・レスキュー",
             "area": "埼玉",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "http://www.help-sheltie.net/",
+            "caution": "繁殖者による譲渡希望は、有償無償にかかわらず掲載いたしません。",
             "note": "",
             "sns": [
                 {
@@ -466,13 +618,20 @@
                     "type": "x",
                     "url": "https://twitter.com/sheltie_rescue/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 22,
             "name": "SCENTHOUND RESCUE",
             "area": "埼玉",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "https://ameblo.jp/scenthoundrescue/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -480,7 +639,8 @@
                     "type": "blog",
                     "url": "https://ameblo.jp/scenthoundrescue/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         }
     ]
 }

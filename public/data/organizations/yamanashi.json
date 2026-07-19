@@ -6,17 +6,32 @@
             "id": 1,
             "name": "リトルキャッツ（山梨県犬猫救助ポータル）",
             "area": "山梨",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://www.littlecats.jp/",
-            "note": "県公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "NPO山梨ねこボランティアネットワーク",
             "area": "山梨",
+            "city": "県東部・富士五湖エリア",
+            "species": [
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://www.npoyamanekovn.com/",
-            "note": "県東部・富士五湖エリアで活動。保護猫の活動が中心。県公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

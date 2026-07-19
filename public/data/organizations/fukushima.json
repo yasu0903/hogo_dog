@@ -6,16 +6,31 @@
             "id": 1,
             "name": "特定非営利活動法人SORAアニマルシェルター",
             "area": "福島",
+            "city": "福島市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://sora.ne.jp/",
-            "note": "県公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "不要な犬猫の引き取りは行っていません。見学の際には事前の連絡が必要です。",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "特定非営利活動法人動物愛護団体LYSTA",
             "area": "福島",
+            "city": "いわき市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://lysta.me/",
-            "note": "いわき市で活動。県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "",
             "sns": [
                 {
                     "name": "LYSTA ブログ",
@@ -27,7 +42,8 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/npo.lysta.ohana/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         }
     ]
 }

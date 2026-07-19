@@ -2,16 +2,102 @@
     "source_list": [
         {
             "no": "01",
-            "name":"北海道",
-            "source_url": ""
+            "name": "北海道",
+            "source_url": "https://www.pref.hokkaido.lg.jp/ks/skn/aigo/registration.html",
+            "file_url": "https://www.pref.hokkaido.lg.jp/fs/9/1/2/4/0/6/1/_/%E3%80%90HP%E5%85%AC%E9%96%8B%E7%94%A8%E3%80%91R05%E7%99%BB%E9%8C%B2%E5%9B%A3%E4%BD%93%E4%B8%80%E8%A6%A7%E8%A1%A8.pdf",
+            "sha256": "287194d628d04b74d284a4ce59f702cc7e677a96eeaf92359605cf4d3c3389c8",
+            "organization_num": 5,
+            "note": "動物愛護管理の推進に関する団体登録制度。一覧は令和5年9月12日時点のPDF"
+        },
+        {
+            "no": "02",
+            "name": "青森県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "03",
+            "name": "岩手県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "譲渡ボランティア登録制度はあるが名簿の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "04",
+            "name": "宮城県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "登録団体への譲渡制度はあるが一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "05",
+            "name": "秋田県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "06",
+            "name": "山形県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "07",
+            "name": "福島県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
         },
         {
             "no": "08",
-            "name":"茨城県",
+            "name": "茨城県",
             "source_url": "https://www.pref.ibaraki.jp/hokenfukushi/doshise/kanri/20190418.html",
-            "file_url": "https://www.pref.ibaraki.jp/hokenfukushi/doshise/kanri/documents/toubora20250318.pdf",
-            "sha256": "9ff4c2a6bdc68f2e3bb6d59a21f16e361903d5278e1ca71e086cf99b95fef70b",
-            "organization_num": 81
+            "file_url": "https://www.pref.ibaraki.jp/hokenfukushi/doshise/kanri/documents/toubora20260526.pdf",
+            "sha256": "1addd027077277b9421d8c1ee9ef62e3cab9c41aaabe79f40112502d692e4025",
+            "organization_num": 80,
+            "note": "旧PDF(toubora20250318.pdf)は404。2026年5月26日版に更新"
+        },
+        {
+            "no": "09",
+            "name": "栃木県",
+            "source_url": "https://www.douai.pref.tochigi.lg.jp/work/group-list/",
+            "file_url": "https://www.douai.pref.tochigi.lg.jp/work/group-list/",
+            "sha256": "bdbda33ac87d971e8123f3296c46d4d7c8582da2f651e47e50936739346ff2ae",
+            "organization_num": 14,
+            "note": "動物愛護指導センターの登録団体等一覧（HTML）"
+        },
+        {
+            "no": "10",
+            "name": "群馬県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。ぐんま犬猫パートナーシップ制度は販売事業者等が対象のため対象外"
+        },
+        {
+            "no": "11",
+            "name": "埼玉県",
+            "source_url": "https://www.pref.saitama.lg.jp/b0716/doubutu-link-jyoutoninnteidanntai.html",
+            "file_url": "https://www.pref.saitama.lg.jp/b0716/doubutu-link-jyoutoninnteidanntai.html",
+            "sha256": "85fde32be65b9d8e29d7c374031e93bff0c864c426039220a36aa9f223c42d6e",
+            "organization_num": 16,
+            "note": "譲渡認定団体のリンク集（HTML）。2026年7月時点で16団体掲載"
         },
         {
             "no": "11",
@@ -23,19 +109,326 @@
         },
         {
             "no": "12",
-            "name":"千葉県",
+            "name": "千葉県",
             "source_url": "https://www.pref.chiba.lg.jp/aigo/bora-katudou.html",
             "file_url": "https://www.pref.chiba.lg.jp/aigo/bora-katudou.html",
-            "sha256": "649a3d78065d65aaf3f2f26a3fa879ea3b0353ae5b68343d75f779353834587b",
-            "organization_num": 16
+            "sha256": "9776775682d80c514a3d38882660f43d6d9922e9cdec56a024820aeca7845fd2",
+            "organization_num": 16,
+            "note": "譲渡等に関する登録団体16（トリミング関係1団体は含めず）"
         },
         {
             "no": "13",
-            "name":"東京都",
+            "name": "東京都",
             "source_url": "https://wannyan.metro.tokyo.lg.jp/dantai-ichiran/",
             "file_url": "https://wannyan.metro.tokyo.lg.jp/wp-content/uploads/2024/10/71d72c08c69d4e22df8835382e96bd8c-2.pdf",
             "sha256": "e2890472c1df2fb3708b9b2a1d98cb1080d382ffcabec47b646e1b8b7c2d5646",
             "organization_num": 47
+        },
+        {
+            "no": "14",
+            "name": "神奈川県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県動物愛護センターに登録ボランティア制度はあるが一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "15",
+            "name": "新潟県",
+            "source_url": "https://www.pref.niigata.lg.jp/sec/seikatueisei/0198745.html",
+            "file_url": "https://www.pref.niigata.lg.jp/sec/seikatueisei/0198745.html",
+            "sha256": "e2f319d372f246852d90af76d002370637b9702dd898e170a1b2c5c7a341663e",
+            "organization_num": 16,
+            "note": "譲渡ボランティア名簿（HTML、令和7年12月26日現在）"
+        },
+        {
+            "no": "16",
+            "name": "富山県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "17",
+            "name": "石川県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "18",
+            "name": "福井県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "19",
+            "name": "山梨県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "20",
+            "name": "長野県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "21",
+            "name": "岐阜県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "22",
+            "name": "静岡県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "23",
+            "name": "愛知県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "24",
+            "name": "三重県",
+            "source_url": "https://www.pref.mie.lg.jp/ASMILE/m0306100009.htm",
+            "file_url": "https://www.pref.mie.lg.jp/ASMILE/m0306100009.htm",
+            "sha256": "2bfa34426be7202c0c1a664b545d921e0dbc1458d9bcba443bf7bbd7d93d61f9",
+            "organization_num": 19,
+            "note": "あすまいる（動物愛護推進センター）の譲渡ボランティア団体一覧（HTML）"
+        },
+        {
+            "no": "25",
+            "name": "滋賀県",
+            "source_url": "https://www.pref.shiga.lg.jp/doubutsuhogo/hoshii/305155.html",
+            "file_url": "https://www.pref.shiga.lg.jp/doubutsuhogo/hoshii/305155.html",
+            "sha256": "e87344456c5dea01f95cff5d87613ba76d5986b99425238388e7b0a3b08e0489",
+            "organization_num": 1,
+            "note": "犬猫の譲渡活動を行っている団体等の紹介ページ（HTML）"
+        },
+        {
+            "no": "26",
+            "name": "京都府",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "府による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "27",
+            "name": "大阪府",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "譲渡登録団体制度はあるが一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "28",
+            "name": "兵庫県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "29",
+            "name": "奈良県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "30",
+            "name": "和歌山県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "31",
+            "name": "鳥取県",
+            "source_url": "https://www.pref.tottori.lg.jp/251718.htm",
+            "file_url": "https://www.pref.tottori.lg.jp/251718.htm",
+            "sha256": "2f6302394d57ee376487c9e8e97264adff76704ae9d20ee1ff89a90715677639",
+            "organization_num": 7,
+            "note": "登録譲渡ボランティア一覧（HTML、令和7年1月現在）"
+        },
+        {
+            "no": "32",
+            "name": "島根県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "33",
+            "name": "岡山県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "登録ボランティア団体制度はあるが一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "34",
+            "name": "広島県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "35",
+            "name": "山口県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "保健所への譲渡団体登録制度はあるが一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "36",
+            "name": "徳島県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "37",
+            "name": "香川県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "譲渡ボランティア制度はあるが一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "38",
+            "name": "愛媛県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "譲渡仲介者登録名簿はあるがWeb公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "39",
+            "name": "高知県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "40",
+            "name": "福岡県",
+            "source_url": "https://www.zaidan-fukuoka-douai.or.jp/groups",
+            "file_url": "https://www.zaidan-fukuoka-douai.or.jp/groups",
+            "sha256": "c7a27ce1cd39203722b0505f2c05dfddc04c48ee95476f8d90251d5e17b60261",
+            "organization_num": 45,
+            "note": "県動物愛護センター（公益財団法人福岡県動物愛護管理協会運営）のセンター登録団体一覧（HTML）"
+        },
+        {
+            "no": "41",
+            "name": "佐賀県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "42",
+            "name": "長崎県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "43",
+            "name": "熊本県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "44",
+            "name": "大分県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "45",
+            "name": "宮崎県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "46",
+            "name": "鹿児島県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
+        },
+        {
+            "no": "47",
+            "name": "沖縄県",
+            "source_url": "",
+            "file_url": "",
+            "sha256": "",
+            "organization_num": null,
+            "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）"
         }
     ]
 }

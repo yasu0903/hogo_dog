@@ -5,7 +5,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #f5f7fa;
+  background-color: var(--color-bg);
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -22,10 +22,10 @@
 
 .title {
   font-size: 2.2rem;
-  color: #2c3e50;
+  color: var(--color-ink);
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 3px solid #3498db;
+  border-bottom: 3px solid var(--color-primary);
   position: relative;
 }
 
@@ -35,8 +35,8 @@
   align-items: center;
   height: 100vh;
   font-size: 1.2rem;
-  color: #7f8c8d;
-  background-color: #f5f7fa;
+  color: var(--color-text-muted);
+  background-color: var(--color-bg);
 }
 
 .error {
@@ -47,7 +47,7 @@
   align-items: center;
   font-size: 1.2rem;
   color: #e74c3c;
-  background-color: #f5f7fa;
+  background-color: var(--color-bg);
   text-align: center;
   padding: 2rem;
 }
@@ -74,17 +74,17 @@
   flex: 1;
   min-width: 220px;
   padding: 0.6rem 1rem;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--color-border);
   border-radius: 6px;
   font-size: 0.95rem;
-  color: #2c3e50;
+  color: var(--color-ink);
   background-color: white;
 }
 
 .searchInput:focus {
   outline: none;
-  border-color: #3498db;
-  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(224, 122, 63, 0.15);
 }
 
 .speciesFilter {
@@ -95,7 +95,7 @@
 .speciesButton {
   padding: 0.5rem 1rem;
   background-color: white;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--color-border);
   border-radius: 9999px;
   color: #4a5568;
   font-size: 0.9rem;
@@ -105,20 +105,20 @@
 }
 
 .speciesButton:hover:not(.speciesButtonActive) {
-  border-color: #3498db;
-  color: #3498db;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .speciesButtonActive {
-  background-color: #3498db;
-  border-color: #3498db;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
   color: white;
 }
 
 .clearButton {
   padding: 0.6rem 1.2rem;
   background-color: white;
-  border: 1px solid #cbd5e0;
+  border: 1px solid var(--color-border);
   border-radius: 6px;
   color: #64748b;
   font-size: 0.9rem;
@@ -154,12 +154,12 @@
 }
 
 .viewTab:hover {
-  color: #3498db;
+  color: var(--color-primary);
 }
 
 .viewTabActive {
-  color: #3498db;
-  border-bottom-color: #3498db;
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
 }
 
 .resultsInfo {
@@ -180,11 +180,11 @@
 .noResults {
   text-align: center;
   padding: 3rem 1rem;
-  color: #7f8c8d;
+  color: var(--color-text-muted);
   font-size: 1.1rem;
   background-color: #f8f9fa;
   border-radius: 8px;
-  border: 1px dashed #cbd5e0;
+  border: 1px dashed var(--color-border);
 }
 
 /* レスポンシブデザイン */

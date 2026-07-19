@@ -5,7 +5,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #f5f7fa;
+  background-color: var(--color-bg);
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -26,8 +26,8 @@
   align-items: center;
   height: 100vh;
   font-size: 1.2rem;
-  color: #7f8c8d;
-  background-color: #f5f7fa;
+  color: var(--color-text-muted);
+  background-color: var(--color-bg);
 }
 
 .breadcrumb {
@@ -41,7 +41,7 @@
 }
 
 .breadcrumb a {
-  color: #3498db;
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -50,15 +50,15 @@
 }
 
 .breadcrumbSeparator {
-  color: #cbd5e0;
+  color: var(--color-border);
 }
 
 .title {
   font-size: 2rem;
-  color: #2c3e50;
+  color: var(--color-ink);
   margin-bottom: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 3px solid #3498db;
+  border-bottom: 3px solid var(--color-primary);
 }
 
 .badgeRow {
@@ -118,7 +118,7 @@
   padding: 1rem;
   background-color: #f8f9fa;
   font-weight: 600;
-  color: #34495e;
+  color: var(--color-ink);
   font-size: 0.9rem;
 }
 
@@ -126,13 +126,13 @@
   flex: 1;
   padding: 1rem;
   margin: 0;
-  color: #2c3e50;
+  color: var(--color-ink);
   font-size: 0.95rem;
   word-break: break-all;
 }
 
 .websiteLink {
-  color: #3498db;
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -161,12 +161,12 @@
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  color: #2c3e50;
+  color: var(--color-ink);
   text-decoration: none;
 }
 
 .snsLink span {
-  color: #3498db;
+  color: var(--color-primary);
 }
 
 .snsLink:hover span {
@@ -174,7 +174,7 @@
 }
 
 .sourceLink {
-  color: #3498db;
+  color: var(--color-primary);
   text-decoration: none;
   white-space: nowrap;
 }
@@ -216,18 +216,18 @@
 .backLink a {
   display: inline-flex;
   align-items: center;
-  color: #3498db;
+  color: var(--color-primary);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
-  background-color: #ecf0f1;
+  background-color: var(--color-surface-alt);
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
 }
 
 .backLink a:hover {
-  color: #2980b9;
-  background-color: #e0e7eb;
+  color: var(--color-primary-strong);
+  background-color: var(--color-primary-soft);
 }
 
 .backLink a::before {
@@ -258,7 +258,7 @@
 }
 
 .snsIconWebsite {
-  color: #0070f3;
+  color: var(--color-primary);
 }
 
 .snsIconTiktok {

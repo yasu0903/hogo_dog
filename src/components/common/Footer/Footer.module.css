@@ -1,8 +1,8 @@
 /* src/components/common/Footer/Footer.module.css */
 
 .footer {
-  background-color: #2c3e50;
-  color: #ecf0f1;
+  background-color: var(--color-footer-bg);
+  color: #f5efe6;
   padding-top: 2.5rem;
 }
 
@@ -11,13 +11,13 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 2rem 4rem;
   padding: 0 2rem 2rem;
 }
 
 .logoSection {
-  flex-basis: 300px;
-  margin-bottom: 2rem;
+  flex: 1 1 300px;
+  max-width: 380px;
 }
 
 .logo {
@@ -36,26 +36,16 @@
   left: 0;
   width: 50px;
   height: 2px;
-  background-color: #3498db;
+  background-color: var(--color-primary);
 }
 
 .tagline {
-  color: #bdc3c7;
-  line-height: 1.5;
-}
-
-/* サイトマップと法的情報の横並び用スタイル */
-.linksContainer {
-  display: flex;
-  gap: 4rem; /* 間隔を広く取る */
-}
-
-.linkColumn {
-  flex-basis: auto;
+  color: #cfc4b5;
+  line-height: 1.6;
 }
 
 .linkSection {
-  margin-bottom: 1.5rem;
+  flex: 0 1 auto;
 }
 
 .linkSection h3 {
@@ -72,7 +62,7 @@
   left: 0;
   width: 30px;
   height: 2px;
-  background-color: #3498db;
+  background-color: var(--color-primary);
 }
 
 .linkSection ul {
@@ -86,72 +76,33 @@
 }
 
 .linkSection a {
-  color: #bdc3c7;
+  color: #cfc4b5;
   text-decoration: none;
   transition: color 0.2s;
   position: relative;
 }
 
 .linkSection a:hover {
-  color: #3498db;
+  color: var(--color-primary);
 }
 
 .linkSection a::before {
   content: '›';
   margin-right: 0.5rem;
-  color: #3498db;
+  color: var(--color-primary);
 }
 
-/* 問い合わせ先スタイル */
-.contactSection {
-  flex-basis: 300px;
+.upcoming {
+  margin-top: 1rem;
+  color: #a3968a;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  max-width: 260px;
 }
 
-.contactSection h3 {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  position: relative;
-  padding-bottom: 0.5rem;
-}
-
-.contactSection h3::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 30px;
-  height: 2px;
-  background-color: #3498db;
-}
-
-.contactSection ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.contactSection li {
-  margin-bottom: 0.7rem;
-}
-
-.contactSection a {
-  color: #bdc3c7;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.contactSection a:hover {
-  color: #3498db;
-}
-
-.contactInfo {
-  color: #95a5a6;
-  font-size: 0.9rem;
-}
-
-/* フッター下部スタイル更新 */
+/* フッター下部スタイル */
 .bottom {
-  background-color: #1a252f;
+  background-color: var(--color-footer-bg-deep);
   padding: 1.5rem 2rem;
 }
 
@@ -164,7 +115,7 @@
 }
 
 .copyright {
-  color: #95a5a6;
+  color: #a3968a;
   font-size: 0.9rem;
   margin: 0;
 }
@@ -176,39 +127,27 @@
 }
 
 .socialIcon {
-  color: #ecf0f1;
+  color: #f5efe6;
   font-size: 0.9rem;
   transition: color 0.2s;
   text-decoration: none;
 }
 
 .socialIcon:hover {
-  color: #3498db;
+  color: var(--color-primary);
 }
 
 /* レスポンシブデザイン */
 @media (max-width: 992px) {
   .content {
     flex-direction: column;
+    gap: 2rem;
   }
-  
-  .linksContainer {
-    margin-bottom: 2rem;
-  }
-}
 
-@media (max-width: 768px) {
-  .content {
-    padding: 0 1.5rem 2rem;
-  }
-  
-  .linksContainer {
-    flex-direction: column;
-    gap: 0;
-  }
-  
-  .linkColumn {
-    margin-bottom: 0;
+  .logoSection {
+    /* 縦積み時は flex-basis が高さに効いて余白になるため解除する */
+    flex-basis: auto;
+    max-width: none;
   }
 }
 
@@ -216,28 +155,29 @@
   .footer {
     padding-top: 2rem;
   }
-  
+
   .content {
     padding: 0 1rem 1.5rem;
+    gap: 1.5rem;
   }
-  
+
   .logo {
     font-size: 1.3rem;
   }
-  
+
   .bottomContent {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .social {
     margin-top: 0.5rem;
   }
-  
+
   .bottom {
     padding: 1.2rem 1rem;
   }
-  
+
   .copyright {
     font-size: 0.8rem;
   }

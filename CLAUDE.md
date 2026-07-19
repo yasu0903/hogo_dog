@@ -19,16 +19,27 @@ This is a React SPA for searching Japanese dog rescue organizations with geograp
 - **Two-tier data structure**:
   - `source.json` - Prefecture-level organization summaries  
   - `organizations/{prefecture}.json` - Detailed organization data per prefecture
+- **Generated search index (Phase 3)**: `scripts/build_search_index.mjs` runs automatically before
+  `npm run dev` / `npm run build` (predev/prebuild hooks) and generates `public/data/search_index.json`
+  (unified all-organizations index for the national search page), `public/sitemap.xml`, and
+  `public/robots.txt`. All three are gitignored — never hand-edit them; edit the source JSONs instead
 
 ### Key Data Relationships
 - Prefecture IDs (e.g. "08") map to English names (e.g. "ibaraki") 
 - English names are used to fetch detailed organization data from `/data/organizations/{englishName}.json`
 - Organizations are grouped by prefecture and filtered by geographic areas (北海道, 東北, 関東, etc.)
 
+### Routing (Phase 3)
+- `/` Home, `/organizations` national cross-prefecture search (filters `q` / `area` / `pref` /
+  `species` / `view` / `page` are synced to URL query; `?view=map` shows the SVG tile choropleth),
+  `/organizations/:id` per-prefecture list, `/organizations/:prefectureId/:orgId` single-organization
+  page (per-page SEO/OGP via react-helmet-async)
+
 ### Component Structure
 - **Pages**: Route-level components in `src/pages/`
-- **Layout**: Common Header/Footer components
-- **Organization Components**: Specialized components for organization display and filtering
+- **Layout**: Common Header/Footer components, shared `Seo` and `Pagination` in `src/components/common/`
+- **Organization Components**: `OrgCard` (shared card for search + prefecture pages),
+  `JapanTileMap` (tile-grid choropleth), `AreaFilter`, `PrefectureFilter`
 - **Modular CSS**: Each component has its own `.module.css` file
 
 ### API Service Pattern

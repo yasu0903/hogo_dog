@@ -1,4 +1,5 @@
 export const PAGINATION_CONSTANT = {
     NUM_PER_PAGE: 6,
+    SEARCH_NUM_PER_PAGE: 12,
     NUM_OF_DISPLAY_PAGES:4,
 }

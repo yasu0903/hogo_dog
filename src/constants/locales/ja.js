@@ -47,14 +47,32 @@ export const HOME_MESSAGES = {
     ],
     HERO_SELECT_LABEL: 'お住まいの都道府県から探す',
     HERO_SELECT_PLACEHOLDER: '都道府県を選択',
+    HERO_MAP_LINK: '🗾 地図から探す',
     LINK_TO_ORGANIZATIONS: '団体を探す'
 }
 
 export const ORGANIZATIONS_MESSAGES = {
-    TITLE: '団体一覧',
+    TITLE: '団体を探す',
+    DESCRIPTION: '全国の保護犬・保護猫団体を団体名・エリア・都道府県・犬猫の別で横断検索できます。',
     ERROR_FOR_DATA_LOADING: 'データが読み込まれていません',
     ERROR_FOR_VALIDATION: 'データの形式が正しくありません',
-    ERROR_FOR_NO_RESULTS: '該当する団体が見つかりません'
+    ERROR_FOR_NO_RESULTS: '該当する団体が見つかりません',
+    SEARCH_PLACEHOLDER: '団体名・市区町村で検索',
+    VIEW_LIST: 'リスト',
+    VIEW_MAP: '地図',
+    VIEW_TOGGLE_LABEL: '表示切替',
+    CLEAR_FILTERS: '条件をクリア',
+    RESULT_COUNT: (total, from, to) => `全${total}件中 ${from}-${to}件を表示`,
+    ALL_PREFECTURES: 'すべての都道府県'
+}
+
+export const JAPAN_MAP_MESSAGES = {
+    ARIA_LABEL: '都道府県別の掲載団体数マップ',
+    HINT: '都道府県をクリックすると、その県の団体一覧へ移動します',
+    COUNT_UNIT: '団体',
+    LEGEND_FEW: '少',
+    LEGEND_MANY: '多',
+    LEGEND_ZERO: '掲載なし'
 }
 
 export const ORGANIZATION_CARD_MESSAGES = {
@@ -67,7 +85,7 @@ export const ORGANIZATION_DETAIL_MESSAGES = {
     ERROR_FOR_PREFECTURE_LOADING: '都道府県情報の読み込みに失敗しました',
     NEXT: '次へ',
     BACK: '前へ',
-    BACK_TO_ORGANIZATION_LIST: '都道府県一覧へ戻る',
+    BACK_TO_ORGANIZATION_LIST: '団体検索へ戻る',
     ORGANIZAION_NOT_FOUND: '団体が見つかりません',
     AREA: 'エリア',
     ACTIVITY_AREA: '活動地域',
@@ -90,7 +108,11 @@ export const ORGANIZATION_DETAIL_MESSAGES = {
     SPECIES_ALL: 'すべて',
     SPECIES_DOG: '🐕 犬',
     SPECIES_CAT: '🐈 猫',
-    NO_MATCHING_ORGANIZATIONS: '条件に一致する団体がありません'
+    NO_MATCHING_ORGANIZATIONS: '条件に一致する団体がありません',
+    LINK_BROKEN: '⚠️ サイトのリンク切れを確認',
+    LAST_VERIFIED: (date) => `最終確認日: ${date}`,
+    VIEW_DETAIL: '詳細を見る →',
+    BREADCRUMB_SEARCH: '団体を探す'
 }
 
 export const FILTER_MESSAGES = {

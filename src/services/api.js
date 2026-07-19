@@ -135,6 +135,43 @@ export const fetchSourceById = async (prefectureId) => {
   return sources.find(source => source.id === prefectureId) || null;
 };
 
+// 全国横断検索用の統合インデックスを取得
+// （scripts/build_search_index.mjs がビルド時に生成する search_index.json を読む）
+export const fetchSearchIndex = async () => {
+  try {
+    const response = await fetch('/data/search_index.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+
+    if (data && Array.isArray(data.organizations)) {
+      return data.organizations.map(org => ({
+        prefectureId: org.prefecture_id,
+        prefectureName: org.prefecture_name,
+        prefectureArea: org.prefecture_area,
+        id: org.id,
+        name: org.name,
+        area: org.area,
+        city: org.city,
+        species: org.species || [],
+        sourceType: org.source_type,
+        website: org.url,
+        caution: org.caution,
+        note: org.note,
+        sns: org.sns,
+        lastVerified: org.last_verified,
+        linkBroken: Boolean(org.link_broken)
+      }));
+    }
+
+    return [];
+  } catch (error) {
+    console.error('Error fetching search index:', error);
+    return [];
+  }
+};
+
 // 特定の都道府県の団体詳細を取得
 export const fetchOrganizationDetail = async (prefectureId) => {
   try {
@@ -177,7 +214,9 @@ export const fetchOrganizationDetail = async (prefectureId) => {
         website: org.url,
         caution: org.caution,
         note: org.note,
-        sns: org.sns
+        sns: org.sns,
+        lastVerified: org.last_verified,
+        linkBroken: Boolean(org.link_broken)
       }));
     }
     

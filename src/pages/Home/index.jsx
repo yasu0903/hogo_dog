@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
+import Seo from '../../components/common/Seo';
 import styles from './Home.module.css';
 import { HOME_MESSAGES } from '../../constants/locales/ja';
 import { fetchPrefectures, fetchOrganizations, getAreas } from '../../services/api';
@@ -46,6 +47,7 @@ const Home = () => {
 
   return (
     <div className={styles.container}>
+      <Seo path="/" />
       <Header />
       <main className={styles.main}>
         <h1 className={styles.title}>{HOME_MESSAGES.WELCOME}</h1>
@@ -79,6 +81,9 @@ const Home = () => {
                 </optgroup>
               ))}
             </select>
+            <Link to="/organizations?view=map" className={styles.heroMapLink}>
+              {HOME_MESSAGES.HERO_MAP_LINK}
+            </Link>
           </div>
         )}
 

@@ -1,0 +1,217 @@
+/* src/components/organizations/OrgCard/OrgCard.module.css */
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #e1e8ed;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #3498db;
+}
+
+.nameLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nameLink:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.badgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.7rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badgeDog {
+  background-color: #fdf1e3;
+  color: #b3611a;
+}
+
+.badgeCat {
+  background-color: #f3ecfb;
+  color: #6c3ea8;
+}
+
+.badgeOfficial {
+  background-color: #e6f6ec;
+  color: #1e7d43;
+}
+
+.badgeCaution {
+  background-color: #fdeaea;
+  color: #b02a2a;
+}
+
+.area {
+  display: inline-block;
+  background-color: #edf2f7;
+  color: #4a5568;
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.linkRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0 0 1rem;
+}
+
+.websiteChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  background-color: #ebf5fb;
+  transition: background-color 0.2s;
+  font-size: 0.95rem;
+}
+
+.websiteChip:hover {
+  background-color: #d6eaf8;
+}
+
+.linkBroken {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  background-color: #fdeaea;
+  color: #b02a2a;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.snsChip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f1f5f9;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.snsChip:hover {
+  background-color: #e2e8f0;
+  transform: translateY(-2px);
+}
+
+.caution {
+  background-color: #fdf2f2;
+  padding: 1rem;
+  border-left: 3px solid #e74c3c;
+  margin: 0 0 1rem;
+  border-radius: 0 4px 4px 0;
+  color: #922b21;
+  font-size: 0.9rem;
+}
+
+.note {
+  background-color: #fffde7;
+  padding: 1rem;
+  border-left: 3px solid #ffd600;
+  margin: 0 0 1rem;
+  border-radius: 0 4px 4px 0;
+  color: #5d4037;
+  font-size: 0.9rem;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.lastVerified {
+  color: #94a3b8;
+  font-size: 0.8rem;
+}
+
+.detailLink {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.detailLink:hover {
+  text-decoration: underline;
+}
+
+/* SNSタイプ別のアイコン色 */
+.snsIconTwitter {
+  color: #1DA1F2;
+}
+
+.snsIconFacebook {
+  color: #4267B2;
+}
+
+.snsIconInstagram {
+  color: #C13584;
+}
+
+.snsIconYoutube {
+  color: #FF0000;
+}
+
+.snsIconLine {
+  color: #00c300;
+}
+
+.snsIconWebsite {
+  color: #0070f3;
+}
+
+.snsIconTiktok {
+  color: #021614;
+}
+
+.snsIconOther {
+  color: #6c757d;
+}

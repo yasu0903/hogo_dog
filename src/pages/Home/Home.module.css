@@ -86,19 +86,7 @@
   margin-top: 1rem;
 }
 
-.heroMapLink {
-  display: inline-flex;
-  align-items: center;
-  color: var(--color-primary);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-}
-
-.heroMapLink:hover {
-  text-decoration: underline;
-}
-
+.heroMapLink,
 .heroAllLink {
   display: inline-flex;
   align-items: center;
@@ -113,6 +101,7 @@
   transition: background-color 0.2s, color 0.2s;
 }
 
+.heroMapLink:hover,
 .heroAllLink:hover {
   background-color: var(--color-primary);
   color: white;

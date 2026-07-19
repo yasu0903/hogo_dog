@@ -30,8 +30,9 @@ const Organizations = () => {
         // エリア一覧を取得
         const areasList = getAreas(prefsData);
 
-        // 掲載団体が1件もない都道府県は一覧に表示しない
-        const visibleOrgsData = orgsData.filter(org => org.listedCount > 0);
+        // 掲載団体が1件もない都道府県（listed_num: 0）は一覧に表示しない。
+        // listed_numを持たない古いデータを読んだ場合は非表示にせず全件表示する
+        const visibleOrgsData = orgsData.filter(org => org.listedCount !== 0);
 
         setPrefectures(prefsData);
         setAreas(areasList);

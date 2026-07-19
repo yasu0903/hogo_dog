@@ -52,20 +52,35 @@
   color: #cbd5e0;
 }
 
-.sourceInfo {
+/* 出典バナー */
+.sourceBanner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
   margin-bottom: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  background-color: #f0f7fc;
+  border-left: 4px solid #3498db;
+  border-radius: 0 6px 6px 0;
   font-size: 0.9rem;
+  color: #34495e;
 }
 
-.sourceInfo a {
+.sourceBanner p {
+  margin: 0;
+}
+
+.sourceBanner a {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
   color: #3498db;
   text-decoration: none;
+  white-space: nowrap;
 }
 
-.sourceInfo a:hover {
+.sourceBanner a:hover {
   text-decoration: underline;
 }
 
@@ -156,6 +171,112 @@
   margin-bottom: 1rem;
   padding-bottom: 0.8rem;
   border-bottom: 2px solid #3498db;
+}
+
+/* 検索・絞り込みバー */
+.filterBar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.searchInput {
+  flex: 1;
+  min-width: 220px;
+  padding: 0.6rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #2c3e50;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+.speciesFilter {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.speciesButton {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 9999px;
+  color: #4a5568;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.speciesButton:hover:not(.speciesButtonActive) {
+  border-color: #3498db;
+  color: #3498db;
+}
+
+.speciesButtonActive {
+  background-color: #3498db;
+  border-color: #3498db;
+  color: white;
+}
+
+.noResults {
+  margin: 2rem 0;
+  text-align: center;
+  color: #64748b;
+}
+
+/* 団体カードのバッジ */
+.badgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.7rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badgeDog {
+  background-color: #fdf1e3;
+  color: #b3611a;
+}
+
+.badgeCat {
+  background-color: #f3ecfb;
+  color: #6c3ea8;
+}
+
+.badgeOfficial {
+  background-color: #e6f6ec;
+  color: #1e7d43;
+}
+
+.badgeCaution {
+  background-color: #fdeaea;
+  color: #b02a2a;
+}
+
+.caution {
+  background-color: #fdf2f2;
+  padding: 1rem;
+  border-left: 3px solid #e74c3c;
+  margin: 1rem 0 0;
+  border-radius: 0 4px 4px 0;
+  color: #922b21;
+  font-size: 0.9rem;
 }
 
 .area {

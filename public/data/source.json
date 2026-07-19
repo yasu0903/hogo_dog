@@ -8,7 +8,8 @@
             "sha256": "287194d628d04b74d284a4ce59f702cc7e677a96eeaf92359605cf4d3c3389c8",
             "organization_num": 5,
             "note": "動物愛護管理の推進に関する団体登録制度。一覧は令和5年9月12日時点のPDF",
-            "listed_num": 5
+            "listed_num": 5,
+            "as_of": "令和5年9月12日"
         },
         {
             "no": "02",
@@ -18,7 +19,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/aomori.json は独自調査による主要団体を掲載",
-            "listed_num": 2
+            "listed_num": 2,
+            "as_of": "2026年7月"
         },
         {
             "no": "03",
@@ -28,7 +30,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "譲渡ボランティア登録制度はあるが名簿の公表は確認できず（2026年7月調査）。organizations/iwate.json は独自調査による主要団体を掲載",
-            "listed_num": 2
+            "listed_num": 2,
+            "as_of": "2026年7月"
         },
         {
             "no": "04",
@@ -38,7 +41,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "登録団体への譲渡制度はあるが一覧の公表は確認できず（2026年7月調査）。organizations/miyagi.json は独自調査による主要団体を掲載",
-            "listed_num": 2
+            "listed_num": 2,
+            "as_of": "2026年7月"
         },
         {
             "no": "05",
@@ -48,7 +52,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/akita.json は独自調査による主要団体を掲載",
-            "listed_num": 2
+            "listed_num": 2,
+            "as_of": "2026年7月"
         },
         {
             "no": "06",
@@ -58,7 +63,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/yamagata.json は独自調査による主要団体を掲載",
-            "listed_num": 1
+            "listed_num": 1,
+            "as_of": "2026年7月"
         },
         {
             "no": "07",
@@ -68,7 +74,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/fukushima.json は独自調査による主要団体を掲載",
-            "listed_num": 2
+            "listed_num": 2,
+            "as_of": "2026年7月"
         },
         {
             "no": "08",
@@ -78,7 +85,8 @@
             "sha256": "1addd027077277b9421d8c1ee9ef62e3cab9c41aaabe79f40112502d692e4025",
             "organization_num": 80,
             "note": "旧PDF(toubora20250318.pdf)は404。2026年5月26日版に更新",
-            "listed_num": 80
+            "listed_num": 80,
+            "as_of": "2026年5月26日"
         },
         {
             "no": "09",
@@ -88,7 +96,8 @@
             "sha256": "bdbda33ac87d971e8123f3296c46d4d7c8582da2f651e47e50936739346ff2ae",
             "organization_num": 14,
             "note": "動物愛護指導センターの登録団体等一覧（HTML）",
-            "listed_num": 14
+            "listed_num": 14,
+            "as_of": ""
         },
         {
             "no": "10",
@@ -98,7 +107,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。ぐんま犬猫パートナーシップ制度は販売事業者等が対象のため対象外",
-            "listed_num": 0
+            "listed_num": 0,
+            "as_of": "2026年7月"
         },
         {
             "no": "11",
@@ -108,16 +118,8 @@
             "sha256": "85fde32be65b9d8e29d7c374031e93bff0c864c426039220a36aa9f223c42d6e",
             "organization_num": 16,
             "note": "譲渡認定団体のリンク集（HTML）。2026年7月時点で16団体掲載",
-            "listed_num": 22
-        },
-        {
-            "no": "11",
-            "name": "埼玉県",
-            "source_url": "https://www.pref.saitama.lg.jp/b0716/doubutu-link-jyoutoninnteidanntai.html",
-            "file_url": "https://www.pref.saitama.lg.jp/b0716/doubutu-link-jyoutoninnteidanntai.html",
-            "sha256": "54bd7d71356c7c6f1b1757428d9ca562d4505fcc3e1d1dad106556776dd51731",
-            "organization_num": 22,
-            "listed_num": 22
+            "listed_num": 22,
+            "as_of": "2026年7月"
         },
         {
             "no": "12",
@@ -127,7 +129,8 @@
             "sha256": "9776775682d80c514a3d38882660f43d6d9922e9cdec56a024820aeca7845fd2",
             "organization_num": 16,
             "note": "譲渡等に関する登録団体16（トリミング関係1団体は含めず）",
-            "listed_num": 16
+            "listed_num": 16,
+            "as_of": ""
         },
         {
             "no": "13",
@@ -136,7 +139,8 @@
             "file_url": "https://wannyan.metro.tokyo.lg.jp/wp-content/uploads/2024/10/71d72c08c69d4e22df8835382e96bd8c-2.pdf",
             "sha256": "e2890472c1df2fb3708b9b2a1d98cb1080d382ffcabec47b646e1b8b7c2d5646",
             "organization_num": 47,
-            "listed_num": 44
+            "listed_num": 44,
+            "as_of": ""
         },
         {
             "no": "14",
@@ -146,7 +150,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県動物愛護センターに登録ボランティア制度はあるが一覧の公表は確認できず（2026年7月調査）",
-            "listed_num": 0
+            "listed_num": 0,
+            "as_of": "2026年7月"
         },
         {
             "no": "15",
@@ -156,7 +161,8 @@
             "sha256": "e2f319d372f246852d90af76d002370637b9702dd898e170a1b2c5c7a341663e",
             "organization_num": 16,
             "note": "譲渡ボランティア名簿（HTML、令和7年12月26日現在）。名簿中の個人ボランティア7件は氏名のみのため organizations/niigata.json には団体9件のみ掲載",
-            "listed_num": 9
+            "listed_num": 9,
+            "as_of": "令和7年12月26日"
         },
         {
             "no": "16",
@@ -166,7 +172,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/toyama.json は独自調査による主要団体を掲載",
-            "listed_num": 2
+            "listed_num": 2,
+            "as_of": "2026年7月"
         },
         {
             "no": "17",
@@ -176,7 +183,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/ishikawa.json は独自調査による主要団体を掲載",
-            "listed_num": 1
+            "listed_num": 1,
+            "as_of": "2026年7月"
         },
         {
             "no": "18",
@@ -186,7 +194,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/fukui.json は独自調査による主要団体を掲載",
-            "listed_num": 2
+            "listed_num": 2,
+            "as_of": "2026年7月"
         },
         {
             "no": "19",
@@ -196,7 +205,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/yamanashi.json は独自調査による主要団体を掲載",
-            "listed_num": 2
+            "listed_num": 2,
+            "as_of": "2026年7月"
         },
         {
             "no": "20",
@@ -206,7 +216,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/nagano.json は独自調査による主要団体を掲載",
-            "listed_num": 2
+            "listed_num": 2,
+            "as_of": "2026年7月"
         },
         {
             "no": "21",
@@ -216,7 +227,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/gifu.json は独自調査による主要団体を掲載",
-            "listed_num": 2
+            "listed_num": 2,
+            "as_of": "2026年7月"
         },
         {
             "no": "22",
@@ -226,7 +238,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/shizuoka.json は独自調査による主要団体を掲載",
-            "listed_num": 3
+            "listed_num": 3,
+            "as_of": "2026年7月"
         },
         {
             "no": "23",
@@ -236,7 +249,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/aichi.json は独自調査による主要団体を掲載",
-            "listed_num": 3
+            "listed_num": 3,
+            "as_of": "2026年7月"
         },
         {
             "no": "24",
@@ -246,7 +260,8 @@
             "sha256": "3260f53bf50f4153a10d0a98b65aa6a2b571e765c2ebb082b10e9bb307d6e82a",
             "organization_num": 20,
             "note": "あすまいる（動物愛護推進センター）の譲渡ボランティア団体一覧（HTML）。2026年7月時点20団体",
-            "listed_num": 20
+            "listed_num": 20,
+            "as_of": "2026年7月"
         },
         {
             "no": "25",
@@ -256,7 +271,8 @@
             "sha256": "e87344456c5dea01f95cff5d87613ba76d5986b99425238388e7b0a3b08e0489",
             "organization_num": 1,
             "note": "犬猫の譲渡活動を行っている団体等の紹介ページ（HTML）",
-            "listed_num": 1
+            "listed_num": 1,
+            "as_of": ""
         },
         {
             "no": "26",
@@ -266,7 +282,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "府による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/kyoto.json は独自調査による主要団体を掲載",
-            "listed_num": 2
+            "listed_num": 2,
+            "as_of": "2026年7月"
         },
         {
             "no": "27",
@@ -276,7 +293,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "譲渡登録団体制度はあるが一覧の公表は確認できず（2026年7月調査）。organizations/osaka.json は独自調査による主要団体を掲載",
-            "listed_num": 2
+            "listed_num": 2,
+            "as_of": "2026年7月"
         },
         {
             "no": "28",
@@ -286,7 +304,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/hyogo.json は独自調査による主要団体を掲載",
-            "listed_num": 2
+            "listed_num": 2,
+            "as_of": "2026年7月"
         },
         {
             "no": "29",
@@ -296,7 +315,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/nara.json は独自調査による主要団体を掲載",
-            "listed_num": 2
+            "listed_num": 2,
+            "as_of": "2026年7月"
         },
         {
             "no": "30",
@@ -306,7 +326,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/wakayama.json は独自調査による主要団体を掲載",
-            "listed_num": 1
+            "listed_num": 1,
+            "as_of": "2026年7月"
         },
         {
             "no": "31",
@@ -316,7 +337,8 @@
             "sha256": "2f6302394d57ee376487c9e8e97264adff76704ae9d20ee1ff89a90715677639",
             "organization_num": 7,
             "note": "登録譲渡ボランティア一覧（HTML、令和7年1月現在）。うち個人1件は氏名のみのため organizations/tottori.json には団体6件のみ掲載",
-            "listed_num": 6
+            "listed_num": 6,
+            "as_of": "令和7年1月"
         },
         {
             "no": "32",
@@ -326,7 +348,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/shimane.json は独自調査による主要団体を掲載",
-            "listed_num": 2
+            "listed_num": 2,
+            "as_of": "2026年7月"
         },
         {
             "no": "33",
@@ -336,7 +359,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "登録ボランティア団体制度はあるが一覧の公表は確認できず（2026年7月調査）。organizations/okayama.json は独自調査による主要団体を掲載",
-            "listed_num": 3
+            "listed_num": 3,
+            "as_of": "2026年7月"
         },
         {
             "no": "34",
@@ -346,7 +370,8 @@
             "sha256": "f93b428d2300adb09cf2d281c34397e5129fd552e73a164ae17ad54787ac5e83",
             "organization_num": 15,
             "note": "県動物愛護センターの協力団体等一覧（HTML）。2026年7月時点15件",
-            "listed_num": 15
+            "listed_num": 15,
+            "as_of": "2026年7月"
         },
         {
             "no": "35",
@@ -356,7 +381,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "保健所への譲渡団体登録制度はあるが一覧の公表は確認できず（2026年7月調査）。organizations/yamaguchi.json は独自調査による主要団体を掲載",
-            "listed_num": 3
+            "listed_num": 3,
+            "as_of": "2026年7月"
         },
         {
             "no": "36",
@@ -366,7 +392,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/tokushima.json は独自調査による主要団体を掲載",
-            "listed_num": 1
+            "listed_num": 1,
+            "as_of": "2026年7月"
         },
         {
             "no": "37",
@@ -376,7 +403,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "譲渡ボランティア制度はあるが一覧の公表は確認できず（2026年7月調査）。organizations/kagawa.json は独自調査による主要団体を掲載",
-            "listed_num": 2
+            "listed_num": 2,
+            "as_of": "2026年7月"
         },
         {
             "no": "38",
@@ -386,7 +414,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "譲渡仲介者登録名簿はあるがWeb公表は確認できず（2026年7月調査）。organizations/ehime.json は独自調査による主要団体を掲載",
-            "listed_num": 2
+            "listed_num": 2,
+            "as_of": "2026年7月"
         },
         {
             "no": "39",
@@ -396,7 +425,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/kochi.json は独自調査による主要団体を掲載",
-            "listed_num": 1
+            "listed_num": 1,
+            "as_of": "2026年7月"
         },
         {
             "no": "40",
@@ -406,7 +436,8 @@
             "sha256": "ad6db70451e8a15e2b066226df8f781550afa4ccfa56246a9721c18df2b3807b",
             "organization_num": 37,
             "note": "県動物愛護センター（公益財団法人福岡県動物愛護管理協会運営）のセンター登録団体一覧（HTML）。2026年7月時点37団体",
-            "listed_num": 37
+            "listed_num": 37,
+            "as_of": "2026年7月"
         },
         {
             "no": "41",
@@ -416,7 +447,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/saga.json は独自調査による主要団体を掲載",
-            "listed_num": 1
+            "listed_num": 1,
+            "as_of": "2026年7月"
         },
         {
             "no": "42",
@@ -426,7 +458,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/nagasaki.json は独自調査による主要団体を掲載",
-            "listed_num": 1
+            "listed_num": 1,
+            "as_of": "2026年7月"
         },
         {
             "no": "43",
@@ -436,7 +469,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/kumamoto.json は独自調査による主要団体を掲載",
-            "listed_num": 3
+            "listed_num": 3,
+            "as_of": "2026年7月"
         },
         {
             "no": "44",
@@ -446,7 +480,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。独自調査でも公式サイトを持つ民間譲渡団体を確認できず、organizations/oita.json は空リスト",
-            "listed_num": 0
+            "listed_num": 0,
+            "as_of": "2026年7月"
         },
         {
             "no": "45",
@@ -456,7 +491,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/miyazaki.json は独自調査による主要団体を掲載",
-            "listed_num": 1
+            "listed_num": 1,
+            "as_of": "2026年7月"
         },
         {
             "no": "46",
@@ -466,7 +502,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/kagoshima.json は独自調査による主要団体を掲載",
-            "listed_num": 3
+            "listed_num": 3,
+            "as_of": "2026年7月"
         },
         {
             "no": "47",
@@ -476,7 +513,8 @@
             "sha256": "",
             "organization_num": null,
             "note": "県による譲渡団体一覧の公表は確認できず（2026年7月調査）。organizations/okinawa.json は独自調査による主要団体を掲載",
-            "listed_num": 3
+            "listed_num": 3,
+            "as_of": "2026年7月"
         }
     ]
 }

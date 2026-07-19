@@ -6,16 +6,24 @@
             "id": 1,
             "name": "特定非営利活動法人もふっこひだ",
             "area": "岐阜",
+            "city": "飛騨地方",
+            "species": [],
+            "source_type": "independent",
             "url": "https://www.mofuhida.com/",
-            "note": "飛騨地方を中心に活動。県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "",
             "sns": []
         },
         {
             "id": 2,
             "name": "特定非営利活動法人出逢いの森",
             "area": "岐阜",
+            "city": "",
+            "species": [],
+            "source_type": "independent",
             "url": "https://deaimori.com/",
-            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "",
             "sns": []
         }
     ]

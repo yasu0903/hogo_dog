@@ -6,16 +6,24 @@
             "id": 1,
             "name": "特定非営利活動法人動物保護団体神戸アニマルリンク",
             "area": "兵庫",
+            "city": "",
+            "species": [],
+            "source_type": "independent",
             "url": "https://www.kobeanimallink.com/",
-            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "",
             "sns": []
         },
         {
             "id": 2,
             "name": "特定非営利活動法人りぐこうべ兵庫",
             "area": "兵庫",
+            "city": "",
+            "species": [],
+            "source_type": "independent",
             "url": "https://lig-kobe.com/",
-            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "",
             "sns": []
         }
     ]

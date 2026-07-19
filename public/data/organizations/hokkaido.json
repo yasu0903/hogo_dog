@@ -6,7 +6,11 @@
             "id": 1,
             "name": "特定非営利活動法人HOKKAIDOしっぽの会",
             "area": "北海道",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "https://shippo.or.jp/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -25,8 +29,14 @@
             "id": 2,
             "name": "非営利型一般社団法人ねこたまご",
             "area": "北海道",
+            "city": "",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
             "url": "https://www.nekotamago.org/",
-            "note": "保護猫の活動が中心",
+            "caution": "",
+            "note": "",
             "sns": [
                 {
                     "name": "ねこたまご X",
@@ -44,8 +54,14 @@
             "id": 3,
             "name": "一般社団法人猫たちを守る十勝Wishの会",
             "area": "北海道",
+            "city": "",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
             "url": "https://catcafe-wish.jimdofree.com/",
-            "note": "保護猫の活動が中心",
+            "caution": "",
+            "note": "",
             "sns": [
                 {
                     "name": "猫たちを守る十勝Wishの会 ブログ",
@@ -68,7 +84,11 @@
             "id": 4,
             "name": "一般社団法人ティアハイム十勝",
             "area": "北海道",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "https://www.tier-tokachi.com/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -92,7 +112,11 @@
             "id": 5,
             "name": "一般社団法人北のワニ舎",
             "area": "北海道",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "https://kitanowanisya.amebaownd.com/",
+            "caution": "",
             "note": "爬虫類の保護・譲渡が中心",
             "sns": []
         }

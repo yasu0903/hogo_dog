@@ -70,11 +70,27 @@ export const ORGANIZATION_DETAIL_MESSAGES = {
     BACK_TO_ORGANIZATION_LIST: '都道府県一覧へ戻る',
     ORGANIZAION_NOT_FOUND: '団体が見つかりません',
     AREA: 'エリア',
+    ACTIVITY_AREA: '活動地域',
     WEBSITE: '公式サイト',
     SNS: 'SNS',
     SOURCE: '情報ソース',
+    SOURCE_OFFICIAL: (prefecture, asOf) =>
+        `この一覧は${prefecture}公表の登録団体一覧${asOf ? `（${asOf}時点）` : ''}に基づいています。`,
+    SOURCE_INDEPENDENT: (prefecture) =>
+        `${prefecture}による登録団体一覧の公表がないため、独自調査に基づき掲載しています。`,
+    SOURCE_LINK: '出典を見る',
+    BADGE_DOG: '🐕 犬',
+    BADGE_CAT: '🐈 猫',
+    BADGE_OFFICIAL: '✅ 行政公表',
+    BADGE_CAUTION: '⚠️ 注意事項あり',
     BREADCRUMB_HOME: 'ホーム',
-    BREADCRUMB_ORGANIZATIONS: '団体一覧'
+    BREADCRUMB_ORGANIZATIONS: '団体一覧',
+    SEARCH_PLACEHOLDER: '団体名で検索',
+    SPECIES_FILTER_LABEL: '扱う動物',
+    SPECIES_ALL: 'すべて',
+    SPECIES_DOG: '🐕 犬',
+    SPECIES_CAT: '🐈 猫',
+    NO_MATCHING_ORGANIZATIONS: '条件に一致する団体がありません'
 }
 
 export const FILTER_MESSAGES = {

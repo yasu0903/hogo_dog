@@ -6,16 +6,24 @@
             "id": 1,
             "name": "World love heart",
             "area": "奈良",
+            "city": "大和郡山市",
+            "species": [],
+            "source_type": "independent",
             "url": "https://worldloveheart-nara.jimdofree.com/",
-            "note": "大和郡山市で活動。県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "",
             "sns": []
         },
         {
             "id": 2,
             "name": "動物保護団体りぼん",
             "area": "奈良",
+            "city": "",
+            "species": [],
+            "source_type": "independent",
             "url": "https://ribbon-foster.jimdofree.com/",
-            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "",
             "sns": []
         }
     ]

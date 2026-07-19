@@ -6,24 +6,38 @@
             "id": 1,
             "name": "特定非営利活動法人動物たちを守る会ケルビム",
             "area": "沖縄",
+            "city": "宜野湾市・うるま市",
+            "species": [],
+            "source_type": "independent",
             "url": "https://www.cherubims.org/",
-            "note": "宜野湾市・うるま市でシェルターを運営。県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "シェルターを運営",
             "sns": []
         },
         {
             "id": 2,
             "name": "一般社団法人琉球わんにゃんゆいまーる",
             "area": "沖縄",
+            "city": "",
+            "species": [],
+            "source_type": "independent",
             "url": "https://ryukyuwannyanyuimaru.org/",
-            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "",
             "sns": []
         },
         {
             "id": 3,
             "name": "特定非営利活動法人ワンズパートナーの会",
             "area": "沖縄",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "independent",
             "url": "https://onesfamily.ti-da.net/",
-            "note": "犬の保護が中心。県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "",
             "sns": []
         }
     ]

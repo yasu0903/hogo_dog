@@ -6,8 +6,12 @@
             "id": 1,
             "name": "アニマルリンク鳥取",
             "area": "鳥取",
+            "city": "東部地域",
+            "species": [],
+            "source_type": "official",
             "url": "https://www.instagram.com/animallink_tottori/",
-            "note": "東部地域／県の登録譲渡ボランティア一覧より",
+            "caution": "",
+            "note": "",
             "sns": [
                 {
                     "name": "アニマルリンク鳥取 ブログ",
@@ -20,8 +24,12 @@
             "id": 2,
             "name": "猫じゃらし",
             "area": "鳥取",
+            "city": "中部地域",
+            "species": [],
+            "source_type": "official",
             "url": "https://nekojarashi-org.jimdofree.com/",
-            "note": "中部地域／県の登録譲渡ボランティア一覧より",
+            "caution": "",
+            "note": "",
             "sns": [
                 {
                     "name": "猫じゃらし Instagram",
@@ -39,16 +47,24 @@
             "id": 3,
             "name": "米子犬猫NET",
             "area": "鳥取",
+            "city": "西部地域",
+            "species": [],
+            "source_type": "official",
             "url": "https://www.facebook.com/yonagoinuneko.inu/",
-            "note": "西部地域／県の登録譲渡ボランティア一覧より",
+            "caution": "",
+            "note": "",
             "sns": []
         },
         {
             "id": 4,
             "name": "Doggys smile",
             "area": "鳥取",
+            "city": "西部地域",
+            "species": [],
+            "source_type": "official",
             "url": "https://doggyssmile.jimdofree.com/",
-            "note": "西部地域／県の登録譲渡ボランティア一覧より",
+            "caution": "",
+            "note": "",
             "sns": [
                 {
                     "name": "Doggys smile Instagram",
@@ -61,16 +77,24 @@
             "id": 5,
             "name": "ねこいえ米子",
             "area": "鳥取",
+            "city": "西部地域",
+            "species": [],
+            "source_type": "official",
             "url": "https://nekoieyonago.com/",
-            "note": "西部地域／県の登録譲渡ボランティア一覧より",
+            "caution": "",
+            "note": "",
             "sns": []
         },
         {
             "id": 6,
             "name": "にゃんこのお家",
             "area": "鳥取",
+            "city": "西部地域",
+            "species": [],
+            "source_type": "official",
             "url": "https://www.instagram.com/nyankonoouchi224",
-            "note": "西部地域／県の登録譲渡ボランティア一覧より",
+            "caution": "",
+            "note": "",
             "sns": []
         }
     ]

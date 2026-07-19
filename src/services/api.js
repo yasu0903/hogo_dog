@@ -116,7 +116,9 @@ export const fetchOrganizations = async () => {
         sourceUrl: source.source_url,
         fileUrl: source.file_url,
         organizationCount: source.organization_num,
-        listedCount: source.listed_num
+        listedCount: source.listed_num,
+        asOf: source.as_of,
+        isOfficial: Boolean(source.source_url)
       }));
     }
     
@@ -169,7 +171,11 @@ export const fetchOrganizationDetail = async (prefectureId) => {
         id: org.id,
         name: org.name,
         area: org.area,
+        city: org.city,
+        species: org.species || [],
+        sourceType: org.source_type,
         website: org.url,
+        caution: org.caution,
         note: org.note,
         sns: org.sns
       }));

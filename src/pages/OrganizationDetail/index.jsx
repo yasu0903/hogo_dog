@@ -52,6 +52,10 @@ const OrganizationDetail = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(PAGINATION_CONSTANT.NUM_PER_PAGE); // 1ページに表示する団体数
 
+  // 絞り込み用の状態
+  const [speciesFilter, setSpeciesFilter] = useState('all'); // 'all' | 'dog' | 'cat'
+  const [searchQuery, setSearchQuery] = useState('');
+
   useEffect(() => {
     const loadData = async () => {
       try {
@@ -74,13 +78,36 @@ const OrganizationDetail = () => {
     loadData();
   }, [id]);
 
+  // 絞り込み(犬/猫フィルタ + 団体名の部分一致検索)
+  const filteredOrganizations = organizations.filter(org => {
+    if (speciesFilter !== 'all' && !(org.species || []).includes(speciesFilter)) {
+      return false;
+    }
+    const query = searchQuery.trim().toLowerCase();
+    if (query && !org.name.toLowerCase().includes(query)) {
+      return false;
+    }
+    return true;
+  });
+
+  // 絞り込み条件が変わったら1ページ目に戻す
+  const handleSpeciesFilterChange = (value) => {
+    setSpeciesFilter(value);
+    setCurrentPage(1);
+  };
+
+  const handleSearchQueryChange = (value) => {
+    setSearchQuery(value);
+    setCurrentPage(1);
+  };
+
   // 表示すべき団体のインデックス計算
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentOrganizations = organizations.slice(indexOfFirstItem, indexOfLastItem);
+  const currentOrganizations = filteredOrganizations.slice(indexOfFirstItem, indexOfLastItem);
 
   // 全ページ数を計算
-  const totalPages = Math.ceil(organizations.length / itemsPerPage);
+  const totalPages = Math.ceil(filteredOrganizations.length / itemsPerPage);
 
   // ページ変更ハンドラー
   const handlePageChange = (pageNumber) => {
@@ -226,22 +253,57 @@ const OrganizationDetail = () => {
 
         <h1 className={styles.title}>{`${prefectureName}の保護犬団体（${organizations.length}件）`}</h1>
 
-        {source?.sourceUrl && (
-          <p className={styles.sourceInfo}>
-            <a href={source.sourceUrl} target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLink} /> {ORGANIZATION_DETAIL_MESSAGES.SOURCE}
-            </a>
-          </p>
+        {source && (
+          <div className={styles.sourceBanner}>
+            <p>
+              {source.isOfficial
+                ? ORGANIZATION_DETAIL_MESSAGES.SOURCE_OFFICIAL(prefectureName, source.asOf)
+                : ORGANIZATION_DETAIL_MESSAGES.SOURCE_INDEPENDENT(prefectureName)}
+            </p>
+            {source.sourceUrl && (
+              <a href={source.sourceUrl} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLink} /> {ORGANIZATION_DETAIL_MESSAGES.SOURCE_LINK}
+              </a>
+            )}
+          </div>
         )}
 
         <div className={styles.backLink}>
           <Link to="/organizations">{ORGANIZATION_DETAIL_MESSAGES.BACK_TO_ORGANIZATION_LIST}</Link>
         </div>
 
-        {organizations.length > 0 && (
-          <div className={styles.resultsInfo}>
-            <p>全{organizations.length}件中 {indexOfFirstItem + 1}-{Math.min(indexOfLastItem, organizations.length)}件を表示</p>
+        <div className={styles.filterBar}>
+          <input
+            type="search"
+            className={styles.searchInput}
+            placeholder={ORGANIZATION_DETAIL_MESSAGES.SEARCH_PLACEHOLDER}
+            value={searchQuery}
+            onChange={(e) => handleSearchQueryChange(e.target.value)}
+            aria-label={ORGANIZATION_DETAIL_MESSAGES.SEARCH_PLACEHOLDER}
+          />
+          <div className={styles.speciesFilter} role="group" aria-label={ORGANIZATION_DETAIL_MESSAGES.SPECIES_FILTER_LABEL}>
+            {[
+              { value: 'all', label: ORGANIZATION_DETAIL_MESSAGES.SPECIES_ALL },
+              { value: 'dog', label: ORGANIZATION_DETAIL_MESSAGES.SPECIES_DOG },
+              { value: 'cat', label: ORGANIZATION_DETAIL_MESSAGES.SPECIES_CAT }
+            ].map(option => (
+              <button
+                key={option.value}
+                className={`${styles.speciesButton} ${speciesFilter === option.value ? styles.speciesButtonActive : ''}`}
+                onClick={() => handleSpeciesFilterChange(option.value)}
+              >
+                {option.label}
+              </button>
+            ))}
           </div>
+        </div>
+
+        {filteredOrganizations.length > 0 ? (
+          <div className={styles.resultsInfo}>
+            <p>全{filteredOrganizations.length}件中 {indexOfFirstItem + 1}-{Math.min(indexOfLastItem, filteredOrganizations.length)}件を表示</p>
+          </div>
+        ) : (
+          <p className={styles.noResults}>{ORGANIZATION_DETAIL_MESSAGES.NO_MATCHING_ORGANIZATIONS}</p>
         )}
         {totalPages > 1 && <Pagination />}
 
@@ -249,7 +311,25 @@ const OrganizationDetail = () => {
           {currentOrganizations.map(org => (
             <div key={org.id} className={styles.orgItem}>
               <h2>{org.name}</h2>
-              <p className={styles.area}>{ORGANIZATION_DETAIL_MESSAGES.AREA}: {org.area}</p>
+
+              <div className={styles.badgeRow}>
+                {org.species?.includes('dog') && (
+                  <span className={`${styles.badge} ${styles.badgeDog}`}>{ORGANIZATION_DETAIL_MESSAGES.BADGE_DOG}</span>
+                )}
+                {org.species?.includes('cat') && (
+                  <span className={`${styles.badge} ${styles.badgeCat}`}>{ORGANIZATION_DETAIL_MESSAGES.BADGE_CAT}</span>
+                )}
+                {org.sourceType === 'official' && (
+                  <span className={`${styles.badge} ${styles.badgeOfficial}`}>{ORGANIZATION_DETAIL_MESSAGES.BADGE_OFFICIAL}</span>
+                )}
+                {org.caution && (
+                  <span className={`${styles.badge} ${styles.badgeCaution}`}>{ORGANIZATION_DETAIL_MESSAGES.BADGE_CAUTION}</span>
+                )}
+              </div>
+
+              <p className={styles.area}>
+                {ORGANIZATION_DETAIL_MESSAGES.ACTIVITY_AREA}: {org.area}{org.city ? `・${org.city}` : ''}
+              </p>
 
               <div className={styles.linkRow}>
                 {org.website && (
@@ -281,6 +361,8 @@ const OrganizationDetail = () => {
                   );
                 })}
               </div>
+
+              {org.caution && <p className={styles.caution}>{org.caution}</p>}
 
               {org.note && <p className={styles.note}>{org.note}</p>}
 

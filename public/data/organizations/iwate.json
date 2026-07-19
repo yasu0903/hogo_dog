@@ -6,16 +6,26 @@
             "id": 1,
             "name": "動物いのちの会いわて",
             "area": "岩手",
+            "city": "",
+            "species": [],
+            "source_type": "independent",
             "url": "https://inochiiwate.com/",
-            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "",
             "sns": []
         },
         {
             "id": 2,
             "name": "認定特定非営利活動法人もりねこ",
             "area": "岩手",
+            "city": "",
+            "species": [
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://www.morineko.org/",
-            "note": "保護猫の活動が中心。県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "",
             "sns": []
         }
     ]

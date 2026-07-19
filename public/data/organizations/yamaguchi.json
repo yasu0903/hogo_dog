@@ -6,24 +6,36 @@
             "id": 1,
             "name": "認定特定非営利活動法人ちびたまのしっぽ愛護会",
             "area": "山口",
+            "city": "長門市",
+            "species": [],
+            "source_type": "independent",
             "url": "https://chibitama.or.jp/",
-            "note": "長門市で活動。県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "",
             "sns": []
         },
         {
             "id": 2,
             "name": "ケダマの会",
             "area": "山口",
+            "city": "田布施町",
+            "species": [],
+            "source_type": "independent",
             "url": "https://kedamanokai.org/",
-            "note": "田布施町で活動。県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "",
             "sns": []
         },
         {
             "id": 3,
             "name": "特定非営利活動法人青い鳥動物愛護会",
             "area": "山口",
+            "city": "防府市",
+            "species": [],
+            "source_type": "independent",
             "url": "http://aoitori-aigo.org/",
-            "note": "防府市で活動。県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "",
             "sns": []
         }
     ]

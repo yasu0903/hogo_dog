@@ -6,16 +6,24 @@
             "id": 1,
             "name": "特定非営利活動法人SORAアニマルシェルター",
             "area": "福島",
+            "city": "",
+            "species": [],
+            "source_type": "independent",
             "url": "https://sora.ne.jp/",
-            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "",
             "sns": []
         },
         {
             "id": 2,
             "name": "特定非営利活動法人動物愛護団体LYSTA",
             "area": "福島",
+            "city": "いわき市",
+            "species": [],
+            "source_type": "independent",
             "url": "https://lysta.me/",
-            "note": "いわき市で活動。県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "",
             "sns": [
                 {
                     "name": "LYSTA ブログ",

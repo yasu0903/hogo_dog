@@ -54,5 +54,12 @@ Uses FontAwesome React components for social media icons with dynamic icon mappi
 
 ### Data File Structure
 - Prefecture files follow: `{no, name, english_name, area}` format
-- Organization files follow: `{organizations: [{id, name, area, url, note, sns}]}` format
+- Organization files follow: `{organizations: [{id, name, area, city, species, source_type, url, caution, note, sns}]}` format
+  - `species`: array of `"dog"` / `"cat"` (empty array = 未確認, shown without badges)
+  - `city`: 活動市区町村・地域 (empty string if unknown; displayed as `{area}・{city}`)
+  - `source_type`: `"official"` (県公表一覧掲載) or `"independent"` (独自調査)
+  - `caution`: 注意事項 (e.g. 引取り不可), rendered as a warning on the card
+  - `note`: free text only — 出典・地域・犬猫の別 must go in the structured fields above, not here
 - SNS objects use `{type, url, name}` structure for social media links
+- `source.json` entries include `as_of` (時点, e.g. "令和5年9月12日") shown in the per-prefecture source banner; `source_url` non-empty marks the prefecture list as officially published
+- Never include phone numbers in data files (個人情報方針); `scripts/migrate_phase2_notes.py` contains the note-migration logic and a phone-number validation check

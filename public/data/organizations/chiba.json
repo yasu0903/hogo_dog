@@ -6,7 +6,11 @@
             "id": 1,
             "name": "NPO法人 犬と猫のためのライフボート",
             "area": "千葉",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "https://www.lifeboat.or.jp",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -45,7 +49,11 @@
             "id": 2,
             "name": "一般社団法人 アルマ",
             "area": "東京",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "http://alma.or.jp/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -94,7 +102,13 @@
             "id": 3,
             "name": "ボーダーコリーレスキューネットワーク",
             "area": "",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "https://www.bcrn.jp/",
+            "caution": "",
             "note": "ボーダーコリーのみ",
             "sns": [
                 {
@@ -108,8 +122,12 @@
             "id": 4,
             "name": "アグリドッグレスキュー",
             "area": "埼玉",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "https://aguri.nomaki.jp/",
-            "note": "埼玉県",
+            "caution": "",
+            "note": "",
             "sns": [
                 {
                     "name": "アグリドッグレスキュー",
@@ -132,7 +150,11 @@
             "id": 5,
             "name": "GUNDOG RESCUE CACI",
             "area": "千葉",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "https://cac-ichikawa.com/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -161,7 +183,11 @@
             "id": 6,
             "name": "ちばわん",
             "area": "千葉",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "https://chibawan.net/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -190,7 +216,11 @@
             "id": 7,
             "name": "ビアディー・レスキュー・ネットワーク",
             "area": "千葉",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "https://www2u.biglobe.ne.jp/~BDN/BRN.html",
+            "caution": "",
             "note": "",
             "sns": []
         },
@@ -198,7 +228,11 @@
             "id": 8,
             "name": "ふがふがレスキュークラブ",
             "area": "千葉",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "https://toysya.sakura.ne.jp/fuga/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -212,7 +246,11 @@
             "id": 9,
             "name": "Animal Rescue Chida",
             "area": "千葉",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "https://arch2013.org/index.html",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -251,7 +289,11 @@
             "id": 10,
             "name": "Doggy☆Days",
             "area": "千葉",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "",
+            "caution": "",
             "note": "",
             "sns": []
         },
@@ -259,7 +301,11 @@
             "id": 11,
             "name": "theVOICE(ぼいす)",
             "area": "千葉",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "https://thevoice-japan.org/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -278,7 +324,11 @@
             "id": 12,
             "name": "TSR(チームシュナウザーレスキュー)",
             "area": "千葉",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "https://tschnar.jimdofree.com/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -292,8 +342,12 @@
             "id": 13,
             "name": "アイドッグレスキュー隊",
             "area": "東京",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "http://aidog.jpn.com/",
-            "note": "東京都",
+            "caution": "",
+            "note": "",
             "sns": [
                 {
                     "name": "アイドッグ活動日記",
@@ -321,7 +375,11 @@
             "id": 14,
             "name": "公益財団法人ヒューマニン財団",
             "area": "千葉",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "http://humanin.or.jp/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -335,7 +393,11 @@
             "id": 15,
             "name": "ゆめネコ譲渡会",
             "area": "千葉",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "http://yume-neko.net/",
+            "caution": "",
             "note": "",
             "sns": []
         },
@@ -343,8 +405,12 @@
             "id": 16,
             "name": "いぬ助け",
             "area": "千葉",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "http://www.inudasuke.com",
-            "note": "千葉県",
+            "caution": "",
+            "note": "",
             "sns": [
                 {
                     "name": "いぬ助け",

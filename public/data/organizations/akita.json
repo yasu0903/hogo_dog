@@ -6,16 +6,30 @@
             "id": 1,
             "name": "特定非営利活動法人いぬ・ねこネットワーク秋田",
             "area": "秋田",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://www.inuneko-akita.net/",
-            "note": "行政と合同で譲渡会を開催。県公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "シェルターはなく、一般の方からの犬猫の引き取りは行っていません。",
+            "note": "行政と合同で譲渡会を開催",
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "一般社団法人ONE FOR AKITA",
             "area": "秋田",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "independent",
             "url": "https://www.saveakita.or.jp/ofa/",
-            "note": "秋田犬の保護・譲渡が中心。県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "",
+            "note": "秋田犬の保護・譲渡が中心",
             "sns": [
                 {
                     "name": "ONE FOR AKITA X",
@@ -27,7 +41,8 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/one.for.akita.project/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         }
     ]
 }

@@ -6,9 +6,17 @@
             "id": 1,
             "name": "特定非営利活動法人アニマルライブ",
             "area": "佐賀",
+            "city": "有田町",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://animal-live.or.jp/",
-            "note": "有田町にシェルターを運営。県公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "",
+            "note": "シェルターを運営",
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

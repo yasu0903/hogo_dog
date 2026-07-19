@@ -197,3 +197,8 @@ package-lock.json
 
 # vite
 .vite/
+# Phase 2.5 enrichment pipeline intermediate outputs (regenerable)
+scripts/enrichment/out/
+
+# ビルド時に scripts/build_search_index.mjs が生成するファイル
+/public/data/search_index.json

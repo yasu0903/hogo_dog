@@ -5,22 +5,28 @@ import { FILTER_MESSAGES } from '../../../constants/locales/ja';
 const AreaFilter = ({ areas, selectedArea, onFilterChange }) => {
   return (
     <div className={styles.filterContainer}>
-      <label htmlFor="area-select" className={styles.filterLabel}>
-        {FILTER_MESSAGES.AREA.LABEL}
-      </label>
-      <select
-        id="area-select"
-        value={selectedArea}
-        onChange={(e) => onFilterChange(e.target.value)}
-        className={styles.filterSelect}
-      >
-        <option value="">{FILTER_MESSAGES.AREA.ALL_AREA}</option>
+      <span className={styles.filterLabel}>{FILTER_MESSAGES.AREA.LABEL}</span>
+      <div className={styles.chips} role="group" aria-label={FILTER_MESSAGES.AREA.LABEL}>
+        <button
+          type="button"
+          className={`${styles.chip} ${selectedArea === '' ? styles.chipActive : ''}`}
+          aria-pressed={selectedArea === ''}
+          onClick={() => onFilterChange('')}
+        >
+          {FILTER_MESSAGES.AREA.ALL_AREA}
+        </button>
         {areas.map((area) => (
-          <option key={area} value={area}>
+          <button
+            key={area}
+            type="button"
+            className={`${styles.chip} ${selectedArea === area ? styles.chipActive : ''}`}
+            aria-pressed={selectedArea === area}
+            onClick={() => onFilterChange(area)}
+          >
             {area}
-          </option>
+          </button>
         ))}
-      </select>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,289 @@
+/* src/pages/Organization/Organization.module.css */
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.main {
+  max-width: 900px;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  flex: 1;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+  background-color: var(--color-bg);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.breadcrumb a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbSeparator {
+  color: var(--color-border);
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--color-ink);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.badgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.8rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.badgeDog {
+  background-color: #fdf1e3;
+  color: #b3611a;
+}
+
+.badgeCat {
+  background-color: #f3ecfb;
+  color: #6c3ea8;
+}
+
+.badgeOfficial {
+  background-color: #e6f6ec;
+  color: #1e7d43;
+}
+
+.badgeCaution {
+  background-color: #fdeaea;
+  color: #b02a2a;
+}
+
+.infoList {
+  margin: 0 0 1.5rem;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.infoRow {
+  display: flex;
+  border-bottom: 1px solid #e1e8ed;
+}
+
+.infoRow:last-child {
+  border-bottom: none;
+}
+
+.infoRow dt {
+  flex: 0 0 140px;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: var(--color-ink);
+  font-size: 0.9rem;
+}
+
+.infoRow dd {
+  flex: 1;
+  padding: 1rem;
+  margin: 0;
+  color: var(--color-ink);
+  font-size: 0.95rem;
+  word-break: break-all;
+}
+
+.websiteLink {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.websiteLink:hover {
+  text-decoration: underline;
+}
+
+.linkBroken {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  background-color: #fdeaea;
+  color: #b02a2a;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.snsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.snsLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.snsLink span {
+  color: var(--color-primary);
+}
+
+.snsLink:hover span {
+  text-decoration: underline;
+}
+
+.sourceLink {
+  color: var(--color-primary);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.sourceLink:hover {
+  text-decoration: underline;
+}
+
+.caution {
+  background-color: #fdf2f2;
+  padding: 1rem;
+  border-left: 3px solid #e74c3c;
+  margin: 0 0 1rem;
+  border-radius: 0 4px 4px 0;
+  color: #922b21;
+  font-size: 0.95rem;
+}
+
+.note {
+  background-color: #fffde7;
+  padding: 1rem;
+  border-left: 3px solid #ffd600;
+  margin: 0 0 1rem;
+  border-radius: 0 4px 4px 0;
+  color: #5d4037;
+  font-size: 0.95rem;
+}
+
+.lastVerified {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.backLink {
+  margin-top: 2rem;
+}
+
+.backLink a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  background-color: var(--color-surface-alt);
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+}
+
+.backLink a:hover {
+  color: var(--color-primary-strong);
+  background-color: var(--color-primary-soft);
+}
+
+.backLink a::before {
+  content: "←";
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* SNSタイプ別のアイコン色 */
+.snsIconTwitter {
+  color: #1DA1F2;
+}
+
+.snsIconFacebook {
+  color: #4267B2;
+}
+
+.snsIconInstagram {
+  color: #C13584;
+}
+
+.snsIconYoutube {
+  color: #FF0000;
+}
+
+.snsIconLine {
+  color: #00c300;
+}
+
+.snsIconWebsite {
+  color: var(--color-primary);
+}
+
+.snsIconTiktok {
+  color: #021614;
+}
+
+.snsIconOther {
+  color: #6c757d;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 1.2rem;
+    width: 95%;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .infoRow {
+    flex-direction: column;
+  }
+
+  .infoRow dt {
+    flex: none;
+  }
+}

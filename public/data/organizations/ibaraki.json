@@ -6,8 +6,11 @@
             "id": 1,
             "name": "NPO法人 ポチたま会",
             "area": "茨城",
-            "city": "",
-            "species": [],
+            "city": "取手市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "http://www7b.biglobe.ne.jp/~inu-neko/",
             "caution": "",
@@ -18,14 +21,18 @@
                     "type": "blog",
                     "url": "https://hogodiary.jugem.jp/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "NPO法人 保健所の成犬・猫の譲渡を推進する会",
             "area": "神奈川",
-            "city": "",
-            "species": [],
+            "city": "町田市・横浜市青葉区",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "http://npo.seikenjoto.org",
             "caution": "飼えなくなった犬・猫のお引取りは致しません。",
@@ -41,14 +48,18 @@
                     "type": "blog",
                     "url": "http://jouto.blog69.fc2.com/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 3,
             "name": "NPO法人 犬と猫のためのライフボート",
             "area": "千葉",
             "city": "",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://www.lifeboat.or.jp",
             "caution": "",
@@ -84,7 +95,8 @@
                     "type": "youtube",
                     "url": "https://www.youtube.com/c/LifeboatJP"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 4,
@@ -104,7 +116,8 @@
                     "type": "blog",
                     "url": "http://staffbcrn.blog38.fc2.com/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 5,
@@ -122,18 +135,21 @@
                     "type": "blog",
                     "url": "https://nacouravik.exblog.jp/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 6,
             "name": "GUNDOG RESCUE CACI",
             "area": "千葉",
-            "city": "",
-            "species": [],
+            "city": "市川市",
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://cac-ichikawa.com/",
             "caution": "",
-            "note": "",
+            "note": "鳥猟犬(ガンドッグ)の保護が中心",
             "sns": [
                 {
                     "name": "GUNDOG RESCUE CACI",
@@ -155,17 +171,20 @@
                     "type": "x",
                     "url": "https://x.com/RescueCaci"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 7,
             "name": "シェルティ・レスキュー",
             "area": "東京",
             "city": "",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "http://www.help-sheltie.net",
-            "caution": "",
+            "caution": "繁殖者による譲渡希望は有償無償にかかわらず掲載いたしません。",
             "note": "",
             "sns": [
                 {
@@ -178,14 +197,18 @@
                     "type": "blog",
                     "url": "https://ameblo.jp/help-sheltie-azukari/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 8,
             "name": "NPO法人 動物愛護を考える茨城県民ネットワークCAPIN",
             "area": "茨城",
-            "city": "",
-            "species": [],
+            "city": "つくば市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://www.capin.love",
             "caution": "",
@@ -196,16 +219,20 @@
                     "type": "blog",
                     "url": "https://ameblo.jp/capin-blog/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 9,
             "name": "一般社団法人 アルマ",
             "area": "東京",
-            "city": "",
-            "species": [],
+            "city": "目黒区・葛飾区",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
-            "url": "http://alma.or.jp/",
+            "url": "https://alma.or.jp/",
             "caution": "",
             "note": "",
             "sns": [
@@ -249,26 +276,32 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/npo.alma"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 10,
             "name": "動物保護団体 ダンデライオン",
             "area": "埼玉",
-            "city": "",
-            "species": [],
+            "city": "川越市",
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://dandelion2008.jimdofree.com/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 11,
             "name": "NPO法人 ワンワンパーティクラブ",
             "area": "",
-            "city": "",
-            "species": [],
+            "city": "富士市・足立区・安曇野市・滑川町・新宿区・立川市",
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "http://www.wanwan.org/",
             "caution": "",
@@ -279,7 +312,8 @@
                     "type": "x",
                     "url": "https://x.com/WPC1994"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 12,
@@ -297,10 +331,13 @@
             "id": 13,
             "name": "ペットと暮らそう（一般社団法人 動物共生推進事業）",
             "area": "",
-            "city": "",
-            "species": [],
+            "city": "松戸市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
-            "url": "http://with-pets.info/",
+            "url": "https://with-pets.info/",
             "caution": "",
             "note": "",
             "sns": [
@@ -324,19 +361,23 @@
                     "type": "tiktok",
                     "url": "https://www.tiktok.com/@with.pets"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 14,
             "name": "ジャックの里",
             "area": "東京",
             "city": "",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "http://www.jfcj.net/jht/",
-            "caution": "",
+            "caution": "長時間留守番のある家庭、単身者、高齢者のみの家庭、申請審査に適合しない家庭等には譲渡できません。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 15,
@@ -354,11 +395,14 @@
             "id": 16,
             "name": "特定非営利活動法人 動物愛護団体 ANGELS",
             "area": "滋賀",
-            "city": "",
-            "species": [],
+            "city": "高島市・大阪市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "http://angels2005.org/",
-            "caution": "",
+            "caution": "譲渡には事前アンケートによる予約が必要です。",
             "note": "",
             "sns": [
                 {
@@ -386,14 +430,18 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/angels1947/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 17,
             "name": "公益財団法人 ヒューマニン財団",
             "area": "",
-            "city": "",
-            "species": [],
+            "city": "杉並区",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "http://humanin.or.jp/",
             "caution": "",
@@ -409,14 +457,18 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/humaninfoundation/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 18,
             "name": "特定非営利活動法人 捨て犬ゼロ",
             "area": "東京",
-            "city": "",
-            "species": [],
+            "city": "日光市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://www.pfirst.jp/protected_activities.html",
             "caution": "",
@@ -432,16 +484,20 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/psfirst_official/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 19,
             "name": "PEACE TAILS",
             "area": "神奈川",
-            "city": "",
-            "species": [],
+            "city": "横浜市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
-            "url": "http://peacetails.org/",
+            "url": "https://peacetails.org/",
             "caution": "",
             "note": "",
             "sns": [
@@ -450,40 +506,51 @@
                     "type": "blog",
                     "url": "https://peacetails.org/staffblog/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 20,
             "name": "個人活動家(T.K)",
             "area": "茨城",
-            "city": "",
-            "species": [],
+            "city": "つくば市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
-            "url": "http://petsupport.jimdofree.com/",
-            "caution": "",
+            "url": "https://petsupport.jimdofree.com/",
+            "caution": "小さいお子さんのいる家庭へは引渡し不可。一部の犬は当院への診察歴や段差のない家等の条件あり。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 21,
             "name": "個人活動家（チャコまま）",
             "area": "茨城",
             "city": "",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://chakomama.net/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 22,
             "name": "NPO法人 Tier Heim KOKUA",
             "area": "",
-            "city": "",
-            "species": [],
+            "city": "渋谷区",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
-            "url": "http://tierheim-kokua.aloha703.com/",
+            "url": "https://tierheim-kokua.aloha703.com/",
             "caution": "",
             "note": "",
             "sns": [
@@ -507,14 +574,17 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/tierheim_kokua/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 23,
             "name": "特定非営利活動法人 家庭犬しつけ協会",
             "area": "東京",
-            "city": "",
-            "species": [],
+            "city": "台東区",
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://cdta.or.jp",
             "caution": "",
@@ -530,14 +600,17 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/kateikensitsuke_kyoukai/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 24,
             "name": "アグリドッグレスキュー",
             "area": "埼玉",
             "city": "",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://aguri.nomaki.jp/",
             "caution": "",
@@ -558,14 +631,17 @@
                     "type": "blog",
                     "url": "https://ameblo.jp/micteru/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 25,
             "name": "認定特定非営利活動法人 キドックス",
             "area": "茨城",
             "city": "",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://kidogs.org/",
             "caution": "",
@@ -576,17 +652,21 @@
                     "type": "blog",
                     "url": "https://kidogs.org/blog"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 26,
             "name": "わんにゃんＭ’ｓ",
             "area": "茨城",
-            "city": "",
-            "species": [],
+            "city": "守谷市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://wannyanms.wixsite.com/home",
-            "caution": "",
+            "caution": "譲渡にあたっては、その子にかかった医療費を里親が負担する必要があります。",
             "note": "",
             "sns": [
                 {
@@ -594,14 +674,17 @@
                     "type": "blog",
                     "url": "https://www.facebook.com/wannyanms/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 27,
             "name": "たんぽぽの里",
             "area": "",
-            "city": "",
-            "species": [],
+            "city": "相模原市",
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://tanpopo-nyans.amebaownd.com",
             "caution": "",
@@ -632,14 +715,17 @@
                     "type": "x",
                     "url": "https://x.com/cat_hometown"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 28,
             "name": "Team.ホーリーキャット",
             "area": "茨城",
             "city": "",
-            "species": [],
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://holycat.info/",
             "caution": "",
@@ -655,14 +741,17 @@
                     "type": "blog",
                     "url": "https://ameblo.jp/maron-mama"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 29,
             "name": "NPO法人 funnyCat&Dog",
             "area": "",
-            "city": "",
-            "species": [],
+            "city": "狭山市",
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://cafe-funnycat.amebaownd.com/",
             "caution": "",
@@ -683,14 +772,17 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/funnycat_sayama/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 30,
             "name": "アイドッグレスキュー隊",
             "area": "東京",
-            "city": "",
-            "species": [],
+            "city": "大田区",
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "http://aidog.jpn.com/",
             "caution": "",
@@ -716,7 +808,8 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/aidog_rescue/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 31,
@@ -728,53 +821,67 @@
             "url": "http://dcproject-s.org/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19",
+            "link_broken": true
         },
         {
             "id": 32,
             "name": "一般社団法人 Loveセラピープロジェクト ひいらぎチーム",
             "area": "",
-            "city": "",
-            "species": [],
+            "city": "東久留米市",
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://ameblo.jp/onosakie",
-            "caution": "",
+            "caution": "医療費、空輸費、雑費等の経費負担、室内飼育、脱走対策、半年を目安とした避妊去勢手術が条件です。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 33,
             "name": "個人活動家(DOT MITO)",
             "area": "茨城",
             "city": "",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://ameblo.jp/hibisasumama/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 34,
             "name": "中島 博美",
             "area": "茨城",
             "city": "",
-            "species": [],
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://www.instagram.com/fuuchannel/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 35,
             "name": "藤和那須リゾート",
             "area": "栃木",
             "city": "",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://www.nasuhai.co.jp/sos/",
-            "caution": "",
+            "caution": "お見合い希望の場合は事前連絡が必要です。",
             "note": "",
             "sns": [
                 {
@@ -787,7 +894,8 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/wancosos/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 36,
@@ -842,7 +950,9 @@
             "name": "メロードッグレスキュー",
             "area": "埼玉",
             "city": "",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://www.mellowpaw.com/",
             "caution": "",
@@ -858,16 +968,19 @@
                     "type": "youtube",
                     "url": "https://www.youtube.com/channel/UCTd4vY5dw_CBSifw8_4Y0kg"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 41,
             "name": "いぬ助け",
             "area": "千葉",
             "city": "",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
-            "url": "http://www.inudasuke.com",
+            "url": "https://www.inudasuke.com",
             "caution": "",
             "note": "",
             "sns": [
@@ -876,7 +989,8 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/inudasuke/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 42,
@@ -894,20 +1008,25 @@
             "id": 43,
             "name": "阿部 久美子(NEKOGOTO)",
             "area": "茨城",
-            "city": "",
-            "species": [],
+            "city": "ひたちなか市・那珂市・大洗町・東海村・水戸市・鉾田市・茨城町・笠間市・城里町・常陸大宮市・常陸太田市・小美玉市",
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://nekogoto.info/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 44,
             "name": "特定非営利活動法人 キャットセイビア",
             "area": "東京",
-            "city": "",
-            "species": [],
+            "city": "多摩市・八王子市・町田市",
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://catsavior.com",
             "caution": "",
@@ -928,14 +1047,18 @@
                     "type": "x",
                     "url": "https://x.com/hogoneko1v"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 45,
             "name": "Delacroix Dog Ranch",
             "area": "群馬",
             "city": "",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://ddranch.jp",
             "caution": "",
@@ -946,7 +1069,8 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/delacroix_d1/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 46,
@@ -958,14 +1082,17 @@
             "url": "https://www.instagram.com/nekonekokoneko11/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 47,
             "name": "礒﨑 正悟",
             "area": "茨城",
-            "city": "",
-            "species": [],
+            "city": "水戸市",
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://wonderful-partner.com",
             "caution": "",
@@ -991,14 +1118,18 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/wonderful.partner"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 48,
             "name": "にくきゅうライフ",
             "area": "埼玉",
             "city": "",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://299life.wixsite.com/website",
             "caution": "",
@@ -1009,14 +1140,17 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/299__life"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 49,
             "name": "にゃんこの大冒険",
             "area": "",
-            "city": "",
-            "species": [],
+            "city": "古河市・守谷市・下妻市・つくば市・小山市・越谷市",
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "http://witch912.cocolog-nifty.com",
             "caution": "",
@@ -1027,16 +1161,20 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/juliet.030522/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 50,
             "name": "一般財団法人 犬猫生活福祉財団",
             "area": "東京",
-            "city": "",
-            "species": [],
+            "city": "前橋市・吉岡町",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
-            "url": "http://inuneko-fukushi.or.jp",
+            "url": "https://inuneko-fukushi.or.jp",
             "caution": "",
             "note": "",
             "sns": [
@@ -1045,19 +1183,23 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/inuneko_seikatsu_foster/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 51,
             "name": "一般社団法人 ラフィンの家",
             "area": "千葉",
-            "city": "",
-            "species": [],
+            "city": "茂原市・東金市",
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://ruffinnoie.com",
-            "caution": "",
+            "caution": "譲渡には不妊手術、マイクロチップ挿入が必須です。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 52,
@@ -1081,18 +1223,22 @@
             "url": "https://www.instagram.com/chi77_55",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 54,
             "name": "スモールライフプロテクション",
             "area": "東京",
-            "city": "",
-            "species": [],
+            "city": "足立区",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://slpjapan.com",
             "caution": "",
-            "note": "",
+            "note": "元野犬など性格に課題のある犬の保護が中心",
             "sns": [
                 {
                     "name": "保護PETS (NPO法人smalllifeprotection)",
@@ -1114,7 +1260,8 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/SLPJapan/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 55,
@@ -1138,7 +1285,8 @@
             "url": "http://instagram.com/kemikemi1206",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 57,
@@ -1157,7 +1305,9 @@
             "name": "個人活動家(M.K)",
             "area": "神奈川",
             "city": "",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "http://dog-salon-bell.moo.jp",
             "caution": "",
@@ -1168,19 +1318,24 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/bell.dog.rescue"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 59,
             "name": "NPO法人 わんにゃんレスキューOHANA",
             "area": "",
-            "city": "",
-            "species": [],
+            "city": "神栖市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://ohanakamisu.sakura.ne.jp/ohana/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 60,
@@ -1192,14 +1347,18 @@
             "url": "http://instagram.com/u6o12m6r5",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 61,
             "name": "NPO法人 Pooch Dog Rescue",
             "area": "神奈川",
             "city": "",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "http://poochdogrescue.com",
             "caution": "",
@@ -1215,7 +1374,8 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/poochdogrescue/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 62,
@@ -1233,8 +1393,10 @@
             "id": 63,
             "name": "ミャオ！ねこのおうち",
             "area": "東京",
-            "city": "",
-            "species": [],
+            "city": "豊島区",
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://myaoneko.com",
             "caution": "",
@@ -1255,7 +1417,8 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/myaoneko55/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 64,
@@ -1273,25 +1436,33 @@
             "id": 65,
             "name": "イオンペット株式会社",
             "area": "千葉",
-            "city": "",
-            "species": [],
+            "city": "千葉市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://www.aeonpet.com/lifehouse/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 66,
             "name": "中村 典子",
             "area": "",
-            "city": "",
-            "species": [],
+            "city": "高崎市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://annies12forest.blog.fc2.com",
-            "caution": "",
+            "caution": "保護犬が抱える年齢・病気などのリスクや、発生した医療費を里親が負担する決まりがあります。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 67,
@@ -1321,10 +1492,12 @@
             "id": 69,
             "name": "一般社団法人 SUNNY CUDDLES",
             "area": "東京",
-            "city": "",
-            "species": [],
+            "city": "目黒区",
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
-            "url": "http://www.sunny-cuddles.com",
+            "url": "https://www.sunny-cuddles.com",
             "caution": "",
             "note": "",
             "sns": [
@@ -1333,7 +1506,8 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/sunny.cuddles/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 70,
@@ -1345,41 +1519,50 @@
             "url": "https://www.instagram.com/chocomama1123/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 71,
             "name": "ゼロイバ",
             "area": "千葉",
             "city": "",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://www.instagram.com/ibaraki_yaken/",
             "caution": "",
-            "note": "",
-            "sns": []
+            "note": "茨城の野犬の保護が中心",
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 72,
             "name": "命こそ宝",
             "area": "群馬",
             "city": "",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://www.instagram.com/inotikosotakara",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 73,
             "name": "ゆめネコ譲渡会",
             "area": "東京:千葉",
-            "city": "",
-            "species": [],
+            "city": "中央区",
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
-            "url": "http://yume-neko.net/",
-            "caution": "",
+            "url": "https://yume-neko.net/",
+            "caution": "外国の方は日本人同等の日本語理解力が無い場合は譲渡致しかねます。",
             "note": "",
             "sns": [
                 {
@@ -1387,7 +1570,8 @@
                     "type": "blog",
                     "url": "https://blog.canpan.info/yume-neko/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 74,
@@ -1417,7 +1601,8 @@
                     "type": "tiktok",
                     "url": "https://www.tiktok.com/@izufamily"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 76,
@@ -1435,13 +1620,16 @@
             "id": 77,
             "name": "Sun's こもろシェルター",
             "area": "長野",
-            "city": "",
-            "species": [],
+            "city": "小諸市・軽井沢町・佐久市・御代田町",
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://komoroshelter.jp",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 78,
@@ -1460,7 +1648,9 @@
             "name": "NPO法人 リアン",
             "area": "埼玉",
             "city": "",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://restartdoglien.jimdofree.com",
             "caution": "",
@@ -1481,19 +1671,23 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/restartdoglien/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 80,
             "name": "NPO法人 ねこ会",
             "area": "東京",
             "city": "",
-            "species": [],
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "http://doukai.org/neko/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

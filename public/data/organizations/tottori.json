@@ -18,14 +18,17 @@
                     "type": "blog",
                     "url": "https://ameblo.jp/shiro16222/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "猫じゃらし",
             "area": "鳥取",
             "city": "中部地域",
-            "species": [],
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://nekojarashi-org.jimdofree.com/",
             "caution": "",
@@ -41,29 +44,37 @@
                     "type": "blog",
                     "url": "https://ameblo.jp/necojarasi2019/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 3,
             "name": "米子犬猫NET",
             "area": "鳥取",
             "city": "西部地域",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://www.facebook.com/yonagoinuneko.inu/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 4,
             "name": "Doggys smile",
             "area": "鳥取",
             "city": "西部地域",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://doggyssmile.jimdofree.com/",
-            "caution": "",
+            "caution": "猫は里親募集の手伝いや助言のみ。保護犬お見合いは譲渡会以外での個別対応不可。",
             "note": "",
             "sns": [
                 {
@@ -71,31 +82,38 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/doggys_smile/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 5,
             "name": "ねこいえ米子",
             "area": "鳥取",
             "city": "西部地域",
-            "species": [],
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://nekoieyonago.com/",
-            "caution": "",
+            "caution": "現在、猫の譲渡会への新規参加申し込みを一時的に停止しています。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 6,
             "name": "にゃんこのお家",
             "area": "鳥取",
             "city": "西部地域",
-            "species": [],
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://www.instagram.com/nyankonoouchi224",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

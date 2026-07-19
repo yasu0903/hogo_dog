@@ -7,12 +7,16 @@
             "name": "特定非営利活動法人ワンダブル二度目の命",
             "area": "和歌山",
             "city": "和歌山市",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "independent",
             "url": "https://wandouble.com/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

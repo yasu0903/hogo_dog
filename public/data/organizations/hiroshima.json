@@ -6,61 +6,79 @@
             "id": 1,
             "name": "特定非営利活動法人動物愛護団体エンジェルズ",
             "area": "広島",
-            "city": "",
-            "species": [],
+            "city": "高島市・大阪市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "http://angels2005.org/",
-            "caution": "",
+            "caution": "譲渡会への参加は事前アンケートによる予約が必要です。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "Step Dog&Cat 犬猫保護グループ",
             "area": "広島",
             "city": "",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://www.facebook.com/stepinuneko/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 3,
             "name": "高山ペットショップ",
             "area": "広島",
-            "city": "",
-            "species": [],
+            "city": "東広島市・三原市・尾道市",
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://takayama-petshop.co.jp/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 4,
             "name": "特定非営利活動法人西日本アニマルアシスト（NAA）",
             "area": "広島",
-            "city": "",
-            "species": [],
+            "city": "尾道市",
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://n-animal-assist.net/",
             "caution": "",
-            "note": "",
-            "sns": []
+            "note": "野良猫の不妊去勢手術の支援が中心",
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 5,
             "name": "広島動物ネットワーク",
             "area": "広島",
             "city": "",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://ameblo.jp/animalnet/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 6,
@@ -78,13 +96,16 @@
             "id": 7,
             "name": "特定非営利活動法人ピースウィンズ・ジャパン（ピースワンコ・ジャパン）",
             "area": "広島",
-            "city": "",
-            "species": [],
+            "city": "世羅町・大阪市",
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://peace-wanko.jp/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 8,
@@ -103,48 +124,64 @@
             "name": "保護っ子れすきゅーBRIDGE",
             "area": "広島",
             "city": "",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://ameblo.jp/bridge2018/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 10,
             "name": "特定非営利活動法人SPA",
             "area": "広島",
             "city": "",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://s-p-a.jp/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 11,
             "name": "ワンミャツダクラブ",
             "area": "広島",
             "city": "",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://onemeazdaclub.web.fc2.com/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 12,
             "name": "特定非営利活動法人犬猫みなしご救援隊",
             "area": "広島",
-            "city": "",
-            "species": [],
+            "city": "広島市・那須塩原市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://minashigo.jp/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 13,
@@ -162,25 +199,33 @@
             "id": 14,
             "name": "一般社団法人ブランケット",
             "area": "広島",
-            "city": "",
-            "species": [],
+            "city": "安芸高田市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://www.blanket-larme.com/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 15,
             "name": "一般社団法人サニーサイドアップ",
             "area": "広島",
             "city": "",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://bio.site/dogparadise",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

@@ -7,48 +7,62 @@
             "name": "W・N・P（ワンニャンプロジェクト）人との共生",
             "area": "三重",
             "city": "津市",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://www4.hp-ez.com/hp/wnp/top",
-            "caution": "",
+            "caution": "「安く手に入るから」といった考えの方には譲渡しません。アポ無しでの代表宅訪問は一切禁止です。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "わんにゃんこ",
             "area": "三重",
             "city": "津市",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "http://wannyanko.blog114.fc2.com/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 3,
             "name": "Life with dog",
             "area": "三重",
             "city": "伊勢市",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://www.facebook.com/ise.life.with.dog/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 4,
             "name": "YSK-R&B ねこのいえ",
             "area": "三重",
             "city": "玉城町",
-            "species": [],
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "http://www.ysklog.com/nekonoie",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 5,
@@ -79,12 +93,16 @@
             "name": "一般社団法人動物保護団体わんらぶ",
             "area": "三重",
             "city": "伊賀市",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://onelove-home4animals.amebaownd.com/",
-            "caution": "",
+            "caution": "勝手な都合で飼えなくなった、自ら保護した、または野良猫に関する引取りや相談は受け付けていない。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 8,
@@ -115,72 +133,94 @@
             "name": "おっぽ",
             "area": "三重",
             "city": "松阪市",
-            "species": [],
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "http://catcatcat.ninpou.jp/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 11,
             "name": "四日市動物愛護団体つむぎ",
             "area": "三重",
             "city": "四日市市",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://weloveyaken.wixsite.com/tumugi/",
-            "caution": "",
+            "caution": "一般からの保護依頼は一切受けておらず、保健所に収容された犬猫のみを対象としています。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 12,
             "name": "アニマル・トラストの会",
             "area": "三重",
             "city": "大紀町",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://anitora2016.wixsite.com/website",
-            "caution": "",
+            "caution": "現在、猫の引き取りはしていません。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 13,
             "name": "SORA小さな命を救う会",
             "area": "三重",
             "city": "菰野町",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
-            "url": "http://sora-chiisana.org/",
+            "url": "https://sora-chiisana.org/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 14,
             "name": "特定非営利活動法人Peace Design",
             "area": "三重",
             "city": "志摩市",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://peacedesign.net/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 15,
             "name": "いせしま里親探し隊ラッキーグループ",
             "area": "三重",
             "city": "志摩市",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "http://isesima-luckygroup.strikingly.com/",
-            "caution": "",
+            "caution": "現在、猫の保護・譲渡は行っていません。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 16,
@@ -223,24 +263,32 @@
             "name": "大世古BASE",
             "area": "三重",
             "city": "伊勢市",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://www6.hp-ez.com/hp/ohzekobase3",
-            "caution": "",
+            "caution": "野犬や野良猫の捕獲、多頭飼育崩壊からの保護など、活動への理解と協力がある場合のみ依頼を受け付けている。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 20,
             "name": "一般社団法人動物福祉ムック王国",
             "area": "三重",
             "city": "鈴鹿市",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://www.mukku-oukoku.org/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

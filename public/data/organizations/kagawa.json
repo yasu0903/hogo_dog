@@ -7,12 +7,16 @@
             "name": "waKwaKsun",
             "area": "香川",
             "city": "高松市",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "independent",
             "url": "https://www.wakwak-sun.com/",
-            "caution": "",
+            "caution": "保護施設を持たないため、保護できる数には限りがあります。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
@@ -26,7 +30,8 @@
             "url": "http://bonnyan0222.jp/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

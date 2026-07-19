@@ -7,36 +7,47 @@
             "name": "新潟動物ネットワーク（NDN）",
             "area": "新潟",
             "city": "新潟市",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
-            "url": "http://ndn2001.com",
-            "caution": "",
+            "url": "https://ndn2001.com",
+            "caution": "シェルターや保護施設を有していないため、動物を預かることはできません。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "魚沼アニマルサポート",
             "area": "新潟",
             "city": "南魚沼市",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
-            "url": "http://uas.localinfo.jp/",
+            "url": "https://uas.localinfo.jp/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 3,
             "name": "しっぽのなかま上越",
             "area": "新潟",
             "city": "上越市",
-            "species": [],
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "http://sippononakama.blog.fc2.com/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 4,
@@ -60,19 +71,23 @@
             "url": "https://www.facebook.com/dear-Paws-714354395610244/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 6,
             "name": "キトンブルーのおうち",
             "area": "新潟",
             "city": "三条市",
-            "species": [],
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://www.facebook.com/KittenBluesHouse/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 7,
@@ -84,7 +99,8 @@
             "url": "https://www.instagram.com/nikukyukenkyusho/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 8,
@@ -103,12 +119,15 @@
             "name": "ねこのつめきりや",
             "area": "新潟",
             "city": "長岡市",
-            "species": [],
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://www.instagram.com/25notsume96_83",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

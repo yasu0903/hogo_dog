@@ -6,37 +6,49 @@
             "id": 1,
             "name": "特定非営利活動法人犬猫と共生できる社会をめざす会鹿児島",
             "area": "鹿児島",
-            "city": "",
-            "species": [],
+            "city": "鹿児島市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "independent",
             "url": "https://www.dog-cat-kagoshima.org/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "特定非営利活動法人里親と保護犬猫を守る会",
             "area": "鹿児島",
             "city": "",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "independent",
             "url": "https://www.hogoinuneko.com/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 3,
             "name": "ボランティアグループわんにゃんハート",
             "area": "鹿児島",
-            "city": "",
-            "species": [],
+            "city": "鹿児島市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "independent",
             "url": "https://wannyanheart.com/",
-            "caution": "",
+            "caution": "譲渡時には事務手数料やワクチン代・避妊去勢費用の一部負担、預り金等が発生します。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

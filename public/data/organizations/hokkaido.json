@@ -7,7 +7,10 @@
             "name": "特定非営利活動法人HOKKAIDOしっぽの会",
             "area": "北海道",
             "city": "",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://shippo.or.jp/",
             "caution": "",
@@ -23,13 +26,14 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/shipponokai/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "非営利型一般社団法人ねこたまご",
             "area": "北海道",
-            "city": "",
+            "city": "札幌市",
             "species": [
                 "cat"
             ],
@@ -48,13 +52,14 @@
                     "type": "blog",
                     "url": "https://ameblo.jp/may1119/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 3,
             "name": "一般社団法人猫たちを守る十勝Wishの会",
             "area": "北海道",
-            "city": "",
+            "city": "帯広市",
             "species": [
                 "cat"
             ],
@@ -78,17 +83,21 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/catcafewish/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 4,
             "name": "一般社団法人ティアハイム十勝",
             "area": "北海道",
-            "city": "",
-            "species": [],
+            "city": "帯広市・釧路市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://www.tier-tokachi.com/",
-            "caution": "",
+            "caution": "個人からの引き取り依頼は受け付けていません。電話での問い合わせにも対応していません。",
             "note": "",
             "sns": [
                 {
@@ -106,19 +115,21 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/tier.tokachi/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 5,
             "name": "一般社団法人北のワニ舎",
             "area": "北海道",
-            "city": "",
+            "city": "札幌市",
             "species": [],
             "source_type": "official",
             "url": "https://kitanowanisya.amebaownd.com/",
             "caution": "",
             "note": "爬虫類の保護・譲渡が中心",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

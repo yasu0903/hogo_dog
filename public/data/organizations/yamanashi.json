@@ -7,12 +7,16 @@
             "name": "リトルキャッツ（山梨県犬猫救助ポータル）",
             "area": "山梨",
             "city": "",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "independent",
             "url": "https://www.littlecats.jp/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
@@ -26,7 +30,8 @@
             "url": "https://www.npoyamanekovn.com/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

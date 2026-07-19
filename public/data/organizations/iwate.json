@@ -6,19 +6,23 @@
             "id": 1,
             "name": "動物いのちの会いわて",
             "area": "岩手",
-            "city": "",
-            "species": [],
+            "city": "雫石町",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "independent",
             "url": "https://inochiiwate.com/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "認定特定非営利活動法人もりねこ",
             "area": "岩手",
-            "city": "",
+            "city": "盛岡市",
             "species": [
                 "cat"
             ],
@@ -26,7 +30,8 @@
             "url": "https://www.morineko.org/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

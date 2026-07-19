@@ -7,7 +7,10 @@
             "name": "NPO法人 犬と猫のためのライフボート",
             "area": "千葉",
             "city": "",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://www.lifeboat.or.jp",
             "caution": "",
@@ -43,16 +46,20 @@
                     "type": "youtube",
                     "url": "https://www.youtube.com/c/LifeboatJP"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "一般社団法人 アルマ",
             "area": "東京",
-            "city": "",
-            "species": [],
+            "city": "目黒区・葛飾区",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
-            "url": "http://alma.or.jp/",
+            "url": "https://alma.or.jp/",
             "caution": "",
             "note": "",
             "sns": [
@@ -96,7 +103,8 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/npo.alma"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 3,
@@ -116,14 +124,17 @@
                     "type": "blog",
                     "url": "http://staffbcrn.blog38.fc2.com/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 4,
             "name": "アグリドッグレスキュー",
             "area": "埼玉",
             "city": "",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://aguri.nomaki.jp/",
             "caution": "",
@@ -144,14 +155,17 @@
                     "type": "blog",
                     "url": "https://ameblo.jp/micteru/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 5,
             "name": "GUNDOG RESCUE CACI",
             "area": "千葉",
-            "city": "",
-            "species": [],
+            "city": "市川市",
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://cac-ichikawa.com/",
             "caution": "",
@@ -177,14 +191,18 @@
                     "type": "x",
                     "url": "https://x.com/RescueCaci"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 6,
             "name": "ちばわん",
             "area": "千葉",
-            "city": "",
-            "species": [],
+            "city": "流山市・市川市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://chibawan.net/",
             "caution": "",
@@ -210,26 +228,32 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/CHIBAWAN1"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 7,
             "name": "ビアディー・レスキュー・ネットワーク",
             "area": "千葉",
             "city": "",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://www2u.biglobe.ne.jp/~BDN/BRN.html",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 8,
             "name": "ふがふがレスキュークラブ",
             "area": "千葉",
             "city": "",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://toysya.sakura.ne.jp/fuga/",
             "caution": "",
@@ -240,14 +264,18 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/hanapecha_festival"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 9,
             "name": "Animal Rescue Chida",
             "area": "千葉",
-            "city": "",
-            "species": [],
+            "city": "松戸市・佐倉市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://arch2013.org/index.html",
             "caution": "",
@@ -283,7 +311,8 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/animal_rescue_chiba/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 10,
@@ -302,7 +331,10 @@
             "name": "theVOICE(ぼいす)",
             "area": "千葉",
             "city": "",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "https://thevoice-japan.org/",
             "caution": "",
@@ -318,14 +350,17 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/thevoice.japan/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 12,
             "name": "TSR(チームシュナウザーレスキュー)",
             "area": "千葉",
             "city": "",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "https://tschnar.jimdofree.com/",
             "caution": "",
@@ -336,14 +371,17 @@
                     "type": "blog",
                     "url": "https://teamschnauzerrescure.blogspot.com/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 13,
             "name": "アイドッグレスキュー隊",
             "area": "東京",
-            "city": "",
-            "species": [],
+            "city": "大田区",
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
             "url": "http://aidog.jpn.com/",
             "caution": "",
@@ -369,14 +407,18 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/aidog_rescue/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 14,
             "name": "公益財団法人ヒューマニン財団",
             "area": "千葉",
             "city": "",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "official",
             "url": "http://humanin.or.jp/",
             "caution": "",
@@ -387,28 +429,34 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/humaninfoundation/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 15,
             "name": "ゆめネコ譲渡会",
             "area": "千葉",
-            "city": "",
-            "species": [],
+            "city": "中央区",
+            "species": [
+                "cat"
+            ],
             "source_type": "official",
-            "url": "http://yume-neko.net/",
-            "caution": "",
+            "url": "https://yume-neko.net/",
+            "caution": "日本語理解力のない外国人は譲渡不可。飼育環境が不適切な場合はキャンセルとなる。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 16,
             "name": "いぬ助け",
             "area": "千葉",
             "city": "",
-            "species": [],
+            "species": [
+                "dog"
+            ],
             "source_type": "official",
-            "url": "http://www.inudasuke.com",
+            "url": "https://www.inudasuke.com",
             "caution": "",
             "note": "",
             "sns": [
@@ -417,7 +465,8 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/inudasuke/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         }
     ]
 }

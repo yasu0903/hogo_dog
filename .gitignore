@@ -197,3 +197,5 @@ package-lock.json
 
 # vite
 .vite/
+# Phase 2.5 enrichment pipeline intermediate outputs (regenerable)
+scripts/enrichment/out/

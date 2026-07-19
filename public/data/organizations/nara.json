@@ -7,24 +7,32 @@
             "name": "World love heart",
             "area": "奈良",
             "city": "大和郡山市",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "independent",
             "url": "https://worldloveheart-nara.jimdofree.com/",
-            "caution": "",
+            "caution": "活動を終了し残された動物や譲渡後の連絡先は「保護団体りぼん」に委託・委任されています。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "動物保護団体りぼん",
             "area": "奈良",
             "city": "",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "independent",
             "url": "https://ribbon-foster.jimdofree.com/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

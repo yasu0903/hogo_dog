@@ -7,12 +7,16 @@
             "name": "公益財団法人日本アニマルトラスト（ハッピーハウス）",
             "area": "大阪",
             "city": "能勢町",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "independent",
             "url": "https://happyhouse.or.jp/",
             "caution": "",
             "note": "動物保護施設を運営",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
@@ -26,7 +30,8 @@
             "url": "https://happiness-dog.com/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

@@ -7,24 +7,32 @@
             "name": "特定非営利活動法人一匹でも犬・ねこを救う会",
             "area": "長野",
             "city": "上田市",
-            "species": [],
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "independent",
             "url": "https://www.inuneko-sukuukai.com/",
             "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "特定非営利活動法人ながの動物福祉協会",
             "area": "長野",
-            "city": "",
-            "species": [],
+            "city": "長野市",
+            "species": [
+                "dog",
+                "cat"
+            ],
             "source_type": "independent",
             "url": "https://naganodoufuku.org/",
-            "caution": "",
+            "caution": "保護依頼はお受けできません。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

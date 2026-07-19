@@ -1,0 +1,100 @@
+{
+    "no": "01",
+    "pref_name": "hokkaido",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特定非営利活動法人HOKKAIDOしっぽの会",
+            "area": "北海道",
+            "url": "https://shippo.or.jp/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "HOKKAIDOしっぽの会 X",
+                    "type": "x",
+                    "url": "https://x.com/shipponokai"
+                },
+                {
+                    "name": "HOKKAIDOしっぽの会 Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/shipponokai/"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "非営利型一般社団法人ねこたまご",
+            "area": "北海道",
+            "url": "https://www.nekotamago.org/",
+            "note": "保護猫の活動が中心",
+            "sns": [
+                {
+                    "name": "ねこたまご X",
+                    "type": "x",
+                    "url": "https://x.com/nekotamago_"
+                },
+                {
+                    "name": "ねこたまご ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/may1119/"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "一般社団法人猫たちを守る十勝Wishの会",
+            "area": "北海道",
+            "url": "https://catcafe-wish.jimdofree.com/",
+            "note": "保護猫の活動が中心",
+            "sns": [
+                {
+                    "name": "猫たちを守る十勝Wishの会 ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/catcafewish/"
+                },
+                {
+                    "name": "猫たちを守る十勝Wishの会 Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/wish2101/"
+                },
+                {
+                    "name": "猫たちを守る十勝Wishの会 Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/catcafewish/"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "一般社団法人ティアハイム十勝",
+            "area": "北海道",
+            "url": "https://www.tier-tokachi.com/",
+            "note": "",
+            "sns": [
+                {
+                    "name": "ティアハイム十勝 ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/tier-tokachi/"
+                },
+                {
+                    "name": "ティアハイム十勝 Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/tier.tokachi/"
+                },
+                {
+                    "name": "ティアハイム十勝 Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/tier.tokachi/"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "一般社団法人北のワニ舎",
+            "area": "北海道",
+            "url": "https://kitanowanisya.amebaownd.com/",
+            "note": "爬虫類の保護・譲渡が中心",
+            "sns": []
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "no": "05",
+    "pref_name": "akita",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特定非営利活動法人いぬ・ねこネットワーク秋田",
+            "area": "秋田",
+            "url": "https://www.inuneko-akita.net/",
+            "note": "行政と合同で譲渡会を開催。県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        },
+        {
+            "id": 2,
+            "name": "一般社団法人ONE FOR AKITA",
+            "area": "秋田",
+            "url": "https://www.saveakita.or.jp/ofa/",
+            "note": "秋田犬の保護・譲渡が中心。県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": [
+                {
+                    "name": "ONE FOR AKITA X",
+                    "type": "x",
+                    "url": "https://twitter.com/one_for_akita"
+                },
+                {
+                    "name": "ONE FOR AKITA Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/one.for.akita.project/"
+                }
+            ]
+        }
+    ]
+}

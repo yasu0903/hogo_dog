@@ -1,0 +1,22 @@
+{
+    "no": "37",
+    "pref_name": "kagawa",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "waKwaKsun",
+            "area": "香川",
+            "url": "https://www.wakwak-sun.com/",
+            "note": "高松市で活動。県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        },
+        {
+            "id": 2,
+            "name": "特定非営利活動法人BONにゃん",
+            "area": "香川",
+            "url": "http://bonnyan0222.jp/",
+            "note": "高松市で活動。保護猫の活動が中心。県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        }
+    ]
+}

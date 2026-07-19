@@ -29,11 +29,14 @@ const Organizations = () => {
         
         // エリア一覧を取得
         const areasList = getAreas(prefsData);
-        
+
+        // 掲載団体が1件もない都道府県は一覧に表示しない
+        const visibleOrgsData = orgsData.filter(org => org.listedCount > 0);
+
         setPrefectures(prefsData);
         setAreas(areasList);
-        setOrganizations(orgsData);
-        setFilteredOrganizations(orgsData);
+        setOrganizations(visibleOrgsData);
+        setFilteredOrganizations(visibleOrgsData);
       } catch (error) {
         console.error(COMMON_MESSAGES.ERROR_WHILE_LOADING, error);
         setError(COMMON_MESSAGES.FAILED_LOADING_DATA);

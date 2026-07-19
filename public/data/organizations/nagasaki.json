@@ -1,0 +1,14 @@
+{
+    "no": "42",
+    "pref_name": "nagasaki",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特例認定特定非営利活動法人長崎わんにゃん会",
+            "area": "長崎",
+            "url": "https://nagasaki-wannyankai.com/",
+            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        }
+    ]
+}

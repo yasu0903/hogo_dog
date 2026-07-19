@@ -1,0 +1,28 @@
+{
+    "no": "38",
+    "pref_name": "ehime",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "認定特定非営利活動法人えひめイヌ・ネコの会",
+            "area": "愛媛",
+            "url": "https://ehimeinuneko.com/",
+            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": [
+                {
+                    "name": "えひめイヌ・ネコの会 ブログ",
+                    "type": "blog",
+                    "url": "https://ameblo.jp/ehimeinuneko/"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "dog＆cat幸呼の会",
+            "area": "愛媛",
+            "url": "https://kokonokai.jimdofree.com/",
+            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        }
+    ]
+}

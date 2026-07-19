@@ -1,0 +1,22 @@
+{
+    "no": "18",
+    "pref_name": "fukui",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特定非営利活動法人福井犬・猫を救う会",
+            "area": "福井",
+            "url": "http://www.fukui-dogcat.com/",
+            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        },
+        {
+            "id": 2,
+            "name": "ふくい動物愛護管理支援センター協会",
+            "area": "福井",
+            "url": "https://www.fapscsite.com/",
+            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "no": "46",
+    "pref_name": "kagoshima",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特定非営利活動法人犬猫と共生できる社会をめざす会鹿児島",
+            "area": "鹿児島",
+            "url": "https://www.dog-cat-kagoshima.org/",
+            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        },
+        {
+            "id": 2,
+            "name": "特定非営利活動法人里親と保護犬猫を守る会",
+            "area": "鹿児島",
+            "url": "https://www.hogoinuneko.com/",
+            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        },
+        {
+            "id": 3,
+            "name": "ボランティアグループわんにゃんハート",
+            "area": "鹿児島",
+            "url": "https://wannyanheart.com/",
+            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        }
+    ]
+}

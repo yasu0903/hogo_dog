@@ -1,0 +1,22 @@
+{
+    "no": "16",
+    "pref_name": "toyama",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特定非営利活動法人ピース・アニマルズ・ホーム",
+            "area": "富山",
+            "url": "https://www.peace-animals-home.org/",
+            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        },
+        {
+            "id": 2,
+            "name": "特定非営利活動法人しっぽのこころ",
+            "area": "富山",
+            "url": "https://www.instagram.com/shippono___kokoro/",
+            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        }
+    ]
+}

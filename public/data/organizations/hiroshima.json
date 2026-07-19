@@ -1,0 +1,126 @@
+{
+    "no": "34",
+    "pref_name": "hiroshima",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特定非営利活動法人動物愛護団体エンジェルズ",
+            "area": "広島",
+            "url": "http://angels2005.org/",
+            "note": "県動物愛護センターの協力団体等一覧より",
+            "sns": []
+        },
+        {
+            "id": 2,
+            "name": "Step Dog&Cat 犬猫保護グループ",
+            "area": "広島",
+            "url": "https://www.facebook.com/stepinuneko/",
+            "note": "県動物愛護センターの協力団体等一覧より",
+            "sns": []
+        },
+        {
+            "id": 3,
+            "name": "高山ペットショップ",
+            "area": "広島",
+            "url": "https://takayama-petshop.co.jp/",
+            "note": "県動物愛護センターの協力団体等一覧より",
+            "sns": []
+        },
+        {
+            "id": 4,
+            "name": "特定非営利活動法人西日本アニマルアシスト（NAA）",
+            "area": "広島",
+            "url": "https://n-animal-assist.net/",
+            "note": "県動物愛護センターの協力団体等一覧より",
+            "sns": []
+        },
+        {
+            "id": 5,
+            "name": "広島動物ネットワーク",
+            "area": "広島",
+            "url": "https://ameblo.jp/animalnet/",
+            "note": "県動物愛護センターの協力団体等一覧より",
+            "sns": []
+        },
+        {
+            "id": 6,
+            "name": "尾三地区犬猫保護婦人会",
+            "area": "広島",
+            "url": "",
+            "note": "県動物愛護センターの協力団体等一覧より",
+            "sns": []
+        },
+        {
+            "id": 7,
+            "name": "特定非営利活動法人ピースウィンズ・ジャパン（ピースワンコ・ジャパン）",
+            "area": "広島",
+            "url": "https://peace-wanko.jp/",
+            "note": "県動物愛護センターの協力団体等一覧より",
+            "sns": []
+        },
+        {
+            "id": 8,
+            "name": "ペットマナープロジェクトおのみち",
+            "area": "広島",
+            "url": "",
+            "note": "県動物愛護センターの協力団体等一覧より",
+            "sns": []
+        },
+        {
+            "id": 9,
+            "name": "保護っ子れすきゅーBRIDGE",
+            "area": "広島",
+            "url": "https://ameblo.jp/bridge2018/",
+            "note": "県動物愛護センターの協力団体等一覧より",
+            "sns": []
+        },
+        {
+            "id": 10,
+            "name": "特定非営利活動法人SPA",
+            "area": "広島",
+            "url": "https://s-p-a.jp/",
+            "note": "県動物愛護センターの協力団体等一覧より",
+            "sns": []
+        },
+        {
+            "id": 11,
+            "name": "ワンミャツダクラブ",
+            "area": "広島",
+            "url": "https://onemeazdaclub.web.fc2.com/",
+            "note": "県動物愛護センターの協力団体等一覧より",
+            "sns": []
+        },
+        {
+            "id": 12,
+            "name": "特定非営利活動法人犬猫みなしご救援隊",
+            "area": "広島",
+            "url": "https://minashigo.jp/",
+            "note": "県動物愛護センターの協力団体等一覧より",
+            "sns": []
+        },
+        {
+            "id": 13,
+            "name": "寺田保護ねこ学園",
+            "area": "広島",
+            "url": "",
+            "note": "県動物愛護センターの協力団体等一覧より",
+            "sns": []
+        },
+        {
+            "id": 14,
+            "name": "一般社団法人ブランケット",
+            "area": "広島",
+            "url": "https://www.blanket-larme.com/",
+            "note": "県動物愛護センターの協力団体等一覧より",
+            "sns": []
+        },
+        {
+            "id": 15,
+            "name": "一般社団法人サニーサイドアップ",
+            "area": "広島",
+            "url": "https://bio.site/dogparadise",
+            "note": "県動物愛護センターの協力団体等一覧より",
+            "sns": []
+        }
+    ]
+}

@@ -1,0 +1,166 @@
+{
+    "no": "24",
+    "pref_name": "mie",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "W・N・P（ワンニャンプロジェクト）人との共生",
+            "area": "三重",
+            "url": "https://www4.hp-ez.com/hp/wnp/top",
+            "note": "津市／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 2,
+            "name": "わんにゃんこ",
+            "area": "三重",
+            "url": "http://wannyanko.blog114.fc2.com/",
+            "note": "津市／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 3,
+            "name": "Life with dog",
+            "area": "三重",
+            "url": "https://www.facebook.com/ise.life.with.dog/",
+            "note": "伊勢市／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 4,
+            "name": "YSK-R&B ねこのいえ",
+            "area": "三重",
+            "url": "http://www.ysklog.com/nekonoie",
+            "note": "玉城町／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 5,
+            "name": "動物との共生ネットワーク",
+            "area": "三重",
+            "url": "",
+            "note": "松阪市／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 6,
+            "name": "リトルパウエイド三重",
+            "area": "三重",
+            "url": "",
+            "note": "津市／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 7,
+            "name": "一般社団法人動物保護団体わんらぶ",
+            "area": "三重",
+            "url": "https://onelove-home4animals.amebaownd.com/",
+            "note": "伊賀市／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 8,
+            "name": "動物保護団体Dep（ディップ）",
+            "area": "三重",
+            "url": "",
+            "note": "菰野町／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 9,
+            "name": "てるてる猫の家",
+            "area": "三重",
+            "url": "",
+            "note": "松阪市／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 10,
+            "name": "おっぽ",
+            "area": "三重",
+            "url": "http://catcatcat.ninpou.jp/",
+            "note": "松阪市／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 11,
+            "name": "四日市動物愛護団体つむぎ",
+            "area": "三重",
+            "url": "https://weloveyaken.wixsite.com/tumugi/",
+            "note": "四日市市／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 12,
+            "name": "アニマル・トラストの会",
+            "area": "三重",
+            "url": "https://anitora2016.wixsite.com/website",
+            "note": "大紀町／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 13,
+            "name": "SORA小さな命を救う会",
+            "area": "三重",
+            "url": "http://sora-chiisana.org/",
+            "note": "菰野町／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 14,
+            "name": "特定非営利活動法人Peace Design",
+            "area": "三重",
+            "url": "https://peacedesign.net/",
+            "note": "志摩市／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 15,
+            "name": "いせしま里親探し隊ラッキーグループ",
+            "area": "三重",
+            "url": "http://isesima-luckygroup.strikingly.com/",
+            "note": "志摩市／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 16,
+            "name": "伊勢いぬねこ連絡会",
+            "area": "三重",
+            "url": "",
+            "note": "伊勢市／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 17,
+            "name": "ティアヒュッテアンジー",
+            "area": "三重",
+            "url": "",
+            "note": "菰野町／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 18,
+            "name": "伊勢市地域猫（犬）プロジェクト",
+            "area": "三重",
+            "url": "",
+            "note": "伊勢市／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 19,
+            "name": "大世古BASE",
+            "area": "三重",
+            "url": "https://www6.hp-ez.com/hp/ohzekobase3",
+            "note": "伊勢市／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        },
+        {
+            "id": 20,
+            "name": "一般社団法人動物福祉ムック王国",
+            "area": "三重",
+            "url": "https://www.mukku-oukoku.org/",
+            "note": "鈴鹿市／県の譲渡ボランティア団体一覧より",
+            "sns": []
+        }
+    ]
+}

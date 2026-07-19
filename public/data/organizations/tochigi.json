@@ -1,0 +1,146 @@
+{
+    "no": "09",
+    "pref_name": "tochigi",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "篠井のしっぽ",
+            "area": "栃木",
+            "url": "",
+            "note": "犬／登録番号:23-79-1",
+            "sns": []
+        },
+        {
+            "id": 2,
+            "name": "ハピネスステイブル",
+            "area": "栃木",
+            "url": "",
+            "note": "犬／登録番号:23-79-2",
+            "sns": []
+        },
+        {
+            "id": 3,
+            "name": "はち・れく保護犬の家",
+            "area": "栃木",
+            "url": "",
+            "note": "犬／登録番号:23-79-4",
+            "sns": []
+        },
+        {
+            "id": 4,
+            "name": "Animal Rescue SONA DORAS",
+            "area": "栃木",
+            "url": "https://www.instagram.com/stk_sona_doras/",
+            "note": "犬・猫／登録番号:24-22-1",
+            "sns": []
+        },
+        {
+            "id": 5,
+            "name": "イズファミリー",
+            "area": "茨城",
+            "url": "https://fanme.link/@izufamily",
+            "note": "犬／登録番号:25-16-1",
+            "sns": [
+                {
+                    "name": "イズファミリー",
+                    "type": "tiktok",
+                    "url": "https://www.tiktok.com/@izufamily"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "メロードッグレスキュー",
+            "area": "埼玉",
+            "url": "https://www.mellowpaw.com/",
+            "note": "犬／登録番号:25-16-2",
+            "sns": [
+                {
+                    "name": "メロードッグレスキュー",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/mellow.rescue/"
+                },
+                {
+                    "name": "Mellow Dog Rescue",
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/channel/UCTd4vY5dw_CBSifw8_4Y0kg"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "鈴木",
+            "area": "栃木",
+            "url": "https://www.instagram.com/luv_dogs_101/",
+            "note": "犬・猫／登録番号:25-16-3",
+            "sns": []
+        },
+        {
+            "id": 8,
+            "name": "MAKI.I",
+            "area": "栃木",
+            "url": "https://www.instagram.com/maki.190423",
+            "note": "犬／登録番号:25-16-4",
+            "sns": []
+        },
+        {
+            "id": 9,
+            "name": "さくら日和動物病院",
+            "area": "栃木",
+            "url": "https://www.instagram.com/sakurabiyori_ah/",
+            "note": "犬・猫／登録番号:25-16-5",
+            "sns": []
+        },
+        {
+            "id": 10,
+            "name": "川嶋 久美子",
+            "area": "栃木",
+            "url": "https://ameblo.jp/kota-ume-kuro/",
+            "note": "犬・猫／登録番号:25-16-6",
+            "sns": []
+        },
+        {
+            "id": 11,
+            "name": "wolf hill",
+            "area": "栃木",
+            "url": "https://instagram.com/natsu.wolfhill_grmmmmm",
+            "note": "犬・猫／登録番号:25-16-7",
+            "sns": []
+        },
+        {
+            "id": 12,
+            "name": "特定非営利活動法人わんtime with animals",
+            "area": "長野",
+            "url": "https://www.instagram.com/wantime_with_animals",
+            "note": "犬／登録番号:25-16-8",
+            "sns": []
+        },
+        {
+            "id": 13,
+            "name": "藤和那須リゾート株式会社",
+            "area": "栃木",
+            "url": "http://www.nasuhai.co.jp/sos/",
+            "note": "犬／登録番号:25-16-9",
+            "sns": [
+                {
+                    "name": "那須ハイ&りんどう湖/SOS活動(保護犬の里親募集）",
+                    "type": "blog",
+                    "url": "https://www.ameba.jp/profile/general/nasuhaiwonderful/"
+                },
+                {
+                    "name": "那須ハイSOS活動-保護犬譲渡-",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/wancosos/"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "室井 奈津美",
+            "area": "",
+            "url": "https://www.instagram.com/oreo_bebe_collon/",
+            "note": "犬／登録番号:25-16-10",
+            "sns": []
+        }
+    ]
+}

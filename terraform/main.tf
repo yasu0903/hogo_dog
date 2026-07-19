@@ -74,14 +74,14 @@ module "route53_records" {
 }
 
 # サンプルコンテンツのアップロード（オプション）
-module "sample_content" {
-  source = "./modules/content"
-
-  bucket_name   = module.s3_website.bucket_name
-  domain_name   = var.domain_name
-  index_content = var.index_content
-  error_content = var.error_content
-}
+# module "sample_content" {
+#   source = "./modules/content"
+# 
+#   bucket_name   = module.s3_website.bucket_name
+#   domain_name   = var.domain_name
+#   index_content = var.index_content
+#   error_content = var.error_content
+# }
 
 locals {
   bucket_name = var.website_bucket_name != null ? var.website_bucket_name : var.domain_name

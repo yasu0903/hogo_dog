@@ -1,0 +1,38 @@
+{
+    "no": "21",
+    "pref_name": "gifu",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特定非営利活動法人もふっこひだ",
+            "area": "岐阜",
+            "city": "飛騨地方",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://www.mofuhida.com/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 2,
+            "name": "特定非営利活動法人出逢いの森",
+            "area": "岐阜",
+            "city": "関市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://deaimori.com/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        }
+    ]
+}

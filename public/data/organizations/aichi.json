@@ -1,0 +1,53 @@
+{
+    "no": "23",
+    "pref_name": "aichi",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特定非営利活動法人ファミーユ",
+            "area": "愛知",
+            "city": "名古屋市を拠点に東海地方",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://www.npo-famille.org/",
+            "caution": "行政からの保護が中心で、個人からの犬・猫の保護依頼は受け付けていません。",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 2,
+            "name": "特定非営利活動法人DOG DUCA",
+            "area": "愛知",
+            "city": "名古屋市",
+            "species": [
+                "dog"
+            ],
+            "source_type": "independent",
+            "url": "https://dogduca.com/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 3,
+            "name": "特定非営利活動法人保護譲渡推進協会（わんにゃんさとおや会）",
+            "area": "愛知",
+            "city": "小牧市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://www.satooyakai.or.jp/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        }
+    ]
+}

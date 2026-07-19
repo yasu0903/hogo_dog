@@ -1,0 +1,37 @@
+{
+    "no": "28",
+    "pref_name": "hyogo",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特定非営利活動法人動物保護団体神戸アニマルリンク",
+            "area": "兵庫",
+            "city": "神戸市",
+            "species": [
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://www.kobeanimallink.com/",
+            "caution": "地域猫（野良猫）の保護、犬やその他の動物の保護活動は受け付けておりません。",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 2,
+            "name": "特定非営利活動法人りぐこうべ兵庫",
+            "area": "兵庫",
+            "city": "神戸市北区",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://lig-kobe.com/",
+            "caution": "飼い主のいない動物の直接保護は行っていません。また、里親希望の施設見学には事前の予約が必要です。",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        }
+    ]
+}

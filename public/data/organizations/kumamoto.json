@@ -1,0 +1,54 @@
+{
+    "no": "43",
+    "pref_name": "kumamoto",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "ジョートフル熊本",
+            "area": "熊本",
+            "city": "熊本市・西原村",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://www.jyoutofull.org/",
+            "caution": "",
+            "note": "動物愛護センター・保健所・保護団体と協力して譲渡会を開催",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 2,
+            "name": "特定非営利活動法人犬猫ケアホームきずなの丘",
+            "area": "熊本",
+            "city": "西原村",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://www.kizunanooka.org/",
+            "caution": "保護スペース満杯のため、緊急や保健所以外からの猫の保護依頼受付を現在停止しています。",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 3,
+            "name": "山ぼうしの樹犬猫の会",
+            "area": "熊本",
+            "city": "甲佐町",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://www.haw-fukufuku.net/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        }
+    ]
+}

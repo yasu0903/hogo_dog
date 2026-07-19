@@ -1,0 +1,37 @@
+{
+    "no": "19",
+    "pref_name": "yamanashi",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "リトルキャッツ（山梨県犬猫救助ポータル）",
+            "area": "山梨",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://www.littlecats.jp/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 2,
+            "name": "NPO山梨ねこボランティアネットワーク",
+            "area": "山梨",
+            "city": "県東部・富士五湖エリア",
+            "species": [
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://www.npoyamanekovn.com/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        }
+    ]
+}

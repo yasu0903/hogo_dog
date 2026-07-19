@@ -1,0 +1,38 @@
+{
+    "no": "32",
+    "pref_name": "shimane",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "Animal Life Support Center PONT",
+            "area": "島根",
+            "city": "松江市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://animal-pont.com/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 2,
+            "name": "しあわせサポート犬猫部",
+            "area": "島根",
+            "city": "松江市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://www.inunekobu.com/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        }
+    ]
+}

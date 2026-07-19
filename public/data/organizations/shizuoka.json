@@ -1,0 +1,54 @@
+{
+    "no": "22",
+    "pref_name": "shizuoka",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "一般社団法人静岡県動物保護協会",
+            "area": "静岡",
+            "city": "静岡市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://www.love-sacs.com/",
+            "caution": "シェルターを持たないため、小動物等の一時預かりや引き取り・譲渡活動は行っていません。",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 2,
+            "name": "アニマルフォスターペアレンツ",
+            "area": "静岡",
+            "city": "県西部地区",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://anfospe.com/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 3,
+            "name": "その小さないのち守りたいプロジェクト",
+            "area": "静岡",
+            "city": "静岡市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://inochiproject.jimdofree.com/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        }
+    ]
+}

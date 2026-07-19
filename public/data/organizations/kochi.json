@@ -1,0 +1,22 @@
+{
+    "no": "39",
+    "pref_name": "kochi",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特定非営利活動法人アニマルサポート高知家",
+            "area": "高知",
+            "city": "高知市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://anisupo.jimdofree.com/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "no": "37",
+    "pref_name": "kagawa",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "waKwaKsun",
+            "area": "香川",
+            "city": "高松市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://www.wakwak-sun.com/",
+            "caution": "保護施設を持たないため、保護できる数には限りがあります。",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 2,
+            "name": "特定非営利活動法人BONにゃん",
+            "area": "香川",
+            "city": "高松市",
+            "species": [
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "http://bonnyan0222.jp/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        }
+    ]
+}

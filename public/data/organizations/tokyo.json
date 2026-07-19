@@ -6,7 +6,14 @@
             "id": 1,
             "name": "特定非営利活動法人 保健所の成犬・猫の譲渡を推進する会",
             "area": "東京",
+            "city": "町田市・横浜市青葉区",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
             "url": "http://npo.seikenjoto.org/",
+            "caution": "飼い主不在の成犬・猫の譲渡を推進しているが、猫の引き取りは行っていない。",
             "note": "",
             "sns": [
                 {
@@ -19,13 +26,21 @@
                     "type": "blog",
                     "url": "http://jouto.blog69.fc2.com/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "NPO法人日本動物生命尊重の会",
             "area": "東京",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
             "url": "https://www.alis1993.com/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -48,13 +63,21 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/people/Npo%E6%B3%95%E4%BA%BA-%E6%97%A5%E6%9C%AC%E5%8B%95%E7%89%A9%E7%94%9F%E5%91%BD%E5%B0%8A%E9%87%8D%E3%81%AE%E4%BC%9A-alis/100064368564674/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 3,
             "name": "一般社団法人 アルマ",
             "area": "東京",
-            "url": "http://alma.or.jp/",
+            "city": "目黒区・葛飾区",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://alma.or.jp/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -97,13 +120,20 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/npo.alma"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 4,
             "name": "イングリッシュコッカースパニエル・レスキューネットワーク",
             "area": "",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "http://ecsrn.com/",
+            "caution": "",
             "note": "イングリッシュ・コッカー",
             "sns": [
                 {
@@ -111,13 +141,21 @@
                     "type": "blog",
                     "url": "https://ecsrn.exblog.jp/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 5,
             "name": "CAJA(カヤ)の会",
             "area": "東京",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
             "url": "https://cajadog.com/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -125,13 +163,18 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/cayanokai"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 6,
             "name": "特定非営利活動法人 フレンズ・オヴ・アニマルズ(FOA)",
             "area": "東京",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -155,7 +198,13 @@
             "id": 7,
             "name": "ハッピーラブズ",
             "area": "東京",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "https://happylabs.info/",
+            "caution": "",
             "note": "ラブラドール・ゴールデン等",
             "sns": [
                 {
@@ -168,13 +217,20 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/happylabsdogs"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 9,
             "name": "Perro Dogs Home",
             "area": "東京",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "http://www.perro-dogshome.com/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -187,14 +243,21 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/perrodogshome"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 10,
             "name": "HappyLabs",
             "area": "東京",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "https://happylabs.info/",
-            "note": "ゴールデンレトリバー",
+            "caution": "",
+            "note": "ゴールデンレトリバー。レトリーバー種とそのミックス犬の保護が中心",
             "sns": [
                 {
                     "name": "HappyLabs",
@@ -211,13 +274,20 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/happylabsdogs"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 18,
             "name": "Queue",
             "area": "東京",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "http://www.perro-dogshome.com/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -230,13 +300,20 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/perrodogshome"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 19,
             "name": "ふがふがれすきゅークラブ",
             "area": "東京",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "http://toysya.sakura.ne.jp/fuga/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -249,13 +326,18 @@
                     "type": "blog",
                     "url": "http://fugares.blog42.fc2.com/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 21,
             "name": "個人活動者（港）",
             "area": "東京",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "",
+            "caution": "",
             "note": "",
             "sns": []
         },
@@ -263,7 +345,13 @@
             "id": 24,
             "name": "Angel's Tale シーズーレスキューネットワーク",
             "area": "東京",
-            "url": "http://angelstale.net/",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
+            "url": "https://angelstale.net/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -276,13 +364,20 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/_Angels.Tale"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 25,
             "name": "ジャックの里",
             "area": "東京",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "http://www.jfcj.net/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -290,13 +385,20 @@
                     "type": "facebook",
                     "url": "http://www.facebook.com/jacks.home.town"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 26,
             "name": "Dog Shelter",
             "area": "東京",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "http://dogshelter.jp/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -304,13 +406,18 @@
                     "type": "blog",
                     "url": "http://dogshelter.jp/blog/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 27,
             "name": "犬民宿舎 しろいぬの里",
             "area": "東京",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "",
+            "caution": "",
             "note": "",
             "sns": []
         },
@@ -318,15 +425,27 @@
             "id": 30,
             "name": "わんにゃん小梅保育園(FARCO)",
             "area": "東京",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
             "url": "https://sites.google.com/site/wannyanfarco/",
+            "caution": "個別のお見合いの場合はアンケートの送付、条件の合致が必要となります。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 31,
             "name": "わんにゃんサポートクローバーの会",
             "area": "東京",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "",
+            "caution": "",
             "note": "",
             "sns": []
         },
@@ -334,7 +453,11 @@
             "id": 35,
             "name": "CATWINGS",
             "area": "東京",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "",
+            "caution": "",
             "note": "",
             "sns": []
         },
@@ -342,7 +465,13 @@
             "id": 36,
             "name": "一般社団法人ケンの家",
             "area": "東京",
-            "url": "http://kens-house.com/",
+            "city": "横浜市",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
+            "url": "https://kens-house.com/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -355,13 +484,18 @@
                     "type": "x",
                     "url": "https://twitter.com/kennoyeah"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 38,
             "name": "ねこひと会",
             "area": "東京",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "",
+            "caution": "",
             "note": "",
             "sns": []
         },
@@ -369,7 +503,14 @@
             "id": 40,
             "name": "イオンペット株式会社",
             "area": "東京",
+            "city": "千葉市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
             "url": "https://www.aeonpet.com/lifehouse/about/",
+            "caution": "同居家族とのふれあいや譲渡前の講習視聴が必要であり、条件により譲渡をお断りする場合もあります。",
             "note": "",
             "sns": [
                 {
@@ -382,13 +523,20 @@
                     "type": "youtube",
                     "url": "https://www.youtube.com/channel/UCmylbkoZWecS0_6IYNg_a1g"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 41,
             "name": "特定非営利活動法人アグリドッグレスキュー",
             "area": "東京",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "http://aguri.nomaki.jp/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -401,13 +549,21 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/aguridogrescue/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 42,
             "name": "GO GO GROOMERS",
             "area": "東京",
+            "city": "荒川区",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
             "url": "http://gogogroomers.club/",
+            "caution": "避妊去勢、各種ワクチン・健康管理、室内飼育、譲渡費用の負担などの条件があります。",
             "note": "",
             "sns": [
                 {
@@ -420,13 +576,21 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/GOGOgroomers-700258293378416/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 43,
             "name": "一般社団法人 ワン・モア・フィールド",
             "area": "東京",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
             "url": "https://ameblo.jp/once-more-field/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -434,13 +598,18 @@
                     "type": "blog",
                     "url": "https://ameblo.jp/once-more-field/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 45,
             "name": "the VOICE(ぼいす)",
             "area": "東京",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "",
+            "caution": "",
             "note": "",
             "sns": []
         },
@@ -448,7 +617,14 @@
             "id": 46,
             "name": "ＮＰＯ法人 どうぶつの福祉を考える会",
             "area": "東京",
-            "url": "http://thevoice-japan.org/",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://thevoice-japan.org/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -461,13 +637,18 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/the_voice_animalrescue/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 48,
             "name": "Loved One D",
             "area": "東京",
+            "city": "",
+            "species": [],
+            "source_type": "official",
             "url": "",
+            "caution": "",
             "note": "",
             "sns": []
         },
@@ -475,7 +656,13 @@
             "id": 49,
             "name": "アイドッグ・レスキュー隊",
             "area": "東京",
+            "city": "渋谷区・豊島区・台東区・大田区",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "http://aidog.jpn.com/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -483,21 +670,36 @@
                     "type": "blog",
                     "url": "http://ameblo.jp/aidog20141001/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 50,
             "name": "ゆめネコ譲渡会",
             "area": "東京",
-            "url": "http://yume-neko.net/",
+            "city": "中央区",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://yume-neko.net/",
+            "caution": "外国の方は日本人同等の日本語理解力が無い場合は譲渡不可。飼育環境によりキャンセルもあり。",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 51,
             "name": "特定非営利活動法人 Tier Heim KOKUA",
             "area": "東京",
-            "url": "http://tierheim-kokua.aloha703.com/",
+            "city": "渋谷区",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://tierheim-kokua.aloha703.com/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -515,13 +717,21 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/tierheim_kokua/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 52,
             "name": "公益財団法人 ヒューマニン財団",
             "area": "東京",
+            "city": "杉並区",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
             "url": "http://humanin.or.jp/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -534,13 +744,20 @@
                     "type": "facebook",
                     "url": "https://www.facebook.com/humaninfoundation/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 53,
             "name": "シェルティ・レスキュー",
             "area": "東京",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "http://help-sheltie.net/",
+            "caution": "繁殖者による譲渡希望は有償無償にかかわらず掲載いたしません。",
             "note": "",
             "sns": [
                 {
@@ -553,13 +770,20 @@
                     "type": "x",
                     "url": "https://twitter.com/sheltie_rescue/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 55,
             "name": "特定非営利活動法人 家庭犬しつけ協会",
             "area": "東京",
-            "url": "http://cdta.or.jp/",
+            "city": "台東区",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
+            "url": "https://cdta.or.jp/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -567,13 +791,20 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/kateikensitsuke_kyoukai"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 56,
             "name": "特定非営利活動法人 東京キャッツアイ",
             "area": "東京",
+            "city": "",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
             "url": "https://tokyocatseye.com/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -596,21 +827,36 @@
                     "type": "youtube",
                     "url": "https://www.youtube.com/embed/D3nGPSM98Ng"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 57,
             "name": "一般社団法人ベビーキャットレスキュー",
             "area": "東京",
+            "city": "",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
             "url": "http://baby.cats.gr.jp/",
+            "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 60,
             "name": "一般社団法人台東１２５小さな手",
             "area": "東京",
+            "city": "台東区",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
             "url": "http://125chiisanate.main.jp/",
+            "caution": "外猫の捕獲のご相談はお受けしておりません。",
             "note": "",
             "sns": [
                 {
@@ -618,13 +864,20 @@
                     "type": "blog",
                     "url": "https://ameblo.jp/125125taito"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 61,
             "name": "特定非営利活動法人府中猫の会",
             "area": "東京",
+            "city": "府中市",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
             "url": "https://ameblo.jp/team-rose-cats/",
+            "caution": "お電話でのご相談は受け付けておりません。譲渡には後継人が必要な場合や猫アレルギーの確認があります。",
             "note": "",
             "sns": [
                 {
@@ -632,13 +885,20 @@
                     "type": "blog",
                     "url": "https://ameblo.jp/team-rose-cats/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 62,
             "name": "ネスタ猫の会",
             "area": "東京",
+            "city": "練馬区・杉並区・世田谷区",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
             "url": "https://ameblo.jp/nesutaneko/",
+            "caution": "60歳以上のみの世帯、単身者、無職、学生、外国籍、多頭飼育環境等への譲渡は制限があります。",
             "note": "",
             "sns": [
                 {
@@ -646,21 +906,35 @@
                     "type": "blog",
                     "url": "https://ameblo.jp/nesutaneko/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 63,
             "name": "むさしの地域猫の会",
             "area": "東京",
+            "city": "武蔵野市",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
             "url": "https://www.musashinoneko.com/",
+            "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 64,
             "name": "PEACE BOAT",
             "area": "東京",
+            "city": "横浜市",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "https://peaceboat.localinfo.jp/",
+            "caution": "個人やブリーダーからの引き取りは行っていません。",
             "note": "",
             "sns": [
                 {
@@ -668,21 +942,36 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/peace_boat/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 65,
             "name": "まちワン",
             "area": "東京",
+            "city": "町田市",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
             "url": "https://machi-wan-dogs.amebaownd.com/",
+            "caution": "",
             "note": "",
-            "sns": []
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 66,
             "name": "特定非営利活動法人SPA",
             "area": "東京",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
             "url": "https://s-p-a.jp/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -700,13 +989,20 @@
                     "type": "instagram",
                     "url": "https://www.instagram.com/s.p.a__official/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 67,
             "name": "とーち保護猫の会",
             "area": "東京",
+            "city": "目黒区・渋谷区",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
             "url": "https://ameblo.jp/to-chi-hogoneko/",
+            "caution": "",
             "note": "",
             "sns": [
                 {
@@ -714,7 +1010,8 @@
                     "type": "blog",
                     "url": "https://ameblo.jp/to-chi-hogoneko/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         }
     ]
 }

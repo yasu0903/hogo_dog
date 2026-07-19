@@ -1,0 +1,569 @@
+{
+    "no": "40",
+    "pref_name": "fukuoka",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "Dog Walk",
+            "area": "福岡",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/3ea05a12-4ec5-4773-8352-546030430e7c",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 2,
+            "name": "NPO法人クラン",
+            "area": "福岡",
+            "city": "福岡市",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/0cc415a1-05cf-4771-8d2e-790e911cf089",
+            "caution": "一般の方からの直接の猫の保護依頼はお受けしていません。",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 3,
+            "name": "ピースワンコ・ジャパン福岡譲渡センター",
+            "area": "福岡",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/ac4d79ff-af09-43e0-8173-eb5ded4784e7",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 4,
+            "name": "Berry's",
+            "area": "福岡",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/6039ba43-b720-4980-894c-c2195f44e63c",
+            "caution": "保護頭数が限られるため、個人からの引取りは行っていません。",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 5,
+            "name": "Stand by Animalz",
+            "area": "福岡",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/6fa45671-4f7b-469d-bd1c-b0810842da94",
+            "caution": "猫の保護依頼は受け付けておりません。",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 6,
+            "name": "一般社団法人リアン",
+            "area": "福岡",
+            "city": "筑後市",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/4756dd5d-6526-44d3-895e-12812efb37fc",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 7,
+            "name": "小さなしっぽ",
+            "area": "福岡",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/f25d8c8a-d984-4ca8-bc16-4f781fa4d834",
+            "caution": "",
+            "note": "チワワ・ミニチュアピンシャーなど超小型犬の保護が中心",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 8,
+            "name": "じゃむ屋",
+            "area": "福岡",
+            "city": "芦屋町",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/afbd19d4-467f-4636-8393-44e4b744f743",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 9,
+            "name": "NPO法人アニマルホームohana",
+            "area": "福岡",
+            "city": "中間市・遠賀郡",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/c5652944-66c1-4aff-b260-718d620eaf4e",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 10,
+            "name": "NPO法人さくらねこサポートOGORI",
+            "area": "福岡",
+            "city": "小郡市",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/28a48ddc-aa4b-4a90-93c0-5ac5bc6fffb6",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 11,
+            "name": "チームあんず",
+            "area": "福岡",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/75f26da7-d79b-4a23-9b8d-c0375e52fd56",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 12,
+            "name": "アニマルサポートむなかた",
+            "area": "福岡",
+            "city": "宗像市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/fd331c7f-5a64-4991-8223-2fbbc2e39e9d",
+            "caution": "猫を保護したが飼えない、どこかに猫がいるから保護してほしいといった猫の引き取りは行っていません。",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 13,
+            "name": "保護っ子ハウス",
+            "area": "福岡",
+            "city": "北九州市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/61251fdb-06e6-4f97-9b7b-96c52f735444",
+            "caution": "",
+            "note": "医療ケアの必要な犬猫を優先的に保護",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 14,
+            "name": "NPO法人動物愛護団体NYANS",
+            "area": "福岡",
+            "city": "",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/43c4b51f-103f-4d66-b3b0-aef6de18ec87",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 15,
+            "name": "Rinと。",
+            "area": "福岡",
+            "city": "",
+            "species": [],
+            "source_type": "official",
+            "url": "",
+            "caution": "",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 16,
+            "name": "Dog House なぎさ",
+            "area": "福岡",
+            "city": "遠賀郡",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/5b5726e9-23ce-4630-b4fe-3dd21e60c35d",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 17,
+            "name": "NPO法人小さな天使club",
+            "area": "福岡",
+            "city": "宮若市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/8a9cd666-4e26-4c4b-bc3f-e5f0a19a0572",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 18,
+            "name": "チームSAKURA",
+            "area": "福岡",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/7c988383-07f3-4630-b4c6-5fbfcba414af",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 19,
+            "name": "十夢の会",
+            "area": "福岡",
+            "city": "福岡市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/3796be21-948f-4e49-b556-2ba08e72e7c8",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 20,
+            "name": "チームシュナウザーレスキュー（TSR）",
+            "area": "福岡",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/244da6c6-9178-4876-88dc-d94ca4f54aae",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 21,
+            "name": "HAPPY-SMILE",
+            "area": "福岡",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/ea60dfb9-8821-4cc6-bfdd-b5541aeef7de",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 22,
+            "name": "一般社団法人J-Taz's",
+            "area": "福岡",
+            "city": "朝倉市",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/3cfdc460-9e81-4b36-bd5a-0f53180d5a78",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 23,
+            "name": "シェルティ・レスキュー福岡支部",
+            "area": "福岡",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/b255bd71-0fc0-4b4f-9f46-e24a27954905",
+            "caution": "",
+            "note": "シェットランド・シープドッグ(単犬種)の保護が中心",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 24,
+            "name": "福ねこハウス",
+            "area": "福岡",
+            "city": "",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/a7aa5d4b-2530-4fc8-8c32-22b653e31dcd",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 25,
+            "name": "一般社団法人わんわんさくちゃんお日様の会",
+            "area": "福岡",
+            "city": "朝倉郡",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/3e454725-f275-4b9a-8b71-ea61a4adf59e",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 26,
+            "name": "猫糸舎",
+            "area": "福岡",
+            "city": "福岡市・北九州市",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/30acbbdb-8b2b-4448-97f7-0b66ae328ad4",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 27,
+            "name": "Cramp",
+            "area": "福岡",
+            "city": "朝倉郡・筑前町",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/e8dab8e1-3125-44c4-8d7a-e3c91edaa199",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 28,
+            "name": "わんにゃんレスキューはぴねす",
+            "area": "福岡",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/c7cda05a-a6c1-481a-852d-674c25f98f60",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 29,
+            "name": "Liebe（リーベ）",
+            "area": "福岡",
+            "city": "",
+            "species": [],
+            "source_type": "official",
+            "url": "",
+            "caution": "",
+            "note": "",
+            "sns": []
+        },
+        {
+            "id": 30,
+            "name": "TEAM-A",
+            "area": "福岡",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/c21bf2c9-efbb-4415-a835-29ba93e0e315",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 31,
+            "name": "ANIMAL STAR☆FIELD",
+            "area": "福岡",
+            "city": "福津市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/3233924b-12fa-40ad-9a24-075d2ab2a9f7",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 32,
+            "name": "チーム・ぱぴちーず",
+            "area": "福岡",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/fed682a6-10dc-4aea-9495-53a3c49917a5",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 33,
+            "name": "福岡コーギーレスキュー",
+            "area": "福岡",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/94268c8c-d10e-47ba-ab96-66cc46828a80",
+            "caution": "",
+            "note": "コーギーの保護・譲渡が中心",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 34,
+            "name": "NPO法人セブンデイズ",
+            "area": "福岡",
+            "city": "筑紫野市",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/c21e066c-0f04-4cfe-b544-f05c305b9239",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 35,
+            "name": "ボーダーコリーレスキューネットワーク",
+            "area": "福岡",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/e12d19f0-58ab-45fb-bcb9-b450c14e973e",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 36,
+            "name": "イオンペットPeTeMo筑紫野店",
+            "area": "福岡",
+            "city": "筑紫野市",
+            "species": [
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/5a947d6d-420e-4e39-8b71-ab75934f66a4",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 37,
+            "name": "チームちわわ",
+            "area": "福岡",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "official",
+            "url": "https://www.zaidan-fukuoka-douai.or.jp/groups/detail/398ca813-0010-4952-b18c-03e504e0086d",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        }
+    ]
+}

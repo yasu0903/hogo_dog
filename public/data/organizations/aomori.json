@@ -1,0 +1,38 @@
+{
+    "no": "02",
+    "pref_name": "aomori",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "犬猫の新しい飼い主探しボランティア ワン・ニャンを愛する会",
+            "area": "青森",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "http://wannyan12.minibird.jp/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 2,
+            "name": "特定非営利活動法人アニマル・サポート青森",
+            "area": "青森",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "http://www.as-aomori.org/",
+            "caution": "保護施設はなく引き取りも行いません。新しい飼い主が見つかるまでは相談者自身で世話をする必要があります。",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        }
+    ]
+}

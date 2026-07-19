@@ -1,0 +1,22 @@
+{
+    "no": "42",
+    "pref_name": "nagasaki",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特例認定特定非営利活動法人長崎わんにゃん会",
+            "area": "長崎",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://nagasaki-wannyankai.com/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        }
+    ]
+}

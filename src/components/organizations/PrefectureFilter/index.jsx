@@ -1,11 +1,12 @@
 // src/components/organizations/PrefectureFilter.jsx
 import styles from './PrefectureFilter.module.css';
+import { FILTER_MESSAGES, ORGANIZATIONS_MESSAGES } from '../../../constants/locales/ja';
 
 const PrefectureFilter = ({ prefectures, selectedPrefecture, onFilterChange }) => {
   return (
     <div className={styles.filterContainer}>
       <label htmlFor="prefecture-select" className={styles.filterLabel}>
-        都道府県で絞り込み
+        {FILTER_MESSAGES.PREFECTURE.LABEL}
       </label>
       <select
         id="prefecture-select"
@@ -13,7 +14,7 @@ const PrefectureFilter = ({ prefectures, selectedPrefecture, onFilterChange }) =
         onChange={(e) => onFilterChange(e.target.value)}
         className={styles.filterSelect}
       >
-        <option value="">すべての都道府県</option>
+        <option value="">{ORGANIZATIONS_MESSAGES.ALL_PREFECTURES}</option>
         {prefectures.map((prefecture) => (
           <option key={prefecture.id} value={prefecture.id}>
             {prefecture.name}

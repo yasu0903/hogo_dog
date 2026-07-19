@@ -1,0 +1,22 @@
+{
+    "no": "45",
+    "pref_name": "miyazaki",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特定非営利活動法人咲桃虎",
+            "area": "宮崎",
+            "city": "高原町",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://www.sakumonto.com/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        }
+    ]
+}

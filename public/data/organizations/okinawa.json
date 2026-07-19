@@ -1,0 +1,51 @@
+{
+    "no": "47",
+    "pref_name": "okinawa",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特定非営利活動法人動物たちを守る会ケルビム",
+            "area": "沖縄",
+            "city": "宜野湾市・うるま市",
+            "species": [
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://www.cherubims.org/",
+            "caution": "",
+            "note": "シェルターを運営",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 2,
+            "name": "一般社団法人琉球わんにゃんゆいまーる",
+            "area": "沖縄",
+            "city": "",
+            "species": [
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://ryukyuwannyanyuimaru.org/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 3,
+            "name": "特定非営利活動法人ワンズパートナーの会",
+            "area": "沖縄",
+            "city": "",
+            "species": [
+                "dog"
+            ],
+            "source_type": "independent",
+            "url": "https://onesfamily.ti-da.net/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        }
+    ]
+}

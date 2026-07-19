@@ -1,0 +1,37 @@
+{
+    "no": "27",
+    "pref_name": "osaka",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "公益財団法人日本アニマルトラスト（ハッピーハウス）",
+            "area": "大阪",
+            "city": "能勢町",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://happyhouse.or.jp/",
+            "caution": "",
+            "note": "動物保護施設を運営",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 2,
+            "name": "特定非営利活動法人はぴねすDOG",
+            "area": "大阪",
+            "city": "北摂地域",
+            "species": [
+                "dog"
+            ],
+            "source_type": "independent",
+            "url": "https://happiness-dog.com/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        }
+    ]
+}

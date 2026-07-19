@@ -1,0 +1,54 @@
+{
+    "no": "33",
+    "pref_name": "okayama",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "犬猫愛護会わんぱーく",
+            "area": "岡山",
+            "city": "岡山市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://www.wanpark.org/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 2,
+            "name": "認定特定非営利活動法人しあわせの種たち",
+            "area": "岡山",
+            "city": "岡山市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://shiawasenotanetachi.amebaownd.com/",
+            "caution": "",
+            "note": "岡山県動物愛護センターの譲渡事業と協働",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        },
+        {
+            "id": 3,
+            "name": "一般社団法人ALL AS ONE",
+            "area": "岡山",
+            "city": "岡山市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
+            "url": "https://allasone.jp/",
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        }
+    ]
+}

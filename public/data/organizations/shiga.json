@@ -1,0 +1,22 @@
+{
+    "no": "25",
+    "pref_name": "shiga",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特定非営利活動法人動物愛護団体ANGELS",
+            "area": "滋賀",
+            "city": "高島市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "official",
+            "url": "http://angels2005.org/",
+            "caution": "譲渡会への参加は事前アンケートによる予約が必要です。",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
+        }
+    ]
+}

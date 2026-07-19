@@ -6,25 +6,49 @@
             "id": 1,
             "name": "犬猫愛護会わんぱーく",
             "area": "岡山",
+            "city": "岡山市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://www.wanpark.org/",
-            "note": "県公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "認定特定非営利活動法人しあわせの種たち",
             "area": "岡山",
+            "city": "岡山市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://shiawasenotanetachi.amebaownd.com/",
-            "note": "岡山県動物愛護センターの譲渡事業と協働。県公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "",
+            "note": "岡山県動物愛護センターの譲渡事業と協働",
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 3,
             "name": "一般社団法人ALL AS ONE",
             "area": "岡山",
+            "city": "岡山市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://allasone.jp/",
-            "note": "岡山市を中心に活動。県公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

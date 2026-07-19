@@ -6,9 +6,17 @@
             "id": 1,
             "name": "庄内アニマル倶楽部",
             "area": "山形",
+            "city": "庄内地区",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://shonaianimalclub.jimdofree.com/",
-            "note": "庄内地区で活動。県公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "現在、受け入れスペースがないため、保護依頼は受け付けていません。",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

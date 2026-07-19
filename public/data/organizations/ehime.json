@@ -6,23 +6,39 @@
             "id": 1,
             "name": "認定特定非営利活動法人えひめイヌ・ネコの会",
             "area": "愛媛",
+            "city": "松山市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://ehimeinuneko.com/",
-            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "caution": "犬猫の預かり施設ではないため、里親が見つかるまで自身で責任を持って世話をする必要がある。",
+            "note": "",
             "sns": [
                 {
                     "name": "えひめイヌ・ネコの会 ブログ",
                     "type": "blog",
                     "url": "https://ameblo.jp/ehimeinuneko/"
                 }
-            ]
+            ],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "dog＆cat幸呼の会",
             "area": "愛媛",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://kokonokai.jimdofree.com/",
-            "note": "県公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

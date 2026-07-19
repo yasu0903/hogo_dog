@@ -6,17 +6,33 @@
             "id": 1,
             "name": "セカンドチャンス京都",
             "area": "京都",
+            "city": "京都市・宇治市",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://2ndchance-kyoto.com/",
-            "note": "府公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "諸事情により、犬・猫の引き取りは行っていません。メールや訪問での相談も不可です。",
+            "note": "",
+            "sns": [],
+            "last_verified": "2026-07-19"
         },
         {
             "id": 2,
             "name": "京都 縁の会",
             "area": "京都",
+            "city": "",
+            "species": [
+                "dog",
+                "cat"
+            ],
+            "source_type": "independent",
             "url": "https://kyotoennokai.wixsite.com/ennokai",
-            "note": "犬猫譲渡会の企画・運営。府公表の登録団体一覧はないため独自調査で掲載",
-            "sns": []
+            "caution": "",
+            "note": "犬猫譲渡会の企画・運営",
+            "sns": [],
+            "last_verified": "2026-07-19"
         }
     ]
 }

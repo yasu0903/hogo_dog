@@ -1,43 +1,47 @@
 // src/pages/Organizations/index.jsx
-import { useState, useEffect } from 'react';
+// 全国横断の団体検索ページ。
+// フィルタ状態（q / area / pref / species / view / page）はURLクエリに同期し、
+// 共有・ブラウザバックで状態が再現できる。
+import { useState, useEffect, useMemo } from 'react';
+import { useSearchParams, useNavigate } from 'react-router-dom';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
+import Seo from '../../components/common/Seo';
+import Pagination from '../../components/common/Pagination';
 import AreaFilter from '../../components/organizations/AreaFilter';
-import OrganizationList from '../../components/organizations/OrganizationList';
-import { fetchOrganizations, fetchPrefectures, getAreas } from '../../services/api';
-import { COMMON_MESSAGES, ORGANIZAIONS_MESSAGES } from '../../constants/locales/ja';
+import PrefectureFilter from '../../components/organizations/PrefectureFilter';
+import OrgCard from '../../components/organizations/OrgCard';
+import JapanTileMap from '../../components/organizations/JapanTileMap';
+import { fetchSearchIndex, fetchPrefectures, getAreas } from '../../services/api';
+import { COMMON_MESSAGES, ORGANIZATIONS_MESSAGES, ORGANIZATION_DETAIL_MESSAGES } from '../../constants/locales/ja';
+import { PAGINATION_CONSTANT } from '../../constants/pagination';
 import styles from './Organizations.module.css';
 
 const Organizations = () => {
-  const [organizations, setOrganizations] = useState([]);
-  const [filteredOrganizations, setFilteredOrganizations] = useState([]);
+  const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [allOrganizations, setAllOrganizations] = useState([]);
   const [prefectures, setPrefectures] = useState([]);
-  const [areas, setAreas] = useState([]);
-  const [selectedArea, setSelectedArea] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // データ読み込み
+  // フィルタ状態はURLクエリを唯一の情報源にする
+  const query = searchParams.get('q') ?? '';
+  const selectedArea = searchParams.get('area') ?? '';
+  const selectedPrefecture = searchParams.get('pref') ?? '';
+  const speciesFilter = searchParams.get('species') ?? 'all';
+  const view = searchParams.get('view') === 'map' ? 'map' : 'list';
+  const currentPage = Math.max(1, parseInt(searchParams.get('page') ?? '1', 10) || 1);
+
   useEffect(() => {
     const loadData = async () => {
       try {
-        // データ取得
-        const [prefsData, orgsData] = await Promise.all([
-          fetchPrefectures(),
-          fetchOrganizations()
+        const [indexData, prefsData] = await Promise.all([
+          fetchSearchIndex(),
+          fetchPrefectures()
         ]);
-        
-        // エリア一覧を取得
-        const areasList = getAreas(prefsData);
-
-        // 掲載団体が1件もない都道府県（listed_num: 0）は一覧に表示しない。
-        // listed_numを持たない古いデータを読んだ場合は非表示にせず全件表示する
-        const visibleOrgsData = orgsData.filter(org => org.listedCount !== 0);
-
+        setAllOrganizations(indexData);
         setPrefectures(prefsData);
-        setAreas(areasList);
-        setOrganizations(visibleOrgsData);
-        setFilteredOrganizations(visibleOrgsData);
       } catch (error) {
         console.error(COMMON_MESSAGES.ERROR_WHILE_LOADING, error);
         setError(COMMON_MESSAGES.FAILED_LOADING_DATA);
@@ -49,28 +53,79 @@ const Organizations = () => {
     loadData();
   }, []);
 
-  // エリアフィルター変更時の処理
-  const handleAreaChange = (area) => {
-    setSelectedArea(area);
-    applyFilters(area);
-  };
-
-  // フィルター適用関数
-  const applyFilters = (area) => {
-    let filtered = [...organizations];
-
-    // エリアフィルター
-    if (area) {
-      // 都道府県IDからエリアを判断するために、該当するエリアに所属する都道府県IDのリストを作成
-      const prefIdsInArea = prefectures
-        .filter(pref => pref.area === area)
-        .map(pref => pref.id);
-      
-      filtered = filtered.filter(org => prefIdsInArea.includes(org.prefecture_id));
+  // URLクエリの更新。フィルタ変更時はページ番号をリセットする
+  const updateParams = (patch, { replace = false } = {}) => {
+    const next = new URLSearchParams(searchParams);
+    for (const [key, value] of Object.entries(patch)) {
+      if (value === '' || value == null || value === 'all' || (key === 'page' && value === 1) || (key === 'view' && value === 'list')) {
+        next.delete(key);
+      } else {
+        next.set(key, String(value));
+      }
     }
-    
-    setFilteredOrganizations(filtered);
+    if (!('page' in patch)) {
+      next.delete('page');
+    }
+    setSearchParams(next, { replace });
   };
+
+  // 掲載団体がある都道府県と、県ごとの団体数
+  const countsByPrefecture = useMemo(() => {
+    const counts = {};
+    for (const org of allOrganizations) {
+      counts[org.prefectureId] = (counts[org.prefectureId] ?? 0) + 1;
+    }
+    return counts;
+  }, [allOrganizations]);
+
+  const visiblePrefectures = useMemo(
+    () => prefectures.filter(pref => countsByPrefecture[pref.id]),
+    [prefectures, countsByPrefecture]
+  );
+
+  const areas = useMemo(() => getAreas(visiblePrefectures), [visiblePrefectures]);
+
+  // 都道府県セレクタの選択肢（エリア選択時はそのエリア内に絞る）
+  const prefectureOptions = selectedArea
+    ? visiblePrefectures.filter(pref => pref.area === selectedArea)
+    : visiblePrefectures;
+
+  // 絞り込み
+  const filteredOrganizations = useMemo(() => {
+    const normalizedQuery = query.trim().toLowerCase();
+    return allOrganizations.filter(org => {
+      if (selectedArea && org.prefectureArea !== selectedArea) return false;
+      if (selectedPrefecture && org.prefectureId !== selectedPrefecture) return false;
+      if (speciesFilter !== 'all' && !(org.species || []).includes(speciesFilter)) return false;
+      if (normalizedQuery) {
+        const haystack = `${org.name} ${org.city ?? ''} ${org.prefectureName}`.toLowerCase();
+        if (!haystack.includes(normalizedQuery)) return false;
+      }
+      return true;
+    });
+  }, [allOrganizations, query, selectedArea, selectedPrefecture, speciesFilter]);
+
+  // ページネーション
+  const itemsPerPage = PAGINATION_CONSTANT.SEARCH_NUM_PER_PAGE;
+  const totalPages = Math.max(1, Math.ceil(filteredOrganizations.length / itemsPerPage));
+  const safePage = Math.min(currentPage, totalPages);
+  const indexOfLastItem = safePage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentOrganizations = filteredOrganizations.slice(indexOfFirstItem, indexOfLastItem);
+
+  const handlePageChange = (pageNumber) => {
+    updateParams({ page: pageNumber });
+    window.scrollTo(0, 0);
+  };
+
+  const handleAreaChange = (area) => {
+    // エリアを切り替えたら、そのエリア外の都道府県選択は解除する
+    const keepPref = selectedPrefecture &&
+      prefectures.some(pref => pref.id === selectedPrefecture && (!area || pref.area === area));
+    updateParams({ area, pref: keepPref ? selectedPrefecture : '' });
+  };
+
+  const hasActiveFilters = Boolean(query || selectedArea || selectedPrefecture || speciesFilter !== 'all');
 
   if (loading) {
     return <div className={styles.loading}>{COMMON_MESSAGES.LOADING}</div>;
@@ -82,19 +137,124 @@ const Organizations = () => {
 
   return (
     <div className={styles.container}>
+      <Seo
+        title={ORGANIZATIONS_MESSAGES.TITLE}
+        description={ORGANIZATIONS_MESSAGES.DESCRIPTION}
+        path="/organizations"
+      />
       <Header />
       <main className={styles.main}>
-        <h1 className={styles.title}>{ORGANIZAIONS_MESSAGES.TITLE}</h1>
-        
+        <h1 className={styles.title}>{ORGANIZATIONS_MESSAGES.TITLE}</h1>
+
         <div className={styles.filters}>
-          <AreaFilter
-            areas={areas}
-            selectedArea={selectedArea}
-            onFilterChange={handleAreaChange}
-          />
+          <div className={styles.filterRow}>
+            <input
+              type="search"
+              className={styles.searchInput}
+              placeholder={ORGANIZATIONS_MESSAGES.SEARCH_PLACEHOLDER}
+              value={query}
+              onChange={(e) => updateParams({ q: e.target.value }, { replace: true })}
+              aria-label={ORGANIZATIONS_MESSAGES.SEARCH_PLACEHOLDER}
+            />
+            <div className={styles.speciesFilter} role="group" aria-label={ORGANIZATION_DETAIL_MESSAGES.SPECIES_FILTER_LABEL}>
+              {[
+                { value: 'all', label: ORGANIZATION_DETAIL_MESSAGES.SPECIES_ALL },
+                { value: 'dog', label: ORGANIZATION_DETAIL_MESSAGES.SPECIES_DOG },
+                { value: 'cat', label: ORGANIZATION_DETAIL_MESSAGES.SPECIES_CAT }
+              ].map(option => (
+                <button
+                  key={option.value}
+                  className={`${styles.speciesButton} ${speciesFilter === option.value ? styles.speciesButtonActive : ''}`}
+                  onClick={() => updateParams({ species: option.value })}
+                >
+                  {option.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className={styles.filterRow}>
+            <AreaFilter
+              areas={areas}
+              selectedArea={selectedArea}
+              onFilterChange={handleAreaChange}
+            />
+          </div>
+
+          <div className={styles.filterRow}>
+            <PrefectureFilter
+              prefectures={prefectureOptions}
+              selectedPrefecture={selectedPrefecture}
+              onFilterChange={(pref) => updateParams({ pref })}
+            />
+            {hasActiveFilters && (
+              <button
+                className={styles.clearButton}
+                onClick={() => updateParams({ q: '', area: '', pref: '', species: 'all' })}
+              >
+                {ORGANIZATIONS_MESSAGES.CLEAR_FILTERS}
+              </button>
+            )}
+          </div>
         </div>
-        
-        <OrganizationList organizations={filteredOrganizations} />
+
+        <div className={styles.viewTabs} role="group" aria-label={ORGANIZATIONS_MESSAGES.VIEW_TOGGLE_LABEL}>
+          <button
+            className={`${styles.viewTab} ${view === 'list' ? styles.viewTabActive : ''}`}
+            aria-pressed={view === 'list'}
+            onClick={() => updateParams({ view: 'list', page: safePage })}
+          >
+            {ORGANIZATIONS_MESSAGES.VIEW_LIST}
+          </button>
+          <button
+            className={`${styles.viewTab} ${view === 'map' ? styles.viewTabActive : ''}`}
+            aria-pressed={view === 'map'}
+            onClick={() => updateParams({ view: 'map', page: safePage })}
+          >
+            {ORGANIZATIONS_MESSAGES.VIEW_MAP}
+          </button>
+        </div>
+
+        {view === 'map' ? (
+          <JapanTileMap
+            prefectures={prefectures}
+            counts={countsByPrefecture}
+            onSelect={(prefId) => navigate(`/organizations/${prefId}`)}
+          />
+        ) : (
+          <>
+            {filteredOrganizations.length > 0 ? (
+              <div className={styles.resultsInfo}>
+                <p>
+                  {ORGANIZATIONS_MESSAGES.RESULT_COUNT(
+                    filteredOrganizations.length,
+                    indexOfFirstItem + 1,
+                    Math.min(indexOfLastItem, filteredOrganizations.length)
+                  )}
+                </p>
+              </div>
+            ) : (
+              <p className={styles.noResults}>{ORGANIZATIONS_MESSAGES.ERROR_FOR_NO_RESULTS}</p>
+            )}
+
+            <div className={styles.organizationsList}>
+              {currentOrganizations.map(org => (
+                <OrgCard
+                  key={`${org.prefectureId}-${org.id}`}
+                  org={org}
+                  detailPath={`/organizations/${org.prefectureId}/${org.id}`}
+                  showPrefecture
+                />
+              ))}
+            </div>
+
+            <Pagination
+              currentPage={safePage}
+              totalPages={totalPages}
+              onPageChange={handlePageChange}
+            />
+          </>
+        )}
       </main>
       <Footer />
     </div>

@@ -1,4 +1,4 @@
-export const PAGINAION_CONSTANT = {
+export const PAGINATION_CONSTANT = {
     NUM_PER_PAGE: 6,
     NUM_OF_DISPLAY_PAGES:4,
 }

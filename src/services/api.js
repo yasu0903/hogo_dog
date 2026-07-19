@@ -29,7 +29,7 @@ export const fetchPrefectures = async () => {
   }
 };
 
-export const fetchPrefectureiById = async (prefectureId) => {
+export const fetchPrefectureById = async (prefectureId) => {
   try {
     const response = await fetch('/data/prefecture.json');
     if (!response.ok) {
@@ -125,6 +125,12 @@ export const fetchOrganizations = async () => {
     console.error('Error fetching organizations:', error);
     return [];
   }
+};
+
+// 特定の都道府県の情報ソース（自治体公表資料など）を取得
+export const fetchSourceById = async (prefectureId) => {
+  const sources = await fetchOrganizations();
+  return sources.find(source => source.id === prefectureId) || null;
 };
 
 // 特定の都道府県の団体詳細を取得

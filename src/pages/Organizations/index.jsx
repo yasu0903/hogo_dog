@@ -5,7 +5,7 @@ import Footer from '../../components/common/Footer';
 import AreaFilter from '../../components/organizations/AreaFilter';
 import OrganizationList from '../../components/organizations/OrganizationList';
 import { fetchOrganizations, fetchPrefectures, getAreas } from '../../services/api';
-import { COMMON_MESSAGES, ORGANIZAIONS_MESSAGES } from '../../constants/locales/ja';
+import { COMMON_MESSAGES, ORGANIZATIONS_MESSAGES } from '../../constants/locales/ja';
 import styles from './Organizations.module.css';
 
 const Organizations = () => {
@@ -84,7 +84,7 @@ const Organizations = () => {
     <div className={styles.container}>
       <Header />
       <main className={styles.main}>
-        <h1 className={styles.title}>{ORGANIZAIONS_MESSAGES.TITLE}</h1>
+        <h1 className={styles.title}>{ORGANIZATIONS_MESSAGES.TITLE}</h1>
         
         <div className={styles.filters}>
           <AreaFilter

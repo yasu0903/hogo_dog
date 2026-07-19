@@ -3,7 +3,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import Home from '../pages/Home';
 import Organizations from '../pages/Organizations';
 import OrganizationDetail from '../pages/OrganizationDetail';
-import PrivacyPolicy from '../pages/PrivacyPlicy';
+import PrivacyPolicy from '../pages/PrivacyPolicy';
 import TermsOfService from '../pages/TermsOfService';
 
 const router = createBrowserRouter([

@@ -9,7 +9,7 @@ export const COMMON_MESSAGES = {
 
 export const HEADER_MESSAGES = {
     HOME: 'ホーム',
-    ORGANIZATIONS: '検索',
+    ORGANIZATIONS: '団体を探す',
     TITLE: 'わんだーネット'
 }
 
@@ -18,7 +18,7 @@ export const FOOTER_MESSAGES = {
     SITEMAP: 'サイトマップ',
     HOME: 'ホーム',
     ORGANIZAIONS: '動物愛護団体一覧',
-    COPYRIGHT: 'わんだーネット All Rights Researved.',
+    COPYRIGHT: 'わんだーネット All Rights Reserved.',
     LEGAL: '法的情報',
     PRIVACY_POLICY: 'プライバシーポリシー',
     TERMS_OF_SERVICE: '利用規約',
@@ -45,32 +45,36 @@ export const HOME_MESSAGES = {
             DESCRIPTION: '日本全国の団体情報を網羅しています',
         }
     ],
-    LINK_TO_ORGANIZATIONS: '検索'
+    HERO_SELECT_LABEL: 'お住まいの都道府県から探す',
+    HERO_SELECT_PLACEHOLDER: '都道府県を選択',
+    LINK_TO_ORGANIZATIONS: '団体を探す'
 }
 
-export const ORGANIZAIONS_MESSAGES = {
+export const ORGANIZATIONS_MESSAGES = {
     TITLE: '団体一覧',
     ERROR_FOR_DATA_LOADING: 'データが読み込まれていません',
     ERROR_FOR_VALIDATION: 'データの形式が正しくありません',
     ERROR_FOR_NO_RESULTS: '該当する団体が見つかりません'
 }
 
-export const ORGANIZAION_CARD_MESSAGES = {
-    SOURCE: '情報ソース',
-    NUMBER_OF_REGISTERED_ORGANIZATION: '登録団体数:',
-    LINK_TO_ORGANIZAION_DETAIL: '詳細',
+export const ORGANIZATION_CARD_MESSAGES = {
+    NUMBER_OF_REGISTERED_ORGANIZATION: '掲載団体数:',
+    LINK_TO_ORGANIZAION_DETAIL: '詳細を見る',
 }
 
-export const ORGANIZAION_DETAIL_MESSAGES = {
+export const ORGANIZATION_DETAIL_MESSAGES = {
     ERROR_FOR_ORGANIZAION_LOADING: '団体情報の読み込みに失敗しました',
     ERROR_FOR_PREFECTURE_LOADING: '都道府県情報の読み込みに失敗しました',
     NEXT: '次へ',
     BACK: '前へ',
-    BACK_TO_ORGANIZATION_LIST: '戻る',
+    BACK_TO_ORGANIZATION_LIST: '都道府県一覧へ戻る',
     ORGANIZAION_NOT_FOUND: '団体が見つかりません',
     AREA: 'エリア',
     WEBSITE: '公式サイト',
-    SNS: 'SNS'
+    SNS: 'SNS',
+    SOURCE: '情報ソース',
+    BREADCRUMB_HOME: 'ホーム',
+    BREADCRUMB_ORGANIZATIONS: '団体一覧'
 }
 
 export const FILTER_MESSAGES = {

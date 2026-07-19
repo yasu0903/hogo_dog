@@ -1,0 +1,22 @@
+{
+    "no": "28",
+    "pref_name": "hyogo",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特定非営利活動法人動物保護団体神戸アニマルリンク",
+            "area": "兵庫",
+            "url": "https://www.kobeanimallink.com/",
+            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        },
+        {
+            "id": 2,
+            "name": "特定非営利活動法人りぐこうべ兵庫",
+            "area": "兵庫",
+            "url": "https://lig-kobe.com/",
+            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        }
+    ]
+}

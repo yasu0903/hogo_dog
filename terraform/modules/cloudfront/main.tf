@@ -30,9 +30,9 @@ resource "aws_cloudfront_distribution" "website" {
     viewer_protocol_policy = "redirect-to-https"
     compress               = true
 
-    min_ttl                = 0
-    default_ttl            = 3600   # 1時間
-    max_ttl                = 86400  # 24時間
+    min_ttl     = 0
+    default_ttl = 3600  # 1時間
+    max_ttl     = 86400 # 24時間
 
     forwarded_values {
       query_string = false
@@ -42,11 +42,21 @@ resource "aws_cloudfront_distribution" "website" {
     }
   }
 
-  # カスタムエラーレスポンス設定
+  # SPAのため、S3にオブジェクトが存在しないパスはindex.htmlを返し、
+  # クライアント側（React Router）でルーティングする。
+  # OAC構成ではListBucket権限がなく、存在しないキーはS3が403を返すため403も対象にする
   custom_error_response {
-    error_code         = 404
-    response_code      = 404
-    response_page_path = "/${var.error_document}"
+    error_code            = 403
+    response_code         = 200
+    response_page_path    = "/${var.index_document}"
+    error_caching_min_ttl = 0
+  }
+
+  custom_error_response {
+    error_code            = 404
+    response_code         = 200
+    response_page_path    = "/${var.index_document}"
+    error_caching_min_ttl = 0
   }
 
   restrictions {

@@ -1,0 +1,22 @@
+{
+    "no": "32",
+    "pref_name": "shimane",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "Animal Life Support Center PONT",
+            "area": "島根",
+            "url": "https://animal-pont.com/",
+            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        },
+        {
+            "id": 2,
+            "name": "しあわせサポート犬猫部",
+            "area": "島根",
+            "url": "https://www.inunekobu.com/",
+            "note": "松江市を中心に活動。県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        }
+    ]
+}

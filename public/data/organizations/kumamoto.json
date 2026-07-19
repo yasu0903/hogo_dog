@@ -1,0 +1,30 @@
+{
+    "no": "43",
+    "pref_name": "kumamoto",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "ジョートフル熊本",
+            "area": "熊本",
+            "url": "https://www.jyoutofull.org/",
+            "note": "動物愛護センター・保健所・保護団体と協力して譲渡会を開催。県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        },
+        {
+            "id": 2,
+            "name": "特定非営利活動法人犬猫ケアホームきずなの丘",
+            "area": "熊本",
+            "url": "https://www.kizunanooka.org/",
+            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        },
+        {
+            "id": 3,
+            "name": "山ぼうしの樹犬猫の会",
+            "area": "熊本",
+            "url": "https://www.haw-fukufuku.net/",
+            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        }
+    ]
+}

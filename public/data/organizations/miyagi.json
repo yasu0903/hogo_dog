@@ -1,0 +1,33 @@
+{
+    "no": "04",
+    "pref_name": "miyagi",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "宮城県犬猫里親探しの会バトンタッチ",
+            "area": "宮城",
+            "url": "https://batontouch.chu.jp/",
+            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        },
+        {
+            "id": 2,
+            "name": "特定非営利活動法人アニマルクラブ石巻",
+            "area": "宮城",
+            "url": "https://a-c.sub.jp/",
+            "note": "県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": [
+                {
+                    "name": "アニマルクラブ石巻 Facebook",
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/NPO.animalclub.ishinomaki/"
+                },
+                {
+                    "name": "アニマルクラブ石巻 Instagram",
+                    "type": "instagram",
+                    "url": "https://www.instagram.com/animalclubishinomaki/"
+                }
+            ]
+        }
+    ]
+}

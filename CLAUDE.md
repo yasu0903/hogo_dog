@@ -50,6 +50,7 @@ Uses FontAwesome React components for social media icons with dynamic icon mappi
 1. Add prefecture data to `/public/data/prefecture.json`
 2. Create corresponding `/public/data/organizations/{englishName}.json` file
 3. Update area mappings if introducing new geographic areas
+4. Update `listed_num` in `/public/data/source.json` to match the number of organizations in the prefecture's organizations file (prefectures with `listed_num` 0 are hidden from the list page)
 
 ### Data File Structure
 - Prefecture files follow: `{no, name, english_name, area}` format

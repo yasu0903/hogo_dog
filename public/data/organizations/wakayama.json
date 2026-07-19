@@ -1,0 +1,14 @@
+{
+    "no": "30",
+    "pref_name": "wakayama",
+    "organizations": [
+        {
+            "id": 1,
+            "name": "特定非営利活動法人ワンダブル二度目の命",
+            "area": "和歌山",
+            "url": "https://wandouble.com/",
+            "note": "和歌山市を拠点に活動。県公表の登録団体一覧はないため独自調査で掲載",
+            "sns": []
+        }
+    ]
+}

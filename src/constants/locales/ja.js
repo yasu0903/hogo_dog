@@ -64,7 +64,8 @@ export const ORGANIZATIONS_MESSAGES = {
     VIEW_TOGGLE_LABEL: '表示切替',
     CLEAR_FILTERS: '条件をクリア',
     RESULT_COUNT: (total, from, to) => `全${total}件中 ${from}-${to}件を表示`,
-    ALL_PREFECTURES: 'すべての都道府県'
+    ALL_PREFECTURES: 'すべての都道府県',
+    ALL_CITIES: 'すべての市区町村'
 }
 
 export const JAPAN_MAP_MESSAGES = {
@@ -172,5 +173,8 @@ export const FILTER_MESSAGES = {
     },
     PREFECTURE: {
         LABEL: '都道府県で絞り込む'
+    },
+    CITY: {
+        LABEL: '市区町村で絞り込む'
     }
 }

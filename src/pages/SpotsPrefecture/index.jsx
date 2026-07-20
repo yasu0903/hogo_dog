@@ -10,6 +10,7 @@ import Seo from '../../components/common/Seo';
 import Pagination from '../../components/common/Pagination';
 import SpotCard from '../../components/spots/SpotCard';
 import CategoryFilter from '../../components/spots/CategoryFilter';
+import CityFilter from '../../components/organizations/CityFilter';
 import { fetchSpotsByPrefecture, fetchPrefectureById } from '../../services/api';
 import { COMMON_MESSAGES, SPOTS_MESSAGES, SPOTS_PREFECTURE_MESSAGES } from '../../constants/locales/ja';
 import { PAGINATION_CONSTANT } from '../../constants/pagination';
@@ -24,6 +25,7 @@ const SpotsPrefecture = () => {
 
   // ページ内フィルタ・ページネーション
   const [categoryFilter, setCategoryFilter] = useState('all');
+  const [cityFilter, setCityFilter] = useState('all');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = PAGINATION_CONSTANT.NUM_PER_PAGE;
 
@@ -53,12 +55,26 @@ const SpotsPrefecture = () => {
     [spots]
   );
 
-  const filteredSpots = categoryFilter === 'all'
-    ? spots
-    : spots.filter(spot => spot.category === categoryFilter);
+  // 市区町村セレクタの選択肢（spot.city は単一の市区町村名）
+  const cityOptions = useMemo(() => {
+    const set = new Set();
+    for (const spot of spots) {
+      if (spot.city) set.add(spot.city);
+    }
+    return [...set].sort((a, b) => a.localeCompare(b, 'ja'));
+  }, [spots]);
+
+  const filteredSpots = spots.filter(spot =>
+    (categoryFilter === 'all' || spot.category === categoryFilter) &&
+    (cityFilter === 'all' || spot.city === cityFilter));
 
   const handleCategoryChange = (category) => {
     setCategoryFilter(category);
+    setCurrentPage(1);
+  };
+
+  const handleCityChange = (value) => {
+    setCityFilter(value === '' ? 'all' : value);
     setCurrentPage(1);
   };
 
@@ -136,6 +152,13 @@ const SpotsPrefecture = () => {
             selectedCategory={categoryFilter}
             onFilterChange={handleCategoryChange}
           />
+          {cityOptions.length > 0 && (
+            <CityFilter
+              cities={cityOptions}
+              selectedCity={cityFilter === 'all' ? '' : cityFilter}
+              onFilterChange={handleCityChange}
+            />
+          )}
         </div>
 
         {filteredSpots.length > 0 ? (

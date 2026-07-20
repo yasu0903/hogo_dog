@@ -10,6 +10,7 @@ import Seo from '../../components/common/Seo';
 import Pagination from '../../components/common/Pagination';
 import AreaFilter from '../../components/organizations/AreaFilter';
 import PrefectureFilter from '../../components/organizations/PrefectureFilter';
+import CityFilter from '../../components/organizations/CityFilter';
 import JapanTileMap from '../../components/organizations/JapanTileMap';
 import SpotCard from '../../components/spots/SpotCard';
 import CategoryFilter from '../../components/spots/CategoryFilter';
@@ -30,6 +31,7 @@ const Spots = () => {
   const query = searchParams.get('q') ?? '';
   const selectedArea = searchParams.get('area') ?? '';
   const selectedPrefecture = searchParams.get('pref') ?? '';
+  const selectedCity = searchParams.get('city') ?? '';
   const categoryFilter = searchParams.get('category') ?? 'all';
   const view = searchParams.get('view') === 'map' ? 'map' : 'list';
   const currentPage = Math.max(1, parseInt(searchParams.get('page') ?? '1', 10) || 1);
@@ -99,12 +101,24 @@ const Spots = () => {
     ? visiblePrefectures.filter(pref => pref.area === selectedArea)
     : visiblePrefectures;
 
+  // 市区町村セレクタの選択肢（選択県内に限定。spot.city は単一の市区町村名）
+  const cityOptions = useMemo(() => {
+    if (!selectedPrefecture) return [];
+    const set = new Set();
+    for (const spot of allSpots) {
+      if (spot.prefectureId !== selectedPrefecture) continue;
+      if (spot.city) set.add(spot.city);
+    }
+    return [...set].sort((a, b) => a.localeCompare(b, 'ja'));
+  }, [allSpots, selectedPrefecture]);
+
   // 絞り込み
   const filteredSpots = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
     return allSpots.filter(spot => {
       if (selectedArea && spot.prefectureArea !== selectedArea) return false;
       if (selectedPrefecture && spot.prefectureId !== selectedPrefecture) return false;
+      if (selectedCity && spot.city !== selectedCity) return false;
       if (categoryFilter !== 'all' && spot.category !== categoryFilter) return false;
       if (normalizedQuery) {
         const haystack = `${spot.name} ${spot.city ?? ''} ${spot.prefectureName}`.toLowerCase();
@@ -112,7 +126,7 @@ const Spots = () => {
       }
       return true;
     });
-  }, [allSpots, query, selectedArea, selectedPrefecture, categoryFilter]);
+  }, [allSpots, query, selectedArea, selectedPrefecture, selectedCity, categoryFilter]);
 
   // ページネーション
   const itemsPerPage = PAGINATION_CONSTANT.SEARCH_NUM_PER_PAGE;
@@ -128,13 +142,13 @@ const Spots = () => {
   };
 
   const handleAreaChange = (area) => {
-    // エリアを切り替えたら、そのエリア外の都道府県選択は解除する
+    // エリアを切り替えたら、そのエリア外の都道府県選択は解除する（市区町村も連動）
     const keepPref = selectedPrefecture &&
       prefectures.some(pref => pref.id === selectedPrefecture && (!area || pref.area === area));
-    updateParams({ area, pref: keepPref ? selectedPrefecture : '' });
+    updateParams({ area, pref: keepPref ? selectedPrefecture : '', city: keepPref ? selectedCity : '' });
   };
 
-  const hasActiveFilters = Boolean(query || selectedArea || selectedPrefecture || categoryFilter !== 'all');
+  const hasActiveFilters = Boolean(query || selectedArea || selectedPrefecture || selectedCity || categoryFilter !== 'all');
 
   if (loading) {
     return <div className={styles.loading}>{COMMON_MESSAGES.LOADING}</div>;
@@ -184,12 +198,19 @@ const Spots = () => {
             <PrefectureFilter
               prefectures={prefectureOptions}
               selectedPrefecture={selectedPrefecture}
-              onFilterChange={(pref) => updateParams({ pref })}
+              onFilterChange={(pref) => updateParams({ pref, city: '' })}
             />
+            {selectedPrefecture && cityOptions.length > 0 && (
+              <CityFilter
+                cities={cityOptions}
+                selectedCity={selectedCity}
+                onFilterChange={(city) => updateParams({ city })}
+              />
+            )}
             {hasActiveFilters && (
               <button
                 className={styles.clearButton}
-                onClick={() => updateParams({ q: '', area: '', pref: '', category: 'all' })}
+                onClick={() => updateParams({ q: '', area: '', pref: '', city: '', category: 'all' })}
               >
                 {SPOTS_MESSAGES.CLEAR_FILTERS}
               </button>

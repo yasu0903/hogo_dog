@@ -1,0 +1,132 @@
+{
+  "no": "01",
+  "pref_name": "hokkaido",
+  "spots": [
+    {
+      "id": 1,
+      "name": "犬と森林浴",
+      "category": "dog_run",
+      "area": "北海道",
+      "city": "東川町",
+      "lat": 43.7079,
+      "lng": 142.5766,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/4482859678",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "ミントフィールド 大型犬エリア",
+      "category": "dog_run",
+      "area": "北海道",
+      "city": "北見市",
+      "lat": 43.7858,
+      "lng": 143.8967,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": "有料"
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1182605290",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "ミントフィールド 小型犬エリア",
+      "category": "dog_run",
+      "area": "北海道",
+      "city": "北見市",
+      "lat": 43.7857,
+      "lng": 143.8964,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": "有料"
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1182605291",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "Dogrun Ken+ （ドックラン ケンケン）",
+      "category": "dog_run",
+      "area": "北海道",
+      "city": "苫小牧市",
+      "lat": 42.6129,
+      "lng": 141.51,
+      "url": "https://www.instagram.com/dogrun_kenken/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1343926953",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "旭川市21世紀の森　せせらぎ広場　ドッグラン",
+      "category": "dog_run",
+      "area": "北海道",
+      "city": "旭川市",
+      "lat": 43.7167,
+      "lng": 142.6515,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1419541014",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "北海道",
+      "city": "大空町",
+      "lat": 43.9167,
+      "lng": 144.1874,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/477206900",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "no": "05",
+  "pref_name": "akita",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ぽよよんの森 ドッグラン",
+      "category": "dog_run",
+      "area": "秋田",
+      "city": "東成瀬村",
+      "lat": 39.1303,
+      "lng": 140.718,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/7778179241",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "(犬専用公園)",
+      "category": "dog_run",
+      "area": "秋田",
+      "city": "秋田市",
+      "lat": 39.6655,
+      "lng": 140.1688,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/773090768",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "秋田",
+      "city": "大館市",
+      "lat": 40.3054,
+      "lng": 140.5614,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/832286145",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "秋田犬ふれあい処in千秋公園",
+      "category": "dog_run",
+      "area": "秋田",
+      "city": "秋田市",
+      "lat": 39.7209,
+      "lng": 140.1246,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/885564164",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

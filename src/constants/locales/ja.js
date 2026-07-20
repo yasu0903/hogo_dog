@@ -9,7 +9,9 @@ export const COMMON_MESSAGES = {
 
 export const HEADER_MESSAGES = {
     TITLE: 'わんだーネット',
-    TAGLINE: '保護犬・保護猫団体の全国検索'
+    TAGLINE: '保護犬・保護猫団体の全国検索',
+    NAV_ORGANIZATIONS: '団体を探す',
+    NAV_SPOTS: 'お出かけ'
 }
 
 export const FOOTER_MESSAGES = {
@@ -17,7 +19,10 @@ export const FOOTER_MESSAGES = {
     CONTENT: 'コンテンツ',
     ORGANIZATIONS: '団体を探す',
     MAP: '地図から探す',
-    UPCOMING: '今後追加予定: おでかけ情報・お散歩お天気（準備中）',
+    SPOTS: 'お出かけスポットを探す',
+    UPCOMING: '今後追加予定: お散歩お天気（準備中）',
+    OSM_ATTRIBUTION: '地図・スポットデータ © OpenStreetMap contributors (ODbL)',
+    OSM_COPYRIGHT_URL: 'https://www.openstreetmap.org/copyright',
     COPYRIGHT: 'わんだーネット All Rights Reserved.',
     LEGAL: '法的情報',
     PRIVACY_POLICY: 'プライバシーポリシー',
@@ -133,6 +138,36 @@ export const ORGANIZATION_DETAIL_MESSAGES = {
     LAST_VERIFIED: (date) => `最終確認日: ${date}`,
     VIEW_DETAIL: '詳細を見る →',
     BREADCRUMB_SEARCH: '団体を探す'
+}
+
+export const SPOTS_MESSAGES = {
+    TITLE: '犬とお出かけスポット検索',
+    DESCRIPTION: '全国のドッグランなど、犬とお出かけできるスポットを名称・エリア・都道府県・カテゴリで横断検索できます。',
+    SEARCH_PLACEHOLDER: 'スポット名・市区町村で検索',
+    CATEGORY_LABEL: 'カテゴリ',
+    CATEGORY_ALL: 'すべて',
+    CATEGORY_DOG_RUN: '🐕 ドッグラン',
+    CATEGORY_CAFE: '☕ カフェ',
+    CATEGORY_PARK: '🌳 公園',
+    RESULT_COUNT: (total, from, to) => `全${total}件中 ${from}-${to}件を表示`,
+    ERROR_FOR_NO_RESULTS: '該当するスポットが見つかりません',
+    CLEAR_FILTERS: '条件をクリア',
+    LOCATION: '所在地',
+    WEBSITE: 'ウェブサイト',
+    CONDITIONS_FEE: '料金',
+    CONDITIONS_SIZE_LIMIT: '体格制限',
+    CONDITIONS_VACCINATION: 'ワクチン証明',
+    CONDITIONS_VACCINATION_REQUIRED: '必要',
+    CONDITIONS_VACCINATION_NOT_REQUIRED: '不要',
+    LAST_VERIFIED: (date) => `最終確認日: ${date}`,
+    OSM_ATTRIBUTION: 'スポットデータは OpenStreetMap をもとに掲載しています。最新の営業状況・利用条件は公式情報をご確認ください。'
+}
+
+// カテゴリ値 → 表示ラベル（CategoryFilter と SpotCard で共用）
+export const SPOT_CATEGORY_LABELS = {
+    dog_run: SPOTS_MESSAGES.CATEGORY_DOG_RUN,
+    cafe: SPOTS_MESSAGES.CATEGORY_CAFE,
+    park: SPOTS_MESSAGES.CATEGORY_PARK
 }
 
 export const FILTER_MESSAGES = {

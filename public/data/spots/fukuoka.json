@@ -1,0 +1,69 @@
+{
+  "no": "40",
+  "pref_name": "fukuoka",
+  "spots": [
+    {
+      "id": 1,
+      "name": "タマホーム有明メガソーラー発電所　ドッグラン",
+      "category": "dog_run",
+      "area": "福岡",
+      "city": "大牟田市",
+      "lat": 33.045,
+      "lng": 130.4255,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1053277208",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "筥松ワンワン伝道場",
+      "category": "dog_run",
+      "area": "福岡",
+      "city": "福岡市東区",
+      "lat": 33.6153,
+      "lng": 130.4307,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/667345282",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "福岡",
+      "city": "福岡市西区",
+      "lat": 33.5444,
+      "lng": 130.3173,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/845813493",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "no": "03",
+  "pref_name": "iwate",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "岩手",
+      "city": "一戸町",
+      "lat": 40.2031,
+      "lng": 141.2912,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/547564665",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "ドックラン",
+      "category": "dog_run",
+      "area": "岩手",
+      "city": "一関市",
+      "lat": 38.8263,
+      "lng": 141.2223,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/690376965",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

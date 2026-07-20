@@ -1,0 +1,27 @@
+{
+  "no": "32",
+  "pref_name": "shimane",
+  "spots": [
+    {
+      "id": 1,
+      "name": "大海崎メモリアルパーク横ドッグラン",
+      "category": "dog_run",
+      "area": "島根",
+      "city": "松江市",
+      "lat": 35.4768,
+      "lng": 133.1439,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1080539562",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

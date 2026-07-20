@@ -1,0 +1,405 @@
+{
+  "no": "13",
+  "pref_name": "tokyo",
+  "spots": [
+    {
+      "id": 1,
+      "name": "豊洲ぐるりドッグラン",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "江東区",
+      "lat": 35.6406,
+      "lng": 139.7781,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/11374672982",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "昭和記念公園ドッグラン",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "立川市",
+      "lat": 35.702,
+      "lng": 139.4048,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/2129169671",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "Green dog",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "渋谷区",
+      "lat": 35.6495,
+      "lng": 139.7005,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/2356706340",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "Dog Garden",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "渋谷区",
+      "lat": 35.6495,
+      "lng": 139.7002,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/2356706362",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "ペットパーキング",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "北区",
+      "lat": 35.7794,
+      "lng": 139.7253,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/2558150633",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "東京ドギーズガーデン",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "青梅市",
+      "lat": 35.7955,
+      "lng": 139.3189,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/18857358",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "青梅市",
+      "lat": 35.7937,
+      "lng": 139.3161,
+      "url": "https://petsone.cainz.com/shop/296/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/18995842",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "つばさドッグラン",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "大田区",
+      "lat": 35.5837,
+      "lng": 139.7818,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1118926821",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "葛飾区",
+      "lat": 35.7914,
+      "lng": 139.8695,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/119014523",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "世田谷区",
+      "lat": 35.6622,
+      "lng": 139.6127,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/328326164",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "たつみの森ドッグラン",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "江東区",
+      "lat": 35.6483,
+      "lng": 139.817,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/332865004",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 12,
+      "name": "しおさいドッグラン",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "大田区",
+      "lat": 35.5889,
+      "lng": 139.7517,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/46705600",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 13,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "小金井市",
+      "lat": 35.7162,
+      "lng": 139.5235,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/53440899",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 14,
+      "name": "武蔵川公園 ドッグラン",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "武蔵野市",
+      "lat": 35.7063,
+      "lng": 139.5378,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/59277422",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 15,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "目黒区",
+      "lat": 35.624,
+      "lng": 139.6642,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/646382600",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 16,
+      "name": "代々木公園ドッグラン",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "渋谷区",
+      "lat": 35.6729,
+      "lng": 139.6941,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/680802488",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 17,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "江東区",
+      "lat": 35.672,
+      "lng": 139.8084,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/683394371",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 18,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "多摩市",
+      "lat": 35.6402,
+      "lng": 139.4635,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/815789047",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 19,
+      "name": "Dog Run",
+      "category": "dog_run",
+      "area": "東京",
+      "city": "港区",
+      "lat": 35.6681,
+      "lng": 139.7385,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/993050155",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "no": "38",
+  "pref_name": "ehime",
+  "spots": [
+    {
+      "id": 1,
+      "name": "大型犬ドッグラン",
+      "category": "dog_run",
+      "area": "愛媛",
+      "city": "松山市",
+      "lat": 33.8432,
+      "lng": 132.7373,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1082257554",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "小型犬ドッグラン",
+      "category": "dog_run",
+      "area": "愛媛",
+      "city": "松山市",
+      "lat": 33.8423,
+      "lng": 132.7371,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1082257555",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

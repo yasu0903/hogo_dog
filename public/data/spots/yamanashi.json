@@ -1,0 +1,111 @@
+{
+  "no": "19",
+  "pref_name": "yamanashi",
+  "spots": [
+    {
+      "id": 1,
+      "name": "境川PAドッグラン",
+      "category": "dog_run",
+      "area": "山梨",
+      "city": "笛吹市",
+      "lat": 35.5992,
+      "lng": 138.6027,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/4383034713",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "双葉SAドッグラン",
+      "category": "dog_run",
+      "area": "山梨",
+      "city": "甲斐市",
+      "lat": 35.6783,
+      "lng": 138.5124,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/4568511596",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "山梨",
+      "city": "北杜市",
+      "lat": 35.9024,
+      "lng": 138.4338,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/510352203",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "道の駅富士吉田ドッグラン",
+      "category": "dog_run",
+      "area": "山梨",
+      "city": "富士吉田市",
+      "lat": 35.4581,
+      "lng": 138.8026,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/836670264",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "リバーサイドパーク　ドッグラン",
+      "category": "dog_run",
+      "area": "山梨",
+      "city": "南部町",
+      "lat": 35.2441,
+      "lng": 138.4849,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/987632406",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

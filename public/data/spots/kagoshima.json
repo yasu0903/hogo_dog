@@ -1,0 +1,27 @@
+{
+  "no": "46",
+  "pref_name": "kagoshima",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ドッグサロンComu",
+      "category": "dog_run",
+      "area": "鹿児島",
+      "city": "奄美市",
+      "lat": 28.3899,
+      "lng": 129.5388,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/543823436",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

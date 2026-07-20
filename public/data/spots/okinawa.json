@@ -1,0 +1,48 @@
+{
+  "no": "47",
+  "pref_name": "okinawa",
+  "spots": [
+    {
+      "id": 1,
+      "name": "Sea Lake Zakimi Private Dog Park",
+      "category": "dog_run",
+      "area": "沖縄",
+      "city": "読谷村",
+      "lat": 26.4104,
+      "lng": 127.7519,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/12519606583",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "Chibana Dog Park",
+      "category": "dog_run",
+      "area": "沖縄",
+      "city": "沖縄市",
+      "lat": 26.3673,
+      "lng": 127.795,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/784697581",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "no": "43",
+  "pref_name": "kumamoto",
+  "spots": [
+    {
+      "id": 1,
+      "name": "犬のひろば",
+      "category": "dog_run",
+      "area": "熊本",
+      "city": "山江村",
+      "lat": 32.2618,
+      "lng": 130.7687,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/13780577627",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

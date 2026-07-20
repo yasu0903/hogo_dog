@@ -1,0 +1,48 @@
+{
+  "no": "39",
+  "pref_name": "kochi",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "高知",
+      "city": "南国市",
+      "lat": 33.6012,
+      "lng": 133.6142,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/388271315",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "StepDo!",
+      "category": "dog_run",
+      "area": "高知",
+      "city": "高知市",
+      "lat": 33.5773,
+      "lng": 133.5609,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/654130280",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

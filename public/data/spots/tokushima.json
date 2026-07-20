@@ -1,0 +1,27 @@
+{
+  "no": "36",
+  "pref_name": "tokushima",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ドッグラン（道の駅 いたの）",
+      "category": "dog_run",
+      "area": "徳島",
+      "city": "板野町",
+      "lat": 34.1361,
+      "lng": 134.4733,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1461675284",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

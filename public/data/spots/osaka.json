@@ -1,0 +1,111 @@
+{
+  "no": "27",
+  "pref_name": "osaka",
+  "spots": [
+    {
+      "id": 1,
+      "name": "バイク神社　大阪",
+      "category": "dog_run",
+      "area": "大阪",
+      "city": "太子町",
+      "lat": 34.5218,
+      "lng": 135.658,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/11655672876",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "大阪",
+      "city": "大東市",
+      "lat": 34.7259,
+      "lng": 135.6308,
+      "url": "https://fukakitaryokuchi.jp/page/about#dog",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/13746608569",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "ランフォルセ枚方パークガーデン",
+      "category": "dog_run",
+      "area": "大阪",
+      "city": "枚方市",
+      "lat": 34.8098,
+      "lng": 135.6292,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/307545306",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "パートナードッグタウン",
+      "category": "dog_run",
+      "area": "大阪",
+      "city": "大阪市鶴見区",
+      "lat": 34.7082,
+      "lng": 135.5808,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/481336140",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "WILD garden ぷらすわん",
+      "category": "dog_run",
+      "area": "大阪",
+      "city": "茨木市",
+      "lat": 34.8508,
+      "lng": 135.5693,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/951514417",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

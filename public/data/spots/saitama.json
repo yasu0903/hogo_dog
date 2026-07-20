@@ -1,0 +1,153 @@
+{
+  "no": "11",
+  "pref_name": "saitama",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "埼玉",
+      "city": "富士見市",
+      "lat": 35.861,
+      "lng": 139.5463,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/3812278113",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "Velt Dog Field",
+      "category": "dog_run",
+      "area": "埼玉",
+      "city": "東松山市",
+      "lat": 36.0331,
+      "lng": 139.3546,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1395919756",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "わんわん広場",
+      "category": "dog_run",
+      "area": "埼玉",
+      "city": "行田市",
+      "lat": 36.1314,
+      "lng": 139.4508,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/442894046",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "そうか公園ドッグラン",
+      "category": "dog_run",
+      "area": "埼玉",
+      "city": "草加市",
+      "lat": 35.8602,
+      "lng": 139.8294,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/558121876",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "森林公園ドッグラン",
+      "category": "dog_run",
+      "area": "埼玉",
+      "city": "滑川町",
+      "lat": 36.0952,
+      "lng": 139.377,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/593493700",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "埼玉",
+      "city": "東松山市",
+      "lat": 35.9868,
+      "lng": 139.3834,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/617755430",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "グリーンパーク ドッグラン阿須",
+      "category": "dog_run",
+      "area": "埼玉",
+      "city": "飯能市",
+      "lat": 35.8303,
+      "lng": 139.3251,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/973210472",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

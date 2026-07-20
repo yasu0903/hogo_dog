@@ -1,0 +1,111 @@
+{
+  "no": "23",
+  "pref_name": "aichi",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ペット美容室じゅん",
+      "category": "dog_run",
+      "area": "愛知",
+      "city": "一宮市",
+      "lat": 35.3113,
+      "lng": 136.8187,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/2498164227",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "尾張・犬の学校",
+      "category": "dog_run",
+      "area": "愛知",
+      "city": "小牧市",
+      "lat": 35.265,
+      "lng": 136.8824,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/441086925",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "ふれあい広場",
+      "category": "dog_run",
+      "area": "愛知",
+      "city": "名古屋市緑区",
+      "lat": 35.0633,
+      "lng": 136.9532,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/495430392",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "愛知",
+      "city": "名古屋市緑区",
+      "lat": 35.063,
+      "lng": 136.9532,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/495430393",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "愛知",
+      "city": "新城市",
+      "lat": 34.8697,
+      "lng": 137.515,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/77592866",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

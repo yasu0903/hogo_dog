@@ -1,0 +1,48 @@
+{
+  "no": "29",
+  "pref_name": "nara",
+  "spots": [
+    {
+      "id": 1,
+      "name": "赤膚山ドッグラン フロリアード奈良店",
+      "category": "dog_run",
+      "area": "奈良",
+      "city": "奈良市",
+      "lat": 34.6748,
+      "lng": 135.7624,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1360308610",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "奈良",
+      "city": "橿原市",
+      "lat": 34.5018,
+      "lng": 135.7593,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1447996912",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

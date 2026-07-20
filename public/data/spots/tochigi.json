@@ -1,0 +1,153 @@
+{
+  "no": "09",
+  "pref_name": "tochigi",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ろまんちっく村 にぎわい広場",
+      "category": "dog_run",
+      "area": "栃木",
+      "city": "宇都宮市",
+      "lat": 36.6329,
+      "lng": 139.8359,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/13257006058",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "小型犬専用ドッグラン（道の駅ろまんちっく村）",
+      "category": "dog_run",
+      "area": "栃木",
+      "city": "宇都宮市",
+      "lat": 36.6335,
+      "lng": 139.8309,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/13257006059",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "栃木",
+      "city": "那須塩原市",
+      "lat": 36.9659,
+      "lng": 139.9897,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/1742745777",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "ナーディアス那須",
+      "category": "dog_run",
+      "area": "栃木",
+      "city": "那須町",
+      "lat": 37.0485,
+      "lng": 140.0076,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/4073660630",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "那須わんわんワールド",
+      "category": "dog_run",
+      "area": "栃木",
+      "city": "那須町",
+      "lat": 37.0325,
+      "lng": 140.0746,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/6287713725",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "ドックサロンJaime",
+      "category": "dog_run",
+      "area": "栃木",
+      "city": "那須塩原市",
+      "lat": 36.9519,
+      "lng": 140.034,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/9301640967",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "ドッグラン （道の駅うつのみや ろまんちっく村）",
+      "category": "dog_run",
+      "area": "栃木",
+      "city": "宇都宮市",
+      "lat": 36.6314,
+      "lng": 139.8366,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1444824974",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

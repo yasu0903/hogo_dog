@@ -1,0 +1,48 @@
+{
+  "no": "16",
+  "pref_name": "toyama",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ドッグパーク福光",
+      "category": "dog_run",
+      "area": "富山",
+      "city": "南砺市",
+      "lat": 36.5561,
+      "lng": 136.9009,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1078417298",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "あさひシーサイドドッグラン",
+      "category": "dog_run",
+      "area": "富山",
+      "city": "朝日町",
+      "lat": 36.9757,
+      "lng": 137.6108,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/599217909",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

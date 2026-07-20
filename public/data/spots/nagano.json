@@ -1,0 +1,48 @@
+{
+  "no": "20",
+  "pref_name": "nagano",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "長野",
+      "city": "塩尻市",
+      "lat": 36.1546,
+      "lng": 137.9221,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/12707188029",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "長野",
+      "city": "木祖村",
+      "lat": 35.9699,
+      "lng": 137.7459,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/582543577",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

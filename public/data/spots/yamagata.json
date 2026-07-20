@@ -1,0 +1,27 @@
+{
+  "no": "06",
+  "pref_name": "yamagata",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "山形",
+      "city": "寒河江市",
+      "lat": 38.3631,
+      "lng": 140.2688,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/398121785",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

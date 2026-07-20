@@ -1,0 +1,27 @@
+{
+  "no": "34",
+  "pref_name": "hiroshima",
+  "spots": [
+    {
+      "id": 1,
+      "name": "わんわんひろば",
+      "category": "dog_run",
+      "area": "広島",
+      "city": "東広島市",
+      "lat": 34.4346,
+      "lng": 132.703,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1452994845",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

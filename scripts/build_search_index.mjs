@@ -4,6 +4,7 @@
 //
 // 出力:
 //   public/data/search_index.json  … 全団体 + 都道府県情報の統合インデックス（gitignore対象）
+//   public/data/spots_index.json   … 全お出かけスポットの統合インデックス（gitignore対象）
 //   public/sitemap.xml             … 全ページのURL一覧（gitignore対象）
 
 import { readFile, writeFile } from 'node:fs/promises';
@@ -62,6 +63,29 @@ const main = async () => {
   const indexPath = path.join(DATA_DIR, 'search_index.json');
   await writeFile(indexPath, JSON.stringify(index), 'utf-8');
 
+  // spots_index.json: 全都道府県のお出かけスポットを統合（/spots 全国ページが読む。sitemap統合はW2）
+  const spots = [];
+  for (const pref of prefData.prefecture_list) {
+    const spotFile = path.join(DATA_DIR, 'spots', `${pref.english_name}.json`);
+    if (!existsSync(spotFile)) continue;
+
+    const spotData = await readJson(spotFile);
+    for (const spot of spotData.spots ?? []) {
+      spots.push({
+        prefecture_id: pref.no,
+        prefecture_name: pref.name,
+        prefecture_area: pref.area,
+        ...spot,
+      });
+    }
+  }
+  const spotsIndex = {
+    generated_at: new Date().toISOString().slice(0, 10),
+    total: spots.length,
+    spots,
+  };
+  await writeFile(path.join(DATA_DIR, 'spots_index.json'), JSON.stringify(spotsIndex), 'utf-8');
+
   // sitemap.xml: 静的ページ + 県別ページ + 団体単体ページ
   const urls = ['/', '/organizations', '/privacy-policy', '/terms-of-service'];
   const prefIds = [...new Set(organizations.map((o) => o.prefecture_id))].sort();
@@ -87,6 +111,7 @@ const main = async () => {
   await writeFile(path.join(ROOT, 'public', 'robots.txt'), robots, 'utf-8');
 
   console.log(`search_index.json: ${organizations.length} organizations (${prefIds.length} prefectures)`);
+  console.log(`spots_index.json: ${spots.length} spots`);
   console.log(`sitemap.xml: ${urls.length} urls`);
 };
 

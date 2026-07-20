@@ -1,0 +1,27 @@
+{
+  "no": "24",
+  "pref_name": "mie",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "三重",
+      "city": "鈴鹿市",
+      "lat": 34.9623,
+      "lng": 136.4644,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/765984266",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

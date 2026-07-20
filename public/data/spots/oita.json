@@ -1,0 +1,27 @@
+{
+  "no": "44",
+  "pref_name": "oita",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "大分",
+      "city": "別府市",
+      "lat": 33.3371,
+      "lng": 131.4658,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/766247415",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "no": "07",
+  "pref_name": "fukushima",
+  "spots": [
+    {
+      "id": 1,
+      "name": "WANわんクラブ",
+      "category": "dog_run",
+      "area": "福島",
+      "city": "会津若松市",
+      "lat": 37.4726,
+      "lng": 139.8874,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/289570605",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "福島",
+      "city": "磐梯町",
+      "lat": 37.5634,
+      "lng": 139.9876,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/508665247",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "福島",
+      "city": "南相馬市",
+      "lat": 37.7147,
+      "lng": 140.9228,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/766105403",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

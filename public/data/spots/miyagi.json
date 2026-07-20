@@ -1,0 +1,69 @@
+{
+  "no": "04",
+  "pref_name": "miyagi",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "宮城",
+      "city": "川崎町",
+      "lat": 38.191,
+      "lng": 140.6635,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/780358335",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "ドックフィールド",
+      "category": "dog_run",
+      "area": "宮城",
+      "city": "仙台市太白区",
+      "lat": 38.211,
+      "lng": 140.8691,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/797850672",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "名取ドッグランパーク",
+      "category": "dog_run",
+      "area": "宮城",
+      "city": "名取市",
+      "lat": 38.21,
+      "lng": 140.8335,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/805310588",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

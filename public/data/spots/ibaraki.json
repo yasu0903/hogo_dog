@@ -1,0 +1,48 @@
+{
+  "no": "08",
+  "pref_name": "ibaraki",
+  "spots": [
+    {
+      "id": 1,
+      "name": "守谷SAドッグラン",
+      "category": "dog_run",
+      "area": "茨城",
+      "city": "守谷市",
+      "lat": 35.9394,
+      "lng": 139.9665,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/4971914594",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "守谷SAドッグラン",
+      "category": "dog_run",
+      "area": "茨城",
+      "city": "守谷市",
+      "lat": 35.9382,
+      "lng": 139.9692,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/4973487714",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

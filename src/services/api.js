@@ -172,6 +172,49 @@ export const fetchSearchIndex = async () => {
   }
 };
 
+// お出かけスポットの統合インデックスを取得
+// （scripts/build_search_index.mjs がビルド時に生成する spots_index.json を読む）
+export const fetchSpotsIndex = async () => {
+  try {
+    const response = await fetch('/data/spots_index.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+
+    if (data && Array.isArray(data.spots)) {
+      return data.spots.map(spot => ({
+        prefectureId: spot.prefecture_id,
+        prefectureName: spot.prefecture_name,
+        prefectureArea: spot.prefecture_area,
+        id: spot.id,
+        name: spot.name,
+        category: spot.category,
+        area: spot.area,
+        city: spot.city ?? '',
+        lat: spot.lat,
+        lng: spot.lng,
+        website: spot.url ?? '',
+        conditions: {
+          vaccinationCert: spot.conditions?.vaccination_cert ?? null,
+          sizeLimit: spot.conditions?.size_limit ?? '',
+          fee: spot.conditions?.fee ?? ''
+        },
+        caution: spot.caution ?? '',
+        note: spot.note ?? '',
+        sns: spot.sns ?? [],
+        source: spot.source,
+        lastVerified: spot.last_verified ?? ''
+      }));
+    }
+
+    return [];
+  } catch (error) {
+    console.error('Error fetching spots index:', error);
+    return [];
+  }
+};
+
 // 特定の都道府県の団体詳細を取得
 export const fetchOrganizationDetail = async (prefectureId) => {
   try {

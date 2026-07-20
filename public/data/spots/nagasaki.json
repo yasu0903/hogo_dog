@@ -1,0 +1,48 @@
+{
+  "no": "42",
+  "pref_name": "nagasaki",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "長崎",
+      "city": "長崎市",
+      "lat": 32.7596,
+      "lng": 129.8478,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1207940058",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "Hario Base Dog Park",
+      "category": "dog_run",
+      "area": "長崎",
+      "city": "佐世保市",
+      "lat": 33.0842,
+      "lng": 129.7821,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1335206988",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

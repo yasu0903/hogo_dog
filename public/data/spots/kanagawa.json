@@ -1,0 +1,216 @@
+{
+  "no": "14",
+  "pref_name": "kanagawa",
+  "spots": [
+    {
+      "id": 1,
+      "name": "寄七つ星ドッグラン",
+      "category": "dog_run",
+      "area": "神奈川",
+      "city": "松田町",
+      "lat": 35.3843,
+      "lng": 139.131,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/12696895549",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "わんちゃん遊歩道",
+      "category": "dog_run",
+      "area": "神奈川",
+      "city": "海老名市",
+      "lat": 35.4322,
+      "lng": 139.4022,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/1988295171",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "神奈川",
+      "city": "横浜市港北区",
+      "lat": 35.5128,
+      "lng": 139.6015,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1189962084",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "東光寺ペット霊園 ドッグラン",
+      "category": "dog_run",
+      "area": "神奈川",
+      "city": "横浜市保土ケ谷区",
+      "lat": 35.4743,
+      "lng": 139.579,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1209735900",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "WANderLAND",
+      "category": "dog_run",
+      "area": "神奈川",
+      "city": "横須賀市",
+      "lat": 35.2533,
+      "lng": 139.6175,
+      "url": "https://www.instagram.com/wanderland_minamihayama/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": "有料"
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1239524242",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "麻布大学 Wind Chimes",
+      "category": "dog_run",
+      "area": "神奈川",
+      "city": "相模原市中央区",
+      "lat": 35.5755,
+      "lng": 139.3911,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1373619199",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "神奈川",
+      "city": "相模原市中央区",
+      "lat": 35.5755,
+      "lng": 139.3912,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1445921791",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "新杉田公園ドッグラン",
+      "category": "dog_run",
+      "area": "神奈川",
+      "city": "横浜市磯子区",
+      "lat": 35.3826,
+      "lng": 139.6252,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/311524792",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "ふれあいの森ドッグラン",
+      "category": "dog_run",
+      "area": "神奈川",
+      "city": "大和市",
+      "lat": 35.4696,
+      "lng": 139.4493,
+      "url": "http://f-dogrun.jp/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/482808134",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "ワンコパーク",
+      "category": "dog_run",
+      "area": "神奈川",
+      "city": "横浜市都筑区",
+      "lat": 35.561,
+      "lng": 139.568,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/873316510",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

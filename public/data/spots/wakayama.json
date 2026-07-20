@@ -1,0 +1,27 @@
+{
+  "no": "30",
+  "pref_name": "wakayama",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ドッグラン Beck",
+      "category": "dog_run",
+      "area": "和歌山",
+      "city": "紀の川市",
+      "lat": 34.2888,
+      "lng": 135.4162,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1431052356",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

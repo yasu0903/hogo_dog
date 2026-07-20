@@ -1,0 +1,48 @@
+{
+  "no": "10",
+  "pref_name": "gunma",
+  "spots": [
+    {
+      "id": 1,
+      "name": "Wan'der Run'd",
+      "category": "dog_run",
+      "area": "群馬",
+      "city": "藤岡市",
+      "lat": 36.2381,
+      "lng": 139.078,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1035898435",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "浅間 六里ヶ原休憩所ワンちゃん広場ドッグラン",
+      "category": "dog_run",
+      "area": "群馬",
+      "city": "嬬恋村",
+      "lat": 36.4271,
+      "lng": 138.5598,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/976305322",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

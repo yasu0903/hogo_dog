@@ -1,0 +1,237 @@
+{
+  "no": "22",
+  "pref_name": "shizuoka",
+  "spots": [
+    {
+      "id": 1,
+      "name": "わんわん広場 ドッグラン",
+      "category": "dog_run",
+      "area": "静岡",
+      "city": "浜松市浜名区",
+      "lat": 34.8181,
+      "lng": 137.7327,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/3397755193",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "静岡",
+      "city": "浜松市浜名区",
+      "lat": 34.8402,
+      "lng": 137.7491,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/3500523096",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "みちまる広場足柄",
+      "category": "dog_run",
+      "area": "静岡",
+      "city": "小山町",
+      "lat": 35.3131,
+      "lng": 138.9691,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/4539793234",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "みちまる広場足柄",
+      "category": "dog_run",
+      "area": "静岡",
+      "city": "小山町",
+      "lat": 35.3129,
+      "lng": 138.9675,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/4539793279",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "みちまる広場足柄",
+      "category": "dog_run",
+      "area": "静岡",
+      "city": "御殿場市",
+      "lat": 35.3143,
+      "lng": 138.9621,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/4539794008",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "わんView広場",
+      "category": "dog_run",
+      "area": "静岡",
+      "city": "下田市",
+      "lat": 34.6789,
+      "lng": 138.9524,
+      "url": "https://ropeway.co.jp/dockrun/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1426201476",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "+わん",
+      "category": "dog_run",
+      "area": "静岡",
+      "city": "浜松市中央区",
+      "lat": 34.7672,
+      "lng": 137.6637,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1437084430",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "ドッグラン　犬の森ポム",
+      "category": "dog_run",
+      "area": "静岡",
+      "city": "浜松市浜名区",
+      "lat": 34.7808,
+      "lng": 137.7391,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/566527008",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "Dog Run",
+      "category": "dog_run",
+      "area": "静岡",
+      "city": "浜松市中央区",
+      "lat": 34.6972,
+      "lng": 137.6079,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": "無料"
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/651963734",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "静岡",
+      "city": "浜松市中央区",
+      "lat": 34.6948,
+      "lng": 137.6457,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/675556023",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "静岡",
+      "city": "藤枝市",
+      "lat": 34.8459,
+      "lng": 138.2345,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/905314619",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "no": "28",
+  "pref_name": "hyogo",
+  "spots": [
+    {
+      "id": 1,
+      "name": "Dog Run Garden",
+      "category": "dog_run",
+      "area": "兵庫",
+      "city": "丹波市",
+      "lat": 35.0926,
+      "lng": 135.0322,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/13860029501",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "Trail Dog Walk",
+      "category": "dog_run",
+      "area": "兵庫",
+      "city": "丹波市",
+      "lat": 35.0921,
+      "lng": 135.0308,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/13860043501",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "Dog Run Hill & Turf",
+      "category": "dog_run",
+      "area": "兵庫",
+      "city": "丹波市",
+      "lat": 35.0928,
+      "lng": 135.0323,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/13863605257",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "えばらの森 かぶと虫ドーム",
+      "category": "dog_run",
+      "area": "兵庫",
+      "city": "宍粟市",
+      "lat": 35.1848,
+      "lng": 134.6282,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/5329771420",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "お山(ひょうごアニマルサークル)",
+      "category": "dog_run",
+      "area": "兵庫",
+      "city": "神戸市北区",
+      "lat": 34.8857,
+      "lng": 135.1802,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/8613999279",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "広場",
+      "category": "dog_run",
+      "area": "兵庫",
+      "city": "尼崎市",
+      "lat": 34.7729,
+      "lng": 135.3759,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/381672585",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "RICドッグラン",
+      "category": "dog_run",
+      "area": "兵庫",
+      "city": "神戸市東灘区",
+      "lat": 34.6854,
+      "lng": 135.2707,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/864083878",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

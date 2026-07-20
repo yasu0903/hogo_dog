@@ -10,6 +10,10 @@ const Header = () => {
         <Link to="/">{HEADER_MESSAGES.TITLE}</Link>
         <span className={styles.tagline}>{HEADER_MESSAGES.TAGLINE}</span>
       </div>
+      <nav className={styles.nav}>
+        <Link to="/organizations" className={styles.navLink}>{HEADER_MESSAGES.NAV_ORGANIZATIONS}</Link>
+        <Link to="/spots" className={styles.navLink}>{HEADER_MESSAGES.NAV_SPOTS}</Link>
+      </nav>
     </header>
   );
 };

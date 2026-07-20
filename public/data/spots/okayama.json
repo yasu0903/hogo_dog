@@ -1,0 +1,27 @@
+{
+  "no": "33",
+  "pref_name": "okayama",
+  "spots": [
+    {
+      "id": 1,
+      "name": "Wan!! Family Dogrun Tsurugi",
+      "category": "dog_run",
+      "area": "岡山",
+      "city": "備前市",
+      "lat": 34.8896,
+      "lng": 134.2158,
+      "url": "https://www.wan-family.net/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/12325189552",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

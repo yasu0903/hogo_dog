@@ -9,6 +9,9 @@
     "prebuild": "node scripts/build_search_index.mjs",
     "build": "vite build",
     "preview": "vite preview",
+    "spots:fetch": "node scripts/spots/01_fetch_osm.mjs",
+    "spots:geocode": "node scripts/spots/02_assign_prefecture.mjs",
+    "spots:build": "node scripts/spots/03_build_spots_json.mjs",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {

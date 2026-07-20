@@ -1,0 +1,27 @@
+{
+  "no": "15",
+  "pref_name": "niigata",
+  "spots": [
+    {
+      "id": 1,
+      "name": "たにはま公園ドッグラン",
+      "category": "dog_run",
+      "area": "新潟",
+      "city": "上越市",
+      "lat": 37.1567,
+      "lng": 138.1513,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1254652377",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

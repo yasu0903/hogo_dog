@@ -1,0 +1,174 @@
+{
+  "no": "12",
+  "pref_name": "chiba",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "千葉",
+      "city": "千葉市中央区",
+      "lat": 35.5961,
+      "lng": 140.1455,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/6477759872",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "Lamiuelle",
+      "category": "dog_run",
+      "area": "千葉",
+      "city": "木更津市",
+      "lat": 35.3663,
+      "lng": 139.9368,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/8813809249",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "千葉",
+      "city": "柏市",
+      "lat": 35.8371,
+      "lng": 139.9852,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1064983706",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "ドッグラン東金",
+      "category": "dog_run",
+      "area": "千葉",
+      "city": "東金市",
+      "lat": 35.5688,
+      "lng": 140.3618,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1084048802",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "千葉",
+      "city": "成田市",
+      "lat": 35.8698,
+      "lng": 140.3955,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1357109947",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "わんちゃんランド",
+      "category": "dog_run",
+      "area": "千葉",
+      "city": "袖ケ浦市",
+      "lat": 35.4087,
+      "lng": 140.0649,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1454389106",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "ふなばしアンゼルセン公園ドッグラン",
+      "category": "dog_run",
+      "area": "千葉",
+      "city": "船橋市",
+      "lat": 35.7617,
+      "lng": 140.057,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": "有料"
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/654170312",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "八幡台 犬のひろば",
+      "category": "dog_run",
+      "area": "千葉",
+      "city": "木更津市",
+      "lat": 35.3393,
+      "lng": 139.9554,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/705075048",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

@@ -1,9 +1,6 @@
-FROM node:20-alpine
+FROM node:20-slim
 
 WORKDIR /app
-
-# 必要なパッケージをインストール
-RUN apk add --no-cache libc6-compat
 
 # package.jsonとpackage-lock.jsonをコピー
 COPY package*.json ./

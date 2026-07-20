@@ -59,22 +59,15 @@ const Home = () => {
         {/* 1. ヒーロー */}
         <section className={styles.hero}>
           <h1 className={styles.title}>{HOME_MESSAGES.WELCOME}</h1>
-          <p className={styles.description}>
-            {HOME_MESSAGES.DESCRIPTION1}
-            <br />
-            {HOME_MESSAGES.DESCRIPTION2}
-          </p>
 
           {prefectures.length > 0 && (
             <div className={styles.heroSearch}>
-              <label htmlFor="hero-prefecture-select" className={styles.heroSearchLabel}>
-                {HOME_MESSAGES.HERO_SELECT_LABEL}
-              </label>
               <select
                 id="hero-prefecture-select"
                 className={styles.heroSearchSelect}
                 defaultValue=""
                 onChange={handlePrefectureSelect}
+                aria-label={HOME_MESSAGES.HERO_SELECT_LABEL}
               >
                 <option value="" disabled>{HOME_MESSAGES.HERO_SELECT_PLACEHOLDER}</option>
                 {areas.map(area => (
@@ -107,26 +100,28 @@ const Home = () => {
           )}
         </section>
 
-        {/* 2. ペットお出かけ情報 */}
+        {/* 2. ペットお出かけ情報（1枚のタップ可能カード。説明文は置かない） */}
         <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>{HOME_MESSAGES.SPOTS_SECTION_TITLE}</h2>
-          <p className={styles.sectionDescription}>{HOME_MESSAGES.SPOTS_SECTION_DESCRIPTION}</p>
-          <Link to="/spots" className={styles.spotsLink}>
-            {HOME_MESSAGES.SPOTS_SECTION_LINK}
+          <Link to="/spots" className={styles.spotsCard}>
+            <span className={styles.spotsIcon}>{HOME_MESSAGES.SPOTS_SECTION_ICON}</span>
+            <span className={styles.spotsText}>
+              <span className={styles.spotsTitle}>{HOME_MESSAGES.SPOTS_SECTION_TITLE}</span>
+              <span className={styles.spotsLink}>{HOME_MESSAGES.SPOTS_SECTION_LINK}</span>
+            </span>
+            <span className={styles.spotsArrow} aria-hidden="true">→</span>
           </Link>
         </section>
 
-        {/* 3. 今後追加予定のコンテンツ（準備中: リンクは置かない） */}
+        {/* 3. 今後追加予定（準備中: リンクは置かない） */}
         <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>{HOME_MESSAGES.UPCOMING_TITLE}</h2>
-          <div className={styles.upcomingCards}>
+          <div className={styles.upcomingStrip}>
+            <span className={styles.upcomingHeading}>{HOME_MESSAGES.UPCOMING_TITLE}</span>
             {HOME_MESSAGES.UPCOMING_ITEMS.map(item => (
-              <div key={item.TITLE} className={styles.upcomingCard}>
+              <span key={item.TITLE} className={styles.upcomingItem}>
+                <span className={styles.upcomingIcon}>{item.ICON}</span>
+                {item.TITLE}
                 <span className={styles.upcomingBadge}>{HOME_MESSAGES.UPCOMING_BADGE}</span>
-                <div className={styles.upcomingIcon}>{item.ICON}</div>
-                <h3>{item.TITLE}</h3>
-                <p>{item.DESCRIPTION}</p>
-              </div>
+              </span>
             ))}
           </div>
         </section>

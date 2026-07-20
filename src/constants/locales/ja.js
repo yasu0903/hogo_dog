@@ -33,24 +33,21 @@ export const FOOTER_MESSAGES = {
 
 export const HOME_MESSAGES = {
     WELCOME: 'あなたの街の保護犬・保護猫団体を探そう',
-    DESCRIPTION1: '行政公表情報をもとに全国の団体を掲載。',
-    DESCRIPTION2: '出典と最終確認日を明示しています。',
     STATS: (prefectureCount, organizationCount) =>
         `掲載 ${prefectureCount}都道府県 / ${organizationCount}団体`,
-    HERO_SELECT_LABEL: 'お住まいの都道府県から探す',
+    HERO_SELECT_LABEL: '都道府県から探す',
     HERO_SELECT_PLACEHOLDER: '都道府県を選択',
     HERO_MAP_LINK: '🗾 地図から探す',
     HERO_ALL_LINK: '全国から探す',
     SPOTS_SECTION_TITLE: 'ペットお出かけ情報',
-    SPOTS_SECTION_DESCRIPTION: '犬と一緒に行けるドッグラン・公園・カフェなどのお出かけスポットを探せます。',
+    SPOTS_SECTION_ICON: '🐾',
     SPOTS_SECTION_LINK: 'お出かけスポットを探す',
-    UPCOMING_TITLE: '今後追加予定のコンテンツ',
+    UPCOMING_TITLE: '今後追加予定',
     UPCOMING_BADGE: '準備中',
     UPCOMING_ITEMS: [
         {
             ICON: '☀️',
             TITLE: 'お散歩お天気',
-            DESCRIPTION: 'その日の散歩にちょうどいい時間帯や気温をお届け予定です',
         }
     ]
 }

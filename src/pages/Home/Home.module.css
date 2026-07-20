@@ -32,26 +32,11 @@
   line-height: 1.35;
 }
 
-.description {
-  font-size: 1.15rem;
-  color: var(--color-text-muted);
-  margin-bottom: 2.2rem;
-  max-width: 800px;
-  line-height: 1.7;
-}
-
 .heroSearch {
   width: 100%;
   max-width: 420px;
+  margin-top: 0.5rem;
   margin-bottom: 1.8rem;
-}
-
-.heroSearchLabel {
-  display: block;
-  margin-bottom: 0.6rem;
-  font-weight: 600;
-  color: var(--color-ink);
-  font-size: 1rem;
 }
 
 .heroSearchSelect {
@@ -126,84 +111,98 @@
   text-align: center;
 }
 
-.sectionTitle {
-  font-size: 1.6rem;
+/* 2. ペットお出かけ情報（1枚のタップ可能カード） */
+.spotsCard {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 1.2rem 1.5rem;
+  border-radius: 14px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+  text-decoration: none;
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.spotsCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-primary);
+}
+
+.spotsIcon {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.spotsText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+}
+
+.spotsTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
   color: var(--color-ink);
-  margin-bottom: 0.8rem;
 }
 
-.sectionDescription {
-  color: var(--color-text-muted);
-  margin-bottom: 1.5rem;
-}
-
-/* 2. ペットお出かけ情報 */
 .spotsLink {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.spotsArrow {
+  font-size: 1.4rem;
+  color: var(--color-primary);
+}
+
+/* 3. 今後追加予定（準備中: 説明文もリンクも置かない、控えめな帯） */
+.upcomingStrip {
   display: inline-flex;
   align-items: center;
-  padding: 0.7rem 1.8rem;
-  border: 1px solid var(--color-primary);
-  border-radius: 999px;
-  color: white;
-  background-color: var(--color-primary);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: background-color 0.2s, border-color 0.2s;
-}
-
-.spotsLink:hover {
-  background-color: var(--color-primary-strong);
-  border-color: var(--color-primary-strong);
-}
-
-/* 3. 今後追加予定のコンテンツ */
-.upcomingCards {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
   flex-wrap: wrap;
-}
-
-.upcomingCard {
-  position: relative;
-  flex: 1;
-  min-width: 240px;
-  max-width: 380px;
-  padding: 1.8rem 1.5rem;
-  border-radius: 12px;
+  justify-content: center;
+  gap: 0.6rem 1rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
   background-color: var(--color-surface-alt);
   border: 1px dashed var(--color-border);
 }
 
+.upcomingHeading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.upcomingItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.upcomingIcon {
+  font-size: 1.2rem;
+}
+
 .upcomingBadge {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 700;
   color: var(--color-text-muted);
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 999px;
-  padding: 0.2rem 0.7rem;
-}
-
-.upcomingIcon {
-  font-size: 2.2rem;
-  margin-bottom: 0.8rem;
-}
-
-.upcomingCard h3 {
-  font-size: 1.15rem;
-  color: var(--color-ink);
-  margin-bottom: 0.6rem;
-}
-
-.upcomingCard p {
-  font-size: 0.92rem;
-  color: var(--color-text-muted);
-  line-height: 1.6;
+  padding: 0.15rem 0.6rem;
 }
 
 /* レスポンシブデザイン */
@@ -216,21 +215,8 @@
     font-size: 1.9rem;
   }
 
-  .description {
-    font-size: 1.05rem;
-    margin-bottom: 1.8rem;
-  }
-
   .section {
     padding-top: 2.5rem;
-  }
-
-  .upcomingCards {
-    gap: 1.5rem;
-  }
-
-  .upcomingCard {
-    padding: 1.4rem 1.2rem;
   }
 }
 
@@ -243,11 +229,6 @@
     font-size: 1.6rem;
   }
 
-  .description {
-    font-size: 0.98rem;
-    margin-bottom: 1.6rem;
-  }
-
   .heroLinks {
     flex-direction: column;
     gap: 0.8rem;
@@ -257,14 +238,5 @@
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-
-  .upcomingCards {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .upcomingCard {
-    max-width: 100%;
   }
 }

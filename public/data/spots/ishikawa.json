@@ -1,0 +1,300 @@
+{
+  "no": "17",
+  "pref_name": "ishikawa",
+  "spots": [
+    {
+      "id": 1,
+      "name": "金沢城北市民運動公園",
+      "category": "park",
+      "area": "石川",
+      "city": "金沢市",
+      "lat": 36.597,
+      "lng": 136.6583,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/21077622",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "鉢ヶ崎総合公園",
+      "category": "park",
+      "area": "石川",
+      "city": "珠洲市",
+      "lat": 37.4436,
+      "lng": 137.3258,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1237206242",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "金沢城公園",
+      "category": "park",
+      "area": "石川",
+      "city": "金沢市",
+      "lat": 36.5657,
+      "lng": 136.6595,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/128905245",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "芦城公園",
+      "category": "park",
+      "area": "石川",
+      "city": "小松市",
+      "lat": 36.41,
+      "lng": 136.4479,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/187399124",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "チカモリ遺跡公園",
+      "category": "park",
+      "area": "石川",
+      "city": "金沢市",
+      "lat": 36.5562,
+      "lng": 136.6047,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/300426519",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "辰口運動公園",
+      "category": "park",
+      "area": "石川",
+      "city": "能美市",
+      "lat": 36.4478,
+      "lng": 136.5516,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/479738445",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "兼六園",
+      "category": "park",
+      "area": "石川",
+      "city": "金沢市",
+      "lat": 36.5624,
+      "lng": 136.6624,
+      "url": "http://www.pref.ishikawa.jp/siro-niwa/kenrokuen/index.html",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": "有料"
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/50288147",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "加賀市中央公園",
+      "category": "park",
+      "area": "石川",
+      "city": "加賀市",
+      "lat": 36.324,
+      "lng": 136.3312,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/587083305",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "木場潟公園",
+      "category": "park",
+      "area": "石川",
+      "city": "小松市",
+      "lat": 36.3654,
+      "lng": 136.4513,
+      "url": "http://park18.wakwak.com/~kibagata/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/607698211",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "辰口丘陵公園",
+      "category": "park",
+      "area": "石川",
+      "city": "能美市",
+      "lat": 36.4382,
+      "lng": 136.5472,
+      "url": "https://www.ishikawazoo.jp/tatsu_park/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/62272842",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "内灘町総合公園",
+      "category": "park",
+      "area": "石川",
+      "city": "内灘町",
+      "lat": 36.6649,
+      "lng": 136.652,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/691007637",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 12,
+      "name": "希望の丘公園",
+      "category": "park",
+      "area": "石川",
+      "city": "七尾市",
+      "lat": 37.0322,
+      "lng": 136.989,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/719104377",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 13,
+      "name": "西部緑地公園",
+      "category": "park",
+      "area": "石川",
+      "city": "金沢市",
+      "lat": 36.5743,
+      "lng": 136.6024,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/893883920",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 14,
+      "name": "健民海浜公園",
+      "category": "park",
+      "area": "石川",
+      "city": "金沢市",
+      "lat": 36.5924,
+      "lng": 136.5825,
+      "url": "http://www.kenminkouen.com/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/920905315",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

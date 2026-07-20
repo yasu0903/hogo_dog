@@ -1,0 +1,186 @@
+/* src/pages/SpotsPrefecture/SpotsPrefecture.module.css */
+/* 県別お出かけスポット一覧。OrganizationDetail と同表現 */
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.main {
+  max-width: 1200px;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  flex: 1;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: var(--color-ink);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--color-primary);
+  position: relative;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.breadcrumb a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbSeparator {
+  color: var(--color-border);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+  background-color: var(--color-bg);
+}
+
+.error {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.error main {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.error h1 {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+.backLink {
+  margin-bottom: 2rem;
+}
+
+.backLink a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  background-color: var(--color-surface-alt);
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+}
+
+.backLink a:hover {
+  color: var(--color-primary-strong);
+  background-color: var(--color-primary-soft);
+}
+
+.backLink a::before {
+  content: "←";
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.filterBar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.resultsInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.spotsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.noResults {
+  margin: 2rem 0;
+  text-align: center;
+  color: #64748b;
+}
+
+.attribution {
+  margin-top: 2rem;
+  color: #94a3b8;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .main {
+    padding: 1.5rem;
+    width: 95%;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .spotsList {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .resultsInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .spotsList {
+    grid-template-columns: 1fr;
+  }
+}

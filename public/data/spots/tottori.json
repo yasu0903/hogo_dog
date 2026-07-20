@@ -1,0 +1,216 @@
+{
+  "no": "31",
+  "pref_name": "tottori",
+  "spots": [
+    {
+      "id": 1,
+      "name": "東郷湖羽合臨海公園",
+      "category": "park",
+      "area": "鳥取",
+      "city": "湯梨浜町",
+      "lat": 35.4793,
+      "lng": 133.8837,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/6715318",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "鳥取県立布勢総合運動公園;ヤマタスポーツパーク",
+      "category": "park",
+      "area": "鳥取",
+      "city": "鳥取市",
+      "lat": 35.4985,
+      "lng": 134.1817,
+      "url": "https://www.fuse-sportspark.com/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/8411144",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "米子水鳥公園",
+      "category": "park",
+      "area": "鳥取",
+      "city": "米子市",
+      "lat": 35.4423,
+      "lng": 133.2884,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1113121596",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "ほうきフォレストパーク",
+      "category": "park",
+      "area": "鳥取",
+      "city": "伯耆町",
+      "lat": 35.3611,
+      "lng": 133.4462,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1220757377",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "さじアストロパーク",
+      "category": "park",
+      "area": "鳥取",
+      "city": "鳥取市",
+      "lat": 35.3416,
+      "lng": 134.1197,
+      "url": "https://www.city.tottori.lg.jp/site/saji-tenmon/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1514010843",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "久松公園",
+      "category": "park",
+      "area": "鳥取",
+      "city": "鳥取市",
+      "lat": 35.5075,
+      "lng": 134.2384,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/368529352",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "河原中央公園",
+      "category": "park",
+      "area": "鳥取",
+      "city": "鳥取市",
+      "lat": 35.404,
+      "lng": 134.1992,
+      "url": "https://www.kawahara-shiro.com/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/392139992",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "打吹公園",
+      "category": "park",
+      "area": "鳥取",
+      "city": "倉吉市",
+      "lat": 35.4298,
+      "lng": 133.8235,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/453888714",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "樗谿公園",
+      "category": "park",
+      "area": "鳥取",
+      "city": "鳥取市",
+      "lat": 35.4999,
+      "lng": 134.2459,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/656872315",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "鳥取県立むきばんだ史跡公園",
+      "category": "park",
+      "area": "鳥取",
+      "city": "米子市",
+      "lat": 35.4611,
+      "lng": 133.4541,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/669764229",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

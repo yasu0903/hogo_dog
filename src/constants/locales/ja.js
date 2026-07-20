@@ -9,7 +9,9 @@ export const COMMON_MESSAGES = {
 
 export const HEADER_MESSAGES = {
     TITLE: 'わんだーネット',
-    TAGLINE: '保護犬・保護猫団体の全国検索'
+    TAGLINE: '保護犬・保護猫団体の全国検索',
+    NAV_ORGANIZATIONS: '団体を探す',
+    NAV_SPOTS: 'お出かけ'
 }
 
 export const FOOTER_MESSAGES = {
@@ -17,7 +19,10 @@ export const FOOTER_MESSAGES = {
     CONTENT: 'コンテンツ',
     ORGANIZATIONS: '団体を探す',
     MAP: '地図から探す',
-    UPCOMING: '今後追加予定: おでかけ情報・お散歩お天気（準備中）',
+    SPOTS: 'お出かけスポットを探す',
+    UPCOMING: '今後追加予定: お散歩お天気（準備中）',
+    OSM_ATTRIBUTION: '地図・スポットデータ © OpenStreetMap contributors (ODbL)',
+    OSM_COPYRIGHT_URL: 'https://www.openstreetmap.org/copyright',
     COPYRIGHT: 'わんだーネット All Rights Reserved.',
     LEGAL: '法的情報',
     PRIVACY_POLICY: 'プライバシーポリシー',
@@ -28,45 +33,21 @@ export const FOOTER_MESSAGES = {
 
 export const HOME_MESSAGES = {
     WELCOME: 'あなたの街の保護犬・保護猫団体を探そう',
-    DESCRIPTION1: '行政公表情報をもとに全国の団体を掲載。',
-    DESCRIPTION2: '出典と最終確認日を明示しています。',
     STATS: (prefectureCount, organizationCount) =>
         `掲載 ${prefectureCount}都道府県 / ${organizationCount}団体`,
-    FEATURES: [
-        {
-            ICON: '✅',
-            FEATURE: '行政公表情報ベース',
-            DESCRIPTION: '各都道府県が公表する登録団体一覧をもとに掲載。出典と時点を明示しています',
-        },
-        {
-            ICON: '🗾',
-            FEATURE: '全国横断で探せる',
-            DESCRIPTION: '団体名・エリア・都道府県・犬/猫で絞り込み。地図からも探せます',
-        },
-        {
-            ICON: '🔄',
-            FEATURE: '鮮度がわかる',
-            DESCRIPTION: '各団体のサイトを定期確認し、最終確認日とリンク切れを表示しています',
-        }
-    ],
-    HERO_SELECT_LABEL: 'お住まいの都道府県から探す',
+    HERO_SELECT_LABEL: '都道府県から探す',
     HERO_SELECT_PLACEHOLDER: '都道府県を選択',
     HERO_MAP_LINK: '🗾 地図から探す',
     HERO_ALL_LINK: '全国から探す',
-    AREA_SECTION_TITLE: 'エリアから探す',
-    AREA_SECTION_DESCRIPTION: 'お住まいの地域から団体一覧をチェックできます。',
-    UPCOMING_TITLE: '今後追加予定のコンテンツ',
+    SPOTS_SECTION_TITLE: 'ペットお出かけ情報',
+    SPOTS_SECTION_ICON: '🐾',
+    SPOTS_SECTION_LINK: 'お出かけスポットを探す',
+    UPCOMING_TITLE: '今後追加予定',
     UPCOMING_BADGE: '準備中',
     UPCOMING_ITEMS: [
         {
-            ICON: '🚗',
-            TITLE: 'ペットおでかけ情報',
-            DESCRIPTION: '犬と一緒に行ける公園・カフェ・宿を紹介予定です',
-        },
-        {
             ICON: '☀️',
             TITLE: 'お散歩お天気',
-            DESCRIPTION: 'その日の散歩にちょうどいい時間帯や気温をお届け予定です',
         }
     ]
 }
@@ -133,6 +114,55 @@ export const ORGANIZATION_DETAIL_MESSAGES = {
     LAST_VERIFIED: (date) => `最終確認日: ${date}`,
     VIEW_DETAIL: '詳細を見る →',
     BREADCRUMB_SEARCH: '団体を探す'
+}
+
+export const SPOTS_MESSAGES = {
+    TITLE: '犬とお出かけスポット検索',
+    DESCRIPTION: '全国のドッグランなど、犬とお出かけできるスポットを名称・エリア・都道府県・カテゴリで横断検索できます。',
+    SEARCH_PLACEHOLDER: 'スポット名・市区町村で検索',
+    CATEGORY_LABEL: 'カテゴリ',
+    CATEGORY_ALL: 'すべて',
+    CATEGORY_DOG_RUN: '🐕 ドッグラン',
+    CATEGORY_CAFE: '☕ カフェ',
+    CATEGORY_PARK: '🌳 公園',
+    RESULT_COUNT: (total, from, to) => `全${total}件中 ${from}-${to}件を表示`,
+    ERROR_FOR_NO_RESULTS: '該当するスポットが見つかりません',
+    CLEAR_FILTERS: '条件をクリア',
+    LOCATION: '所在地',
+    WEBSITE: 'ウェブサイト',
+    CONDITIONS_FEE: '料金',
+    CONDITIONS_SIZE_LIMIT: '体格制限',
+    CONDITIONS_VACCINATION: 'ワクチン証明',
+    CONDITIONS_VACCINATION_REQUIRED: '必要',
+    CONDITIONS_VACCINATION_NOT_REQUIRED: '不要',
+    LAST_VERIFIED: (date) => `最終確認日: ${date}`,
+    LINK_BROKEN: '⚠️ サイトのリンク切れを確認',
+    VIEW_LIST: 'リスト',
+    VIEW_MAP: '地図',
+    VIEW_TOGGLE_LABEL: '表示切替',
+    MAP_ARIA_LABEL: '都道府県別の掲載スポット数マップ',
+    MAP_HINT: '都道府県をクリックすると、その県のスポット一覧へ移動します',
+    MAP_COUNT_UNIT: '件',
+    OSM_ATTRIBUTION: 'スポットデータは OpenStreetMap をもとに掲載しています。最新の営業状況・利用条件は公式情報をご確認ください。'
+}
+
+export const SPOTS_PREFECTURE_MESSAGES = {
+    TITLE: (prefectureName, count) => `${prefectureName}の犬とお出かけスポット（${count}件）`,
+    SEO_TITLE: (prefectureName) => `${prefectureName}の犬とお出かけスポット`,
+    SEO_DESCRIPTION: (prefectureName, count) =>
+        `${prefectureName}のドッグラン・公園など、犬とお出かけできるスポット${count}件の一覧。`,
+    SPOTS_NOT_FOUND: 'スポットが見つかりません',
+    NO_MATCHING_SPOTS: '条件に一致するスポットがありません',
+    BACK_TO_SPOTS: 'スポット検索へ戻る',
+    BREADCRUMB_HOME: 'ホーム',
+    BREADCRUMB_SEARCH: 'お出かけスポット'
+}
+
+// カテゴリ値 → 表示ラベル（CategoryFilter と SpotCard で共用）
+export const SPOT_CATEGORY_LABELS = {
+    dog_run: SPOTS_MESSAGES.CATEGORY_DOG_RUN,
+    cafe: SPOTS_MESSAGES.CATEGORY_CAFE,
+    park: SPOTS_MESSAGES.CATEGORY_PARK
 }
 
 export const FILTER_MESSAGES = {

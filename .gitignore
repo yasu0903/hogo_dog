@@ -200,5 +200,12 @@ package-lock.json
 # Phase 2.5 enrichment pipeline intermediate outputs (regenerable)
 scripts/enrichment/out/
 
+# spots 収集パイプラインの中間出力 (regenerable)
+scripts/spots/out/
+
+# weather-walk Skill の中間出力 (regenerable)
+skills/weather-walk/out/
+
 # ビルド時に scripts/build_search_index.mjs が生成するファイル
 /public/data/search_index.json
+/public/data/spots_index.json

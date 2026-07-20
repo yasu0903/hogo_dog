@@ -1,0 +1,321 @@
+{
+  "no": "25",
+  "pref_name": "shiga",
+  "spots": [
+    {
+      "id": 1,
+      "name": "大津湖岸なぎさ公園",
+      "category": "park",
+      "area": "滋賀",
+      "city": "大津市",
+      "lat": 34.9962,
+      "lng": 135.8868,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/9503807",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "湖岸緑地中主吉川地区",
+      "category": "park",
+      "area": "滋賀",
+      "city": "野洲市",
+      "lat": 35.136,
+      "lng": 135.9908,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/185964859",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "奥びわスポーツの森",
+      "category": "park",
+      "area": "滋賀",
+      "city": "長浜市",
+      "lat": 35.4122,
+      "lng": 136.2091,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/35067148",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "矢橋帰帆島公園",
+      "category": "park",
+      "area": "滋賀",
+      "city": "草津市",
+      "lat": 35.0068,
+      "lng": 135.9144,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/386052779",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "高島市今津総合運動公園",
+      "category": "park",
+      "area": "滋賀",
+      "city": "高島市",
+      "lat": 35.4175,
+      "lng": 136,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/472033646",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "皇子山総合運動公園",
+      "category": "park",
+      "area": "滋賀",
+      "city": "大津市",
+      "lat": 35.0189,
+      "lng": 135.8568,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/482181730",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "びわこ文化公園",
+      "category": "park",
+      "area": "滋賀",
+      "city": "大津市",
+      "lat": 34.97,
+      "lng": 135.9423,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/543055094",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "希望ヶ丘文化公園",
+      "category": "park",
+      "area": "滋賀",
+      "city": "野洲市",
+      "lat": 35.0558,
+      "lng": 136.0681,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/544715396",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "ひばり公園",
+      "category": "park",
+      "area": "滋賀",
+      "city": "東近江市",
+      "lat": 35.1261,
+      "lng": 136.2487,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/560239853",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "柳が崎湖畔公園",
+      "category": "park",
+      "area": "滋賀",
+      "city": "大津市",
+      "lat": 35.0267,
+      "lng": 135.8688,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/585716976",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "甲南中央運動公園",
+      "category": "park",
+      "area": "滋賀",
+      "city": "甲賀市",
+      "lat": 34.9305,
+      "lng": 136.1764,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/617193985",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 12,
+      "name": "水口スポーツの森",
+      "category": "park",
+      "area": "滋賀",
+      "city": "甲賀市",
+      "lat": 34.9603,
+      "lng": 136.1634,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/618028642",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 13,
+      "name": "ブルーメの丘",
+      "category": "park",
+      "area": "滋賀",
+      "city": "日野町",
+      "lat": 35.0133,
+      "lng": 136.2823,
+      "url": "https://www.blumenooka.jp/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/629055356",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 14,
+      "name": "近江富士花緑公園",
+      "category": "park",
+      "area": "滋賀",
+      "city": "野洲市",
+      "lat": 35.0531,
+      "lng": 136.045,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/673554433",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 15,
+      "name": "びわこ地球市民の森",
+      "category": "park",
+      "area": "滋賀",
+      "city": "守山市",
+      "lat": 35.1036,
+      "lng": 135.9639,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/751225825",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

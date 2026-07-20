@@ -1,0 +1,321 @@
+{
+  "no": "43",
+  "pref_name": "kumamoto",
+  "spots": [
+    {
+      "id": 1,
+      "name": "犬のひろば",
+      "category": "dog_run",
+      "area": "熊本",
+      "city": "山江村",
+      "lat": 32.2618,
+      "lng": 130.7687,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "node/13780577627",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "花畑広場",
+      "category": "park",
+      "area": "熊本",
+      "city": "熊本市中央区",
+      "lat": 32.7989,
+      "lng": 130.7045,
+      "url": "https://hanabatahiroba.jp/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/17369502",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "熊本県民総合運動公園",
+      "category": "park",
+      "area": "熊本",
+      "city": "熊本市東区",
+      "lat": 32.8397,
+      "lng": 130.7927,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/5412152",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "大津町運動公園",
+      "category": "park",
+      "area": "熊本",
+      "city": "大津町",
+      "lat": 32.8729,
+      "lng": 130.8969,
+      "url": "https://www.town.ozu.kumamoto.jp/page/1341.html",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1533723926",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "八代城",
+      "category": "park",
+      "area": "熊本",
+      "city": "八代市",
+      "lat": 32.5076,
+      "lng": 130.5998,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/158829859",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "白川公園",
+      "category": "park",
+      "area": "熊本",
+      "city": "熊本市中央区",
+      "lat": 32.8051,
+      "lng": 130.7152,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/342293711",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "熊本城",
+      "category": "park",
+      "area": "熊本",
+      "city": "熊本市中央区",
+      "lat": 32.8054,
+      "lng": 130.7055,
+      "url": "https://castle.kumamoto-guide.jp/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": "有料"
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/375062710",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "水前寺江津湖広木公園",
+      "category": "park",
+      "area": "熊本",
+      "city": "熊本市東区",
+      "lat": 32.7676,
+      "lng": 130.7561,
+      "url": "https://www.ezuko-park.com/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/411023565",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "村山公園",
+      "category": "park",
+      "area": "熊本",
+      "city": "人吉市",
+      "lat": 32.2216,
+      "lng": 130.7493,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/477905501",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "県営八代運動公園",
+      "category": "park",
+      "area": "熊本",
+      "city": "八代市",
+      "lat": 32.5333,
+      "lng": 130.556,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/484234884",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "相良公園",
+      "category": "park",
+      "area": "熊本",
+      "city": "人吉市",
+      "lat": 32.2086,
+      "lng": 130.7429,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/484237427",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 12,
+      "name": "菊池公園",
+      "category": "park",
+      "area": "熊本",
+      "city": "菊池市",
+      "lat": 32.9857,
+      "lng": 130.8195,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/506315444",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 13,
+      "name": "水前寺江津湖公園（上江津地区）",
+      "category": "park",
+      "area": "熊本",
+      "city": "熊本市中央区",
+      "lat": 32.7802,
+      "lng": 130.7388,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/549489838",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 14,
+      "name": "立岡自然公園",
+      "category": "park",
+      "area": "熊本",
+      "city": "宇土市",
+      "lat": 32.676,
+      "lng": 130.6932,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/697503115",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 15,
+      "name": "芦北海浜総合公園",
+      "category": "park",
+      "area": "熊本",
+      "city": "芦北町",
+      "lat": 32.3205,
+      "lng": 130.4729,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/798289286",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

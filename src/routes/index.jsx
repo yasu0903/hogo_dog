@@ -4,6 +4,8 @@ import Home from '../pages/Home';
 import Organizations from '../pages/Organizations';
 import OrganizationDetail from '../pages/OrganizationDetail';
 import Organization from '../pages/Organization';
+import Spots from '../pages/Spots';
+import SpotsPrefecture from '../pages/SpotsPrefecture';
 import PrivacyPolicy from '../pages/PrivacyPolicy';
 import TermsOfService from '../pages/TermsOfService';
 
@@ -15,6 +17,14 @@ const router = createBrowserRouter([
   {
     path: '/organizations',
     element: <Organizations />,
+  },
+  {
+    path: '/spots',
+    element: <Spots />,
+  },
+  {
+    path: '/spots/:prefectureId',
+    element: <SpotsPrefecture />,
   },
   {
     path: '/organizations/:id',

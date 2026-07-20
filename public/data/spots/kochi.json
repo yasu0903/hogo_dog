@@ -1,0 +1,216 @@
+{
+  "no": "39",
+  "pref_name": "kochi",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "高知",
+      "city": "南国市",
+      "lat": 33.6012,
+      "lng": 133.6142,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/388271315",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "StepDo!",
+      "category": "dog_run",
+      "area": "高知",
+      "city": "高知市",
+      "lat": 33.5773,
+      "lng": 133.5609,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/654130280",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "東山森林公園",
+      "category": "park",
+      "area": "高知",
+      "city": "安芸市",
+      "lat": 33.4889,
+      "lng": 133.9472,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1254078950",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "春野総合運動公園",
+      "category": "park",
+      "area": "高知",
+      "city": "高知市",
+      "lat": 33.5104,
+      "lng": 133.5029,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/394400555",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "筆山公園",
+      "category": "park",
+      "area": "高知",
+      "city": "高知市",
+      "lat": 33.5511,
+      "lng": 133.5358,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/398517029",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "為松公園",
+      "category": "park",
+      "area": "高知",
+      "city": "四万十市",
+      "lat": 32.9954,
+      "lng": 132.9299,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/461296751",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "新居緑地公園",
+      "category": "park",
+      "area": "高知",
+      "city": "土佐市",
+      "lat": 33.4587,
+      "lng": 133.4759,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/566922839",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "西南大規模公園（四万十地区）",
+      "category": "park",
+      "area": "高知",
+      "city": "四万十市",
+      "lat": 32.9478,
+      "lng": 132.9951,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/647739751",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "西南大規模公園",
+      "category": "park",
+      "area": "高知",
+      "city": "黒潮町",
+      "lat": 33.0224,
+      "lng": 133.016,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/647742280",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "甫喜ヶ峰森林公園",
+      "category": "park",
+      "area": "高知",
+      "city": "香美市",
+      "lat": 33.6711,
+      "lng": 133.6884,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/727091518",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

@@ -1,0 +1,468 @@
+{
+  "no": "18",
+  "pref_name": "fukui",
+  "spots": [
+    {
+      "id": 1,
+      "name": "福井健康の森",
+      "category": "park",
+      "area": "福井",
+      "city": "福井市",
+      "lat": 36.0134,
+      "lng": 136.1404,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1037468220",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "芦山公園",
+      "category": "park",
+      "area": "福井",
+      "city": "越前市",
+      "lat": 35.9023,
+      "lng": 136.1814,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1037881209",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "福井県総合グリーンセンター",
+      "category": "park",
+      "area": "福井",
+      "city": "坂井市",
+      "lat": 36.1066,
+      "lng": 136.3044,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1041591381",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "東公園",
+      "category": "park",
+      "area": "福井",
+      "city": "福井市",
+      "lat": 36.0566,
+      "lng": 136.2235,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/180790954",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "小浜公園",
+      "category": "park",
+      "area": "福井",
+      "city": "小浜市",
+      "lat": 35.4922,
+      "lng": 135.7335,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/276153748",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "平泉寺白山神社",
+      "category": "park",
+      "area": "福井",
+      "city": "勝山市",
+      "lat": 36.0438,
+      "lng": 136.5412,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/288802884",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "三国運動公園",
+      "category": "park",
+      "area": "福井",
+      "city": "坂井市",
+      "lat": 36.2255,
+      "lng": 136.1473,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/423057324",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "トリムパーク かなづ",
+      "category": "park",
+      "area": "福井",
+      "city": "あわら市",
+      "lat": 36.2172,
+      "lng": 136.2506,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/441355193",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "武生中央公園",
+      "category": "park",
+      "area": "福井",
+      "city": "越前市",
+      "lat": 35.8992,
+      "lng": 136.1579,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/506233642",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "西山公園",
+      "category": "park",
+      "area": "福井",
+      "city": "鯖江市",
+      "lat": 35.9536,
+      "lng": 136.181,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/543891213",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "金ヶ崎緑地",
+      "category": "park",
+      "area": "福井",
+      "city": "敦賀市",
+      "lat": 35.6621,
+      "lng": 136.0726,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/544368169",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 12,
+      "name": "紫式部公園",
+      "category": "park",
+      "area": "福井",
+      "city": "越前市",
+      "lat": 35.8899,
+      "lng": 136.1576,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/550327987",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 13,
+      "name": "下馬中央公園",
+      "category": "park",
+      "area": "福井",
+      "city": "福井市",
+      "lat": 36.0396,
+      "lng": 136.2346,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/550335238",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 14,
+      "name": "長尾山総合公園",
+      "category": "park",
+      "area": "福井",
+      "city": "勝山市",
+      "lat": 36.0847,
+      "lng": 136.5128,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/558250866",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 15,
+      "name": "敦賀市総合運動公園",
+      "category": "park",
+      "area": "福井",
+      "city": "敦賀市",
+      "lat": 35.6416,
+      "lng": 136.0335,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/565475104",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 16,
+      "name": "松原公園",
+      "category": "park",
+      "area": "福井",
+      "city": "敦賀市",
+      "lat": 35.6557,
+      "lng": 136.0501,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/566293331",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 17,
+      "name": "越前水仙の里公園",
+      "category": "park",
+      "area": "福井",
+      "city": "福井市",
+      "lat": 36.0129,
+      "lng": 135.991,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/688152188",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 18,
+      "name": "三里浜 緩衝緑地",
+      "category": "park",
+      "area": "福井",
+      "city": "坂井市",
+      "lat": 36.1759,
+      "lng": 136.1201,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/688156186",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 19,
+      "name": "福井運動公園",
+      "category": "park",
+      "area": "福井",
+      "city": "福井市",
+      "lat": 36.0522,
+      "lng": 136.1832,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/697663591",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 20,
+      "name": "若狭総合公園",
+      "category": "park",
+      "area": "福井",
+      "city": "小浜市",
+      "lat": 35.515,
+      "lng": 135.7562,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/778886757",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 21,
+      "name": "福井市総合運動公園",
+      "category": "park",
+      "area": "福井",
+      "city": "福井市",
+      "lat": 36.0625,
+      "lng": 136.156,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/837280855",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 22,
+      "name": "きのこの森",
+      "category": "park",
+      "area": "福井",
+      "city": "おおい町",
+      "lat": 35.4568,
+      "lng": 135.5648,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/861071961",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

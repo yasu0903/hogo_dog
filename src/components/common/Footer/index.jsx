@@ -24,6 +24,7 @@ const Footer = () => {
           <ul>
             <li><Link to="/organizations">{FOOTER_MESSAGES.ORGANIZATIONS}</Link></li>
             <li><Link to="/organizations?view=map">{FOOTER_MESSAGES.MAP}</Link></li>
+            <li><Link to="/spots">{FOOTER_MESSAGES.SPOTS}</Link></li>
           </ul>
           {/* 準備中コンテンツ: 実装されるまでリンクは置かない */}
           <p className={styles.upcoming}>{FOOTER_MESSAGES.UPCOMING}</p>
@@ -40,7 +41,19 @@ const Footer = () => {
 
       <div className={styles.bottom}>
         <div className={styles.bottomContent}>
-          <p className={styles.copyright}>&copy; {currentYear} {FOOTER_MESSAGES.COPYRIGHT}</p>
+          <div>
+            <p className={styles.copyright}>&copy; {currentYear} {FOOTER_MESSAGES.COPYRIGHT}</p>
+            {/* ODbL の帰属要件（© OpenStreetMap contributors）を満たすための表示 */}
+            <p className={styles.attribution}>
+              <a
+                href={FOOTER_MESSAGES.OSM_COPYRIGHT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {FOOTER_MESSAGES.OSM_ATTRIBUTION}
+              </a>
+            </p>
+          </div>
 
           {/* SNSリンクを右端に配置 */}
           <div className={styles.social}>

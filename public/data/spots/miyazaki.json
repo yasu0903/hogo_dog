@@ -1,0 +1,384 @@
+{
+  "no": "45",
+  "pref_name": "miyazaki",
+  "spots": [
+    {
+      "id": 1,
+      "name": "宮崎市清武総合運動公園",
+      "category": "park",
+      "area": "宮崎",
+      "city": "宮崎市",
+      "lat": 31.8478,
+      "lng": 131.3717,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/10073967",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "フローランテ宮崎",
+      "category": "park",
+      "area": "宮崎",
+      "city": "宮崎市",
+      "lat": 31.9539,
+      "lng": 131.4656,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1309500938",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "早水公園",
+      "category": "park",
+      "area": "宮崎",
+      "city": "都城市",
+      "lat": 31.7388,
+      "lng": 131.0929,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/461164941",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "宮崎県総合文化公園",
+      "category": "park",
+      "area": "宮崎",
+      "city": "宮崎市",
+      "lat": 31.9343,
+      "lng": 131.4188,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/461405277",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "市民の森",
+      "category": "park",
+      "area": "宮崎",
+      "city": "宮崎市",
+      "lat": 31.9621,
+      "lng": 131.4665,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/466572427",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "宮崎市生目の杜運動公園",
+      "category": "park",
+      "area": "宮崎",
+      "city": "宮崎市",
+      "lat": 31.9441,
+      "lng": 131.3757,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/466573751",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "観音池公園",
+      "category": "park",
+      "area": "宮崎",
+      "city": "都城市",
+      "lat": 31.8251,
+      "lng": 131.136,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/469240619",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "神柱公園",
+      "category": "park",
+      "area": "宮崎",
+      "city": "都城市",
+      "lat": 31.731,
+      "lng": 131.0723,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/470447725",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "阿波岐原森林公園",
+      "category": "park",
+      "area": "宮崎",
+      "city": "宮崎市",
+      "lat": 31.9253,
+      "lng": 131.463,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/510486001",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "阿波岐原森林公園",
+      "category": "park",
+      "area": "宮崎",
+      "city": "宮崎市",
+      "lat": 31.9432,
+      "lng": 131.47,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/510486010",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "宮崎市久峰総合公園",
+      "category": "park",
+      "area": "宮崎",
+      "city": "宮崎市",
+      "lat": 32.0226,
+      "lng": 131.4604,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/530495332",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 12,
+      "name": "生目古墳群史跡公園",
+      "category": "park",
+      "area": "宮崎",
+      "city": "宮崎市",
+      "lat": 31.9486,
+      "lng": 131.3848,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/531635254",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 13,
+      "name": "都島公園",
+      "category": "park",
+      "area": "宮崎",
+      "city": "都城市",
+      "lat": 31.7202,
+      "lng": 131.0489,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/555950365",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 14,
+      "name": "猪崎鼻公園",
+      "category": "park",
+      "area": "宮崎",
+      "city": "日南市",
+      "lat": 31.5598,
+      "lng": 131.3933,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/557601257",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 15,
+      "name": "沖水川市民緑地",
+      "category": "park",
+      "area": "宮崎",
+      "city": "都城市",
+      "lat": 31.7493,
+      "lng": 131.0831,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/559415298",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 16,
+      "name": "串間市総合運動公園",
+      "category": "park",
+      "area": "宮崎",
+      "city": "串間市",
+      "lat": 31.4682,
+      "lng": 131.2194,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/632330254",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 17,
+      "name": "蓮ヶ池史跡公園",
+      "category": "park",
+      "area": "宮崎",
+      "city": "宮崎市",
+      "lat": 31.9697,
+      "lng": 131.4462,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/727377704",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 18,
+      "name": "宮崎県立総合運動公園",
+      "category": "park",
+      "area": "宮崎",
+      "city": "宮崎市",
+      "lat": 31.8263,
+      "lng": 131.4473,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/88813876",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

@@ -120,6 +120,22 @@
   margin: 0;
 }
 
+/* OpenStreetMap 帰属表示（ODbL） */
+.attribution {
+  margin: 0.4rem 0 0;
+  font-size: 0.8rem;
+}
+
+.attribution a {
+  color: #a3968a;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.attribution a:hover {
+  color: var(--color-primary);
+}
+
 /* SNSリンクスタイル */
 .social {
   display: flex;

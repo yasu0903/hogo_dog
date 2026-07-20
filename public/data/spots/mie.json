@@ -1,0 +1,489 @@
+{
+  "no": "24",
+  "pref_name": "mie",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "三重",
+      "city": "鈴鹿市",
+      "lat": 34.9623,
+      "lng": 136.4644,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/765984266",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "鈴鹿青少年の森",
+      "category": "park",
+      "area": "三重",
+      "city": "鈴鹿市",
+      "lat": 34.852,
+      "lng": 136.5384,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/20185914",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "霞ヶ浦緑地",
+      "category": "park",
+      "area": "三重",
+      "city": "四日市市",
+      "lat": 34.9853,
+      "lng": 136.6476,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/6838566",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "久留倍官衙遺跡公園",
+      "category": "park",
+      "area": "三重",
+      "city": "四日市市",
+      "lat": 35.015,
+      "lng": 136.6335,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1320942903",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "志摩市磯部ふれあい公園",
+      "category": "park",
+      "area": "三重",
+      "city": "志摩市",
+      "lat": 34.3867,
+      "lng": 136.8074,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/362056224",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "鳥羽中央公園",
+      "category": "park",
+      "area": "三重",
+      "city": "鳥羽市",
+      "lat": 34.4688,
+      "lng": 136.8519,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/362218316",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "円山公園",
+      "category": "park",
+      "area": "三重",
+      "city": "志摩市",
+      "lat": 34.3069,
+      "lng": 136.818,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/413362785",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "名張中央公園",
+      "category": "park",
+      "area": "三重",
+      "city": "名張市",
+      "lat": 34.624,
+      "lng": 136.1132,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/425253329",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "諏訪公園",
+      "category": "park",
+      "area": "三重",
+      "city": "四日市市",
+      "lat": 34.9685,
+      "lng": 136.6218,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/428667836",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "深谷公園",
+      "category": "park",
+      "area": "三重",
+      "city": "鈴鹿市",
+      "lat": 34.8372,
+      "lng": 136.4967,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/444142212",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "南部丘陵公園（北ゾーン）",
+      "category": "park",
+      "area": "三重",
+      "city": "四日市市",
+      "lat": 34.9449,
+      "lng": 136.584,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/463053265",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 12,
+      "name": "南部丘陵公園（南ゾーン）",
+      "category": "park",
+      "area": "三重",
+      "city": "四日市市",
+      "lat": 34.9369,
+      "lng": 136.5791,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/463053662",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 13,
+      "name": "垂坂公園・羽津山緑地",
+      "category": "park",
+      "area": "三重",
+      "city": "四日市市",
+      "lat": 35.0014,
+      "lng": 136.6222,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/463053958",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 14,
+      "name": "中央緑地公園",
+      "category": "park",
+      "area": "三重",
+      "city": "四日市市",
+      "lat": 34.9518,
+      "lng": 136.615,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/463154767",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 15,
+      "name": "中部台運動公園",
+      "category": "park",
+      "area": "三重",
+      "city": "松阪市",
+      "lat": 34.5451,
+      "lng": 136.506,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/463188610",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 16,
+      "name": "松阪農業公園ベルファーム",
+      "category": "park",
+      "area": "三重",
+      "city": "松阪市",
+      "lat": 34.5816,
+      "lng": 136.4813,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/463189830",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 17,
+      "name": "北勢中央公園",
+      "category": "park",
+      "area": "三重",
+      "city": "四日市市",
+      "lat": 35.0659,
+      "lng": 136.5451,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/464948270",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 18,
+      "name": "大仏山公園",
+      "category": "park",
+      "area": "三重",
+      "city": "玉城町",
+      "lat": 34.5188,
+      "lng": 136.654,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/468614654",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 19,
+      "name": "伊賀国分寺跡",
+      "category": "park",
+      "area": "三重",
+      "city": "伊賀市",
+      "lat": 34.7582,
+      "lng": 136.1538,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/544564081",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 20,
+      "name": "上野森林公園",
+      "category": "park",
+      "area": "三重",
+      "city": "伊賀市",
+      "lat": 34.7431,
+      "lng": 136.1512,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/545645501",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 21,
+      "name": "ウエストパーク松阪",
+      "category": "park",
+      "area": "三重",
+      "city": "松阪市",
+      "lat": 34.5761,
+      "lng": 136.4777,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/546775847",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 22,
+      "name": "桑名七里の渡し公園",
+      "category": "park",
+      "area": "三重",
+      "city": "桑名市",
+      "lat": 35.0701,
+      "lng": 136.6939,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/689863226",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 23,
+      "name": "いなべ市梅林公園",
+      "category": "park",
+      "area": "三重",
+      "city": "いなべ市",
+      "lat": 35.2202,
+      "lng": 136.4948,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/719126052",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

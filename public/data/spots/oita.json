@@ -1,0 +1,342 @@
+{
+  "no": "44",
+  "pref_name": "oita",
+  "spots": [
+    {
+      "id": 1,
+      "name": "ドッグラン",
+      "category": "dog_run",
+      "area": "大分",
+      "city": "別府市",
+      "lat": 33.3371,
+      "lng": 131.4658,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/766247415",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "遊歩公園",
+      "category": "park",
+      "area": "大分",
+      "city": "大分市",
+      "lat": 33.237,
+      "lng": 131.6119,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/12853579",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "佐伯運動公園",
+      "category": "park",
+      "area": "大分",
+      "city": "佐伯市",
+      "lat": 32.9282,
+      "lng": 131.8694,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/15437785",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "大分スポーツ公園",
+      "category": "park",
+      "area": "大分",
+      "city": "大分市",
+      "lat": 33.1976,
+      "lng": 131.6543,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/15476088",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "ダイハツ九州スポーツパーク大貞",
+      "category": "park",
+      "area": "大分",
+      "city": "中津市",
+      "lat": 33.5625,
+      "lng": 131.2097,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/15480395",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "高尾山自然公園",
+      "category": "park",
+      "area": "大分",
+      "city": "大分市",
+      "lat": 33.2117,
+      "lng": 131.6557,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1145086449",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "松原緑地",
+      "category": "park",
+      "area": "大分",
+      "city": "大分市",
+      "lat": 33.2611,
+      "lng": 131.6771,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/152624183",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "天然塚公園",
+      "category": "park",
+      "area": "大分",
+      "city": "大分市",
+      "lat": 33.229,
+      "lng": 131.6564,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/204105714",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "くじゅう花公園",
+      "category": "park",
+      "area": "大分",
+      "city": "竹田市",
+      "lat": 33.0474,
+      "lng": 131.2438,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/485450794",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "ジャングル公園",
+      "category": "park",
+      "area": "大分",
+      "city": "大分市",
+      "lat": 33.2405,
+      "lng": 131.6045,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/49097161",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "大分城址公園 (府内城跡)",
+      "category": "park",
+      "area": "大分",
+      "city": "大分市",
+      "lat": 33.2403,
+      "lng": 131.6116,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/49106871",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 12,
+      "name": "ふないアクアパーク",
+      "category": "park",
+      "area": "大分",
+      "city": "大分市",
+      "lat": 33.2368,
+      "lng": 131.6096,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/49109037",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 13,
+      "name": "若草公園",
+      "category": "park",
+      "area": "大分",
+      "city": "大分市",
+      "lat": 33.2366,
+      "lng": 131.6053,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/49135775",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 14,
+      "name": "平和市民公園",
+      "category": "park",
+      "area": "大分",
+      "city": "大分市",
+      "lat": 33.2433,
+      "lng": 131.6356,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/556161031",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 15,
+      "name": "大分農業文化公園",
+      "category": "park",
+      "area": "大分",
+      "city": "杵築市",
+      "lat": 33.432,
+      "lng": 131.4351,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/565080561",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 16,
+      "name": "別府公園",
+      "category": "park",
+      "area": "大分",
+      "city": "別府市",
+      "lat": 33.282,
+      "lng": 131.4911,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/92357403",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

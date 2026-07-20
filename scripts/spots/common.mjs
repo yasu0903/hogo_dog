@@ -26,8 +26,56 @@ export const today = () => new Date().toISOString().slice(0, 10);
 
 export const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
+export const USER_AGENT = 'hogo-dog-spots/1.0 (https://nyantarou.net)';
+
+const OVERPASS_ENDPOINTS = [
+  'https://overpass-api.de/api/interpreter',
+  'https://overpass.kumi.systems/api/interpreter',
+];
+
+const OVERPASS_MAX_RETRIES = 3;
+
+// Overpass API へのクエリ実行（エンドポイント切替 + 指数バックオフ付き）
+export const fetchOverpass = async (query) => {
+  let lastError;
+  for (const endpoint of OVERPASS_ENDPOINTS) {
+    for (let attempt = 0; attempt < OVERPASS_MAX_RETRIES; attempt++) {
+      try {
+        console.log(`fetching: ${endpoint} (attempt ${attempt + 1}/${OVERPASS_MAX_RETRIES})`);
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            // OSMのポリシー上、識別可能なUser-Agentが必須（無いと406/429になる）
+            'User-Agent': USER_AGENT,
+            'Accept': 'application/json',
+          },
+          body: `data=${encodeURIComponent(query)}`,
+        });
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status} ${response.statusText}`);
+        }
+        return await response.json();
+      } catch (error) {
+        lastError = error;
+        const backoff = 5000 * 2 ** attempt;
+        console.warn(`failed: ${error.message} — retrying in ${backoff / 1000}s`);
+        await sleep(backoff);
+      }
+    }
+    console.warn(`endpoint ${endpoint} exhausted, trying next`);
+  }
+  throw lastError;
+};
+
 // 座標は小数第4位で丸める（約10m精度で十分、ファイルサイズ抑制）
 const roundCoord = (value) => Math.round(value * 10000) / 10000;
+
+// OSM の website タグはスキーム欠落（"city.example.jp" 等）があるため補う
+const normalizeUrl = (url) => {
+  if (!url || /^[a-z][a-z0-9+.-]*:/i.test(url)) return url;
+  return `https://${url}`;
+};
 
 // Overpass の要素1件からスポット候補を抽出する。
 // 名前が無い要素は掲載価値・検索価値がないため null を返す（呼び出し側でスキップ記録）。
@@ -51,7 +99,7 @@ export const extractSpot = (element) => {
     name,
     lat: roundCoord(lat),
     lng: roundCoord(lng),
-    url: tags.website || tags['contact:website'] || '',
+    url: normalizeUrl(tags.website || tags['contact:website'] || ''),
     fee,
   };
 };

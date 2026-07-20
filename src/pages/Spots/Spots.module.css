@@ -104,6 +104,36 @@
   color: #e74c3c;
 }
 
+/* リスト / 地図 切替タブ（Organizations と同表現） */
+.viewTabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e1e8ed;
+}
+
+.viewTab {
+  padding: 0.7rem 1.8rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  color: #64748b;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.viewTab:hover {
+  color: var(--color-primary);
+}
+
+.viewTabActive {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
 .resultsInfo {
   display: flex;
   justify-content: space-between;
@@ -169,5 +199,10 @@
 
   .spotsList {
     grid-template-columns: 1fr;
+  }
+
+  .viewTab {
+    flex: 1;
+    padding: 0.7rem 0;
   }
 }

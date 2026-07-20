@@ -138,6 +138,18 @@
   font-size: 0.95rem;
 }
 
+/* リンク切れ表示（OrgCard の表現に合わせる） */
+.linkBroken {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  background-color: #fdeaea;
+  color: #b02a2a;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
 .cardFooter {
   display: flex;
   justify-content: space-between;

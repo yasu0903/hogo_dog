@@ -63,7 +63,7 @@ const main = async () => {
   const indexPath = path.join(DATA_DIR, 'search_index.json');
   await writeFile(indexPath, JSON.stringify(index), 'utf-8');
 
-  // spots_index.json: 全都道府県のお出かけスポットを統合（/spots 全国ページが読む。sitemap統合はW2）
+  // spots_index.json: 全都道府県のお出かけスポットを統合（/spots 全国ページが読む）
   const spots = [];
   for (const pref of prefData.prefecture_list) {
     const spotFile = path.join(DATA_DIR, 'spots', `${pref.english_name}.json`);
@@ -86,7 +86,8 @@ const main = async () => {
   };
   await writeFile(path.join(DATA_DIR, 'spots_index.json'), JSON.stringify(spotsIndex), 'utf-8');
 
-  // sitemap.xml: 静的ページ + 県別ページ + 団体単体ページ
+  // sitemap.xml: 静的ページ + 県別ページ + 団体単体ページ + スポットページ
+  // （スポット単体ページは設けない方針のため、spots 系は全国 + 県別まで）
   const urls = ['/', '/organizations', '/privacy-policy', '/terms-of-service'];
   const prefIds = [...new Set(organizations.map((o) => o.prefecture_id))].sort();
   for (const prefId of prefIds) {
@@ -94,6 +95,11 @@ const main = async () => {
   }
   for (const org of organizations) {
     urls.push(`/organizations/${org.prefecture_id}/${org.id}`);
+  }
+  urls.push('/spots');
+  const spotPrefIds = [...new Set(spots.map((s) => s.prefecture_id))].sort();
+  for (const prefId of spotPrefIds) {
+    urls.push(`/spots/${prefId}`);
   }
 
   const sitemap = [

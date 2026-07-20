@@ -43,6 +43,384 @@
       "source": "osm",
       "osm_id": "way/599217909",
       "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "県立公園太閤山ランド",
+      "category": "park",
+      "area": "富山",
+      "city": "射水市",
+      "lat": 36.6905,
+      "lng": 137.1038,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/12373324",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "グランドプラザ",
+      "category": "park",
+      "area": "富山",
+      "city": "富山市",
+      "lat": 36.6894,
+      "lng": 137.2137,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/220014128",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "富山城址公園",
+      "category": "park",
+      "area": "富山",
+      "city": "富山市",
+      "lat": 36.6933,
+      "lng": 137.2109,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/338862862",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "富岩運河環水公園",
+      "category": "park",
+      "area": "富山",
+      "city": "富山市",
+      "lat": 36.7097,
+      "lng": 137.2126,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/338875394",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "常願寺川公園",
+      "category": "park",
+      "area": "富山",
+      "city": "立山町",
+      "lat": 36.6929,
+      "lng": 137.2814,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/339204833",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "富山県総合運動公園",
+      "category": "park",
+      "area": "富山",
+      "city": "富山市",
+      "lat": 36.6263,
+      "lng": 137.1967,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/339217402",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "岩瀬スポーツ公園",
+      "category": "park",
+      "area": "富山",
+      "city": "富山市",
+      "lat": 36.7429,
+      "lng": 137.2383,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/339413847",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "高岡古城公園",
+      "category": "park",
+      "area": "富山",
+      "city": "高岡市",
+      "lat": 36.7489,
+      "lng": 137.0217,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/372220862",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "閑乗寺公園",
+      "category": "park",
+      "area": "富山",
+      "city": "南砺市",
+      "lat": 36.56,
+      "lng": 136.9863,
+      "url": "https://kanjojikouen.com/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/469957932",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 12,
+      "name": "オレンジパークふなはし",
+      "category": "park",
+      "area": "富山",
+      "city": "舟橋村",
+      "lat": 36.7001,
+      "lng": 137.3043,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/493450557",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 13,
+      "name": "氷見運動公園",
+      "category": "park",
+      "area": "富山",
+      "city": "氷見市",
+      "lat": 36.8296,
+      "lng": 136.9723,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/548047479",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 14,
+      "name": "黒部市総合公園",
+      "category": "park",
+      "area": "富山",
+      "city": "黒部市",
+      "lat": 36.8806,
+      "lng": 137.4254,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/551834872",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 15,
+      "name": "大島中央公園",
+      "category": "park",
+      "area": "富山",
+      "city": "射水市",
+      "lat": 36.7317,
+      "lng": 137.0749,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/552603081",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 16,
+      "name": "県民公園 頼成の森",
+      "category": "park",
+      "area": "富山",
+      "city": "砺波市",
+      "lat": 36.6312,
+      "lng": 137.0409,
+      "url": "https://www.bgtym.org/ranjyounomori/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/561145826",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 17,
+      "name": "桃山運動公園",
+      "category": "park",
+      "area": "富山",
+      "city": "魚津市",
+      "lat": 36.796,
+      "lng": 137.4328,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/561440165",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 18,
+      "name": "宮野運動公園",
+      "category": "park",
+      "area": "富山",
+      "city": "黒部市",
+      "lat": 36.8658,
+      "lng": 137.479,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/563967736",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 19,
+      "name": "城ケ山公園",
+      "category": "park",
+      "area": "富山",
+      "city": "富山市",
+      "lat": 36.5733,
+      "lng": 137.1314,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/62231141",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 20,
+      "name": "庄川水記念公園",
+      "category": "park",
+      "area": "富山",
+      "city": "砺波市",
+      "lat": 36.5735,
+      "lng": 136.9952,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/695890814",
+      "last_verified": "2026-07-20"
     }
   ]
 }

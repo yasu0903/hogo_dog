@@ -7,6 +7,12 @@
 // - manual_overrides.json（osm_id キー）があればフィールド単位で上書き適用
 //   （"exclude": true で掲載除外、それ以外のキーはフィールド上書き）
 // - スポット 0 件の県はファイルを作らない
+//
+// 注意: id 以外の全フィールドを毎回作り直すため、08_apply.mjs が書き込んだ
+// conditions / caution(自動反映分) / link_broken / last_verified は本スクリプトの
+// 再実行で消える。manual_overrides.json 更新後にこれを再実行したら、
+// 続けて 08_apply.mjs --write も再実行して enrichment を復元すること
+// （正しい順序: 03 → 05〜07 → manual_overrides レビュー → 03 → 08 --write）
 
 import path from 'node:path';
 import { SPOTS_DIR, OUT_DIR, DATA_DIR, readJson, readJsonIfExists, writeJson, today } from './common.mjs';
@@ -59,7 +65,8 @@ const main = async () => {
       built.push({
         id: prev?.id ?? nextId++,
         name: spot.name,
-        category: 'dog_run',
+        // category は 02 が raw の由来（01=dog_run / 04=park）から付与する
+        category: spot.category ?? 'dog_run',
         area: prefNameToArea(pref.name),
         city: spot.city,
         lat: spot.lat,

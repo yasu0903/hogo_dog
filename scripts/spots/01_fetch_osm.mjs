@@ -8,12 +8,7 @@
 // データ更新は手動オペレーション（predev/prebuild には入れない）。
 
 import path from 'node:path';
-import { OUT_DIR, writeJson, extractSpot, sleep } from './common.mjs';
-
-const ENDPOINTS = [
-  'https://overpass-api.de/api/interpreter',
-  'https://overpass.kumi.systems/api/interpreter',
-];
+import { OUT_DIR, writeJson, extractSpot, fetchOverpass } from './common.mjs';
 
 // out center により way/relation も代表点座標が得られる（node はそのまま座標を使う）
 const QUERY = `
@@ -23,42 +18,8 @@ nwr["leisure"="dog_park"](area.jp);
 out center tags;
 `;
 
-const MAX_RETRIES = 3;
-
-const fetchOverpass = async () => {
-  let lastError;
-  for (const endpoint of ENDPOINTS) {
-    for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
-      try {
-        console.log(`fetching: ${endpoint} (attempt ${attempt + 1}/${MAX_RETRIES})`);
-        const response = await fetch(endpoint, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            // OSMのポリシー上、識別可能なUser-Agentが必須（無いと406/429になる）
-            'User-Agent': 'hogo-dog-spots/1.0 (https://nyantarou.net)',
-            'Accept': 'application/json',
-          },
-          body: `data=${encodeURIComponent(QUERY)}`,
-        });
-        if (!response.ok) {
-          throw new Error(`HTTP ${response.status} ${response.statusText}`);
-        }
-        return await response.json();
-      } catch (error) {
-        lastError = error;
-        const backoff = 5000 * 2 ** attempt;
-        console.warn(`failed: ${error.message} — retrying in ${backoff / 1000}s`);
-        await sleep(backoff);
-      }
-    }
-    console.warn(`endpoint ${endpoint} exhausted, trying next`);
-  }
-  throw lastError;
-};
-
 const main = async () => {
-  const raw = await fetchOverpass();
+  const raw = await fetchOverpass(QUERY);
   await writeJson(path.join(OUT_DIR, '01_osm_raw.json'), raw);
 
   const elements = raw.elements ?? [];

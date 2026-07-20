@@ -107,39 +107,16 @@ const Home = () => {
           )}
         </section>
 
-        {/* 2. サイトの特徴 */}
+        {/* 2. ペットお出かけ情報 */}
         <section className={styles.section}>
-          <div className={styles.features}>
-            {HOME_MESSAGES.FEATURES.map(feature => (
-              <div key={feature.FEATURE} className={styles.feature}>
-                <div className={styles.featureIcon}>{feature.ICON}</div>
-                <h3>{feature.FEATURE}</h3>
-                <p>{feature.DESCRIPTION}</p>
-              </div>
-            ))}
-          </div>
+          <h2 className={styles.sectionTitle}>{HOME_MESSAGES.SPOTS_SECTION_TITLE}</h2>
+          <p className={styles.sectionDescription}>{HOME_MESSAGES.SPOTS_SECTION_DESCRIPTION}</p>
+          <Link to="/spots" className={styles.spotsLink}>
+            {HOME_MESSAGES.SPOTS_SECTION_LINK}
+          </Link>
         </section>
 
-        {/* 3. エリアから探す */}
-        {areas.length > 0 && (
-          <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>{HOME_MESSAGES.AREA_SECTION_TITLE}</h2>
-            <p className={styles.sectionDescription}>{HOME_MESSAGES.AREA_SECTION_DESCRIPTION}</p>
-            <div className={styles.areaChips}>
-              {areas.map(area => (
-                <Link
-                  key={area}
-                  to={`/organizations?area=${encodeURIComponent(area)}`}
-                  className={styles.areaChip}
-                >
-                  {area}
-                </Link>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* 4. 今後追加予定のコンテンツ（準備中: リンクは置かない） */}
+        {/* 3. 今後追加予定のコンテンツ（準備中: リンクは置かない） */}
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>{HOME_MESSAGES.UPCOMING_TITLE}</h2>
           <div className={styles.upcomingCards}>

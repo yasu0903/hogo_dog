@@ -172,6 +172,30 @@ export const fetchSearchIndex = async () => {
   }
 };
 
+// スポット1件をJSONの形式からアプリ内の形式に変換する
+// （fetchSpotsIndex と fetchSpotsByPrefecture で共用）
+const mapSpot = (spot) => ({
+  id: spot.id,
+  name: spot.name,
+  category: spot.category,
+  area: spot.area,
+  city: spot.city ?? '',
+  lat: spot.lat,
+  lng: spot.lng,
+  website: spot.url ?? '',
+  conditions: {
+    vaccinationCert: spot.conditions?.vaccination_cert ?? null,
+    sizeLimit: spot.conditions?.size_limit ?? '',
+    fee: spot.conditions?.fee ?? ''
+  },
+  caution: spot.caution ?? '',
+  note: spot.note ?? '',
+  sns: spot.sns ?? [],
+  source: spot.source,
+  lastVerified: spot.last_verified ?? '',
+  linkBroken: Boolean(spot.link_broken)
+});
+
 // お出かけスポットの統合インデックスを取得
 // （scripts/build_search_index.mjs がビルド時に生成する spots_index.json を読む）
 export const fetchSpotsIndex = async () => {
@@ -187,30 +211,51 @@ export const fetchSpotsIndex = async () => {
         prefectureId: spot.prefecture_id,
         prefectureName: spot.prefecture_name,
         prefectureArea: spot.prefecture_area,
-        id: spot.id,
-        name: spot.name,
-        category: spot.category,
-        area: spot.area,
-        city: spot.city ?? '',
-        lat: spot.lat,
-        lng: spot.lng,
-        website: spot.url ?? '',
-        conditions: {
-          vaccinationCert: spot.conditions?.vaccination_cert ?? null,
-          sizeLimit: spot.conditions?.size_limit ?? '',
-          fee: spot.conditions?.fee ?? ''
-        },
-        caution: spot.caution ?? '',
-        note: spot.note ?? '',
-        sns: spot.sns ?? [],
-        source: spot.source,
-        lastVerified: spot.last_verified ?? ''
+        ...mapSpot(spot)
       }));
     }
 
     return [];
   } catch (error) {
     console.error('Error fetching spots index:', error);
+    return [];
+  }
+};
+
+// 特定の都道府県のお出かけスポット一覧を取得（fetchOrganizationDetail と同型）
+export const fetchSpotsByPrefecture = async (prefectureId) => {
+  try {
+    const prefResponse = await fetch('/data/prefecture.json');
+    if (!prefResponse.ok) {
+      throw new Error(`HTTP error! status: ${prefResponse.status}`);
+    }
+    const prefData = await prefResponse.json();
+
+    // 都道府県IDから英語名を取得
+    let englishName = '';
+    if (prefData && prefData.prefecture_list && Array.isArray(prefData.prefecture_list)) {
+      const prefecture = prefData.prefecture_list.find(pref => pref.no === prefectureId);
+      englishName = prefecture ? prefecture.english_name : '';
+    }
+
+    if (!englishName) {
+      console.error(`Prefecture with ID ${prefectureId} not found`);
+      return [];
+    }
+
+    const spotsResponse = await fetch(`/data/spots/${englishName}.json`);
+    if (!spotsResponse.ok) {
+      throw new Error(`HTTP error! status: ${spotsResponse.status}`);
+    }
+    const spotsData = await spotsResponse.json();
+
+    if (spotsData && spotsData.spots && Array.isArray(spotsData.spots)) {
+      return spotsData.spots.map(mapSpot);
+    }
+
+    return [];
+  } catch (error) {
+    console.error(`Error fetching spots for ${prefectureId}:`, error);
     return [];
   }
 };

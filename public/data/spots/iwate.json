@@ -43,6 +43,405 @@
       "source": "osm",
       "osm_id": "way/690376965",
       "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "岩手県営運動公園",
+      "category": "park",
+      "area": "岩手",
+      "city": "盛岡市",
+      "lat": 39.7361,
+      "lng": 141.1193,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/443946",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "沢内総合公園",
+      "category": "park",
+      "area": "岩手",
+      "city": "西和賀町",
+      "lat": 39.4342,
+      "lng": 140.7466,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1002180889",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "盛岡南公園",
+      "category": "park",
+      "area": "岩手",
+      "city": "盛岡市",
+      "lat": 39.6493,
+      "lng": 141.1367,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/210177263",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "観自在王院跡",
+      "category": "park",
+      "area": "岩手",
+      "city": "平泉町",
+      "lat": 38.9885,
+      "lng": 141.1102,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/218653376",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "御所野縄文公園",
+      "category": "park",
+      "area": "岩手",
+      "city": "一戸町",
+      "lat": 40.198,
+      "lng": 141.3088,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/430734279",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "岩手県営運動公園",
+      "category": "park",
+      "area": "岩手",
+      "city": "盛岡市",
+      "lat": 39.7361,
+      "lng": 141.1193,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/51806143",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "中央公園",
+      "category": "park",
+      "area": "岩手",
+      "city": "盛岡市",
+      "lat": 39.6943,
+      "lng": 141.1275,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/535853458",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "北上市立公園飛勢城趾",
+      "category": "park",
+      "area": "岩手",
+      "city": "北上市",
+      "lat": 39.3313,
+      "lng": 141.1366,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/558859980",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "北上市立公園展勝地",
+      "category": "park",
+      "area": "岩手",
+      "city": "北上市",
+      "lat": 39.276,
+      "lng": 141.128,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/558860537",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 12,
+      "name": "釣山公園",
+      "category": "park",
+      "area": "岩手",
+      "city": "一関市",
+      "lat": 38.9244,
+      "lng": 141.1301,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/565571532",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 13,
+      "name": "館ヶ森公園",
+      "category": "park",
+      "area": "岩手",
+      "city": "一関市",
+      "lat": 38.8204,
+      "lng": 141.2666,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/615764750",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 14,
+      "name": "北上総合運動公園",
+      "category": "park",
+      "area": "岩手",
+      "city": "北上市",
+      "lat": 39.2595,
+      "lng": 141.0935,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/620647177",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 15,
+      "name": "水沢公園",
+      "category": "park",
+      "area": "岩手",
+      "city": "奥州市",
+      "lat": 39.1352,
+      "lng": 141.1391,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/62115552",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 16,
+      "name": "鍋倉公園",
+      "category": "park",
+      "area": "岩手",
+      "city": "遠野市",
+      "lat": 39.3275,
+      "lng": 141.5278,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/625186147",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 17,
+      "name": "和賀川グリーンバーク",
+      "category": "park",
+      "area": "岩手",
+      "city": "北上市",
+      "lat": 39.287,
+      "lng": 141.0859,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/670138186",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 18,
+      "name": "木伏緑地",
+      "category": "park",
+      "area": "岩手",
+      "city": "盛岡市",
+      "lat": 39.7034,
+      "lng": 141.1384,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/709250660",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 19,
+      "name": "高田松原津波復興祈念公園",
+      "category": "park",
+      "area": "岩手",
+      "city": "陸前高田市",
+      "lat": 39.0073,
+      "lng": 141.6269,
+      "url": "https://takatamatsubara-park.com/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/761417042",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 20,
+      "name": "高田松原運動公園",
+      "category": "park",
+      "area": "岩手",
+      "city": "陸前高田市",
+      "lat": 39.0115,
+      "lng": 141.6379,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/761417043",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 21,
+      "name": "滝沢森林公園",
+      "category": "park",
+      "area": "岩手",
+      "city": "滝沢市",
+      "lat": 39.8074,
+      "lng": 141.1377,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/82733990",
+      "last_verified": "2026-07-20"
     }
   ]
 }

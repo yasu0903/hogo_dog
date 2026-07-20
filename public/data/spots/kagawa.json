@@ -1,0 +1,468 @@
+{
+  "no": "37",
+  "pref_name": "kagawa",
+  "spots": [
+    {
+      "id": 1,
+      "name": "満濃池森林公園",
+      "category": "park",
+      "area": "香川",
+      "city": "まんのう町",
+      "lat": 34.1587,
+      "lng": 133.8668,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/11957875",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "さぬきこどもの国公園",
+      "category": "park",
+      "area": "香川",
+      "city": "高松市",
+      "lat": 34.2122,
+      "lng": 134.0155,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/12349009",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "さぬき空港公園",
+      "category": "park",
+      "area": "香川",
+      "city": "綾川町",
+      "lat": 34.2149,
+      "lng": 134.0045,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/15088436",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "香川県立亀鶴公園",
+      "category": "park",
+      "area": "香川",
+      "city": "さぬき市",
+      "lat": 34.2528,
+      "lng": 134.1829,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/8142857",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "宇多津臨海公園",
+      "category": "park",
+      "area": "香川",
+      "city": "宇多津町",
+      "lat": 34.3129,
+      "lng": 133.8086,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/102223063",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "綾川町総合運動公園",
+      "category": "park",
+      "area": "香川",
+      "city": "綾川町",
+      "lat": 34.2646,
+      "lng": 133.9495,
+      "url": "https://www.town.ayagawa.lg.jp/docs/2011071400291/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1124077702",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "高山航空公園",
+      "category": "park",
+      "area": "香川",
+      "city": "綾川町",
+      "lat": 34.2005,
+      "lng": 133.9666,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1127488599",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "瀬戸大橋記念公園",
+      "category": "park",
+      "area": "香川",
+      "city": "坂出市",
+      "lat": 34.3519,
+      "lng": 133.8264,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/222369241",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "四国村",
+      "category": "park",
+      "area": "香川",
+      "city": "高松市",
+      "lat": 34.3452,
+      "lng": 134.1096,
+      "url": "https://www.shikokumura.or.jp/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": "有料"
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/468242591",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "一の宮公園",
+      "category": "park",
+      "area": "香川",
+      "city": "観音寺市",
+      "lat": 34.0858,
+      "lng": 133.6373,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/552939493",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "かりんの丘公園",
+      "category": "park",
+      "area": "香川",
+      "city": "まんのう町",
+      "lat": 34.1732,
+      "lng": 133.8697,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/560050712",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 12,
+      "name": "国営讃岐まんのう公園",
+      "category": "park",
+      "area": "香川",
+      "city": "まんのう町",
+      "lat": 34.166,
+      "lng": 133.887,
+      "url": "https://sanukimannopark.jp/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/560055550",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 13,
+      "name": "道の駅「大坂城残石記念公園」",
+      "category": "park",
+      "area": "香川",
+      "city": "土庄町",
+      "lat": 34.5339,
+      "lng": 134.2419,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/56121790",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 14,
+      "name": "爺神山",
+      "category": "park",
+      "area": "香川",
+      "city": "三豊市",
+      "lat": 34.1867,
+      "lng": 133.702,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/56257930",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 15,
+      "name": "土器川公園",
+      "category": "park",
+      "area": "香川",
+      "city": "丸亀市",
+      "lat": 34.2539,
+      "lng": 133.8348,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/569604071",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 16,
+      "name": "桃陵公園",
+      "category": "park",
+      "area": "香川",
+      "city": "多度津町",
+      "lat": 34.268,
+      "lng": 133.7457,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/591281533",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 17,
+      "name": "香川用水記念公園",
+      "category": "park",
+      "area": "香川",
+      "city": "三豊市",
+      "lat": 34.0992,
+      "lng": 133.7654,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/625057655",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 18,
+      "name": "朝日山森林公園",
+      "category": "park",
+      "area": "香川",
+      "city": "三豊市",
+      "lat": 34.1803,
+      "lng": 133.7611,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/625057656",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 19,
+      "name": "とらまる公園",
+      "category": "park",
+      "area": "香川",
+      "city": "東かがわ市",
+      "lat": 34.2407,
+      "lng": 134.3161,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/663060115",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 20,
+      "name": "瀬戸内海国立公園(紫雲出山)",
+      "category": "park",
+      "area": "香川",
+      "city": "三豊市",
+      "lat": 34.2431,
+      "lng": 133.5983,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/669358185",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 21,
+      "name": "三木町総合運動公園",
+      "category": "park",
+      "area": "香川",
+      "city": "三木町",
+      "lat": 34.2393,
+      "lng": 134.1457,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/742762337",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 22,
+      "name": "丸亀市総合運動公園",
+      "category": "park",
+      "area": "香川",
+      "city": "丸亀市",
+      "lat": 34.2653,
+      "lng": 133.7866,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/868171729",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

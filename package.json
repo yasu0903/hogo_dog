@@ -12,6 +12,11 @@
     "spots:fetch": "node scripts/spots/01_fetch_osm.mjs",
     "spots:geocode": "node scripts/spots/02_assign_prefecture.mjs",
     "spots:build": "node scripts/spots/03_build_spots_json.mjs",
+    "spots:parks": "node scripts/spots/04_fetch_osm_parks.mjs",
+    "spots:check-urls": "node scripts/spots/05_check_urls.mjs",
+    "spots:snippets": "node scripts/spots/06_fetch_extract.mjs",
+    "spots:judge": "node scripts/spots/07_judge_gemini.mjs",
+    "spots:apply": "node scripts/spots/08_apply.mjs",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {

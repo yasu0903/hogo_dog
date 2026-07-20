@@ -1,0 +1,279 @@
+{
+  "no": "41",
+  "pref_name": "saga",
+  "spots": [
+    {
+      "id": 1,
+      "name": "SAGAサンライズパーク",
+      "category": "park",
+      "area": "佐賀",
+      "city": "佐賀市",
+      "lat": 33.2763,
+      "lng": 130.2915,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/15798919",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "吉野ヶ里歴史公園",
+      "category": "park",
+      "area": "佐賀",
+      "city": "吉野ヶ里町",
+      "lat": 33.3271,
+      "lng": 130.3851,
+      "url": "https://www.yoshinogari.jp/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/18919143",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "松浦河畔公園",
+      "category": "park",
+      "area": "佐賀",
+      "city": "唐津市",
+      "lat": 33.4196,
+      "lng": 129.9903,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1108810140",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "神野公園",
+      "category": "park",
+      "area": "佐賀",
+      "city": "佐賀市",
+      "lat": 33.266,
+      "lng": 130.281,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/176584505",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "どんどんどんの森公園",
+      "category": "park",
+      "area": "佐賀",
+      "city": "佐賀市",
+      "lat": 33.2604,
+      "lng": 130.2911,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/176759268",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "小城公園",
+      "category": "park",
+      "area": "佐賀",
+      "city": "小城市",
+      "lat": 33.2891,
+      "lng": 130.1959,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/332698949",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "国見台公園",
+      "category": "park",
+      "area": "佐賀",
+      "city": "伊万里市",
+      "lat": 33.2672,
+      "lng": 129.8694,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/438232454",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "佐賀県立森林公園",
+      "category": "park",
+      "area": "佐賀",
+      "city": "佐賀市",
+      "lat": 33.2395,
+      "lng": 130.249,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/577639516",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "万部島",
+      "category": "park",
+      "area": "佐賀",
+      "city": "佐賀市",
+      "lat": 33.2486,
+      "lng": 130.3034,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/577718289",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "西渓公園",
+      "category": "park",
+      "area": "佐賀",
+      "city": "多久市",
+      "lat": 33.2572,
+      "lng": 130.0894,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/586672601",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "旭ヶ岡公園",
+      "category": "park",
+      "area": "佐賀",
+      "city": "鹿島市",
+      "lat": 33.1037,
+      "lng": 130.0928,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/630067023",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 12,
+      "name": "みゆき公園",
+      "category": "park",
+      "area": "佐賀",
+      "city": "嬉野市",
+      "lat": 33.1103,
+      "lng": 129.9811,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/737296103",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 13,
+      "name": "有田ポーセリングパーク",
+      "category": "park",
+      "area": "佐賀",
+      "city": "有田町",
+      "lat": 33.1633,
+      "lng": 129.9071,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/788346071",
+      "last_verified": "2026-07-20"
+    }
+  ]
+}

@@ -1,15 +1,16 @@
 // src/pages/Spots/index.jsx
 // 犬とお出かけできるスポットの全国横断検索ページ。
-// フィルタ状態（q / area / pref / category / page）はURLクエリに同期し、
-// 共有・ブラウザバックで状態が再現できる（view は W2 の地図ビューで追加予定）。
+// フィルタ状態（q / area / pref / category / view / page）はURLクエリに同期し、
+// 共有・ブラウザバックで状態が再現できる（?view=map はタイルマップ表示）。
 import { useState, useEffect, useMemo } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useNavigate } from 'react-router-dom';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
 import Seo from '../../components/common/Seo';
 import Pagination from '../../components/common/Pagination';
 import AreaFilter from '../../components/organizations/AreaFilter';
 import PrefectureFilter from '../../components/organizations/PrefectureFilter';
+import JapanTileMap from '../../components/organizations/JapanTileMap';
 import SpotCard from '../../components/spots/SpotCard';
 import CategoryFilter from '../../components/spots/CategoryFilter';
 import { fetchSpotsIndex, fetchPrefectures, getAreas } from '../../services/api';
@@ -18,6 +19,7 @@ import { PAGINATION_CONSTANT } from '../../constants/pagination';
 import styles from './Spots.module.css';
 
 const Spots = () => {
+  const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const [allSpots, setAllSpots] = useState([]);
   const [prefectures, setPrefectures] = useState([]);
@@ -29,6 +31,7 @@ const Spots = () => {
   const selectedArea = searchParams.get('area') ?? '';
   const selectedPrefecture = searchParams.get('pref') ?? '';
   const categoryFilter = searchParams.get('category') ?? 'all';
+  const view = searchParams.get('view') === 'map' ? 'map' : 'list';
   const currentPage = Math.max(1, parseInt(searchParams.get('page') ?? '1', 10) || 1);
 
   useEffect(() => {
@@ -55,7 +58,7 @@ const Spots = () => {
   const updateParams = (patch, { replace = false } = {}) => {
     const next = new URLSearchParams(searchParams);
     for (const [key, value] of Object.entries(patch)) {
-      if (value === '' || value == null || value === 'all' || (key === 'page' && value === 1)) {
+      if (value === '' || value == null || value === 'all' || (key === 'page' && value === 1) || (key === 'view' && value === 'list')) {
         next.delete(key);
       } else {
         next.set(key, String(value));
@@ -68,13 +71,15 @@ const Spots = () => {
   };
 
   // 掲載スポットがある都道府県と、県ごとのスポット数
+  // （地図の塗り分けにも使うため、カテゴリフィルタ選択中は選択カテゴリのみ数える）
   const countsByPrefecture = useMemo(() => {
     const counts = {};
     for (const spot of allSpots) {
+      if (categoryFilter !== 'all' && spot.category !== categoryFilter) continue;
       counts[spot.prefectureId] = (counts[spot.prefectureId] ?? 0) + 1;
     }
     return counts;
-  }, [allSpots]);
+  }, [allSpots, categoryFilter]);
 
   const visiblePrefectures = useMemo(
     () => prefectures.filter(pref => countsByPrefecture[pref.id]),
@@ -192,31 +197,61 @@ const Spots = () => {
           </div>
         </div>
 
-        {filteredSpots.length > 0 ? (
-          <div className={styles.resultsInfo}>
-            <p>
-              {SPOTS_MESSAGES.RESULT_COUNT(
-                filteredSpots.length,
-                indexOfFirstItem + 1,
-                Math.min(indexOfLastItem, filteredSpots.length)
-              )}
-            </p>
-          </div>
-        ) : (
-          <p className={styles.noResults}>{SPOTS_MESSAGES.ERROR_FOR_NO_RESULTS}</p>
-        )}
-
-        <div className={styles.spotsList}>
-          {currentSpots.map(spot => (
-            <SpotCard key={`${spot.prefectureId}-${spot.id}`} spot={spot} />
-          ))}
+        <div className={styles.viewTabs} role="group" aria-label={SPOTS_MESSAGES.VIEW_TOGGLE_LABEL}>
+          <button
+            className={`${styles.viewTab} ${view === 'list' ? styles.viewTabActive : ''}`}
+            aria-pressed={view === 'list'}
+            onClick={() => updateParams({ view: 'list', page: safePage })}
+          >
+            {SPOTS_MESSAGES.VIEW_LIST}
+          </button>
+          <button
+            className={`${styles.viewTab} ${view === 'map' ? styles.viewTabActive : ''}`}
+            aria-pressed={view === 'map'}
+            onClick={() => updateParams({ view: 'map', page: safePage })}
+          >
+            {SPOTS_MESSAGES.VIEW_MAP}
+          </button>
         </div>
 
-        <Pagination
-          currentPage={safePage}
-          totalPages={totalPages}
-          onPageChange={handlePageChange}
-        />
+        {view === 'map' ? (
+          <JapanTileMap
+            prefectures={prefectures}
+            counts={countsByPrefecture}
+            onSelect={(prefId) => navigate(`/spots/${prefId}`)}
+            ariaLabel={SPOTS_MESSAGES.MAP_ARIA_LABEL}
+            hint={SPOTS_MESSAGES.MAP_HINT}
+            countUnit={SPOTS_MESSAGES.MAP_COUNT_UNIT}
+          />
+        ) : (
+          <>
+            {filteredSpots.length > 0 ? (
+              <div className={styles.resultsInfo}>
+                <p>
+                  {SPOTS_MESSAGES.RESULT_COUNT(
+                    filteredSpots.length,
+                    indexOfFirstItem + 1,
+                    Math.min(indexOfLastItem, filteredSpots.length)
+                  )}
+                </p>
+              </div>
+            ) : (
+              <p className={styles.noResults}>{SPOTS_MESSAGES.ERROR_FOR_NO_RESULTS}</p>
+            )}
+
+            <div className={styles.spotsList}>
+              {currentSpots.map(spot => (
+                <SpotCard key={`${spot.prefectureId}-${spot.id}`} spot={spot} />
+              ))}
+            </div>
+
+            <Pagination
+              currentPage={safePage}
+              totalPages={totalPages}
+              onPageChange={handlePageChange}
+            />
+          </>
+        )}
 
         <p className={styles.attribution}>{SPOTS_MESSAGES.OSM_ATTRIBUTION}</p>
       </main>

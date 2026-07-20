@@ -22,6 +22,237 @@
       "source": "osm",
       "osm_id": "way/1431052356",
       "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "徐福公園",
+      "category": "park",
+      "area": "和歌山",
+      "city": "新宮市",
+      "lat": 33.7259,
+      "lng": 135.9955,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/211652019",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "河西公園",
+      "category": "park",
+      "area": "和歌山",
+      "city": "和歌山市",
+      "lat": 34.252,
+      "lng": 135.1093,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/381725000",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "紀三井寺公園",
+      "category": "park",
+      "area": "和歌山",
+      "city": "和歌山市",
+      "lat": 34.1663,
+      "lng": 135.1909,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/390008424",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "新庄総合公園",
+      "category": "park",
+      "area": "和歌山",
+      "city": "田辺市",
+      "lat": 33.6959,
+      "lng": 135.3999,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/457200982",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "和歌山公園",
+      "category": "park",
+      "area": "和歌山",
+      "city": "和歌山市",
+      "lat": 34.2278,
+      "lng": 135.1725,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/457201094",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "海南市わんぱく公園",
+      "category": "park",
+      "area": "和歌山",
+      "city": "海南市",
+      "lat": 34.1598,
+      "lng": 135.2344,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/457201130",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "のかみふれあい公園",
+      "category": "park",
+      "area": "和歌山",
+      "city": "紀美野町",
+      "lat": 34.1794,
+      "lng": 135.3475,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/457201166",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "白崎海洋公園",
+      "category": "park",
+      "area": "和歌山",
+      "city": "由良町",
+      "lat": 33.9768,
+      "lng": 135.0705,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/467202614",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "ふるさとの川総合公園",
+      "category": "park",
+      "area": "和歌山",
+      "city": "有田市",
+      "lat": 34.0779,
+      "lng": 135.1585,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/492700182",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "かわべ天文公園",
+      "category": "park",
+      "area": "和歌山",
+      "city": "日高川町",
+      "lat": 33.8943,
+      "lng": 135.2157,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/547933723",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 12,
+      "name": "県立紀伊風土記の丘公園",
+      "category": "park",
+      "area": "和歌山",
+      "city": "和歌山市",
+      "lat": 34.2255,
+      "lng": 135.2294,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/714358678",
+      "last_verified": "2026-07-20"
     }
   ]
 }

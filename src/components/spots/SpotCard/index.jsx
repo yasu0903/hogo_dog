@@ -63,15 +63,19 @@ const SpotCard = ({ spot }) => {
 
       {spot.website && (
         <div className={styles.linkRow}>
-          <a
-            href={spot.website}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.websiteChip}
-          >
-            <FontAwesomeIcon icon={faGlobe} />
-            <span>{SPOTS_MESSAGES.WEBSITE}</span>
-          </a>
+          {!spot.linkBroken ? (
+            <a
+              href={spot.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.websiteChip}
+            >
+              <FontAwesomeIcon icon={faGlobe} />
+              <span>{SPOTS_MESSAGES.WEBSITE}</span>
+            </a>
+          ) : (
+            <span className={styles.linkBroken}>{SPOTS_MESSAGES.LINK_BROKEN}</span>
+          )}
         </div>
       )}
 

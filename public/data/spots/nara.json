@@ -43,6 +43,363 @@
       "source": "osm",
       "osm_id": "way/1447996912",
       "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "新沢千塚古墳群公園",
+      "category": "park",
+      "area": "奈良",
+      "city": "橿原市",
+      "lat": 34.4806,
+      "lng": 135.7752,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/17226297",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "大和民俗公園",
+      "category": "park",
+      "area": "奈良",
+      "city": "大和郡山市",
+      "lat": 34.653,
+      "lng": 135.7521,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/5705792",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "生駒山麓公園",
+      "category": "park",
+      "area": "奈良",
+      "city": "生駒市",
+      "lat": 34.702,
+      "lng": 135.6779,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/100228647",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "旧柳生藩陣屋跡",
+      "category": "park",
+      "area": "奈良",
+      "city": "奈良市",
+      "lat": 34.729,
+      "lng": 135.953,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1512866225",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "農業公園 信貴山 のどか村",
+      "category": "park",
+      "area": "奈良",
+      "city": "三郷町",
+      "lat": 34.6045,
+      "lng": 135.6621,
+      "url": "https://www.sigisan-nodokamura.com/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/295393320",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "西山古墳",
+      "category": "park",
+      "area": "奈良",
+      "city": "天理市",
+      "lat": 34.5924,
+      "lng": 135.8429,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/307997390",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "馬見丘陵公園(中央エリア)",
+      "category": "park",
+      "area": "奈良",
+      "city": "広陵町",
+      "lat": 34.5616,
+      "lng": 135.739,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/373707764",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "平城宮跡歴史公園",
+      "category": "park",
+      "area": "奈良",
+      "city": "奈良市",
+      "lat": 34.6903,
+      "lng": 135.7959,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/426778267",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "まほろば健康パーク(浄化センター公園)",
+      "category": "park",
+      "area": "奈良",
+      "city": "大和郡山市",
+      "lat": 34.5983,
+      "lng": 135.782,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/453716359",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 12,
+      "name": "橿原運動公園",
+      "category": "park",
+      "area": "奈良",
+      "city": "橿原市",
+      "lat": 34.4943,
+      "lng": 135.7722,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/454019479",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 13,
+      "name": "鴻ノ池運動公園",
+      "category": "park",
+      "area": "奈良",
+      "city": "奈良市",
+      "lat": 34.6975,
+      "lng": 135.83,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/455101977",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 14,
+      "name": "甘樫丘地区",
+      "category": "park",
+      "area": "奈良",
+      "city": "明日香村",
+      "lat": 34.4777,
+      "lng": 135.8135,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/455102118",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 15,
+      "name": "橿原公苑",
+      "category": "park",
+      "area": "奈良",
+      "city": "橿原市",
+      "lat": 34.489,
+      "lng": 135.7924,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/455102271",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 16,
+      "name": "大谷山自然公園",
+      "category": "park",
+      "area": "奈良",
+      "city": "大和高田市",
+      "lat": 34.5261,
+      "lng": 135.7299,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/455314378",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 17,
+      "name": "奈良公園",
+      "category": "park",
+      "area": "奈良",
+      "city": "奈良市",
+      "lat": 34.6831,
+      "lng": 135.8555,
+      "url": "https://www3.pref.nara.jp/park/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": "無料"
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/456314269",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 18,
+      "name": "矢田自然公園子どもの森",
+      "category": "park",
+      "area": "奈良",
+      "city": "大和郡山市",
+      "lat": 34.663,
+      "lng": 135.7359,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/457871282",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 19,
+      "name": "フォレストパーク神野山",
+      "category": "park",
+      "area": "奈良",
+      "city": "山添村",
+      "lat": 34.6699,
+      "lng": 135.9995,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/458451570",
+      "last_verified": "2026-07-20"
     }
   ]
 }

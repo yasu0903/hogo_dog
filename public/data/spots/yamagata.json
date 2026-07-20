@@ -22,6 +22,384 @@
       "source": "osm",
       "osm_id": "way/398121785",
       "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "山形市総合スポーツセンター",
+      "category": "park",
+      "area": "山形",
+      "city": "山形市",
+      "lat": 38.2804,
+      "lng": 140.3465,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1303179351",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "最上川ふるさと総合公園",
+      "category": "park",
+      "area": "山形",
+      "city": "寒河江市",
+      "lat": 38.363,
+      "lng": 140.2619,
+      "url": "https://m-furusato.sakura.ne.jp/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "ドッグラン利用以外のペット同伴は原則禁止です。",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1330347424",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "最上川上流河川緑地",
+      "category": "park",
+      "area": "山形",
+      "city": "米沢市",
+      "lat": 37.9088,
+      "lng": 140.1204,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1433513394",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "最上川窪田・上郷地区河川緑地",
+      "category": "park",
+      "area": "山形",
+      "city": "米沢市",
+      "lat": 37.9591,
+      "lng": 140.1377,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1442062958",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "山形県総合運動公園",
+      "category": "park",
+      "area": "山形",
+      "city": "天童市",
+      "lat": 38.3374,
+      "lng": 140.3777,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/160359891",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "日和山公園",
+      "category": "park",
+      "area": "山形",
+      "city": "酒田市",
+      "lat": 38.9192,
+      "lng": 139.8277,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/285644034",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "嶋遺跡公園",
+      "category": "park",
+      "area": "山形",
+      "city": "山形市",
+      "lat": 38.2843,
+      "lng": 140.3191,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/288064751",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "烏帽子山公園",
+      "category": "park",
+      "area": "山形",
+      "city": "南陽市",
+      "lat": 38.051,
+      "lng": 140.1654,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/292717315",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "小真木原公園",
+      "category": "park",
+      "area": "山形",
+      "city": "鶴岡市",
+      "lat": 38.7137,
+      "lng": 139.8155,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/377970287",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "藤島歴史公園",
+      "category": "park",
+      "area": "山形",
+      "city": "鶴岡市",
+      "lat": 38.7656,
+      "lng": 139.9028,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/418456421",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 12,
+      "name": "眺海の森ピクニックランド",
+      "category": "park",
+      "area": "山形",
+      "city": "酒田市",
+      "lat": 38.8607,
+      "lng": 139.9778,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/592277670",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 13,
+      "name": "光が丘公園",
+      "category": "park",
+      "area": "山形",
+      "city": "酒田市",
+      "lat": 38.9342,
+      "lng": 139.8291,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/592279990",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 14,
+      "name": "真室川公園",
+      "category": "park",
+      "area": "山形",
+      "city": "真室川町",
+      "lat": 38.8625,
+      "lng": 140.2469,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/632388361",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 15,
+      "name": "霞城公園",
+      "category": "park",
+      "area": "山形",
+      "city": "山形市",
+      "lat": 38.2555,
+      "lng": 140.3284,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/728946713",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 16,
+      "name": "鶴岡公園",
+      "category": "park",
+      "area": "山形",
+      "city": "鶴岡市",
+      "lat": 38.7284,
+      "lng": 139.8242,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/73541632",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 17,
+      "name": "西蔵王公園",
+      "category": "park",
+      "area": "山形",
+      "city": "山形市",
+      "lat": 38.2076,
+      "lng": 140.3571,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/864856165",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 18,
+      "name": "飯森山公園",
+      "category": "park",
+      "area": "山形",
+      "city": "酒田市",
+      "lat": 38.8916,
+      "lng": 139.8233,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/90543372",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 19,
+      "name": "鈴川公園",
+      "category": "park",
+      "area": "山形",
+      "city": "山形市",
+      "lat": 38.2628,
+      "lng": 140.3662,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/936187909",
+      "last_verified": "2026-07-20"
     }
   ]
 }

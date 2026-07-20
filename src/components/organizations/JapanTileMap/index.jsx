@@ -44,17 +44,25 @@ const binIndex = (count, max) => {
   return Math.min(FILL_STEPS.length - 1, Math.ceil((count / max) * FILL_STEPS.length) - 1);
 };
 
-const JapanTileMap = ({ prefectures, counts, onSelect }) => {
+// ラベル類は団体検索向けが既定。スポット検索など他用途では props で差し替える
+const JapanTileMap = ({
+  prefectures,
+  counts,
+  onSelect,
+  ariaLabel = JAPAN_MAP_MESSAGES.ARIA_LABEL,
+  hint = JAPAN_MAP_MESSAGES.HINT,
+  countUnit = JAPAN_MAP_MESSAGES.COUNT_UNIT
+}) => {
   const max = Math.max(0, ...Object.values(counts));
 
   return (
     <div className={styles.mapContainer}>
-      <p className={styles.mapHint}>{JAPAN_MAP_MESSAGES.HINT}</p>
+      <p className={styles.mapHint}>{hint}</p>
       <svg
         className={styles.mapSvg}
         viewBox={`0 0 ${COLS * CELL} ${ROWS * CELL}`}
         role="img"
-        aria-label={JAPAN_MAP_MESSAGES.ARIA_LABEL}
+        aria-label={ariaLabel}
       >
         {prefectures.map((pref) => {
           const pos = TILE_POSITIONS[pref.id];
@@ -70,7 +78,7 @@ const JapanTileMap = ({ prefectures, counts, onSelect }) => {
 
           const tile = (
             <>
-              <title>{`${pref.name}: ${count}${JAPAN_MAP_MESSAGES.COUNT_UNIT}`}</title>
+              <title>{`${pref.name}: ${count}${countUnit}`}</title>
               <rect
                 x={x}
                 y={y}
@@ -112,7 +120,7 @@ const JapanTileMap = ({ prefectures, counts, onSelect }) => {
               className={styles.tile}
               role="link"
               tabIndex={0}
-              aria-label={`${pref.name}（${count}${JAPAN_MAP_MESSAGES.COUNT_UNIT}）`}
+              aria-label={`${pref.name}（${count}${countUnit}）`}
               onClick={() => onSelect(pref.id)}
               onKeyDown={(e) => {
                 if (e.key === 'Enter' || e.key === ' ') {

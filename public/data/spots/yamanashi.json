@@ -106,6 +106,343 @@
       "source": "osm",
       "osm_id": "way/987632406",
       "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "笛吹川 フルーツ公園",
+      "category": "park",
+      "area": "山梨",
+      "city": "山梨市",
+      "lat": 35.7027,
+      "lng": 138.6656,
+      "url": "https://fuefukigawafp.co.jp/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "リード必須。自転車等の乗り入れ不可。一部ドッグランあり。",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/4202655",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "花の都公園",
+      "category": "park",
+      "area": "山梨",
+      "city": "山中湖村",
+      "lat": 35.4395,
+      "lng": 138.8528,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1153654786",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "大石公園",
+      "category": "park",
+      "area": "山梨",
+      "city": "富士河口湖町",
+      "lat": 35.5233,
+      "lng": 138.7465,
+      "url": "https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=2346",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "リード必須。フンは持ち帰ってください。",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1220560079",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "遊亀公園",
+      "category": "park",
+      "area": "山梨",
+      "city": "甲府市",
+      "lat": 35.6509,
+      "lng": 138.5717,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/170132597",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "赤坂台総合公園",
+      "category": "park",
+      "area": "山梨",
+      "city": "甲斐市",
+      "lat": 35.6743,
+      "lng": 138.505,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/242014454",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "万力公園",
+      "category": "park",
+      "area": "山梨",
+      "city": "山梨市",
+      "lat": 35.6911,
+      "lng": 138.6805,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/303247716",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 12,
+      "name": "大法師公園",
+      "category": "park",
+      "area": "山梨",
+      "city": "富士川町",
+      "lat": 35.5463,
+      "lng": 138.4546,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/32955219",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 13,
+      "name": "小瀬スポーツ公園",
+      "category": "park",
+      "area": "山梨",
+      "city": "甲府市",
+      "lat": 35.6218,
+      "lng": 138.5869,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/410148760",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 14,
+      "name": "押原公園",
+      "category": "park",
+      "area": "山梨",
+      "city": "昭和町",
+      "lat": 35.6307,
+      "lng": 138.5405,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/410218596",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 15,
+      "name": "韮崎中央公園",
+      "category": "park",
+      "area": "山梨",
+      "city": "韮崎市",
+      "lat": 35.7223,
+      "lng": 138.4381,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/410374342",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 16,
+      "name": "櫛形総合公園",
+      "category": "park",
+      "area": "山梨",
+      "city": "南アルプス市",
+      "lat": 35.6174,
+      "lng": 138.4564,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/410374658",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 17,
+      "name": "富士川クラフトパーク",
+      "category": "park",
+      "area": "山梨",
+      "city": "身延町",
+      "lat": 35.4178,
+      "lng": 138.4373,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/442578238",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 18,
+      "name": "御勅使南公園",
+      "category": "park",
+      "area": "山梨",
+      "city": "韮崎市",
+      "lat": 35.6679,
+      "lng": 138.4524,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/544259575",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 19,
+      "name": "富士北麓公園",
+      "category": "park",
+      "area": "山梨",
+      "city": "富士吉田市",
+      "lat": 35.4547,
+      "lng": 138.7675,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/598222793",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 20,
+      "name": "大門碑林公園",
+      "category": "park",
+      "area": "山梨",
+      "city": "市川三郷町",
+      "lat": 35.5547,
+      "lng": 138.5054,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/622704172",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 21,
+      "name": "新倉山浅間公園",
+      "category": "park",
+      "area": "山梨",
+      "city": "富士吉田市",
+      "lat": 35.5005,
+      "lng": 138.8016,
+      "url": "https://www.city.fujiyoshida.yamanashi.jp/info/151",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": "無料"
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/765997878",
+      "last_verified": "2026-07-20",
+      "link_broken": true
     }
   ]
 }

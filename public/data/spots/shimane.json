@@ -22,6 +22,405 @@
       "source": "osm",
       "osm_id": "way/1080539562",
       "last_verified": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "name": "浜山公園",
+      "category": "park",
+      "area": "島根",
+      "city": "出雲市",
+      "lat": 35.379,
+      "lng": 132.7072,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/12648788",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "加茂中央公園",
+      "category": "park",
+      "area": "島根",
+      "city": "雲南市",
+      "lat": 35.3416,
+      "lng": 132.8988,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/17697915",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "しまね花の郷",
+      "category": "park",
+      "area": "島根",
+      "city": "出雲市",
+      "lat": 35.3314,
+      "lng": 132.727,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/18793062",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "石見海浜公園",
+      "category": "park",
+      "area": "島根",
+      "city": "浜田市",
+      "lat": 34.951,
+      "lng": 132.1195,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/19445169",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "中海ふれあい公園",
+      "category": "park",
+      "area": "島根",
+      "city": "安来市",
+      "lat": 35.4149,
+      "lng": 133.3111,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/19896600",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 7,
+      "name": "益田運動公園",
+      "category": "park",
+      "area": "島根",
+      "city": "益田市",
+      "lat": 34.6842,
+      "lng": 131.854,
+      "url": "https://masuda-undoukouen.com/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/9575953",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "きすき健康の森",
+      "category": "park",
+      "area": "島根",
+      "city": "雲南市",
+      "lat": 35.2769,
+      "lng": 132.9106,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1295553270",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "岸公園",
+      "category": "park",
+      "area": "島根",
+      "city": "松江市",
+      "lat": 35.4594,
+      "lng": 133.0522,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/181221635",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "島根県立万葉公園",
+      "category": "park",
+      "area": "島根",
+      "city": "益田市",
+      "lat": 34.6791,
+      "lng": 131.8136,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/544531577",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "出雲玉作史跡公園",
+      "category": "park",
+      "area": "島根",
+      "city": "松江市",
+      "lat": 35.4175,
+      "lng": 133.0116,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/554288438",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 12,
+      "name": "松江総合運動公園",
+      "category": "park",
+      "area": "島根",
+      "city": "松江市",
+      "lat": 35.4367,
+      "lng": 133.064,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/556179129",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 13,
+      "name": "清水公園",
+      "category": "park",
+      "area": "島根",
+      "city": "安来市",
+      "lat": 35.4029,
+      "lng": 133.2809,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/580652577",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 14,
+      "name": "宍道ふるさと森林公園",
+      "category": "park",
+      "area": "島根",
+      "city": "松江市",
+      "lat": 35.3861,
+      "lng": 132.8944,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/616133187",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 15,
+      "name": "石見海浜公園",
+      "category": "park",
+      "area": "島根",
+      "city": "江津市",
+      "lat": 34.9731,
+      "lng": 132.153,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/659806883",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 16,
+      "name": "菰沢公園",
+      "category": "park",
+      "area": "島根",
+      "city": "江津市",
+      "lat": 35.0296,
+      "lng": 132.2768,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/668881117",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 17,
+      "name": "石見海浜公園",
+      "category": "park",
+      "area": "島根",
+      "city": "浜田市",
+      "lat": 34.9594,
+      "lng": 132.144,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/682629540",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 18,
+      "name": "かなぎウエスタンライディングパーク",
+      "category": "park",
+      "area": "島根",
+      "city": "浜田市",
+      "lat": 34.8674,
+      "lng": 132.2032,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/684773995",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 19,
+      "name": "青野山　県立自然公園",
+      "category": "park",
+      "area": "島根",
+      "city": "津和野町",
+      "lat": 34.4654,
+      "lng": 131.7944,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/690346593",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 20,
+      "name": "風の国森林公園",
+      "category": "park",
+      "area": "島根",
+      "city": "江津市",
+      "lat": 34.9238,
+      "lng": 132.2663,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/690495949",
+      "last_verified": "2026-07-20"
     }
   ]
 }

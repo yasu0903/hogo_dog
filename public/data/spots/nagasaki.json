@@ -43,6 +43,280 @@
       "source": "osm",
       "osm_id": "way/1335206988",
       "last_verified": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "name": "亀岡公園",
+      "category": "park",
+      "area": "長崎",
+      "city": "平戸市",
+      "lat": 33.3674,
+      "lng": 129.5567,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "relation/8616811",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "name": "島原総合運動公園",
+      "category": "park",
+      "area": "長崎",
+      "city": "島原市",
+      "lat": 32.7757,
+      "lng": 130.3591,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/1147776042",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 5,
+      "name": "大村公園",
+      "category": "park",
+      "area": "長崎",
+      "city": "大村市",
+      "lat": 32.8983,
+      "lng": 129.9588,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/318091399",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 6,
+      "name": "稲佐山公園",
+      "category": "park",
+      "area": "長崎",
+      "city": "長崎市",
+      "lat": 32.7563,
+      "lng": 129.846,
+      "url": "http://inasayama.net/",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/469891509",
+      "last_verified": "2026-07-20",
+      "link_broken": true
+    },
+    {
+      "id": 7,
+      "name": "諫早公園",
+      "category": "park",
+      "area": "長崎",
+      "city": "諫早市",
+      "lat": 32.8449,
+      "lng": 130.0476,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/484351490",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 8,
+      "name": "長崎水辺の森公園",
+      "category": "park",
+      "area": "長崎",
+      "city": "長崎市",
+      "lat": 32.7406,
+      "lng": 129.8689,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/496820922",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 9,
+      "name": "長崎市平和公園",
+      "category": "park",
+      "area": "長崎",
+      "city": "長崎市",
+      "lat": 32.7759,
+      "lng": 129.8636,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/497061000",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 10,
+      "name": "長崎県立総合運動公園",
+      "category": "park",
+      "area": "長崎",
+      "city": "諫早市",
+      "lat": 32.8372,
+      "lng": 130.0413,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/737756343",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 11,
+      "name": "県立百花台公園",
+      "category": "park",
+      "area": "長崎",
+      "city": "雲仙市",
+      "lat": 32.816,
+      "lng": 130.2965,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/737779554",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 12,
+      "name": "野岳湖公園",
+      "category": "park",
+      "area": "長崎",
+      "city": "大村市",
+      "lat": 32.9774,
+      "lng": 129.9831,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/737966664",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 13,
+      "name": "上山公園",
+      "category": "park",
+      "area": "長崎",
+      "city": "諫早市",
+      "lat": 32.84,
+      "lng": 130.0435,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/738486715",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 14,
+      "name": "総合運動公園",
+      "category": "park",
+      "area": "長崎",
+      "city": "長崎市",
+      "lat": 32.773,
+      "lng": 129.8162,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/956221256",
+      "last_verified": "2026-07-20"
+    },
+    {
+      "id": 15,
+      "name": "金比羅公園",
+      "category": "park",
+      "area": "長崎",
+      "city": "長崎市",
+      "lat": 32.7679,
+      "lng": 129.8797,
+      "url": "",
+      "conditions": {
+        "vaccination_cert": null,
+        "size_limit": "",
+        "fee": ""
+      },
+      "caution": "",
+      "note": "",
+      "sns": [],
+      "source": "osm",
+      "osm_id": "way/960641395",
+      "last_verified": "2026-07-20"
     }
   ]
 }

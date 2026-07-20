@@ -10,6 +10,7 @@ import Seo from '../../components/common/Seo';
 import Pagination from '../../components/common/Pagination';
 import AreaFilter from '../../components/organizations/AreaFilter';
 import PrefectureFilter from '../../components/organizations/PrefectureFilter';
+import CityFilter from '../../components/organizations/CityFilter';
 import OrgCard from '../../components/organizations/OrgCard';
 import JapanTileMap from '../../components/organizations/JapanTileMap';
 import { fetchSearchIndex, fetchPrefectures, getAreas } from '../../services/api';
@@ -29,6 +30,7 @@ const Organizations = () => {
   const query = searchParams.get('q') ?? '';
   const selectedArea = searchParams.get('area') ?? '';
   const selectedPrefecture = searchParams.get('pref') ?? '';
+  const selectedCity = searchParams.get('city') ?? '';
   const speciesFilter = searchParams.get('species') ?? 'all';
   const view = searchParams.get('view') === 'map' ? 'map' : 'list';
   const currentPage = Math.max(1, parseInt(searchParams.get('page') ?? '1', 10) || 1);
@@ -90,12 +92,27 @@ const Organizations = () => {
     ? visiblePrefectures.filter(pref => pref.area === selectedArea)
     : visiblePrefectures;
 
+  // 市区町村セレクタの選択肢（選択県内に限定。city は「・」区切りで複数を持つことがある）
+  const cityOptions = useMemo(() => {
+    if (!selectedPrefecture) return [];
+    const set = new Set();
+    for (const org of allOrganizations) {
+      if (org.prefectureId !== selectedPrefecture) continue;
+      for (const c of (org.city ?? '').split('・')) {
+        const trimmed = c.trim();
+        if (trimmed) set.add(trimmed);
+      }
+    }
+    return [...set].sort((a, b) => a.localeCompare(b, 'ja'));
+  }, [allOrganizations, selectedPrefecture]);
+
   // 絞り込み
   const filteredOrganizations = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
     return allOrganizations.filter(org => {
       if (selectedArea && org.prefectureArea !== selectedArea) return false;
       if (selectedPrefecture && org.prefectureId !== selectedPrefecture) return false;
+      if (selectedCity && !(org.city ?? '').split('・').map(s => s.trim()).includes(selectedCity)) return false;
       if (speciesFilter !== 'all' && !(org.species || []).includes(speciesFilter)) return false;
       if (normalizedQuery) {
         const haystack = `${org.name} ${org.city ?? ''} ${org.prefectureName}`.toLowerCase();
@@ -103,7 +120,7 @@ const Organizations = () => {
       }
       return true;
     });
-  }, [allOrganizations, query, selectedArea, selectedPrefecture, speciesFilter]);
+  }, [allOrganizations, query, selectedArea, selectedPrefecture, selectedCity, speciesFilter]);
 
   // ページネーション
   const itemsPerPage = PAGINATION_CONSTANT.SEARCH_NUM_PER_PAGE;
@@ -119,13 +136,13 @@ const Organizations = () => {
   };
 
   const handleAreaChange = (area) => {
-    // エリアを切り替えたら、そのエリア外の都道府県選択は解除する
+    // エリアを切り替えたら、そのエリア外の都道府県選択は解除する（市区町村も連動）
     const keepPref = selectedPrefecture &&
       prefectures.some(pref => pref.id === selectedPrefecture && (!area || pref.area === area));
-    updateParams({ area, pref: keepPref ? selectedPrefecture : '' });
+    updateParams({ area, pref: keepPref ? selectedPrefecture : '', city: keepPref ? selectedCity : '' });
   };
 
-  const hasActiveFilters = Boolean(query || selectedArea || selectedPrefecture || speciesFilter !== 'all');
+  const hasActiveFilters = Boolean(query || selectedArea || selectedPrefecture || selectedCity || speciesFilter !== 'all');
 
   if (loading) {
     return <div className={styles.loading}>{COMMON_MESSAGES.LOADING}</div>;
@@ -185,12 +202,19 @@ const Organizations = () => {
             <PrefectureFilter
               prefectures={prefectureOptions}
               selectedPrefecture={selectedPrefecture}
-              onFilterChange={(pref) => updateParams({ pref })}
+              onFilterChange={(pref) => updateParams({ pref, city: '' })}
             />
+            {selectedPrefecture && cityOptions.length > 0 && (
+              <CityFilter
+                cities={cityOptions}
+                selectedCity={selectedCity}
+                onFilterChange={(city) => updateParams({ city })}
+              />
+            )}
             {hasActiveFilters && (
               <button
                 className={styles.clearButton}
-                onClick={() => updateParams({ q: '', area: '', pref: '', species: 'all' })}
+                onClick={() => updateParams({ q: '', area: '', pref: '', city: '', species: 'all' })}
               >
                 {ORGANIZATIONS_MESSAGES.CLEAR_FILTERS}
               </button>

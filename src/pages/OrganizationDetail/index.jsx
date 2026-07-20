@@ -1,12 +1,13 @@
 // src/pages/OrganizationDetail/index.jsx
 // 県別の団体一覧ページ（/organizations/:id）
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
 import Seo from '../../components/common/Seo';
 import Pagination from '../../components/common/Pagination';
 import OrgCard from '../../components/organizations/OrgCard';
+import CityFilter from '../../components/organizations/CityFilter';
 import { fetchOrganizationDetail, fetchPrefectureById, fetchSourceById } from '../../services/api';
 import styles from './OrganizationDetail.module.css';
 import { ORGANIZATION_DETAIL_MESSAGES, COMMON_MESSAGES } from '../../constants/locales/ja';
@@ -28,6 +29,7 @@ const OrganizationDetail = () => {
 
   // 絞り込み用の状態
   const [speciesFilter, setSpeciesFilter] = useState('all'); // 'all' | 'dog' | 'cat'
+  const [cityFilter, setCityFilter] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
@@ -52,9 +54,24 @@ const OrganizationDetail = () => {
     loadData();
   }, [id]);
 
-  // 絞り込み(犬/猫フィルタ + 団体名の部分一致検索)
+  // 市区町村セレクタの選択肢（city は「・」区切りで複数を持つことがある）
+  const cityOptions = useMemo(() => {
+    const set = new Set();
+    for (const org of organizations) {
+      for (const c of (org.city ?? '').split('・')) {
+        const trimmed = c.trim();
+        if (trimmed) set.add(trimmed);
+      }
+    }
+    return [...set].sort((a, b) => a.localeCompare(b, 'ja'));
+  }, [organizations]);
+
+  // 絞り込み(犬/猫フィルタ + 市区町村 + 団体名の部分一致検索)
   const filteredOrganizations = organizations.filter(org => {
     if (speciesFilter !== 'all' && !(org.species || []).includes(speciesFilter)) {
+      return false;
+    }
+    if (cityFilter !== 'all' && !(org.city ?? '').split('・').map(s => s.trim()).includes(cityFilter)) {
       return false;
     }
     const query = searchQuery.trim().toLowerCase();
@@ -67,6 +84,11 @@ const OrganizationDetail = () => {
   // 絞り込み条件が変わったら1ページ目に戻す
   const handleSpeciesFilterChange = (value) => {
     setSpeciesFilter(value);
+    setCurrentPage(1);
+  };
+
+  const handleCityFilterChange = (value) => {
+    setCityFilter(value === '' ? 'all' : value);
     setCurrentPage(1);
   };
 
@@ -182,6 +204,16 @@ const OrganizationDetail = () => {
             ))}
           </div>
         </div>
+
+        {cityOptions.length > 0 && (
+          <div className={styles.filterBar}>
+            <CityFilter
+              cities={cityOptions}
+              selectedCity={cityFilter === 'all' ? '' : cityFilter}
+              onFilterChange={handleCityFilterChange}
+            />
+          </div>
+        )}
 
         {filteredOrganizations.length > 0 ? (
           <div className={styles.resultsInfo}>

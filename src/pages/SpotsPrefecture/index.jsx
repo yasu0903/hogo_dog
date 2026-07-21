@@ -2,51 +2,30 @@
 // 県別のお出かけスポット一覧ページ（/spots/:prefectureId）。
 // OrganizationDetail（県別団体一覧）と対称の構成。
 // ページ内フィルタは category のみ（県はすでに確定しているため）。
-import { useState, useEffect, useMemo } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useState, useMemo } from 'react';
+import { useParams, useLoaderData, Link } from 'react-router-dom';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
 import Pagination from '../../components/common/Pagination';
 import SpotCard from '../../components/spots/SpotCard';
 import CategoryFilter from '../../components/spots/CategoryFilter';
 import CityFilter from '../../components/organizations/CityFilter';
-import { fetchSpotsByPrefecture, fetchPrefectureById } from '../../services/api';
-import { COMMON_MESSAGES, SPOTS_MESSAGES, SPOTS_PREFECTURE_MESSAGES } from '../../constants/locales/ja';
+import JsonLd from '../../components/common/JsonLd';
+import { SPOTS_MESSAGES, SPOTS_PREFECTURE_MESSAGES } from '../../constants/locales/ja';
 import { PAGINATION_CONSTANT } from '../../constants/pagination';
+import { SITE } from '../../constants/site';
 import styles from './SpotsPrefecture.module.css';
 
 const SpotsPrefecture = () => {
   const { prefectureId } = useParams();
-  const [spots, setSpots] = useState([]);
-  const [prefecture, setPrefecture] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  // データは loader（services/loaders.js の spotsPrefectureLoader）が供給する。
+  const { spots, prefecture } = useLoaderData();
 
   // ページ内フィルタ・ページネーション
   const [categoryFilter, setCategoryFilter] = useState('all');
   const [cityFilter, setCityFilter] = useState('all');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = PAGINATION_CONSTANT.NUM_PER_PAGE;
-
-  useEffect(() => {
-    const loadData = async () => {
-      try {
-        const [spotsData, prefData] = await Promise.all([
-          fetchSpotsByPrefecture(prefectureId),
-          fetchPrefectureById(prefectureId)
-        ]);
-        setSpots(spotsData);
-        setPrefecture(prefData);
-      } catch (error) {
-        console.error(COMMON_MESSAGES.ERROR_WHILE_LOADING, error);
-        setError(COMMON_MESSAGES.FAILED_LOADING_DATA);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadData();
-  }, [prefectureId]);
 
   // データ中に存在するカテゴリのみフィルタに出す（0件カテゴリは非表示）
   const categories = useMemo(
@@ -87,24 +66,6 @@ const SpotsPrefecture = () => {
     window.scrollTo(0, 0);
   };
 
-  if (loading) {
-    return <div className={styles.loading}>{COMMON_MESSAGES.LOADING}</div>;
-  }
-
-  if (error) {
-    return (
-      <div className={styles.error}>
-        <Header />
-        <main className={styles.main}>
-          <h1>{COMMON_MESSAGES.ERROR}</h1>
-          <p>{error}</p>
-          <Link to="/spots">{SPOTS_PREFECTURE_MESSAGES.BACK_TO_SPOTS}</Link>
-        </main>
-        <Footer />
-      </div>
-    );
-  }
-
   if (!spots || spots.length === 0) {
     return (
       <div className={styles.container}>
@@ -120,8 +81,19 @@ const SpotsPrefecture = () => {
 
   const prefectureName = prefecture?.name ?? '';
 
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: SPOTS_MESSAGES.BREADCRUMB_HOME ?? 'ホーム', item: `${SITE.BASE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: SPOTS_MESSAGES.TITLE, item: `${SITE.BASE_URL}/spots` },
+      { '@type': 'ListItem', position: 3, name: prefectureName, item: `${SITE.BASE_URL}/spots/${prefectureId}` },
+    ],
+  };
+
   return (
     <div className={styles.container}>
+      <JsonLd data={breadcrumbLd} />
       <Header />
       <main className={styles.main}>
         <nav className={styles.breadcrumb} aria-label="パンくずリスト">

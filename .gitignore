@@ -190,6 +190,8 @@ package-lock.json
 
 # public/data ディレクトリは管理対象に含める
 !/public/data/
+# OGP画像は管理対象に含める（デプロイ時 dist に含めるため）
+!/public/ogp.png
 
 # ゴミファイル
 .DS_Store

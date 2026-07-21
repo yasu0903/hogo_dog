@@ -30,18 +30,15 @@ from urllib.parse import urlparse
 
 from pathlib import Path
 
-from common import OUT_DIR, iter_org_files, load_json, org_key, save_json
+from common import (
+    OUT_DIR, iter_org_files, load_json, order_org_fields, org_key, save_json,
+)
 
 OVERRIDES_PATH = Path(__file__).resolve().parent / "manual_overrides.json"
 
 RE_PHONE = re.compile(r"0\d{1,4}-\d{1,4}-\d{3,4}|(?<!\d)0\d{9,10}(?!\d)")
 # 「◯◯市」「◯◯町・△△市」等。区切りは「・」のみ許容
 RE_CITY = re.compile(r"^[一-龥々ぁ-んァ-ヶー]{1,8}[市町村区郡](・[一-龥々ぁ-んァ-ヶー]{1,8}[市町村区郡])*$")
-
-FIELD_ORDER = [
-    "id", "name", "area", "city", "species", "source_type",
-    "url", "caution", "note", "sns", "last_verified", "link_broken",
-]
 
 
 def scheme_only_redirect(url, final_url):
@@ -52,10 +49,6 @@ def scheme_only_redirect(url, final_url):
         and a.path.rstrip("/") == b.path.rstrip("/")
         and not b.query
     )
-
-
-def order_fields(org):
-    return {k: org[k] for k in FIELD_ORDER if k in org}
 
 
 def main():
@@ -159,7 +152,7 @@ def main():
                     "judgment": j or None,
                 })
 
-            new_orgs.append(order_fields(org))
+            new_orgs.append(order_org_fields(org))
 
         if dirty:
             data["organizations"] = new_orgs

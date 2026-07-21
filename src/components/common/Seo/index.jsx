@@ -8,6 +8,7 @@ const Seo = ({ title, description, path = '', type = 'website' }) => {
   const fullTitle = title ? `${title}｜${SITE.NAME}` : SITE.NAME;
   const desc = description || SITE.DEFAULT_DESCRIPTION;
   const url = `${SITE.BASE_URL}${path}`;
+  const image = `${SITE.BASE_URL}${SITE.OGP_IMAGE_PATH}`;
 
   return (
     <Head>
@@ -19,7 +20,11 @@ const Seo = ({ title, description, path = '', type = 'website' }) => {
       <meta property="og:type" content={type} />
       <meta property="og:url" content={url} />
       <meta property="og:site_name" content={SITE.NAME} />
-      <meta name="twitter:card" content="summary" />
+      <meta property="og:image" content={image} />
+      <meta property="og:image:width" content={String(SITE.OGP_IMAGE_WIDTH)} />
+      <meta property="og:image:height" content={String(SITE.OGP_IMAGE_HEIGHT)} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content={image} />
     </Head>
   );
 };

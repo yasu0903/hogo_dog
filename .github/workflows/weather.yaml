@@ -1,0 +1,47 @@
+name: Daily Weather Walk
+
+on:
+  schedule:
+    # 19:00 UTC = 04:00 JST 毎日。猛暑期は早朝散歩が早まるため生成も前倒し。
+    # CloudFront の max-age(既定 1800s=30分)で午前の散歩前には反映される想定。
+    - cron: '0 19 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'S3 に put せず対象表示のみ(--dry-run)'
+        type: boolean
+        default: false
+
+# 重複起動での二重 put を防ぐ(実行中は後続をキューせず待たせる)
+concurrency:
+  group: weather-walk
+  cancel-in-progress: false
+
+jobs:
+  generate-and-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r skills/weather-walk/requirements.txt
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-northeast-1
+
+      - name: Run weather pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          WEATHER_S3_BUCKET: ${{ secrets.S3_BUCKET_NAME }}
+          AWS_REGION: ap-northeast-1
+        run: |
+          python3 skills/weather-walk/run_all.py ${{ inputs.dry_run && '--dry-run' || '' }}

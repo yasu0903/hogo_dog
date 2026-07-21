@@ -6,6 +6,7 @@
 // 各 element は withSeo() で <RouteSeo/> を前置し、ページのローディングガードに関係なく
 // per-page の <head> メタが SSG のHTMLへ焼かれるようにする。
 import RouteSeo from '../components/common/RouteSeo';
+import Analytics from '../components/common/Analytics';
 import {
   organizationDetailLoader,
   organizationLoader,
@@ -25,10 +26,11 @@ import TermsOfService from '../pages/TermsOfService';
 // ビルド時（Node）にのみ呼ばれる。生成JSONを読み、対象キーのパス配列を返す。
 const ssgRoutes = () => import('../generated/ssg-routes.json').then((m) => m.default);
 
-// ページ要素に RouteSeo を前置する
+// ページ要素に RouteSeo（per-page head）と Analytics（ルート遷移の page_view）を前置する
 const withSeo = (element) => (
   <>
     <RouteSeo />
+    <Analytics />
     {element}
   </>
 );

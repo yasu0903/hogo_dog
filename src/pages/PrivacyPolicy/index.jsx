@@ -48,11 +48,18 @@ const PrivacyPolicy = () => {
         </section>
 
         <section className={styles.section}>
-          <h2>4. Cookieの使用</h2>
+          <h2>4. Cookieの使用とアクセス解析</h2>
           <p>
-            当サイトでは、ユーザー体験の向上やサイト利用状況の分析のためにCookieを使用しています。
-            Cookieはブラウザの設定から無効にすることが可能ですが、その場合一部の機能が利用できなくなる
-            可能性があります。
+            当サイトでは、サイトの利用状況を把握し改善するために、Googleが提供するアクセス解析ツール
+            「Google Analytics（GA4）」を利用しています。Google Analyticsは、Cookieを使用して
+            ブラウザやアクセスに関する情報（閲覧ページ・滞在時間・参照元・おおよその地域など）を
+            収集しますが、これらは匿名で収集されており、個人を特定するものではありません。
+          </p>
+          <p>
+            収集された情報はGoogleのプライバシーポリシーに基づいて管理されます。詳細は
+            「<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Googleプライバシーポリシー</a>」を、
+            収集の無効化については「<a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Googleアナリティクス オプトアウト アドオン</a>」を
+            ご確認ください。CookieはブラウザやアドオンでOFFにでき、その場合でもサイトの閲覧に支障はありません。
           </p>
         </section>
 

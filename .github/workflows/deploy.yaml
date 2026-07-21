@@ -19,6 +19,10 @@ jobs:
       run: npm install
       
     - name: Build
+      # GA4 測定ID。リポジトリ Secrets に GA_MEASUREMENT_ID を登録すると本番ビルドに注入され、
+      # 解析が有効化される（未登録なら空 → Analytics は no-op のまま）。
+      env:
+        VITE_GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
       run: npm run build
       
     - name: Configure AWS credentials

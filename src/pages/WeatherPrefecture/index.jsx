@@ -6,7 +6,6 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
-import Seo from '../../components/common/Seo';
 import HourlyChart from '../../components/weather/HourlyChart';
 import { fetchWeatherByPrefecture } from '../../services/api';
 import { COMMON_MESSAGES, WEATHER_PREFECTURE_MESSAGES as M } from '../../constants/locales/ja';
@@ -81,11 +80,6 @@ const WeatherPrefecture = () => {
 
   return (
     <div className={styles.container}>
-      <Seo
-        title={M.SEO_TITLE(prefectureName)}
-        description={M.SEO_DESCRIPTION(prefectureName)}
-        path={`/weather/${prefectureId}`}
-      />
       <Header />
       <main className={styles.main}>
         <nav className={styles.breadcrumb} aria-label="パンくずリスト">

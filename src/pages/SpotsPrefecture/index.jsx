@@ -6,7 +6,6 @@ import { useState, useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
-import Seo from '../../components/common/Seo';
 import Pagination from '../../components/common/Pagination';
 import SpotCard from '../../components/spots/SpotCard';
 import CategoryFilter from '../../components/spots/CategoryFilter';
@@ -123,11 +122,6 @@ const SpotsPrefecture = () => {
 
   return (
     <div className={styles.container}>
-      <Seo
-        title={SPOTS_PREFECTURE_MESSAGES.SEO_TITLE(prefectureName)}
-        description={SPOTS_PREFECTURE_MESSAGES.SEO_DESCRIPTION(prefectureName, spots.length)}
-        path={`/spots/${prefectureId}`}
-      />
       <Header />
       <main className={styles.main}>
         <nav className={styles.breadcrumb} aria-label="パンくずリスト">

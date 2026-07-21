@@ -1,6 +1,7 @@
 // src/components/common/Seo/index.jsx
-// react-helmet-async でページ別の title / description / OGP を設定する共通コンポーネント
-import { Helmet } from 'react-helmet-async';
+// vite-react-ssg の <Head> でページ別の title / description / OGP を設定する共通コンポーネント。
+// SSG時はビルド出力のHTML <head> に静的に焼かれ、ブラウザでは通常どおり反映される。
+import { Head } from 'vite-react-ssg';
 import { SITE } from '../../../constants/site';
 
 const Seo = ({ title, description, path = '', type = 'website' }) => {
@@ -9,7 +10,7 @@ const Seo = ({ title, description, path = '', type = 'website' }) => {
   const url = `${SITE.BASE_URL}${path}`;
 
   return (
-    <Helmet>
+    <Head>
       <title>{fullTitle}</title>
       <meta name="description" content={desc} />
       <link rel="canonical" href={url} />
@@ -19,7 +20,7 @@ const Seo = ({ title, description, path = '', type = 'website' }) => {
       <meta property="og:url" content={url} />
       <meta property="og:site_name" content={SITE.NAME} />
       <meta name="twitter:card" content="summary" />
-    </Helmet>
+    </Head>
   );
 };
 

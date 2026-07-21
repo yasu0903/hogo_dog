@@ -7,10 +7,24 @@
 //   public/data/spots_index.json   … 全お出かけスポットの統合インデックス（gitignore対象）
 //   public/sitemap.xml             … 全ページのURL一覧（gitignore対象）
 
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+// ページと同じ文言テンプレを再利用して SSG 用の seo-meta を組み立てる（単一ソース化）。
+import {
+  ORGANIZATIONS_MESSAGES,
+  SPOTS_MESSAGES,
+  WEATHER_MESSAGES,
+  SPOTS_PREFECTURE_MESSAGES,
+  WEATHER_PREFECTURE_MESSAGES,
+} from '../src/constants/locales/ja.js';
+import {
+  orgListSeoTitle,
+  orgListSeoDescription,
+  orgSeoTitle,
+  orgSeoDescription,
+} from '../src/utils/orgSeo.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = path.join(ROOT, 'public', 'data');
@@ -116,9 +130,79 @@ const main = async () => {
   const robots = `User-agent: *\nAllow: /\n\nSitemap: ${SITE_BASE_URL}/sitemap.xml\n`;
   await writeFile(path.join(ROOT, 'public', 'robots.txt'), robots, 'utf-8');
 
+  // src/generated/ssg-routes.json:
+  //   vite-react-ssg の getStaticPaths が読む「事前レンダリング対象の動的パス一覧」。
+  //   src/routes/index.jsx から dyanmic import され、node:fs をクライアントバンドルに
+  //   持ち込まずに全ルートを列挙するために使う（gitignore対象・再生成可）。
+  //   weather は毎日更新の動的データだが、meta/canonical を焼くため全県のシェルを対象にする。
+  const ssgRoutes = {
+    organizationsPrefectures: prefIds.map((id) => `/organizations/${id}`),
+    organizations: organizations.map((o) => `/organizations/${o.prefecture_id}/${o.id}`),
+    spotsPrefectures: spotPrefIds.map((id) => `/spots/${id}`),
+    weatherPrefectures: prefData.prefecture_list.map((p) => `/weather/${p.no}`),
+  };
+  const generatedDir = path.join(ROOT, 'src', 'generated');
+  await mkdir(generatedDir, { recursive: true });
+  await writeFile(path.join(generatedDir, 'ssg-routes.json'), JSON.stringify(ssgRoutes), 'utf-8');
+
+  // src/generated/seo-meta.json:
+  //   全ルートの { title, description, type } を path キーで持つ。RouteSeo がビルド時/実行時に
+  //   これを引いて <head> を出力するため、SSGのHTMLに正しい per-page meta が焼かれる。
+  //   文言はページと同じテンプレ関数を使い単一ソース化（count 等はビルド時データで実値になる）。
+  const prefNameById = new Map(prefData.prefecture_list.map((p) => [p.no, p.name]));
+  const orgCountByPref = new Map();
+  for (const o of organizations) {
+    orgCountByPref.set(o.prefecture_id, (orgCountByPref.get(o.prefecture_id) ?? 0) + 1);
+  }
+  const spotCountByPref = new Map();
+  for (const s of spots) {
+    spotCountByPref.set(s.prefecture_id, (spotCountByPref.get(s.prefecture_id) ?? 0) + 1);
+  }
+
+  const seoMeta = {
+    '/': {},
+    '/organizations': { title: ORGANIZATIONS_MESSAGES.TITLE, description: ORGANIZATIONS_MESSAGES.DESCRIPTION },
+    '/spots': { title: SPOTS_MESSAGES.TITLE, description: SPOTS_MESSAGES.DESCRIPTION },
+    '/weather': { title: WEATHER_MESSAGES.TITLE, description: WEATHER_MESSAGES.DESCRIPTION },
+    '/privacy-policy': { title: 'プライバシーポリシー' },
+    '/terms-of-service': { title: '利用規約' },
+  };
+  for (const prefId of prefIds) {
+    const name = prefNameById.get(prefId) ?? '';
+    seoMeta[`/organizations/${prefId}`] = {
+      title: orgListSeoTitle(name),
+      description: orgListSeoDescription(name, orgCountByPref.get(prefId) ?? 0),
+    };
+  }
+  for (const org of organizations) {
+    seoMeta[`/organizations/${org.prefecture_id}/${org.id}`] = {
+      title: orgSeoTitle(org),
+      description: orgSeoDescription(org, org.prefecture_name),
+      type: 'article',
+    };
+  }
+  for (const prefId of spotPrefIds) {
+    const name = prefNameById.get(prefId) ?? '';
+    seoMeta[`/spots/${prefId}`] = {
+      title: SPOTS_PREFECTURE_MESSAGES.SEO_TITLE(name),
+      description: SPOTS_PREFECTURE_MESSAGES.SEO_DESCRIPTION(name, spotCountByPref.get(prefId) ?? 0),
+    };
+  }
+  for (const pref of prefData.prefecture_list) {
+    seoMeta[`/weather/${pref.no}`] = {
+      title: WEATHER_PREFECTURE_MESSAGES.SEO_TITLE(pref.name),
+      description: WEATHER_PREFECTURE_MESSAGES.SEO_DESCRIPTION(pref.name),
+    };
+  }
+  await writeFile(path.join(generatedDir, 'seo-meta.json'), JSON.stringify(seoMeta), 'utf-8');
+
   console.log(`search_index.json: ${organizations.length} organizations (${prefIds.length} prefectures)`);
   console.log(`spots_index.json: ${spots.length} spots`);
   console.log(`sitemap.xml: ${urls.length} urls`);
+  console.log(
+    `ssg-routes.json: ${ssgRoutes.organizationsPrefectures.length} pref + ${ssgRoutes.organizations.length} org + ${ssgRoutes.spotsPrefectures.length} spot-pref + ${ssgRoutes.weatherPrefectures.length} weather-pref`
+  );
+  console.log(`seo-meta.json: ${Object.keys(seoMeta).length} routes`);
 };
 
 main().catch((err) => {

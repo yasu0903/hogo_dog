@@ -7,7 +7,6 @@ import { useState, useEffect, useMemo } from 'react';
 import { Link, useSearchParams, useNavigate } from 'react-router-dom';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
-import Seo from '../../components/common/Seo';
 import AreaFilter from '../../components/organizations/AreaFilter';
 import WeatherMap from '../../components/weather/WeatherMap';
 import { fetchWeatherIndex, fetchPrefectures, getAreas } from '../../services/api';
@@ -96,11 +95,6 @@ const Weather = () => {
 
   return (
     <div className={styles.container}>
-      <Seo
-        title={WEATHER_MESSAGES.TITLE}
-        description={WEATHER_MESSAGES.DESCRIPTION}
-        path="/weather"
-      />
       <Header />
       <main className={styles.main}>
         <h1 className={styles.title}>{WEATHER_MESSAGES.HEADING}</h1>

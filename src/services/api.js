@@ -260,6 +260,81 @@ export const fetchSpotsByPrefecture = async (prefectureId) => {
   }
 };
 
+// おさんぽ予報の全国サマリを取得
+// （skills/weather-walk が S3 に put する weather/index.json を同一オリジンで読む）
+// 未生成時（CloudFront/vite の SPA フォールバックで HTML が返る等）は null を返し、
+// 呼び出し側で「準備中」表示に落とす。
+export const fetchWeatherIndex = async () => {
+  try {
+    const response = await fetch('/weather/index.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+
+    if (data && Array.isArray(data.prefectures)) {
+      return {
+        date: data.date ?? '',
+        generatedAt: data.generated_at ?? '',
+        source: data.source ?? '',
+        prefectures: data.prefectures.map(pref => ({
+          prefectureId: pref.prefecture_id,
+          prefecture: pref.prefecture,
+          englishName: pref.english_name,
+          summary: pref.summary ?? {},
+          pavementRisk: Boolean(pref.pavement_risk),
+          comment: pref.comment ?? ''
+        }))
+      };
+    }
+
+    return null;
+  } catch (error) {
+    console.error('Error fetching weather index:', error);
+    return null;
+  }
+};
+
+// 特定の都道府県のおさんぽ予報詳細を取得（weather/latest/{englishName}.json）
+// fetchSpotsByPrefecture と同型（prefectureId → englishName を解決してから取得）。
+// 未生成時は null を返す。
+export const fetchWeatherByPrefecture = async (prefectureId) => {
+  try {
+    const prefResponse = await fetch('/data/prefecture.json');
+    if (!prefResponse.ok) {
+      throw new Error(`HTTP error! status: ${prefResponse.status}`);
+    }
+    const prefData = await prefResponse.json();
+
+    let englishName = '';
+    if (prefData && prefData.prefecture_list && Array.isArray(prefData.prefecture_list)) {
+      const prefecture = prefData.prefecture_list.find(pref => pref.no === prefectureId);
+      englishName = prefecture ? prefecture.english_name : '';
+    }
+
+    if (!englishName) {
+      console.error(`Prefecture with ID ${prefectureId} not found`);
+      return null;
+    }
+
+    const weatherResponse = await fetch(`/weather/latest/${englishName}.json`);
+    if (!weatherResponse.ok) {
+      throw new Error(`HTTP error! status: ${weatherResponse.status}`);
+    }
+    const doc = await weatherResponse.json();
+
+    // 都道府県別 JSON はそのまま返す（フィールド構成は skills/weather-walk の 04_build_json 参照）
+    if (doc && doc.english_name) {
+      return doc;
+    }
+
+    return null;
+  } catch (error) {
+    console.error(`Error fetching weather for ${prefectureId}:`, error);
+    return null;
+  }
+};
+
 // 特定の都道府県の団体詳細を取得
 export const fetchOrganizationDetail = async (prefectureId) => {
   try {

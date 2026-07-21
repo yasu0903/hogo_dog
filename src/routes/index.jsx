@@ -6,6 +6,8 @@ import OrganizationDetail from '../pages/OrganizationDetail';
 import Organization from '../pages/Organization';
 import Spots from '../pages/Spots';
 import SpotsPrefecture from '../pages/SpotsPrefecture';
+import Weather from '../pages/Weather';
+import WeatherPrefecture from '../pages/WeatherPrefecture';
 import PrivacyPolicy from '../pages/PrivacyPolicy';
 import TermsOfService from '../pages/TermsOfService';
 
@@ -25,6 +27,14 @@ const router = createBrowserRouter([
   {
     path: '/spots/:prefectureId',
     element: <SpotsPrefecture />,
+  },
+  {
+    path: '/weather',
+    element: <Weather />,
+  },
+  {
+    path: '/weather/:prefectureId',
+    element: <WeatherPrefecture />,
   },
   {
     path: '/organizations/:id',

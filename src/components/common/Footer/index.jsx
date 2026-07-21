@@ -25,9 +25,8 @@ const Footer = () => {
             <li><Link to="/organizations">{FOOTER_MESSAGES.ORGANIZATIONS}</Link></li>
             <li><Link to="/organizations?view=map">{FOOTER_MESSAGES.MAP}</Link></li>
             <li><Link to="/spots">{FOOTER_MESSAGES.SPOTS}</Link></li>
+            <li><Link to="/weather">{FOOTER_MESSAGES.WEATHER}</Link></li>
           </ul>
-          {/* 準備中コンテンツ: 実装されるまでリンクは置かない */}
-          <p className={styles.upcoming}>{FOOTER_MESSAGES.UPCOMING}</p>
         </div>
 
         <div className={styles.linkSection}>

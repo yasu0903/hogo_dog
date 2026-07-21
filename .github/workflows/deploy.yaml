@@ -29,8 +29,10 @@ jobs:
         aws-region: ap-northeast-1
         
     - name: Deploy to S3
+      # weather/ は skills/weather-walk が別途 put する当日のお天気データ。
+      # dist に含まれないため --delete で消さないよう除外する。
       run: |
-        aws s3 sync ./dist s3://${{ secrets.S3_BUCKET_NAME }} --delete
+        aws s3 sync ./dist s3://${{ secrets.S3_BUCKET_NAME }} --delete --exclude "weather/*"
         
     - name: Invalidate CloudFront
       run: |

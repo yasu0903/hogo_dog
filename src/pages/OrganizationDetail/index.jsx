@@ -131,6 +131,13 @@ const OrganizationDetail = () => {
           {source?.isOfficial ? `この一覧は${prefectureName}が公表する資料に基づいています。` : ''}
         </p>
 
+        <p className={styles.guideInline}>
+          <span className={styles.guideInlineText}>{ORGANIZATION_DETAIL_MESSAGES.GUIDE_INLINE_TEXT}</span>
+          <Link to="/guides/foster-flow" className={styles.guideInlineLink}>
+            {ORGANIZATION_DETAIL_MESSAGES.GUIDE_INLINE_LINK}
+          </Link>
+        </p>
+
         {source && (
           <div className={styles.sourceBanner}>
             <p>
@@ -201,6 +208,7 @@ const OrganizationDetail = () => {
               key={org.id}
               org={org}
               detailPath={`/organizations/${id}/${org.id}`}
+              prefectureId={id}
             />
           ))}
         </div>

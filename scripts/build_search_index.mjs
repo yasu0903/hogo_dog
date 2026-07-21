@@ -19,6 +19,7 @@ import {
   SPOTS_PREFECTURE_MESSAGES,
   WEATHER_PREFECTURE_MESSAGES,
   GUIDES_MESSAGES,
+  FAVORITES_MESSAGES,
 } from '../src/constants/locales/ja.js';
 import {
   orgListSeoTitle,
@@ -170,6 +171,8 @@ const main = async () => {
     '/': {},
     '/organizations': { title: ORGANIZATIONS_MESSAGES.TITLE, description: ORGANIZATIONS_MESSAGES.DESCRIPTION },
     '/guides': { title: GUIDES_MESSAGES.TITLE, description: GUIDES_MESSAGES.DESCRIPTION },
+    // /favorites は localStorage 由来のCSRページ。検索対象外にする（sitemap にも載せない）。
+    '/favorites': { title: FAVORITES_MESSAGES.TITLE, noindex: true },
     '/spots': { title: SPOTS_MESSAGES.TITLE, description: SPOTS_MESSAGES.DESCRIPTION },
     '/weather': { title: WEATHER_MESSAGES.TITLE, description: WEATHER_MESSAGES.DESCRIPTION },
     '/privacy-policy': { title: 'プライバシーポリシー' },

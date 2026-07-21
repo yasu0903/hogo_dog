@@ -16,12 +16,22 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.name {
-  font-size: 1.5rem;
-  color: var(--color-ink);
+.nameRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
   margin-bottom: 1rem;
   padding-bottom: 0.8rem;
   border-bottom: 2px solid var(--color-primary);
+}
+
+.name {
+  font-size: 1.5rem;
+  color: var(--color-ink);
+  margin: 0;
+  flex: 1;
+  min-width: 0;
 }
 
 .nameLink {

@@ -14,7 +14,7 @@ const RouteSeo = () => {
   const meta = seoMeta[key] ?? {};
 
   return (
-    <Seo title={meta.title} description={meta.description} path={key} type={meta.type} />
+    <Seo title={meta.title} description={meta.description} path={key} type={meta.type} noindex={meta.noindex} />
   );
 };
 

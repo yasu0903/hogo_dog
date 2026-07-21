@@ -18,6 +18,7 @@ import OrganizationDetail from '../pages/OrganizationDetail';
 import Organization from '../pages/Organization';
 import Guides from '../pages/Guides';
 import Guide from '../pages/Guide';
+import Favorites from '../pages/Favorites';
 import Spots from '../pages/Spots';
 import SpotsPrefecture from '../pages/SpotsPrefecture';
 import Weather from '../pages/Weather';
@@ -85,6 +86,10 @@ export const routes = [
     path: '/weather/:prefectureId',
     element: withSeo(<WeatherPrefecture />),
     getStaticPaths: async () => (await ssgRoutes()).weatherPrefectures,
+  },
+  {
+    path: '/favorites',
+    element: withSeo(<Favorites />),
   },
   {
     path: '/privacy-policy',

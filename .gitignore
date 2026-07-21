@@ -209,3 +209,4 @@ skills/weather-walk/out/
 # ビルド時に scripts/build_search_index.mjs が生成するファイル
 /public/data/search_index.json
 /public/data/spots_index.json
+/src/generated/

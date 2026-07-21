@@ -6,7 +6,6 @@ import { useState, useEffect, useMemo } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
-import Seo from '../../components/common/Seo';
 import Pagination from '../../components/common/Pagination';
 import AreaFilter from '../../components/organizations/AreaFilter';
 import PrefectureFilter from '../../components/organizations/PrefectureFilter';
@@ -154,11 +153,6 @@ const Organizations = () => {
 
   return (
     <div className={styles.container}>
-      <Seo
-        title={ORGANIZATIONS_MESSAGES.TITLE}
-        description={ORGANIZATIONS_MESSAGES.DESCRIPTION}
-        path="/organizations"
-      />
       <Header />
       <main className={styles.main}>
         <h1 className={styles.title}>{ORGANIZATIONS_MESSAGES.TITLE}</h1>

@@ -1,11 +1,10 @@
 // src/pages/Organization/index.jsx
 // 団体単体ページ（/organizations/:prefectureId/:orgId）。
-// 構造化済みの全情報を表示し、react-helmet-async でページ別のSEO/OGPを設定する。
+// 構造化済みの全情報を表示する。SEO/OGP はルート側の RouteSeo が seo-meta から設定する。
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
-import Seo from '../../components/common/Seo';
 import { fetchOrganizationDetail, fetchPrefectureById, fetchSourceById } from '../../services/api';
 import { ORGANIZATION_DETAIL_MESSAGES, COMMON_MESSAGES } from '../../constants/locales/ja';
 import { getSnsIcon } from '../../utils/snsIcon';
@@ -22,20 +21,6 @@ const snsClassMap = {
   website: 'snsIconWebsite',
   tiktok: 'snsIconTiktok',
   other: 'snsIconOther'
-};
-
-// OGP用のdescriptionを団体情報から組み立てる
-const buildDescription = (org, prefectureName) => {
-  const parts = [];
-  const species = [];
-  if (org.species?.includes('dog')) species.push('犬');
-  if (org.species?.includes('cat')) species.push('猫');
-  parts.push(`${prefectureName}で活動する${species.length ? `保護${species.join('・')}` : '動物保護'}団体「${org.name}」の情報。`);
-  parts.push(`活動地域: ${org.area}${org.city ? `・${org.city}` : ''}。`);
-  if (org.sourceType === 'official') {
-    parts.push('行政公表の登録団体一覧に掲載されています。');
-  }
-  return parts.join('');
 };
 
 const Organization = () => {
@@ -91,12 +76,6 @@ const Organization = () => {
 
   return (
     <div className={styles.container}>
-      <Seo
-        title={org.name}
-        description={buildDescription(org, prefectureName)}
-        path={`/organizations/${prefectureId}/${orgId}`}
-        type="article"
-      />
       <Header />
       <main className={styles.main}>
         <nav className={styles.breadcrumb} aria-label="パンくずリスト">

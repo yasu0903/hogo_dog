@@ -6,7 +6,6 @@ import { useState, useEffect, useMemo } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
-import Seo from '../../components/common/Seo';
 import Pagination from '../../components/common/Pagination';
 import AreaFilter from '../../components/organizations/AreaFilter';
 import PrefectureFilter from '../../components/organizations/PrefectureFilter';
@@ -160,11 +159,6 @@ const Spots = () => {
 
   return (
     <div className={styles.container}>
-      <Seo
-        title={SPOTS_MESSAGES.TITLE}
-        description={SPOTS_MESSAGES.DESCRIPTION}
-        path="/spots"
-      />
       <Header />
       <main className={styles.main}>
         <h1 className={styles.title}>{SPOTS_MESSAGES.TITLE}</h1>

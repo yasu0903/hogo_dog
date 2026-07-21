@@ -7,7 +7,7 @@
     "predev": "node scripts/build_search_index.mjs",
     "dev": "vite",
     "prebuild": "node scripts/build_search_index.mjs",
-    "build": "vite build",
+    "build": "vite-react-ssg build",
     "preview": "vite preview",
     "spots:fetch": "node scripts/spots/01_fetch_osm.mjs",
     "spots:geocode": "node scripts/spots/02_assign_prefecture.mjs",
@@ -37,6 +37,7 @@
     "eslint-plugin-react": "^7.34.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "vite": "^5.1.6"
+    "vite": "^5.1.6",
+    "vite-react-ssg": "^0.8.9"
   }
 }

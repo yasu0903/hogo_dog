@@ -4,7 +4,6 @@ import { useState, useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
-import Seo from '../../components/common/Seo';
 import Pagination from '../../components/common/Pagination';
 import OrgCard from '../../components/organizations/OrgCard';
 import CityFilter from '../../components/organizations/CityFilter';
@@ -143,11 +142,6 @@ const OrganizationDetail = () => {
 
   return (
     <div className={styles.container}>
-      <Seo
-        title={`${prefectureName}の保護犬団体`}
-        description={`${prefectureName}で活動する保護犬・保護猫団体${organizations.length}件の一覧。行政公表情報に基づき掲載しています。`}
-        path={`/organizations/${id}`}
-      />
       <Header />
       <main className={styles.main}>
         <nav className={styles.breadcrumb} aria-label="パンくずリスト">

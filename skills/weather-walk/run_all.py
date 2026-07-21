@@ -14,13 +14,15 @@ usage:
   python3 skills/weather-walk/run_all.py                # 01→05(本番: S3 put まで)
   python3 skills/weather-walk/run_all.py --dry-run      # 05 を --dry-run(put しない)
   python3 skills/weather-walk/run_all.py --skip-upload  # 05 を実行しない(生成のみ)
+  python3 skills/weather-walk/run_all.py --no-comment   # 一言コメント(03/Gemini)を止める
   python3 skills/weather-walk/run_all.py --force        # 01 を --force(全地点取り直し)
 
 env:
-  GEMINI_API_KEY              03 で必須
+  GEMINI_API_KEY              03 で必須(--no-comment / WEATHER_SKIP_COMMENT=1 時は不要)
   WEATHER_S3_BUCKET           05 で必須(--dry-run/--skip-upload 時は不要)
   AWS_REGION / WEATHER_S3_PREFIX / WEATHER_CACHE_MAX_AGE   05 で任意
   WEATHER_MAX_EMPTY_COMMENTS  検証ゲートの空コメント許容数(既定 5)
+  WEATHER_SKIP_COMMENT        "1" で一言コメントをスキップ(--no-comment と等価)
 """
 
 import os
@@ -31,13 +33,6 @@ from common import OUT_DIR, jst_today_iso, load_json
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
-# 05 は検証ゲートを通ってから個別に実行する
-PRE_STEPS = [
-    "02_analyze.py",
-    "03_summarize_gemini.py",
-    "04_build_json.py",
-]
-
 
 def run_step(script, *args):
     path = os.path.join(HERE, script)
@@ -46,8 +41,11 @@ def run_step(script, *args):
     subprocess.run([sys.executable, path, *args], check=True)
 
 
-def validate_before_upload():
-    """05 前の検証ゲート。問題があれば理由文字列を、OK なら None を返す。"""
+def validate_before_upload(require_comments=True):
+    """05 前の検証ゲート。問題があれば理由文字列を、OK なら None を返す。
+
+    require_comments=False(コメント意図的スキップ時)は空コメント判定を行わない。
+    """
     index_path = OUT_DIR / "weather" / "index.json"
     if not index_path.exists():
         return "out/weather/index.json が生成されていません(04 失敗?)"
@@ -61,13 +59,14 @@ def validate_before_upload():
     if not prefectures:
         return "index.json に都道府県が1件もありません"
 
-    empty = [p["english_name"] for p in prefectures if not p.get("comment")]
-    max_empty = int(os.environ.get("WEATHER_MAX_EMPTY_COMMENTS", "5"))
-    if len(empty) > max_empty:
-        return (f"comment 空の都道府県が {len(empty)}件で許容 {max_empty}件を超過"
-                f": {', '.join(empty)}")
-    if empty:
-        print(f"注意: comment 空 {len(empty)}件(許容内): {', '.join(empty)}")
+    if require_comments:
+        empty = [p["english_name"] for p in prefectures if not p.get("comment")]
+        max_empty = int(os.environ.get("WEATHER_MAX_EMPTY_COMMENTS", "5"))
+        if len(empty) > max_empty:
+            return (f"comment 空の都道府県が {len(empty)}件で許容 {max_empty}件を超過"
+                    f": {', '.join(empty)}")
+        if empty:
+            print(f"注意: comment 空 {len(empty)}件(許容内): {', '.join(empty)}")
     return None
 
 
@@ -76,12 +75,17 @@ def main():
     dry_run = "--dry-run" in args
     skip_upload = "--skip-upload" in args
     force = "--force" in args
+    skip_comment = "--no-comment" in args or os.environ.get("WEATHER_SKIP_COMMENT") == "1"
 
     run_step("01_fetch_weather.py", *(["--force"] if force else []))
-    for script in PRE_STEPS:
-        run_step(script)
+    run_step("02_analyze.py")
+    if skip_comment:
+        print("\n一言コメント生成(03)をスキップ(--no-comment / WEATHER_SKIP_COMMENT=1)")
+    else:
+        run_step("03_summarize_gemini.py")
+    run_step("04_build_json.py")
 
-    reason = validate_before_upload()
+    reason = validate_before_upload(require_comments=not skip_comment)
     if reason:
         sys.exit(f"検証ゲート NG → S3 転送を中止します: {reason}")
     print("\n検証ゲート OK")

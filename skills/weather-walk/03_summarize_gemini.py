@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ステップ3: Gemini で散歩コメント文のみ生成。
 
-out/02_analysis.json の構造化結果を gemini-3-flash-preview に渡し、
+out/02_analysis.json の構造化結果を gemini-3.1-flash-lite に渡し、
 飼い主向けの短いコメント(1〜2文)だけを書かせる。数値判定はコード側で
 確定済みなので、Gemini は自然文の生成のみに使う(出力が毎日ブレず低コスト)。
 
@@ -22,7 +22,7 @@ import requests
 
 from common import OUT_DIR, load_json, save_json
 
-MODEL = "gemini-3-flash-preview"
+MODEL = "gemini-3.1-flash-lite"
 ENDPOINT = (
     f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
 )

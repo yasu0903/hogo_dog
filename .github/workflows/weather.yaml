@@ -11,6 +11,10 @@ on:
         description: 'S3 に put せず対象表示のみ(--dry-run)'
         type: boolean
         default: false
+      skip_comment:
+        description: '一言コメント(Gemini)を止める'
+        type: boolean
+        default: false
 
 # 重複起動での二重 put を防ぐ(実行中は後続をキューせず待たせる)
 concurrency:
@@ -43,5 +47,6 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           WEATHER_S3_BUCKET: ${{ secrets.S3_BUCKET_NAME }}
           AWS_REGION: ap-northeast-1
+          WEATHER_SKIP_COMMENT: ${{ inputs.skip_comment && '1' || '' }}
         run: |
           python3 skills/weather-walk/run_all.py ${{ inputs.dry_run && '--dry-run' || '' }}

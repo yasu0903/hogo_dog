@@ -12,8 +12,10 @@ const Header = () => {
       </div>
       <nav className={styles.nav}>
         <Link to="/organizations" className={styles.navLink}>{HEADER_MESSAGES.NAV_ORGANIZATIONS}</Link>
+        <Link to="/guides" className={styles.navLink}>{HEADER_MESSAGES.NAV_GUIDES}</Link>
         <Link to="/spots" className={styles.navLink}>{HEADER_MESSAGES.NAV_SPOTS}</Link>
         <Link to="/weather" className={styles.navLink}>{HEADER_MESSAGES.NAV_WEATHER}</Link>
+        <Link to="/favorites" className={styles.navLink}>{HEADER_MESSAGES.NAV_FAVORITES}</Link>
       </nav>
     </header>
   );

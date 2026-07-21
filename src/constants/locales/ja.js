@@ -11,8 +11,28 @@ export const HEADER_MESSAGES = {
     TITLE: 'わんだーネット',
     TAGLINE: '保護犬・保護猫団体の全国検索',
     NAV_ORGANIZATIONS: '団体を探す',
+    NAV_GUIDES: 'はじめての里親',
     NAV_SPOTS: 'お出かけ',
-    NAV_WEATHER: 'おさんぽ予報'
+    NAV_WEATHER: 'おさんぽ予報',
+    NAV_FAVORITES: '♥ お気に入り'
+}
+
+export const GUIDES_MESSAGES = {
+    TITLE: 'はじめての里親ガイド',
+    DESCRIPTION: '保護犬の里親になるまでの流れ、よくある譲渡条件、里親募集の注意点など、はじめて保護犬を迎える方に向けたガイド記事をまとめています。',
+    LIST_HEADING: 'はじめての里親ガイド',
+    LIST_LEAD: '保護犬を迎えるときに知っておきたいことをまとめました。気になる記事から読んでみてください。',
+    BREADCRUMB_HOME: 'ホーム',
+    BREADCRUMB_GUIDES: '里親ガイド',
+    FAQ_HEADING: 'よくある質問',
+    UPDATED: (date) => `最終更新日: ${date}`,
+    READ_MORE: '記事を読む →',
+    RELATED_HEADING: '関連する記事',
+    CTA_HEADING: '保護犬を探してみる',
+    CTA_TEXT: '準備ができたら、お住まいの地域の保護団体を探してみましょう。',
+    CTA_LINK: '都道府県から団体を探す →',
+    NOT_FOUND: '記事が見つかりません',
+    BACK_TO_GUIDES: '里親ガイド一覧へ戻る'
 }
 
 export const FOOTER_MESSAGES = {
@@ -115,7 +135,23 @@ export const ORGANIZATION_DETAIL_MESSAGES = {
     LAST_VERIFIED: (date) => `最終確認日: ${date}`,
     BADGE_STALE: '🕒 情報が古い可能性',
     VIEW_DETAIL: '詳細を見る →',
-    BREADCRUMB_SEARCH: '団体を探す'
+    BREADCRUMB_SEARCH: '団体を探す',
+    FAVORITE_ADD: (name) => `${name}をお気に入りに追加`,
+    FAVORITE_REMOVE: (name) => `${name}をお気に入りから削除`,
+    GUIDE_INLINE_TEXT: 'はじめて保護犬を迎える方へ',
+    GUIDE_INLINE_LINK: '里親になるまでの流れを読む →'
+}
+
+export const FAVORITES_MESSAGES = {
+    TITLE: 'お気に入りの団体',
+    HEADING: 'お気に入りの団体',
+    LEAD: '気になる団体をお気に入り登録して見比べられます（この端末のブラウザに保存されます）。',
+    EMPTY: 'まだお気に入りに登録した団体はありません。',
+    EMPTY_LINK: '団体を探しにいく →',
+    LOADING: '読み込み中…',
+    BREADCRUMB_HOME: 'ホーム',
+    BREADCRUMB_FAVORITES: 'お気に入り',
+    COUNT: (n) => `${n}件のお気に入り`
 }
 
 export const SPOTS_MESSAGES = {

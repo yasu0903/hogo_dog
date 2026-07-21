@@ -226,3 +226,31 @@
     gap: 0.5rem;
   }
 }
+
+/* はじめての里親ガイドへのインライン導線 */
+.guideInline {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.9rem;
+  margin: 0 0 1.5rem;
+  padding: 0.9rem 1.1rem;
+  background-color: #f4f0e6;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.guideInlineText {
+  color: #6b5d34;
+}
+
+.guideInlineLink {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.guideInlineLink:hover {
+  text-decoration: underline;
+}

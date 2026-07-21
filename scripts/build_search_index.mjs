@@ -18,6 +18,8 @@ import {
   WEATHER_MESSAGES,
   SPOTS_PREFECTURE_MESSAGES,
   WEATHER_PREFECTURE_MESSAGES,
+  GUIDES_MESSAGES,
+  FAVORITES_MESSAGES,
 } from '../src/constants/locales/ja.js';
 import {
   orgListSeoTitle,
@@ -25,6 +27,8 @@ import {
   orgSeoTitle,
   orgSeoDescription,
 } from '../src/utils/orgSeo.js';
+// 里親ガイド記事のメタ（React非依存の定義なので Node からそのまま読める）。
+import { GUIDES } from '../src/content/guides/guides.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = path.join(ROOT, 'public', 'data');
@@ -102,13 +106,16 @@ const main = async () => {
 
   // sitemap.xml: 静的ページ + 県別ページ + 団体単体ページ + スポットページ
   // （スポット単体ページは設けない方針のため、spots 系は全国 + 県別まで）
-  const urls = ['/', '/organizations', '/privacy-policy', '/terms-of-service'];
+  const urls = ['/', '/organizations', '/guides', '/privacy-policy', '/terms-of-service'];
   const prefIds = [...new Set(organizations.map((o) => o.prefecture_id))].sort();
   for (const prefId of prefIds) {
     urls.push(`/organizations/${prefId}`);
   }
   for (const org of organizations) {
     urls.push(`/organizations/${org.prefecture_id}/${org.id}`);
+  }
+  for (const guide of GUIDES) {
+    urls.push(`/guides/${guide.slug}`);
   }
   urls.push('/spots');
   const spotPrefIds = [...new Set(spots.map((s) => s.prefecture_id))].sort();
@@ -138,6 +145,7 @@ const main = async () => {
   const ssgRoutes = {
     organizationsPrefectures: prefIds.map((id) => `/organizations/${id}`),
     organizations: organizations.map((o) => `/organizations/${o.prefecture_id}/${o.id}`),
+    guides: GUIDES.map((g) => `/guides/${g.slug}`),
     spotsPrefectures: spotPrefIds.map((id) => `/spots/${id}`),
     weatherPrefectures: prefData.prefecture_list.map((p) => `/weather/${p.no}`),
   };
@@ -162,6 +170,9 @@ const main = async () => {
   const seoMeta = {
     '/': {},
     '/organizations': { title: ORGANIZATIONS_MESSAGES.TITLE, description: ORGANIZATIONS_MESSAGES.DESCRIPTION },
+    '/guides': { title: GUIDES_MESSAGES.TITLE, description: GUIDES_MESSAGES.DESCRIPTION },
+    // /favorites は localStorage 由来のCSRページ。検索対象外にする（sitemap にも載せない）。
+    '/favorites': { title: FAVORITES_MESSAGES.TITLE, noindex: true },
     '/spots': { title: SPOTS_MESSAGES.TITLE, description: SPOTS_MESSAGES.DESCRIPTION },
     '/weather': { title: WEATHER_MESSAGES.TITLE, description: WEATHER_MESSAGES.DESCRIPTION },
     '/privacy-policy': { title: 'プライバシーポリシー' },
@@ -178,6 +189,13 @@ const main = async () => {
     seoMeta[`/organizations/${org.prefecture_id}/${org.id}`] = {
       title: orgSeoTitle(org),
       description: orgSeoDescription(org, org.prefecture_name),
+      type: 'article',
+    };
+  }
+  for (const guide of GUIDES) {
+    seoMeta[`/guides/${guide.slug}`] = {
+      title: guide.title,
+      description: guide.description,
       type: 'article',
     };
   }

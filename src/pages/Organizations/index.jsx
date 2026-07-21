@@ -261,6 +261,7 @@ const Organizations = () => {
                   key={`${org.prefectureId}-${org.id}`}
                   org={org}
                   detailPath={`/organizations/${org.prefectureId}/${org.id}`}
+                  prefectureId={org.prefectureId}
                   showPrefecture
                 />
               ))}

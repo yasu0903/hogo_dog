@@ -16,6 +16,9 @@ import Home from '../pages/Home';
 import Organizations from '../pages/Organizations';
 import OrganizationDetail from '../pages/OrganizationDetail';
 import Organization from '../pages/Organization';
+import Guides from '../pages/Guides';
+import Guide from '../pages/Guide';
+import Favorites from '../pages/Favorites';
 import Spots from '../pages/Spots';
 import SpotsPrefecture from '../pages/SpotsPrefecture';
 import Weather from '../pages/Weather';
@@ -57,6 +60,15 @@ export const routes = [
     getStaticPaths: async () => (await ssgRoutes()).organizations,
   },
   {
+    path: '/guides',
+    element: withSeo(<Guides />),
+  },
+  {
+    path: '/guides/:slug',
+    element: withSeo(<Guide />),
+    getStaticPaths: async () => (await ssgRoutes()).guides,
+  },
+  {
     path: '/spots',
     element: withSeo(<Spots />),
   },
@@ -74,6 +86,10 @@ export const routes = [
     path: '/weather/:prefectureId',
     element: withSeo(<WeatherPrefecture />),
     getStaticPaths: async () => (await ssgRoutes()).weatherPrefectures,
+  },
+  {
+    path: '/favorites',
+    element: withSeo(<Favorites />),
   },
   {
     path: '/privacy-policy',

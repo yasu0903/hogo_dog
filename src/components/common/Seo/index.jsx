@@ -4,7 +4,7 @@
 import { Head } from 'vite-react-ssg';
 import { SITE } from '../../../constants/site';
 
-const Seo = ({ title, description, path = '', type = 'website' }) => {
+const Seo = ({ title, description, path = '', type = 'website', noindex = false }) => {
   const fullTitle = title ? `${title}｜${SITE.NAME}` : SITE.NAME;
   const desc = description || SITE.DEFAULT_DESCRIPTION;
   const url = `${SITE.BASE_URL}${path}`;
@@ -14,6 +14,7 @@ const Seo = ({ title, description, path = '', type = 'website' }) => {
     <Head>
       <title>{fullTitle}</title>
       <meta name="description" content={desc} />
+      {noindex && <meta name="robots" content="noindex" />}
       <link rel="canonical" href={url} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={desc} />

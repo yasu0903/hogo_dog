@@ -10,6 +10,7 @@ import { SITE } from '../../constants/site';
 import { getSnsIcon } from '../../utils/snsIcon';
 import { isStale } from '../../utils/freshness';
 import { useIsHydrated } from '../../hooks/useIsHydrated';
+import FavoriteButton from '../../components/organizations/FavoriteButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe, faLink } from '@fortawesome/free-solid-svg-icons';
 import styles from './Organization.module.css';
@@ -87,7 +88,10 @@ const Organization = () => {
           <span>{org.name}</span>
         </nav>
 
-        <h1 className={styles.title}>{org.name}</h1>
+        <div className={styles.titleRow}>
+          <h1 className={styles.title}>{org.name}</h1>
+          <FavoriteButton prefectureId={prefectureId} orgId={org.id} name={org.name} />
+        </div>
 
         <div className={styles.badgeRow}>
           {org.species?.includes('dog') && (
@@ -180,6 +184,13 @@ const Organization = () => {
             {ORGANIZATION_DETAIL_MESSAGES.LAST_VERIFIED(org.lastVerified)}
           </p>
         )}
+
+        <p className={styles.guideInline}>
+          <span className={styles.guideInlineText}>{ORGANIZATION_DETAIL_MESSAGES.GUIDE_INLINE_TEXT}</span>
+          <Link to="/guides/foster-flow" className={styles.guideInlineLink}>
+            {ORGANIZATION_DETAIL_MESSAGES.GUIDE_INLINE_LINK}
+          </Link>
+        </p>
 
         <div className={styles.backLink}>
           <Link to={`/organizations/${prefectureId}`}>

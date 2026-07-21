@@ -8,6 +8,7 @@ import { ORGANIZATION_DETAIL_MESSAGES } from '../../../constants/locales/ja';
 import { getSnsIcon } from '../../../utils/snsIcon';
 import { isStale } from '../../../utils/freshness';
 import { useIsHydrated } from '../../../hooks/useIsHydrated';
+import FavoriteButton from '../FavoriteButton';
 
 // typeKey → CSSクラスの対応
 const snsClassMap = {
@@ -21,16 +22,21 @@ const snsClassMap = {
   other: 'snsIconOther'
 };
 
-const OrgCard = ({ org, detailPath, showPrefecture = false }) => {
+const OrgCard = ({ org, detailPath, showPrefecture = false, prefectureId }) => {
   // 鮮度バッジは現在時刻依存 → hydration mismatch を避けるためマウント後のみ表示。
   const hydrated = useIsHydrated();
   const stale = hydrated && !org.linkBroken && isStale(org.lastVerified);
 
   return (
     <div className={styles.card}>
-      <h2 className={styles.name}>
-        {detailPath ? <Link to={detailPath} className={styles.nameLink}>{org.name}</Link> : org.name}
-      </h2>
+      <div className={styles.nameRow}>
+        <h2 className={styles.name}>
+          {detailPath ? <Link to={detailPath} className={styles.nameLink}>{org.name}</Link> : org.name}
+        </h2>
+        {prefectureId != null && (
+          <FavoriteButton prefectureId={prefectureId} orgId={org.id} name={org.name} />
+        )}
+      </div>
 
       <div className={styles.badgeRow}>
         {org.species?.includes('dog') && (

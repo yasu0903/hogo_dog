@@ -1,0 +1,32 @@
+/* src/components/organizations/FavoriteButton/FavoriteButton.module.css */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 9999px;
+  background-color: white;
+  color: #9aa5b1;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.button:hover {
+  color: #e0245e;
+  border-color: #e0245e;
+}
+
+.button.active {
+  color: #e0245e;
+  border-color: #f5c2d1;
+  background-color: #fdeef3;
+}
+
+.heart {
+  font-size: 1.2rem;
+  line-height: 1;
+}

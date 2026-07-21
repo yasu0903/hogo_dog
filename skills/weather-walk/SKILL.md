@@ -84,7 +84,7 @@ S3: weather/latest/{english_name}.json, weather/index.json
 ## データ源・ライセンス
 
 - 天気: **Open-Meteo**(APIキー不要・無料)。`source` フィールドに明記
-- コメント: **gemini-3-flash-preview**(自然文のみ。数値判定には使わない)
+- コメント: **gemini-3.1-flash-lite**(自然文のみ。数値判定には使わない)
 
 ## 拡張の余地
 

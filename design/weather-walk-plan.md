@@ -56,8 +56,8 @@ scripts/weather/
 
 ### 01_fetch_weather.py
 `prefecture_points.json` の各地点で Open-Meteo forecast API を叩く。
-- 取得項目（hourly）: `temperature_2m, apparent_temperature, precipitation,
-  precipitation_probability, weathercode, windspeed_10m, uv_index, is_day`
+- 取得項目（hourly）: `temperature_2m, apparent_temperature, relativehumidity_2m,
+  precipitation, precipitation_probability, weathercode, windspeed_10m, uv_index, is_day`
 - `timezone=Asia/Tokyo`、当日（JST）ぶん
 - 生データを `out/01_raw.json` にキャッシュ（再実行で無駄打ちしない）
 

@@ -11,7 +11,8 @@ export const HEADER_MESSAGES = {
     TITLE: 'わんだーネット',
     TAGLINE: '保護犬・保護猫団体の全国検索',
     NAV_ORGANIZATIONS: '団体を探す',
-    NAV_SPOTS: 'お出かけ'
+    NAV_SPOTS: 'お出かけ',
+    NAV_WEATHER: 'おさんぽ予報'
 }
 
 export const FOOTER_MESSAGES = {
@@ -20,7 +21,7 @@ export const FOOTER_MESSAGES = {
     ORGANIZATIONS: '団体を探す',
     MAP: '地図から探す',
     SPOTS: 'お出かけスポットを探す',
-    UPCOMING: '今後追加予定: お散歩お天気（準備中）',
+    WEATHER: 'おさんぽ予報を見る',
     OSM_ATTRIBUTION: '地図・スポットデータ © OpenStreetMap contributors (ODbL)',
     OSM_COPYRIGHT_URL: 'https://www.openstreetmap.org/copyright',
     COPYRIGHT: 'わんだーネット All Rights Reserved.',
@@ -42,14 +43,13 @@ export const HOME_MESSAGES = {
     SPOTS_SECTION_TITLE: 'ペットお出かけ情報',
     SPOTS_SECTION_ICON: '🐾',
     SPOTS_SECTION_LINK: 'お出かけスポットを探す',
+    WEATHER_SECTION_TITLE: 'おさんぽ予報',
+    WEATHER_SECTION_ICON: '☀️',
+    WEATHER_SECTION_LINK: '今日のおさんぽ予報を見る',
     UPCOMING_TITLE: '今後追加予定',
     UPCOMING_BADGE: '準備中',
-    UPCOMING_ITEMS: [
-        {
-            ICON: '☀️',
-            TITLE: 'お散歩お天気',
-        }
-    ]
+    // 予告する機能ができたらここに追加（空配列のときは帯を表示しない）
+    UPCOMING_ITEMS: []
 }
 
 export const ORGANIZATIONS_MESSAGES = {
@@ -164,6 +164,94 @@ export const SPOT_CATEGORY_LABELS = {
     dog_run: SPOTS_MESSAGES.CATEGORY_DOG_RUN,
     cafe: SPOTS_MESSAGES.CATEGORY_CAFE,
     park: SPOTS_MESSAGES.CATEGORY_PARK
+}
+
+// 日付文字列 "2026-07-21" → "2026年7月21日"（お天気ページ用）
+const formatWeatherDate = (dateStr) => {
+    if (!dateStr) return '';
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dateStr);
+    if (!m) return dateStr;
+    return `${m[1]}年${Number(m[2])}月${Number(m[3])}日`;
+};
+
+export const WEATHER_MESSAGES = {
+    TITLE: 'おさんぽ予報',
+    DESCRIPTION: '全国47都道府県の当日のお天気から、犬の散歩に◎な時間帯・雨の時間帯・路面が熱くて避けたい時間帯がひと目で分かります。',
+    HEADING: '全国のおさんぽ予報',
+    DATE_LABEL: (dateStr) => `${formatWeatherDate(dateStr)}のお天気`,
+    UNAVAILABLE_TITLE: 'お天気データは準備中です',
+    UNAVAILABLE_BODY: '当日のお天気データがまだ生成されていません。しばらくたってから再度お試しください。',
+    AREA_ALL: '全エリア',
+    MAX_TEMP: '最高',
+    MIN_TEMP: '最低',
+    PRECIP_PROB: '降水確率',
+    PAVEMENT_BADGE: '⚠️ 路面高温注意',
+    SUMMARY_UNIT_TEMP: '℃',
+    SUMMARY_UNIT_PCT: '%',
+    VIEW_DETAIL: '詳しく見る →',
+    VIEW_LIST: 'リスト',
+    VIEW_MAP: '地図',
+    VIEW_TOGGLE_LABEL: '表示切替',
+    SOURCE: (source) => `天気データ提供: ${source || 'Open-Meteo'}`
+}
+
+// 最高気温マップ（WeatherMap）用のラベル
+export const WEATHER_MAP_MESSAGES = {
+    ARIA_LABEL: '都道府県別の当日の最高気温マップ',
+    HINT: '都道府県をクリックすると、その県の詳しいお天気へ移動します',
+    TEMP: (temp) => `${temp}℃`,
+    NO_DATA: 'データなし',
+    LEGEND_COOL: '涼',
+    LEGEND_HOT: '暑'
+}
+
+export const WEATHER_PREFECTURE_MESSAGES = {
+    SEO_TITLE: (prefectureName) => `${prefectureName}のおさんぽ予報`,
+    SEO_DESCRIPTION: (prefectureName) =>
+        `${prefectureName}の当日のお天気と、犬の散歩に◎な時間帯・雨の時間帯・路面高温に注意すべき時間帯。`,
+    TITLE: (prefectureName) => `${prefectureName}のおさんぽ予報`,
+    DATE_LOCATION: (dateStr, point) =>
+        `${formatWeatherDate(dateStr)}${point ? `・${point}周辺` : ''}`,
+    UNAVAILABLE_TITLE: 'お天気データが見つかりません',
+    UNAVAILABLE_BODY: 'この都道府県の当日のお天気データがまだ生成されていないか、取得できませんでした。',
+    BACK_TO_WEATHER: 'おさんぽ予報へ戻る',
+    BREADCRUMB_HOME: 'ホーム',
+    BREADCRUMB_WEATHER: 'おさんぽ予報',
+    SUMMARY_TITLE: '今日の天気',
+    MAX_TEMP: '最高気温',
+    MIN_TEMP: '最低気温',
+    PRECIP_PROB: '最大降水確率',
+    WALK_TITLE: '🐕 お散歩◎の時間帯',
+    WALK_EMPTY: '今日は快適に散歩できる時間帯が少なめです。気温や天候をこまめに確認してください。',
+    RAIN_TITLE: '☔ 雨の時間帯',
+    RAIN_EMPTY: '今日はまとまった雨の予報はありません。',
+    RAIN_PROB: (prob) => `降水確率 最大${prob}%`,
+    AVOID_TITLE: '⚠️ 注意したい時間帯',
+    AVOID_EMPTY: '大きな注意ポイントはありません。',
+    AVOID_TYPE: {
+        heat: '🔥 高温・路面熱',
+        cold: '❄️ 冷え込み',
+        wind: '💨 強風'
+    },
+    PAVEMENT_TITLE: '🐾 路面の高温に注意',
+    PAVEMENT_BODY: (from, until, reason) =>
+        `${from}〜${until}頃は${reason || '路面が熱く肉球やけどの恐れ'}があります。この時間帯の散歩は控えめに。`,
+    HOURLY_TITLE: '⏰ 1時間ごとの予報',
+    HOURLY_TIME: '時刻',
+    HOURLY_WEATHER: '天気',
+    HOURLY_TEMP: '気温',
+    HOURLY_FEELS: '体感',
+    HOURLY_HUMIDITY: '湿度',
+    HOURLY_PRECIP: '降水確率',
+    HOURLY_WIND: '風速',
+    UNIT_TEMP: '℃',
+    UNIT_PCT: '%',
+    UNIT_WIND: 'm/s',
+    CHART_ARIA: '1時間ごとの気温の折れ線と、降水確率の棒・湿度の折れ線（時系列）',
+    CHART_TEMP_AXIS: '気温(℃)',
+    CHART_PRECIP_AXIS: '降水確率・湿度(%)',
+    CHART_TABLE_TOGGLE: '数値を表で見る',
+    SOURCE: (source) => `天気データ提供: ${source || 'Open-Meteo'}`
 }
 
 export const FILTER_MESSAGES = {

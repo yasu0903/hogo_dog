@@ -112,19 +112,33 @@ const Home = () => {
           </Link>
         </section>
 
-        {/* 3. 今後追加予定（準備中: リンクは置かない） */}
+        {/* 3. おさんぽ予報（お出かけ情報と同じタップ可能カード） */}
         <section className={styles.section}>
-          <div className={styles.upcomingStrip}>
-            <span className={styles.upcomingHeading}>{HOME_MESSAGES.UPCOMING_TITLE}</span>
-            {HOME_MESSAGES.UPCOMING_ITEMS.map(item => (
-              <span key={item.TITLE} className={styles.upcomingItem}>
-                <span className={styles.upcomingIcon}>{item.ICON}</span>
-                {item.TITLE}
-                <span className={styles.upcomingBadge}>{HOME_MESSAGES.UPCOMING_BADGE}</span>
-              </span>
-            ))}
-          </div>
+          <Link to="/weather" className={styles.spotsCard}>
+            <span className={styles.spotsIcon}>{HOME_MESSAGES.WEATHER_SECTION_ICON}</span>
+            <span className={styles.spotsText}>
+              <span className={styles.spotsTitle}>{HOME_MESSAGES.WEATHER_SECTION_TITLE}</span>
+              <span className={styles.spotsLink}>{HOME_MESSAGES.WEATHER_SECTION_LINK}</span>
+            </span>
+            <span className={styles.spotsArrow} aria-hidden="true">→</span>
+          </Link>
         </section>
+
+        {/* 4. 今後追加予定（準備中: リンクは置かない。予告項目が無いときは非表示） */}
+        {HOME_MESSAGES.UPCOMING_ITEMS.length > 0 && (
+          <section className={styles.section}>
+            <div className={styles.upcomingStrip}>
+              <span className={styles.upcomingHeading}>{HOME_MESSAGES.UPCOMING_TITLE}</span>
+              {HOME_MESSAGES.UPCOMING_ITEMS.map(item => (
+                <span key={item.TITLE} className={styles.upcomingItem}>
+                  <span className={styles.upcomingIcon}>{item.ICON}</span>
+                  {item.TITLE}
+                  <span className={styles.upcomingBadge}>{HOME_MESSAGES.UPCOMING_BADGE}</span>
+                </span>
+              ))}
+            </div>
+          </section>
+        )}
 
       </main>
       <Footer />

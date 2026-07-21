@@ -4,7 +4,7 @@
 prefecture_points.json の代表地点(県庁所在地)ごとに forecast API を叩き、
 生データを out/01_raw.json にキャッシュする。Open-Meteo は APIキー不要・無料。
 
-- hourly: temperature_2m, apparent_temperature, precipitation,
+- hourly: temperature_2m, apparent_temperature, relativehumidity_2m, precipitation,
   precipitation_probability, weathercode, windspeed_10m, uv_index, is_day
 - timezone=Asia/Tokyo、当日(JST)ぶんのみ(forecast_days=1)
 - 再実行で無駄打ちしないよう、取得済みの地点は --force なしではスキップ
@@ -30,6 +30,7 @@ ENDPOINT = "https://api.open-meteo.com/v1/forecast"
 HOURLY = [
     "temperature_2m",
     "apparent_temperature",
+    "relativehumidity_2m",
     "precipitation",
     "precipitation_probability",
     "weathercode",

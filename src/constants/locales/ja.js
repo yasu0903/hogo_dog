@@ -85,7 +85,15 @@ export const ORGANIZATIONS_MESSAGES = {
     CLEAR_FILTERS: '条件をクリア',
     RESULT_COUNT: (total, from, to) => `全${total}件中 ${from}-${to}件を表示`,
     ALL_PREFECTURES: 'すべての都道府県',
-    ALL_CITIES: 'すべての市区町村'
+    ALL_CITIES: 'すべての市区町村',
+    SORT_LABEL: '並び順',
+    SORT_DEFAULT: '標準',
+    SORT_NEAREST: '📍 近い順',
+    GEO_HINT: '現在地から近い順に並べ替えます（位置情報は端末内でのみ使い、外部に送信しません）',
+    GEO_PROMPTING: '現在地を取得中…',
+    GEO_DENIED: '位置情報が許可されませんでした。ブラウザの設定で許可すると近い順に並べ替えられます。',
+    GEO_UNSUPPORTED: 'お使いのブラウザは位置情報に対応していません。',
+    GEO_ERROR: '現在地を取得できませんでした。時間をおいて再度お試しください。'
 }
 
 export const JAPAN_MAP_MESSAGES = {
@@ -139,7 +147,10 @@ export const ORGANIZATION_DETAIL_MESSAGES = {
     FAVORITE_ADD: (name) => `${name}をお気に入りに追加`,
     FAVORITE_REMOVE: (name) => `${name}をお気に入りから削除`,
     GUIDE_INLINE_TEXT: 'はじめて保護犬を迎える方へ',
-    GUIDE_INLINE_LINK: '里親になるまでの流れを読む →'
+    GUIDE_INLINE_LINK: '里親になるまでの流れを読む →',
+    DISTANCE: (km) => `📍 約${km}km`,
+    DISTANCE_NEAR: '📍 すぐ近く',
+    DISTANCE_APPROX: '📍 おおよその位置'
 }
 
 export const FAVORITES_MESSAGES = {

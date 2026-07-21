@@ -70,6 +70,11 @@
   color: #b02a2a;
 }
 
+.badgeStale {
+  background-color: #f4f0e6;
+  color: #8a6d1f;
+}
+
 .area {
   display: inline-block;
   background-color: #edf2f7;

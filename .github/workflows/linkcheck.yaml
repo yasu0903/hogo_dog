@@ -1,0 +1,70 @@
+name: Monthly Link Check
+
+on:
+  schedule:
+    # 毎月1日 20:00 UTC = 翌日 05:00 JST。掲載団体URLの死活を月次で棚卸しする。
+    - cron: '0 20 1 * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: '書き込まず対象表示のみ(--write を付けない)'
+        type: boolean
+        default: false
+
+# 重複起動を防ぐ(死活チェックは時間がかかるため後続はキャンセルせず待たせない)
+concurrency:
+  group: linkcheck
+  cancel-in-progress: false
+
+# create-pull-request がブランチ push / PR 作成するために必要
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+    steps:
+      # PR 先(develop)のデータに対して反映するため、develop を明示チェックアウト。
+      - uses: actions/checkout@v4
+        with:
+          ref: develop
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r scripts/enrichment/requirements.txt
+
+      - name: Check URL liveness
+        run: python3 scripts/enrichment/02_check_urls.py
+
+      - name: Apply liveness results (link_broken / last_verified only)
+        run: |
+          python3 scripts/enrichment/linkcheck_apply.py \
+            ${{ inputs.dry_run && '' || '--write' }}
+
+      # 差分があれば PR を自動作成する。⚠️ 自動 commit / merge はしない
+      # (リンク切れ→非掲載は編集判断。必ず人がレビューしてからマージする)。
+      - name: Create Pull Request
+        if: ${{ !inputs.dry_run }}
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/linkcheck
+          base: develop
+          commit-message: 'chore: 月次リンクチェック反映 (link_broken / last_verified)'
+          title: '月次リンクチェック: 死活・最終確認日の更新'
+          body: |
+            `02_check_urls.py` の死活チェック結果を `linkcheck_apply.py` で反映しました。
+            変更は各団体JSONの `link_broken` / `last_verified` の2値のみです。
+
+            ⚠️ **リンク切れ→非掲載は編集判断です。マージ前に差分を必ずレビューしてください。**
+            - `link_broken: true` が付いた団体 = 今回アクセスできなかったURL
+            - `link_broken` が消えた団体 = 復活を確認(手動確定分は維持)
+
+            Actions ログの「Apply liveness results」ステップにリンク切れ一覧が出力されています。
+          labels: |
+            automated
+            data

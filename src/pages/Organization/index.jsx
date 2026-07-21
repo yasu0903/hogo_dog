@@ -8,6 +8,8 @@ import JsonLd from '../../components/common/JsonLd';
 import { ORGANIZATION_DETAIL_MESSAGES } from '../../constants/locales/ja';
 import { SITE } from '../../constants/site';
 import { getSnsIcon } from '../../utils/snsIcon';
+import { isStale } from '../../utils/freshness';
+import { useIsHydrated } from '../../hooks/useIsHydrated';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe, faLink } from '@fortawesome/free-solid-svg-icons';
 import styles from './Organization.module.css';
@@ -27,6 +29,8 @@ const Organization = () => {
   const { prefectureId } = useParams();
   // データは loader（services/loaders.js の organizationLoader）が供給する。
   const { organization, prefecture, source } = useLoaderData();
+  // 鮮度バッジは現在時刻依存 → hydration mismatch を避けるためマウント後のみ表示。
+  const hydrated = useIsHydrated();
 
   if (!organization) {
     return (
@@ -43,6 +47,7 @@ const Organization = () => {
 
   const prefectureName = prefecture?.name ?? '';
   const org = organization;
+  const stale = hydrated && !org.linkBroken && isStale(org.lastVerified);
 
   // 構造化データ（団体 + パンくず）
   const sameAs = [org.website, ...(org.sns?.map((s) => s.url) ?? [])].filter(Boolean);
@@ -96,6 +101,9 @@ const Organization = () => {
           )}
           {org.caution && (
             <span className={`${styles.badge} ${styles.badgeCaution}`}>{ORGANIZATION_DETAIL_MESSAGES.BADGE_CAUTION}</span>
+          )}
+          {stale && (
+            <span className={`${styles.badge} ${styles.badgeStale}`}>{ORGANIZATION_DETAIL_MESSAGES.BADGE_STALE}</span>
           )}
         </div>
 

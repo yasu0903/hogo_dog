@@ -24,6 +24,17 @@ USER_AGENT = (
 )
 
 
+# org JSON のフィールド出力順（書き戻し時の並びを一定に保つ）
+ORG_FIELD_ORDER = [
+    "id", "name", "area", "city", "species", "source_type",
+    "url", "caution", "note", "sns", "last_verified", "link_broken",
+]
+
+
+def order_org_fields(org):
+    return {k: org[k] for k in ORG_FIELD_ORDER if k in org}
+
+
 def org_key(pref_slug, org_id):
     return f"{pref_slug}#{org_id}"
 

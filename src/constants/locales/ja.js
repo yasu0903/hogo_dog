@@ -113,6 +113,7 @@ export const ORGANIZATION_DETAIL_MESSAGES = {
     NO_MATCHING_ORGANIZATIONS: '条件に一致する団体がありません',
     LINK_BROKEN: '⚠️ サイトのリンク切れを確認',
     LAST_VERIFIED: (date) => `最終確認日: ${date}`,
+    BADGE_STALE: '🕒 情報が古い可能性',
     VIEW_DETAIL: '詳細を見る →',
     BREADCRUMB_SEARCH: '団体を探す'
 }

@@ -1,0 +1,4 @@
+# 死活チェック(02_check_urls.py)/ 反映(linkcheck_apply.py) に必要な依存。
+# HTML抽出(03)やGemini判定(04)を回す場合は beautifulsoup4 / google-generativeai を別途追加。
+requests>=2.31
+urllib3>=2.0

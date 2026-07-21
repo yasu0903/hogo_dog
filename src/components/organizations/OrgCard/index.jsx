@@ -6,6 +6,8 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import styles from './OrgCard.module.css';
 import { ORGANIZATION_DETAIL_MESSAGES } from '../../../constants/locales/ja';
 import { getSnsIcon } from '../../../utils/snsIcon';
+import { isStale } from '../../../utils/freshness';
+import { useIsHydrated } from '../../../hooks/useIsHydrated';
 
 // typeKey → CSSクラスの対応
 const snsClassMap = {
@@ -20,6 +22,10 @@ const snsClassMap = {
 };
 
 const OrgCard = ({ org, detailPath, showPrefecture = false }) => {
+  // 鮮度バッジは現在時刻依存 → hydration mismatch を避けるためマウント後のみ表示。
+  const hydrated = useIsHydrated();
+  const stale = hydrated && !org.linkBroken && isStale(org.lastVerified);
+
   return (
     <div className={styles.card}>
       <h2 className={styles.name}>
@@ -38,6 +44,9 @@ const OrgCard = ({ org, detailPath, showPrefecture = false }) => {
         )}
         {org.caution && (
           <span className={`${styles.badge} ${styles.badgeCaution}`}>{ORGANIZATION_DETAIL_MESSAGES.BADGE_CAUTION}</span>
+        )}
+        {stale && (
+          <span className={`${styles.badge} ${styles.badgeStale}`}>{ORGANIZATION_DETAIL_MESSAGES.BADGE_STALE}</span>
         )}
       </div>
 

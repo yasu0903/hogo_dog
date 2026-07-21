@@ -63,8 +63,28 @@ python3 05_apply.py --write
 （URLのページID等の）誤検知かを判断する。誤検知が疑わしい場合は `05_apply.py` の
 `RE_PHONE` の精度を疑い、直さずに書き込みを強行しない。
 
+### 座標のジオコーディング（近い団体機能の基盤）
+
+`05_apply.py --write` で city が確定した**後**に実行する（確定した市区町村を読むため）。
+
+```bash
+python3 06_geocode.py --dry-run   # 取得予定の新規 city/県の件数だけ確認（API未使用）
+python3 06_geocode.py             # 未キャッシュ分だけ GSI で取得（1req/秒・差分のみ）
+```
+
+- 座標は **org JSON に書き戻さない**（city 名からの派生値）。`city_coords.json` /
+  `pref_centroids.json` / `manual_coords.json` に持つ。**この3ファイルはコミット対象**
+  （`out/` 配下ではない例外。CIビルドが座標を search_index に注入するため、ビルド経路から
+  外部APIを排除する）。
+- `out/geocode_unresolved.json` が出たら中身を確認する。「中央区」「◯◯地区」など
+  市区町村として解決できない表記は、正しい座標を `manual_coords.json` に
+  `"{prefNo}/{city}": {"lat":..,"lng":..}` で手当てして再実行する（キーは org の city 文字列そのまま）。
+- カバレッジ出力（市区町村レベル / 県レベルフォールバック / 未解決の件数）を確認し、
+  県レベルのままの団体が多ければ enrichment で city 補完を検討する。
+
 最後に `npm run lint` / `npm run build` を実行し、`git diff --stat public/data/organizations/`
-で変更範囲を確認してからコミットする。
+で変更範囲を確認してからコミットする（団体JSON に加え `city_coords.json` /
+`pref_centroids.json` / `manual_coords.json` の更新も一緒にコミットする）。
 
 ---
 

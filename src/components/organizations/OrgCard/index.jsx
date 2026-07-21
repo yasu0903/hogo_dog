@@ -22,10 +22,19 @@ const snsClassMap = {
   other: 'snsIconOther'
 };
 
-const OrgCard = ({ org, detailPath, showPrefecture = false, prefectureId }) => {
+// 距離チップの表示文言（geoLevel が pref なら精度をぼかす）
+const distanceLabel = (distanceKm, geoLevel) => {
+  if (distanceKm == null) return null;
+  if (geoLevel === 'pref') return ORGANIZATION_DETAIL_MESSAGES.DISTANCE_APPROX;
+  if (distanceKm < 1) return ORGANIZATION_DETAIL_MESSAGES.DISTANCE_NEAR;
+  return ORGANIZATION_DETAIL_MESSAGES.DISTANCE(Math.round(distanceKm));
+};
+
+const OrgCard = ({ org, detailPath, showPrefecture = false, prefectureId, distanceKm, geoLevel }) => {
   // 鮮度バッジは現在時刻依存 → hydration mismatch を避けるためマウント後のみ表示。
   const hydrated = useIsHydrated();
   const stale = hydrated && !org.linkBroken && isStale(org.lastVerified);
+  const distance = distanceLabel(distanceKm, geoLevel);
 
   return (
     <div className={styles.card}>
@@ -53,6 +62,9 @@ const OrgCard = ({ org, detailPath, showPrefecture = false, prefectureId }) => {
         )}
         {stale && (
           <span className={`${styles.badge} ${styles.badgeStale}`}>{ORGANIZATION_DETAIL_MESSAGES.BADGE_STALE}</span>
+        )}
+        {distance && (
+          <span className={`${styles.badge} ${styles.badgeDistance}`}>{distance}</span>
         )}
       </div>
 

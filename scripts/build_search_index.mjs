@@ -32,13 +32,32 @@ import { GUIDES } from '../src/content/guides/guides.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = path.join(ROOT, 'public', 'data');
+const ENRICH_DIR = path.join(ROOT, 'scripts', 'enrichment');
 const SITE_BASE_URL = 'https://nyantarou.net';
 
 const readJson = async (filePath) => JSON.parse(await readFile(filePath, 'utf-8'));
+const readJsonSafe = async (filePath) =>
+  existsSync(filePath) ? readJson(filePath) : {};
+
+// city 名から導出した座標（scripts/enrichment/06_geocode.py が生成・コミット対象）。
+// 未生成でもビルドは通る（座標なしになるだけ）。優先: manual > city > 県フォールバック。
+const resolveGeo = (prefNo, city, cityCoords, prefCentroids, manualCoords) => {
+  const key = `${prefNo}/${(city ?? '').trim()}`;
+  const cityHit = (city ?? '').trim() && (manualCoords[key] || cityCoords[key]);
+  if (cityHit) return { lat: cityHit.lat, lng: cityHit.lng, geo_level: 'city' };
+  const pref = prefCentroids[prefNo];
+  if (pref) return { lat: pref.lat, lng: pref.lng, geo_level: 'pref' };
+  return null;
+};
 
 const main = async () => {
   const prefData = await readJson(path.join(DATA_DIR, 'prefecture.json'));
   const sourceData = await readJson(path.join(DATA_DIR, 'source.json'));
+
+  // ジオコーディング結果（近い団体機能。未生成なら座標なしで続行）
+  const cityCoords = await readJsonSafe(path.join(ENRICH_DIR, 'city_coords.json'));
+  const prefCentroids = await readJsonSafe(path.join(ENRICH_DIR, 'pref_centroids.json'));
+  const manualCoords = await readJsonSafe(path.join(ENRICH_DIR, 'manual_coords.json'));
 
   const sourceByNo = new Map(sourceData.source_list.map((s) => [s.no, s]));
 
@@ -53,6 +72,7 @@ const main = async () => {
 
     const orgData = await readJson(orgFile);
     for (const org of orgData.organizations ?? []) {
+      const geo = resolveGeo(pref.no, org.city, cityCoords, prefCentroids, manualCoords);
       organizations.push({
         prefecture_id: pref.no,
         prefecture_name: pref.name,
@@ -69,6 +89,7 @@ const main = async () => {
         sns: org.sns ?? [],
         last_verified: org.last_verified ?? '',
         ...(org.link_broken ? { link_broken: true } : {}),
+        ...(geo ? { lat: geo.lat, lng: geo.lng, geo_level: geo.geo_level } : {}),
       });
     }
   }

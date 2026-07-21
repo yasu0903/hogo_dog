@@ -85,6 +85,11 @@
   color: #8a6d1f;
 }
 
+.badgeDistance {
+  background-color: #e7f0fb;
+  color: #1c5fa8;
+}
+
 .area {
   display: inline-block;
   background-color: #edf2f7;

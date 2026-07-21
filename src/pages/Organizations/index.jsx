@@ -15,6 +15,8 @@ import JapanTileMap from '../../components/organizations/JapanTileMap';
 import { fetchSearchIndex, fetchPrefectures, getAreas } from '../../services/api';
 import { COMMON_MESSAGES, ORGANIZATIONS_MESSAGES, ORGANIZATION_DETAIL_MESSAGES } from '../../constants/locales/ja';
 import { PAGINATION_CONSTANT } from '../../constants/pagination';
+import { useGeolocation } from '../../hooks/useGeolocation';
+import { haversineKm } from '../../utils/geo';
 import styles from './Organizations.module.css';
 
 const Organizations = () => {
@@ -24,6 +26,9 @@ const Organizations = () => {
   const [prefectures, setPrefectures] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  // 「近い順」ソート（URLには載せない＝共有リンクで勝手に位置情報を要求しないため）
+  const [sortNearest, setSortNearest] = useState(false);
+  const geo = useGeolocation();
 
   // フィルタ状態はURLクエリを唯一の情報源にする
   const query = searchParams.get('q') ?? '';
@@ -121,13 +126,39 @@ const Organizations = () => {
     });
   }, [allOrganizations, query, selectedArea, selectedPrefecture, selectedCity, speciesFilter]);
 
+  // 「近い順」: 現在地が取れているときだけ、各団体の座標との直線距離で並べ替える。
+  // 座標が無い団体は末尾。距離は各要素に distanceKm として付与する（カード表示用）。
+  const sortedOrganizations = useMemo(() => {
+    if (!sortNearest || !geo.coords) return filteredOrganizations;
+    return filteredOrganizations
+      .map((org) => ({
+        ...org,
+        distanceKm:
+          org.lat != null && org.lng != null
+            ? haversineKm(geo.coords, { lat: org.lat, lng: org.lng })
+            : Infinity,
+      }))
+      .sort((a, b) => a.distanceKm - b.distanceKm);
+  }, [filteredOrganizations, sortNearest, geo.coords]);
+
   // ページネーション
   const itemsPerPage = PAGINATION_CONSTANT.SEARCH_NUM_PER_PAGE;
-  const totalPages = Math.max(1, Math.ceil(filteredOrganizations.length / itemsPerPage));
+  const totalPages = Math.max(1, Math.ceil(sortedOrganizations.length / itemsPerPage));
   const safePage = Math.min(currentPage, totalPages);
   const indexOfLastItem = safePage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentOrganizations = filteredOrganizations.slice(indexOfFirstItem, indexOfLastItem);
+  const currentOrganizations = sortedOrganizations.slice(indexOfFirstItem, indexOfLastItem);
+
+  const handleNearest = () => {
+    setSortNearest(true);
+    updateParams({ page: 1 });
+    if (!geo.coords) geo.request();
+  };
+
+  const handleDefaultSort = () => {
+    setSortNearest(false);
+    updateParams({ page: 1 });
+  };
 
   const handlePageChange = (pageNumber) => {
     updateParams({ page: pageNumber });
@@ -241,13 +272,44 @@ const Organizations = () => {
           />
         ) : (
           <>
-            {filteredOrganizations.length > 0 ? (
+            <div className={styles.sortRow} role="group" aria-label={ORGANIZATIONS_MESSAGES.SORT_LABEL}>
+              <span className={styles.sortLabel}>{ORGANIZATIONS_MESSAGES.SORT_LABEL}</span>
+              <button
+                className={`${styles.sortButton} ${!sortNearest ? styles.sortButtonActive : ''}`}
+                aria-pressed={!sortNearest}
+                onClick={handleDefaultSort}
+              >
+                {ORGANIZATIONS_MESSAGES.SORT_DEFAULT}
+              </button>
+              <button
+                className={`${styles.sortButton} ${sortNearest && geo.status === 'granted' ? styles.sortButtonActive : ''}`}
+                aria-pressed={sortNearest}
+                title={ORGANIZATIONS_MESSAGES.GEO_HINT}
+                onClick={handleNearest}
+              >
+                {ORGANIZATIONS_MESSAGES.SORT_NEAREST}
+              </button>
+              {sortNearest && geo.status === 'prompting' && (
+                <span className={styles.geoNote}>{ORGANIZATIONS_MESSAGES.GEO_PROMPTING}</span>
+              )}
+              {sortNearest && geo.status === 'denied' && (
+                <span className={styles.geoNote}>{ORGANIZATIONS_MESSAGES.GEO_DENIED}</span>
+              )}
+              {sortNearest && geo.status === 'unsupported' && (
+                <span className={styles.geoNote}>{ORGANIZATIONS_MESSAGES.GEO_UNSUPPORTED}</span>
+              )}
+              {sortNearest && geo.status === 'error' && (
+                <span className={styles.geoNote}>{ORGANIZATIONS_MESSAGES.GEO_ERROR}</span>
+              )}
+            </div>
+
+            {sortedOrganizations.length > 0 ? (
               <div className={styles.resultsInfo}>
                 <p>
                   {ORGANIZATIONS_MESSAGES.RESULT_COUNT(
-                    filteredOrganizations.length,
+                    sortedOrganizations.length,
                     indexOfFirstItem + 1,
-                    Math.min(indexOfLastItem, filteredOrganizations.length)
+                    Math.min(indexOfLastItem, sortedOrganizations.length)
                   )}
                 </p>
               </div>
@@ -262,6 +324,8 @@ const Organizations = () => {
                   org={org}
                   detailPath={`/organizations/${org.prefectureId}/${org.id}`}
                   prefectureId={org.prefectureId}
+                  distanceKm={org.distanceKm}
+                  geoLevel={org.geoLevel}
                   showPrefecture
                 />
               ))}

@@ -155,7 +155,10 @@ export const fetchSearchIndex = async () => {
         note: org.note,
         sns: org.sns,
         lastVerified: org.last_verified,
-        linkBroken: Boolean(org.link_broken)
+        linkBroken: Boolean(org.link_broken),
+        lat: org.lat,
+        lng: org.lng,
+        geoLevel: org.geo_level
       }));
     }
 

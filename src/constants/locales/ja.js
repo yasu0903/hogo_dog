@@ -11,8 +11,27 @@ export const HEADER_MESSAGES = {
     TITLE: 'わんだーネット',
     TAGLINE: '保護犬・保護猫団体の全国検索',
     NAV_ORGANIZATIONS: '団体を探す',
+    NAV_GUIDES: 'はじめての里親',
     NAV_SPOTS: 'お出かけ',
     NAV_WEATHER: 'おさんぽ予報'
+}
+
+export const GUIDES_MESSAGES = {
+    TITLE: 'はじめての里親ガイド',
+    DESCRIPTION: '保護犬の里親になるまでの流れ、よくある譲渡条件、里親募集の注意点など、はじめて保護犬を迎える方に向けたガイド記事をまとめています。',
+    LIST_HEADING: 'はじめての里親ガイド',
+    LIST_LEAD: '保護犬を迎えるときに知っておきたいことをまとめました。気になる記事から読んでみてください。',
+    BREADCRUMB_HOME: 'ホーム',
+    BREADCRUMB_GUIDES: '里親ガイド',
+    FAQ_HEADING: 'よくある質問',
+    UPDATED: (date) => `最終更新日: ${date}`,
+    READ_MORE: '記事を読む →',
+    RELATED_HEADING: '関連する記事',
+    CTA_HEADING: '保護犬を探してみる',
+    CTA_TEXT: '準備ができたら、お住まいの地域の保護団体を探してみましょう。',
+    CTA_LINK: '都道府県から団体を探す →',
+    NOT_FOUND: '記事が見つかりません',
+    BACK_TO_GUIDES: '里親ガイド一覧へ戻る'
 }
 
 export const FOOTER_MESSAGES = {

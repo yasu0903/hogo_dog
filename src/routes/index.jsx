@@ -16,6 +16,8 @@ import Home from '../pages/Home';
 import Organizations from '../pages/Organizations';
 import OrganizationDetail from '../pages/OrganizationDetail';
 import Organization from '../pages/Organization';
+import Guides from '../pages/Guides';
+import Guide from '../pages/Guide';
 import Spots from '../pages/Spots';
 import SpotsPrefecture from '../pages/SpotsPrefecture';
 import Weather from '../pages/Weather';
@@ -55,6 +57,15 @@ export const routes = [
     element: withSeo(<Organization />),
     loader: organizationLoader,
     getStaticPaths: async () => (await ssgRoutes()).organizations,
+  },
+  {
+    path: '/guides',
+    element: withSeo(<Guides />),
+  },
+  {
+    path: '/guides/:slug',
+    element: withSeo(<Guide />),
+    getStaticPaths: async () => (await ssgRoutes()).guides,
   },
   {
     path: '/spots',

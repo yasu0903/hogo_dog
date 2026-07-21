@@ -6,6 +6,11 @@
 // 各 element は withSeo() で <RouteSeo/> を前置し、ページのローディングガードに関係なく
 // per-page の <head> メタが SSG のHTMLへ焼かれるようにする。
 import RouteSeo from '../components/common/RouteSeo';
+import {
+  organizationDetailLoader,
+  organizationLoader,
+  spotsPrefectureLoader,
+} from '../services/loaders';
 import Home from '../pages/Home';
 import Organizations from '../pages/Organizations';
 import OrganizationDetail from '../pages/OrganizationDetail';
@@ -40,11 +45,13 @@ export const routes = [
   {
     path: '/organizations/:id',
     element: withSeo(<OrganizationDetail />),
+    loader: organizationDetailLoader,
     getStaticPaths: async () => (await ssgRoutes()).organizationsPrefectures,
   },
   {
     path: '/organizations/:prefectureId/:orgId',
     element: withSeo(<Organization />),
+    loader: organizationLoader,
     getStaticPaths: async () => (await ssgRoutes()).organizations,
   },
   {
@@ -54,6 +61,7 @@ export const routes = [
   {
     path: '/spots/:prefectureId',
     element: withSeo(<SpotsPrefecture />),
+    loader: spotsPrefectureLoader,
     getStaticPaths: async () => (await ssgRoutes()).spotsPrefectures,
   },
   {

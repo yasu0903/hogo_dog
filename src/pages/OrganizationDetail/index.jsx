@@ -1,26 +1,25 @@
 // src/pages/OrganizationDetail/index.jsx
 // 県別の団体一覧ページ（/organizations/:id）
-import { useState, useEffect, useMemo } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useState, useMemo } from 'react';
+import { useParams, useLoaderData, Link } from 'react-router-dom';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
 import Pagination from '../../components/common/Pagination';
 import OrgCard from '../../components/organizations/OrgCard';
 import CityFilter from '../../components/organizations/CityFilter';
-import { fetchOrganizationDetail, fetchPrefectureById, fetchSourceById } from '../../services/api';
+import JsonLd from '../../components/common/JsonLd';
 import styles from './OrganizationDetail.module.css';
-import { ORGANIZATION_DETAIL_MESSAGES, COMMON_MESSAGES } from '../../constants/locales/ja';
+import { ORGANIZATION_DETAIL_MESSAGES } from '../../constants/locales/ja';
 import { PAGINATION_CONSTANT } from '../../constants/pagination';
+import { SITE } from '../../constants/site';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 const OrganizationDetail = () => {
   const { id } = useParams();
-  const [organizations, setOrganizations] = useState([]);
-  const [prefecture, setPrefecture] = useState(null);
-  const [source, setSource] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  // データは loader（services/loaders.js の organizationDetailLoader）が供給する。
+  // SSG時はビルド時に fs 経由で解決されるため、本文までHTMLに焼かれる。
+  const { organizations, prefecture, source } = useLoaderData();
 
   // ページネーション用の状態
   const [currentPage, setCurrentPage] = useState(1);
@@ -30,28 +29,6 @@ const OrganizationDetail = () => {
   const [speciesFilter, setSpeciesFilter] = useState('all'); // 'all' | 'dog' | 'cat'
   const [cityFilter, setCityFilter] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
-
-  useEffect(() => {
-    const loadData = async () => {
-      try {
-        const [orgsData, prefData, sourceData] = await Promise.all([
-          fetchOrganizationDetail(id),
-          fetchPrefectureById(id),
-          fetchSourceById(id)
-        ]);
-        setOrganizations(orgsData);
-        setPrefecture(prefData);
-        setSource(sourceData);
-      } catch (error) {
-        console.error('Error loading organization detail:', error);
-        setError(ORGANIZATION_DETAIL_MESSAGES.ERROR_FOR_ORGANIZAION_LOADING);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadData();
-  }, [id]);
 
   // 市区町村セレクタの選択肢（city は「・」区切りで複数を持つことがある）
   const cityOptions = useMemo(() => {
@@ -107,24 +84,6 @@ const OrganizationDetail = () => {
     window.scrollTo(0, 0);
   };
 
-  if (loading) {
-    return <div className={styles.loading}>{COMMON_MESSAGES.LOADING}</div>;
-  }
-
-  if (error) {
-    return (
-      <div className={styles.error}>
-        <Header />
-        <main className={styles.main}>
-          <h1>{COMMON_MESSAGES.ERROR}</h1>
-          <p>{error}</p>
-          <Link to="/organizations">{ORGANIZATION_DETAIL_MESSAGES.BACK_TO_ORGANIZATION_LIST}</Link>
-        </main>
-        <Footer />
-      </div>
-    );
-  }
-
   if (!organizations || organizations.length === 0) {
     return (
       <div className={styles.container}>
@@ -140,8 +99,20 @@ const OrganizationDetail = () => {
 
   const prefectureName = prefecture?.name ?? '';
 
+  // 構造化データ（パンくず）
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: ORGANIZATION_DETAIL_MESSAGES.BREADCRUMB_HOME, item: `${SITE.BASE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: ORGANIZATION_DETAIL_MESSAGES.BREADCRUMB_SEARCH, item: `${SITE.BASE_URL}/organizations` },
+      { '@type': 'ListItem', position: 3, name: prefectureName, item: `${SITE.BASE_URL}/organizations/${id}` },
+    ],
+  };
+
   return (
     <div className={styles.container}>
+      <JsonLd data={breadcrumbLd} />
       <Header />
       <main className={styles.main}>
         <nav className={styles.breadcrumb} aria-label="パンくずリスト">
@@ -153,6 +124,12 @@ const OrganizationDetail = () => {
         </nav>
 
         <h1 className={styles.title}>{`${prefectureName}の保護犬団体（${organizations.length}件）`}</h1>
+
+        <p style={{ margin: '0 0 20px', color: '#555', lineHeight: 1.8, fontSize: '0.95rem' }}>
+          {`${prefectureName}で活動する保護犬・保護猫団体を${organizations.length}件掲載しています。`}
+          里親募集・譲渡会・預かりボランティアなどの最新情報は、各団体の公式サイト・SNSからご確認ください。
+          {source?.isOfficial ? `この一覧は${prefectureName}が公表する資料に基づいています。` : ''}
+        </p>
 
         {source && (
           <div className={styles.sourceBanner}>

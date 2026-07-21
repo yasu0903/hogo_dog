@@ -1,19 +1,32 @@
 // src/services/api.js
-// JSONファイルからデータを取得する関数
+// JSONファイルからデータを取得する関数（同型 / isomorphic）。
+// - ブラウザ: これまで通り fetch でネットワーク取得
+// - SSG(ビルド時 / import.meta.env.SSR): public/ 配下を fs で直接読む
+//   → vite-react-ssg の loader から呼ぶと、ビルド時に本文までHTMLへ焼ける
+// weather は public に無い（実行時にS3へput）ため、SSGでは読めず null に落ちる（想定どおり）。
+
+const loadJson = async (urlPath) => {
+  if (import.meta.env.SSR) {
+    const { readFile } = await import('node:fs/promises');
+    const { join } = await import('node:path');
+    const rel = urlPath.replace(/^\//, '');
+    const abs = join(globalThis.process.cwd(), 'public', rel);
+    return JSON.parse(await readFile(abs, 'utf-8'));
+  }
+  const response = await fetch(urlPath);
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  return response.json();
+};
 
 // 都道府県データを取得
 export const fetchPrefectures = async () => {
   try {
-    const response = await fetch('/data/prefecture.json');
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const data = await response.json();
-    
-    // データ構造に応じた処理
+    const data = await loadJson('/data/prefecture.json');
+
     // {"prefecture_list": [{no: "01", name: "北海道", english_name: "hokkaido"}, ...]}
     if (data && data.prefecture_list && Array.isArray(data.prefecture_list)) {
-      // プロパティ名を変換して返す
       return data.prefecture_list.map(pref => ({
         id: pref.no,
         name: pref.name,
@@ -21,7 +34,7 @@ export const fetchPrefectures = async () => {
         englishName: pref.english_name
       }));
     }
-    
+
     return [];
   } catch (error) {
     console.error('Error fetching prefectures:', error);
@@ -31,21 +44,12 @@ export const fetchPrefectures = async () => {
 
 export const fetchPrefectureById = async (prefectureId) => {
   try {
-    const response = await fetch('/data/prefecture.json');
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const data = await response.json();
-    
-    // データ構造に応じた処理
-    // {"prefecture_list": [{no: "01", name: "北海道", english_name: "hokkaido"}, ...]}
-    if (data && data.prefecture_list && Array.isArray(data.prefecture_list)) {
-      // プロパティ名を変換して返す
+    const data = await loadJson('/data/prefecture.json');
 
-      return data.prefecture_list.find(pref => pref.no === prefectureId  );
-      
+    if (data && data.prefecture_list && Array.isArray(data.prefecture_list)) {
+      return data.prefecture_list.find(pref => pref.no === prefectureId);
     }
-    
+
     return [];
   } catch (error) {
     console.error('Error fetching prefectures:', error);
@@ -58,7 +62,7 @@ export const fetchPrefectureById = async (prefectureId) => {
 export const getAreas = (prefectures) => {
   // 重複のないエリア一覧を取得
   if (!Array.isArray(prefectures)) return [];
-  
+
   // 日本の地域区分の標準的な順序
   const areaOrder = [
     '北海道',
@@ -70,44 +74,38 @@ export const getAreas = (prefectures) => {
     '四国',
     '九州'
   ];
-  
+
   // 重複のないエリア一覧を取得
   const uniqueAreas = prefectures
     .map(pref => pref.area)
-    .filter((area, index, self) => 
+    .filter((area, index, self) =>
       // 重複を削除
       area && self.indexOf(area) === index
     );
-  
+
   // areaOrderに存在するエリアを順序に従ってソート
   const sortedAreas = [...uniqueAreas].sort((a, b) => {
     const indexA = areaOrder.indexOf(a);
     const indexB = areaOrder.indexOf(b);
-    
+
     // areaOrderに含まれないエリアは最後に追加
     if (indexA === -1 && indexB === -1) return a.localeCompare(b, 'ja');
     if (indexA === -1) return 1;
     if (indexB === -1) return -1;
-    
+
     return indexA - indexB;
   });
-  
+
   return sortedAreas;
 };
 
 // 団体一覧（ソース）を取得
 export const fetchOrganizations = async () => {
   try {
-    const response = await fetch('/data/source.json');
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const data = await response.json();
-    
-    // データ構造に応じた処理
+    const data = await loadJson('/data/source.json');
+
     // {"source_list": [{no: "01", name: "北海道", source_url: ""}, ...]}
     if (data && data.source_list && Array.isArray(data.source_list)) {
-      // プロパティ名を変換して返す
       return data.source_list.map(source => ({
         id: source.no,
         name: source.name,
@@ -121,7 +119,7 @@ export const fetchOrganizations = async () => {
         isOfficial: Boolean(source.source_url)
       }));
     }
-    
+
     return [];
   } catch (error) {
     console.error('Error fetching organizations:', error);
@@ -139,11 +137,7 @@ export const fetchSourceById = async (prefectureId) => {
 // （scripts/build_search_index.mjs がビルド時に生成する search_index.json を読む）
 export const fetchSearchIndex = async () => {
   try {
-    const response = await fetch('/data/search_index.json');
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const data = await response.json();
+    const data = await loadJson('/data/search_index.json');
 
     if (data && Array.isArray(data.organizations)) {
       return data.organizations.map(org => ({
@@ -200,11 +194,7 @@ const mapSpot = (spot) => ({
 // （scripts/build_search_index.mjs がビルド時に生成する spots_index.json を読む）
 export const fetchSpotsIndex = async () => {
   try {
-    const response = await fetch('/data/spots_index.json');
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const data = await response.json();
+    const data = await loadJson('/data/spots_index.json');
 
     if (data && Array.isArray(data.spots)) {
       return data.spots.map(spot => ({
@@ -225,11 +215,7 @@ export const fetchSpotsIndex = async () => {
 // 特定の都道府県のお出かけスポット一覧を取得（fetchOrganizationDetail と同型）
 export const fetchSpotsByPrefecture = async (prefectureId) => {
   try {
-    const prefResponse = await fetch('/data/prefecture.json');
-    if (!prefResponse.ok) {
-      throw new Error(`HTTP error! status: ${prefResponse.status}`);
-    }
-    const prefData = await prefResponse.json();
+    const prefData = await loadJson('/data/prefecture.json');
 
     // 都道府県IDから英語名を取得
     let englishName = '';
@@ -243,11 +229,7 @@ export const fetchSpotsByPrefecture = async (prefectureId) => {
       return [];
     }
 
-    const spotsResponse = await fetch(`/data/spots/${englishName}.json`);
-    if (!spotsResponse.ok) {
-      throw new Error(`HTTP error! status: ${spotsResponse.status}`);
-    }
-    const spotsData = await spotsResponse.json();
+    const spotsData = await loadJson(`/data/spots/${englishName}.json`);
 
     if (spotsData && spotsData.spots && Array.isArray(spotsData.spots)) {
       return spotsData.spots.map(mapSpot);
@@ -262,15 +244,11 @@ export const fetchSpotsByPrefecture = async (prefectureId) => {
 
 // おさんぽ予報の全国サマリを取得
 // （skills/weather-walk が S3 に put する weather/index.json を同一オリジンで読む）
-// 未生成時（CloudFront/vite の SPA フォールバックで HTML が返る等）は null を返し、
+// 未生成時（SSGのfs読み込み失敗 / CloudFront の HTML フォールバック等）は null を返し、
 // 呼び出し側で「準備中」表示に落とす。
 export const fetchWeatherIndex = async () => {
   try {
-    const response = await fetch('/weather/index.json');
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const data = await response.json();
+    const data = await loadJson('/weather/index.json');
 
     if (data && Array.isArray(data.prefectures)) {
       return {
@@ -300,11 +278,7 @@ export const fetchWeatherIndex = async () => {
 // 未生成時は null を返す。
 export const fetchWeatherByPrefecture = async (prefectureId) => {
   try {
-    const prefResponse = await fetch('/data/prefecture.json');
-    if (!prefResponse.ok) {
-      throw new Error(`HTTP error! status: ${prefResponse.status}`);
-    }
-    const prefData = await prefResponse.json();
+    const prefData = await loadJson('/data/prefecture.json');
 
     let englishName = '';
     if (prefData && prefData.prefecture_list && Array.isArray(prefData.prefecture_list)) {
@@ -317,11 +291,7 @@ export const fetchWeatherByPrefecture = async (prefectureId) => {
       return null;
     }
 
-    const weatherResponse = await fetch(`/weather/latest/${englishName}.json`);
-    if (!weatherResponse.ok) {
-      throw new Error(`HTTP error! status: ${weatherResponse.status}`);
-    }
-    const doc = await weatherResponse.json();
+    const doc = await loadJson(`/weather/latest/${englishName}.json`);
 
     // 都道府県別 JSON はそのまま返す（フィールド構成は skills/weather-walk の 04_build_json 参照）
     if (doc && doc.english_name) {
@@ -338,33 +308,22 @@ export const fetchWeatherByPrefecture = async (prefectureId) => {
 // 特定の都道府県の団体詳細を取得
 export const fetchOrganizationDetail = async (prefectureId) => {
   try {
-    // 都道府県IDに基づいて該当する都道府県のJSONを取得
-    const prefResponse = await fetch('/data/prefecture.json');
-    if (!prefResponse.ok) {
-      throw new Error(`HTTP error! status: ${prefResponse.status}`);
-    }
-    const prefData = await prefResponse.json();
-    
+    const prefData = await loadJson('/data/prefecture.json');
+
     // 都道府県IDから英語名を取得
     let englishName = '';
     if (prefData && prefData.prefecture_list && Array.isArray(prefData.prefecture_list)) {
       const prefecture = prefData.prefecture_list.find(pref => pref.no === prefectureId);
       englishName = prefecture ? prefecture.english_name : '';
     }
-    
+
     if (!englishName) {
       console.error(`Prefecture with ID ${prefectureId} not found`);
       return [];
     }
-    
-    // 英語名を使用して該当する団体データのJSONを取得
-    const orgResponse = await fetch(`/data/organizations/${englishName}.json`);
-    if (!orgResponse.ok) {
-      throw new Error(`HTTP error! status: ${orgResponse.status}`);
-    }
-    const orgData = await orgResponse.json();
-    
-    // データ構造に応じた処理
+
+    const orgData = await loadJson(`/data/organizations/${englishName}.json`);
+
     // {no: "08", pref_name: "ibaraki", organizations: [{id: 1, name: "...", ...}]}
     if (orgData && orgData.organizations && Array.isArray(orgData.organizations)) {
       return orgData.organizations.map(org => ({
@@ -382,7 +341,7 @@ export const fetchOrganizationDetail = async (prefectureId) => {
         linkBroken: Boolean(org.link_broken)
       }));
     }
-    
+
     return [];
   } catch (error) {
     console.error(`Error fetching organization detail for ${prefectureId}:`, error);

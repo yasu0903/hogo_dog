@@ -1,12 +1,12 @@
 // src/pages/Organization/index.jsx
 // 団体単体ページ（/organizations/:prefectureId/:orgId）。
 // 構造化済みの全情報を表示する。SEO/OGP はルート側の RouteSeo が seo-meta から設定する。
-import { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, useLoaderData, Link } from 'react-router-dom';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
-import { fetchOrganizationDetail, fetchPrefectureById, fetchSourceById } from '../../services/api';
-import { ORGANIZATION_DETAIL_MESSAGES, COMMON_MESSAGES } from '../../constants/locales/ja';
+import JsonLd from '../../components/common/JsonLd';
+import { ORGANIZATION_DETAIL_MESSAGES } from '../../constants/locales/ja';
+import { SITE } from '../../constants/site';
 import { getSnsIcon } from '../../utils/snsIcon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe, faLink } from '@fortawesome/free-solid-svg-icons';
@@ -24,46 +24,16 @@ const snsClassMap = {
 };
 
 const Organization = () => {
-  const { prefectureId, orgId } = useParams();
-  const [organization, setOrganization] = useState(null);
-  const [prefecture, setPrefecture] = useState(null);
-  const [source, setSource] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const { prefectureId } = useParams();
+  // データは loader（services/loaders.js の organizationLoader）が供給する。
+  const { organization, prefecture, source } = useLoaderData();
 
-  useEffect(() => {
-    const loadData = async () => {
-      try {
-        const [orgsData, prefData, sourceData] = await Promise.all([
-          fetchOrganizationDetail(prefectureId),
-          fetchPrefectureById(prefectureId),
-          fetchSourceById(prefectureId)
-        ]);
-        setOrganization(orgsData.find(org => String(org.id) === orgId) ?? null);
-        setPrefecture(prefData);
-        setSource(sourceData);
-      } catch (error) {
-        console.error('Error loading organization:', error);
-        setError(ORGANIZATION_DETAIL_MESSAGES.ERROR_FOR_ORGANIZAION_LOADING);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadData();
-  }, [prefectureId, orgId]);
-
-  if (loading) {
-    return <div className={styles.loading}>{COMMON_MESSAGES.LOADING}</div>;
-  }
-
-  if (error || !organization) {
+  if (!organization) {
     return (
       <div className={styles.container}>
         <Header />
         <main className={styles.main}>
-          <h1>{error ? COMMON_MESSAGES.ERROR : ORGANIZATION_DETAIL_MESSAGES.ORGANIZAION_NOT_FOUND}</h1>
-          {error && <p>{error}</p>}
+          <h1>{ORGANIZATION_DETAIL_MESSAGES.ORGANIZAION_NOT_FOUND}</h1>
           <Link to="/organizations">{ORGANIZATION_DETAIL_MESSAGES.BACK_TO_ORGANIZATION_LIST}</Link>
         </main>
         <Footer />
@@ -74,8 +44,32 @@ const Organization = () => {
   const prefectureName = prefecture?.name ?? '';
   const org = organization;
 
+  // 構造化データ（団体 + パンくず）
+  const sameAs = [org.website, ...(org.sns?.map((s) => s.url) ?? [])].filter(Boolean);
+  const orgLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: org.name,
+    url: `${SITE.BASE_URL}/organizations/${prefectureId}/${org.id}`,
+    ...(sameAs.length ? { sameAs } : {}),
+    ...(org.website ? { mainEntityOfPage: org.website } : {}),
+    areaServed: [prefectureName, org.area, org.city].filter(Boolean).join('・'),
+  };
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: ORGANIZATION_DETAIL_MESSAGES.BREADCRUMB_HOME, item: `${SITE.BASE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: ORGANIZATION_DETAIL_MESSAGES.BREADCRUMB_SEARCH, item: `${SITE.BASE_URL}/organizations` },
+      { '@type': 'ListItem', position: 3, name: prefectureName, item: `${SITE.BASE_URL}/organizations/${prefectureId}` },
+      { '@type': 'ListItem', position: 4, name: org.name, item: `${SITE.BASE_URL}/organizations/${prefectureId}/${org.id}` },
+    ],
+  };
+
   return (
     <div className={styles.container}>
+      <JsonLd data={orgLd} />
+      <JsonLd data={breadcrumbLd} />
       <Header />
       <main className={styles.main}>
         <nav className={styles.breadcrumb} aria-label="パンくずリスト">

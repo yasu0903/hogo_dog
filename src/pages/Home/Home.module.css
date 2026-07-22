@@ -111,56 +111,47 @@
   text-align: center;
 }
 
-/* 2. ペットお出かけ情報（1枚のタップ可能カード） */
-.spotsCard {
-  display: flex;
-  align-items: center;
-  gap: 1.1rem;
-  max-width: 520px;
-  margin: 0 auto;
-  padding: 1.2rem 1.5rem;
-  border-radius: 14px;
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
-  text-decoration: none;
-  text-align: left;
-  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+/* 2. おでかけ・おさんぽサポート（Hero直下の全幅帯。Heroのピル型リンクと同じ視覚言語） */
+.toolsSection {
+  width: 100%;
+  background-color: var(--color-surface-alt);
+  border-bottom: 1px solid var(--color-border);
+  padding: 2rem 1.5rem 2.5rem;
+  text-align: center;
 }
 
-.spotsCard:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  border-color: var(--color-primary);
-}
-
-.spotsIcon {
-  font-size: 2.2rem;
-  line-height: 1;
-}
-
-.spotsText {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  flex: 1;
-}
-
-.spotsTitle {
-  font-size: 1.2rem;
+.toolsLabel {
+  display: block;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--color-ink);
+  margin-bottom: 1rem;
 }
 
-.spotsLink {
-  font-size: 0.9rem;
+.toolsLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.toolPill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 999px;
+  color: var(--color-primary);
+  background-color: var(--color-surface);
+  text-decoration: none;
   font-weight: 600;
-  color: var(--color-primary);
+  font-size: 0.95rem;
+  transition: background-color 0.2s, color 0.2s;
 }
 
-.spotsArrow {
-  font-size: 1.4rem;
-  color: var(--color-primary);
+.toolPill:hover {
+  background-color: var(--color-primary);
+  color: white;
 }
 
 /* 3. 今後追加予定（準備中: 説明文もリンクも置かない、控えめな帯） */
@@ -218,6 +209,10 @@
   .section {
     padding-top: 2.5rem;
   }
+
+  .toolsSection {
+    padding: 1.8rem 1.2rem 2.2rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -238,5 +233,9 @@
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .toolsSection {
+    padding: 1.5rem 1rem 2rem;
   }
 }

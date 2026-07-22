@@ -12,7 +12,7 @@ export const HEADER_MESSAGES = {
     TAGLINE: '保護犬・保護猫団体の全国検索',
     NAV_ORGANIZATIONS: '団体を探す',
     NAV_GUIDES: 'はじめての里親',
-    NAV_SPOTS: 'お出かけ',
+    NAV_SPOTS: 'お出かけスポット',
     NAV_WEATHER: 'おさんぽ予報',
     NAV_FAVORITES: '♥ お気に入り'
 }
@@ -60,12 +60,11 @@ export const HOME_MESSAGES = {
     HERO_SELECT_PLACEHOLDER: '都道府県を選択',
     HERO_MAP_LINK: '🗾 地図から探す',
     HERO_ALL_LINK: '全国から探す',
+    TOOLS_SECTION_LABEL: 'おでかけ・おさんぽサポート',
     SPOTS_SECTION_TITLE: 'ペットお出かけ情報',
     SPOTS_SECTION_ICON: '🐾',
-    SPOTS_SECTION_LINK: 'お出かけスポットを探す',
     WEATHER_SECTION_TITLE: 'おさんぽ予報',
     WEATHER_SECTION_ICON: '☀️',
-    WEATHER_SECTION_LINK: '今日のおさんぽ予報を見る',
     UPCOMING_TITLE: '今後追加予定',
     UPCOMING_BADGE: '準備中',
     // 予告する機能ができたらここに追加（空配列のときは帯を表示しない）

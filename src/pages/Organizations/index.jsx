@@ -3,7 +3,7 @@
 // フィルタ状態（q / area / pref / species / view / page）はURLクエリに同期し、
 // 共有・ブラウザバックで状態が再現できる。
 import { useState, useEffect, useMemo } from 'react';
-import { useSearchParams, useNavigate } from 'react-router-dom';
+import { Link, useSearchParams, useNavigate } from 'react-router-dom';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
 import Pagination from '../../components/common/Pagination';
@@ -13,7 +13,7 @@ import CityFilter from '../../components/organizations/CityFilter';
 import OrgCard from '../../components/organizations/OrgCard';
 import JapanTileMap from '../../components/organizations/JapanTileMap';
 import { fetchSearchIndex, fetchPrefectures, getAreas } from '../../services/api';
-import { COMMON_MESSAGES, ORGANIZATIONS_MESSAGES, ORGANIZATION_DETAIL_MESSAGES } from '../../constants/locales/ja';
+import { COMMON_MESSAGES, ORGANIZATIONS_MESSAGES, ORGANIZATION_DETAIL_MESSAGES, FEEDBACK_MESSAGES } from '../../constants/locales/ja';
 import { PAGINATION_CONSTANT } from '../../constants/pagination';
 import { useGeolocation } from '../../hooks/useGeolocation';
 import { haversineKm } from '../../utils/geo';
@@ -338,6 +338,11 @@ const Organizations = () => {
             />
           </>
         )}
+
+        <p className={styles.feedbackCta}>
+          {FEEDBACK_MESSAGES.CTA_TEXT}{' '}
+          <Link to="/feedback">{FEEDBACK_MESSAGES.CTA_LINK}</Link>
+        </p>
       </main>
       <Footer />
     </div>

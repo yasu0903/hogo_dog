@@ -23,6 +23,7 @@ import Spots from '../pages/Spots';
 import SpotsPrefecture from '../pages/SpotsPrefecture';
 import Weather from '../pages/Weather';
 import WeatherPrefecture from '../pages/WeatherPrefecture';
+import Feedback from '../pages/Feedback';
 import PrivacyPolicy from '../pages/PrivacyPolicy';
 import TermsOfService from '../pages/TermsOfService';
 
@@ -90,6 +91,10 @@ export const routes = [
   {
     path: '/favorites',
     element: withSeo(<Favorites />),
+  },
+  {
+    path: '/feedback',
+    element: withSeo(<Feedback />),
   },
   {
     path: '/privacy-policy',

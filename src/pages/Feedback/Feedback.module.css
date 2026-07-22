@@ -1,0 +1,95 @@
+/* src/pages/Feedback/Feedback.module.css */
+/* コンテンツページの共通トーン（Organizations の container/main/title に合わせる） */
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.main {
+  max-width: 800px;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  line-height: 1.8;
+  color: var(--color-ink);
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--color-ink);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.lead {
+  margin-bottom: 2rem;
+  color: var(--color-text-muted);
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sectionIcon {
+  color: var(--color-primary);
+}
+
+.section a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  margin: 0 0.2rem;
+}
+
+.pointList {
+  margin: 1rem 0 0 1.5rem;
+}
+
+.pointList li {
+  margin-bottom: 0.5rem;
+}
+
+.notes {
+  background-color: #f8f9fa;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+}
+
+.notes ul {
+  margin: 0.5rem 0 0 1.2rem;
+}
+
+.notes li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+}

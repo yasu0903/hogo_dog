@@ -1,0 +1,37 @@
+name: Validate PR
+
+# データPR（外部コントリビュート含む）とコードPRの両方を検証する。
+# - データ: スキーマ・listed_num整合・id一意性・電話番号混入（scripts/validate_data.mjs）
+# - コード: lint と本番ビルド（prebuild の search_index 生成で全データJSONのパースも通る）
+on:
+  pull_request:
+  push:
+    branches: [ develop ]
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate data
+        run: npm run validate:data
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build

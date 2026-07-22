@@ -20,6 +20,7 @@ import {
   WEATHER_PREFECTURE_MESSAGES,
   GUIDES_MESSAGES,
   FAVORITES_MESSAGES,
+  FEEDBACK_MESSAGES,
 } from '../src/constants/locales/ja.js';
 import {
   orgListSeoTitle,
@@ -127,7 +128,7 @@ const main = async () => {
 
   // sitemap.xml: 静的ページ + 県別ページ + 団体単体ページ + スポットページ
   // （スポット単体ページは設けない方針のため、spots 系は全国 + 県別まで）
-  const urls = ['/', '/organizations', '/guides', '/privacy-policy', '/terms-of-service'];
+  const urls = ['/', '/organizations', '/guides', '/feedback', '/privacy-policy', '/terms-of-service'];
   const prefIds = [...new Set(organizations.map((o) => o.prefecture_id))].sort();
   for (const prefId of prefIds) {
     urls.push(`/organizations/${prefId}`);
@@ -196,6 +197,7 @@ const main = async () => {
     '/favorites': { title: FAVORITES_MESSAGES.TITLE, noindex: true },
     '/spots': { title: SPOTS_MESSAGES.TITLE, description: SPOTS_MESSAGES.DESCRIPTION },
     '/weather': { title: WEATHER_MESSAGES.TITLE, description: WEATHER_MESSAGES.DESCRIPTION },
+    '/feedback': { title: FEEDBACK_MESSAGES.TITLE, description: FEEDBACK_MESSAGES.DESCRIPTION },
     '/privacy-policy': { title: 'プライバシーポリシー' },
     '/terms-of-service': { title: '利用規約' },
   };

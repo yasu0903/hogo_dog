@@ -1,0 +1,61 @@
+name: 🐕 保護団体の掲載・修正依頼
+description: 保護犬・保護猫団体の新規掲載依頼、掲載情報の修正、閉鎖・リンク切れの報告
+title: "[団体] "
+labels: ["data", "organization"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ご報告ありがとうございます。以下のフォームにわかる範囲でご記入ください。
+        いただいた情報は運営が公式サイト等で確認のうえ、データ更新時に反映します。
+        ⚠️ **電話番号・個人の氏名など個人情報は書かないでください**（当サイトは電話番号を掲載しない方針です）。
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 依頼の種類
+      options:
+        - 新しく掲載してほしい
+        - 掲載情報の修正
+        - 閉鎖・活動終了の報告
+        - リンク切れ・URL変更の報告
+        - その他
+    validations:
+      required: true
+  - type: input
+    id: org-name
+    attributes:
+      label: 団体名
+      placeholder: 例) NPO法人 ○○○○の会
+    validations:
+      required: true
+  - type: input
+    id: prefecture
+    attributes:
+      label: 都道府県
+      placeholder: 例) 茨城県
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: 確認できるURL（公式サイト・公式SNSなど）
+      placeholder: https://example.com/
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 内容
+      description: 追加してほしい・修正してほしい内容を具体的にお書きください
+      placeholder: |
+        例) サイトのURLが変わっています。新URL: https://...
+        例) この団体は犬だけでなく猫の保護も行っています
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 確認事項
+      options:
+        - label: 電話番号などの個人情報を含めていません
+          required: true

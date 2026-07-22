@@ -18,6 +18,7 @@ const Footer = () => {
         <div className={styles.logo}>🐾 {COMMON_MESSAGES.TITLE}</div>
 
         <div className={styles.links}>
+          <Link to="/feedback">{FOOTER_MESSAGES.FEEDBACK}</Link>
           <Link to="/privacy-policy">{FOOTER_MESSAGES.PRIVACY_POLICY}</Link>
           <Link to="/terms-of-service">{FOOTER_MESSAGES.TERMS_OF_SERVICE}</Link>
         </div>

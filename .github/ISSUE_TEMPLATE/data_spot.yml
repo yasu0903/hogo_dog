@@ -1,0 +1,71 @@
+name: 🏞 お出かけスポットの掲載・修正依頼
+description: ドッグラン・公園などの新規掲載依頼、掲載情報の修正、閉鎖の報告
+title: "[スポット] "
+labels: ["data", "spot"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ご報告ありがとうございます。以下のフォームにわかる範囲でご記入ください。
+        いただいた情報は運営が公式サイト等で確認のうえ、データ更新時に反映します。
+        ⚠️ **電話番号・個人の氏名など個人情報は書かないでください**（当サイトは電話番号を掲載しない方針です）。
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 依頼の種類
+      options:
+        - 新しく掲載してほしい
+        - 掲載情報の修正
+        - 閉鎖・廃止の報告
+        - リンク切れ・URL変更の報告
+        - その他
+    validations:
+      required: true
+  - type: input
+    id: spot-name
+    attributes:
+      label: スポット名
+      placeholder: 例) ○○公園ドッグラン
+    validations:
+      required: true
+  - type: input
+    id: prefecture
+    attributes:
+      label: 都道府県・市区町村
+      placeholder: 例) 東京都世田谷区
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: カテゴリ
+      options:
+        - ドッグラン
+        - 公園
+        - カフェ
+        - その他・わからない
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: 確認できるURL（公式サイトなど）
+      description: 新規掲載の場合は必須でお願いします（公式情報で確認できるもののみ掲載しています）
+      placeholder: https://example.com/
+  - type: textarea
+    id: detail
+    attributes:
+      label: 内容
+      description: 追加してほしい・修正してほしい内容を具体的にお書きください。場所がわかる情報（住所・最寄り駅など）があると助かります
+      placeholder: |
+        例) ワクチン接種証明書の提示が必要になっています
+        例) このドッグランは2025年に閉鎖されました
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 確認事項
+      options:
+        - label: 電話番号などの個人情報を含めていません
+          required: true

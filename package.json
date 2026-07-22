@@ -17,6 +17,7 @@
     "spots:snippets": "node scripts/spots/06_fetch_extract.mjs",
     "spots:judge": "node scripts/spots/07_judge_gemini.mjs",
     "spots:apply": "node scripts/spots/08_apply.mjs",
+    "validate:data": "node scripts/validate_data.mjs",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {

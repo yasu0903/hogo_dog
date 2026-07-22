@@ -1,0 +1,7 @@
+# Issue作成画面の設定。データ報告はフォーム2種（団体/スポット）に誘導し、
+# GitHubアカウントの無い方向けにXの連絡先も出す。
+blank_issues_enabled: true
+contact_links:
+  - name: X（旧Twitter）で連絡する
+    url: https://x.com/yasuch
+    about: GitHubアカウントをお持ちでない方はこちら。「団体名/スポット名と都道府県」「内容」「確認できるURL」の3点をお知らせください。

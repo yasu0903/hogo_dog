@@ -43,8 +43,22 @@ export const FOOTER_MESSAGES = {
     COPYRIGHT: 'わんだーネット All Rights Reserved.',
     PRIVACY_POLICY: 'プライバシーポリシー',
     TERMS_OF_SERVICE: '利用規約',
+    FEEDBACK: '情報提供・修正依頼',
     X_URL: 'https://x.com/yasuch',
     GITHUB_URL: 'https://github.com/yasu0903',
+}
+
+// /feedback 掲載情報の提供・修正依頼ページ（本文は src/pages/Feedback/index.jsx にインライン）
+export const FEEDBACK_MESSAGES = {
+    TITLE: '掲載情報の提供・修正依頼',
+    DESCRIPTION: '保護団体・お出かけスポットの掲載依頼や、情報の修正・閉鎖のご報告を受け付けています。X（旧Twitter）またはGitHubからお気軽にお知らせください。',
+    X_HANDLE: '@yasuch',
+    X_URL: 'https://x.com/yasuch',
+    ISSUE_URL: 'https://github.com/yasu0903/hogo_dog/issues/new/choose',
+    CONTRIBUTING_URL: 'https://github.com/yasu0903/hogo_dog/blob/master/CONTRIBUTING.md',
+    // 一覧ページ末尾に置く誘導文
+    CTA_TEXT: '掲載されていない団体・スポットの情報や、掲載内容の誤りにお気づきですか？',
+    CTA_LINK: '情報提供・修正依頼はこちら'
 }
 
 export const HOME_MESSAGES = {

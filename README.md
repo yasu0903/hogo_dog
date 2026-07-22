@@ -91,10 +91,15 @@ See `terraform/` directory for infrastructure code.
 
 ## Contributing
 
+Data contributions (rescue organizations / outing spots) are welcome! **Please read
+[CONTRIBUTING.md](CONTRIBUTING.md) first** — organization data and spot data have
+different editing rules (spot JSONs under `public/data/spots/` are pipeline-generated
+and must not be edited directly).
+
 1. Fork the repository
 2. Create a feature branch
-3. Make your changes
-4. Run linting: `npm run lint`
+3. Make your changes (see [CONTRIBUTING.md](CONTRIBUTING.md) for data files)
+4. Run checks: `npm run validate:data && npm run lint`
 5. Submit a pull request
 
 ## License

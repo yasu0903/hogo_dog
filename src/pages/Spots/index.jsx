@@ -3,7 +3,7 @@
 // フィルタ状態（q / area / pref / category / view / page）はURLクエリに同期し、
 // 共有・ブラウザバックで状態が再現できる（?view=map はタイルマップ表示）。
 import { useState, useEffect, useMemo } from 'react';
-import { useSearchParams, useNavigate } from 'react-router-dom';
+import { Link, useSearchParams, useNavigate } from 'react-router-dom';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
 import Pagination from '../../components/common/Pagination';
@@ -14,7 +14,7 @@ import JapanTileMap from '../../components/organizations/JapanTileMap';
 import SpotCard from '../../components/spots/SpotCard';
 import CategoryFilter from '../../components/spots/CategoryFilter';
 import { fetchSpotsIndex, fetchPrefectures, getAreas } from '../../services/api';
-import { COMMON_MESSAGES, SPOTS_MESSAGES } from '../../constants/locales/ja';
+import { COMMON_MESSAGES, SPOTS_MESSAGES, FEEDBACK_MESSAGES } from '../../constants/locales/ja';
 import { PAGINATION_CONSTANT } from '../../constants/pagination';
 import styles from './Spots.module.css';
 
@@ -267,6 +267,11 @@ const Spots = () => {
             />
           </>
         )}
+
+        <p className={styles.feedbackCta}>
+          {FEEDBACK_MESSAGES.CTA_TEXT}{' '}
+          <Link to="/feedback">{FEEDBACK_MESSAGES.CTA_LINK}</Link>
+        </p>
 
         <p className={styles.attribution}>{SPOTS_MESSAGES.OSM_ATTRIBUTION}</p>
       </main>

@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "description": "OSM由来ではないユーザー追加スポット（コントリビューターのPR受け口）。キーは \"user/<半角小文字英数とハイフンのslug>\"（例: user/setagaya-dog-run）。03_build_spots_json.mjs がOSM抽出結果とマージして public/data/spots/{english_name}.json に source: \"user\" で出力する。public/data/spots/ を直接編集してもパイプライン再実行で消えるため、追加は必ずこのファイルで行うこと。エントリを削除すると次回の 03 実行で掲載から外れる。検証: npm run validate:data",
+    "fields": {
+      "pref_no": "都道府県番号（public/data/prefecture.json の no。例: 東京都は \"13\"）",
+      "name": "スポット名",
+      "category": "dog_run / park / cafe のいずれか",
+      "city": "市区町村（例: \"世田谷区\"）",
+      "lat": "緯度（数値）",
+      "lng": "経度（数値）",
+      "url": "公式サイトURL（無ければ \"\"）",
+      "conditions": "省略可。{ \"vaccination_cert\": null|true|false, \"size_limit\": \"\", \"fee\": \"\" }",
+      "caution": "省略可。利用時の注意事項（設備紹介文は書かない）",
+      "note": "省略可。自由記述",
+      "sns": "省略可。[{ \"type\": \"instagram\", \"url\": \"...\", \"name\": \"表示名\" }]",
+      "reason": "省略可。追加の経緯メモ（出典URL等。サイトには出力されない）"
+    },
+    "example": {
+      "user/example-dog-run": {
+        "pref_no": "13",
+        "name": "サンプルドッグラン",
+        "category": "dog_run",
+        "city": "世田谷区",
+        "lat": 35.6462,
+        "lng": 139.6532,
+        "url": "https://example.com/",
+        "reason": "公式サイトで営業確認（2026-07-22）"
+      }
+    }
+  }
+}

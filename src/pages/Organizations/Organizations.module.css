@@ -230,6 +230,24 @@
   border: 1px dashed var(--color-border);
 }
 
+/* 一覧末尾の情報提供・修正依頼への誘導（/feedback） */
+.feedbackCta {
+  margin-top: 2.5rem;
+  padding: 1rem 1.2rem;
+  background-color: #f8f9fa;
+  border: 1px dashed var(--color-border);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.feedbackCta a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
   .main {

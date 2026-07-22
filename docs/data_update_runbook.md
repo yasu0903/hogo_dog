@@ -21,6 +21,21 @@
   差分を確認する運用を徹底する）
 - 各ステップの中間出力は `scripts/*/out/` 配下のJSON（gitignore対象・再生成可能）。
   コミット対象になるのは最終的な `public/data/**/*.json` のみ
+- **実行前に develop を最新化する**。外部コントリビューターのデータPR
+  （CONTRIBUTING.md 参照）がマージされている可能性があるため、古い作業ツリーで
+  パイプラインを回すとユーザー貢献分を巻き戻すことになる
+- 反映後は `npm run validate:data` も実行する（PR CI と同じスキーマ・整合性検証）
+
+### manual_overrides の手動確定値に関する規約（特に link_broken）
+
+- `scripts/enrichment/manual_overrides.json` に `link_broken` 等の手動確定値を書くときは、
+  同じエントリに **`"reason"` キーで確認日と根拠をメモする**
+  （例: `"link_broken": true, "reason": "2026-07-22 ドメイン失効を確認。復活したらこのエントリを削除"`）。
+  apply スクリプトは未知キーを無視するため安全に書ける
+- 手動確定値は**自動処理に常に勝ち続ける**（ユーザーが「サイト復活した」とPRで
+  `link_broken` を消しても、override が残っていれば次回applyで再付与される）。
+  リンク復活報告のPR・issueを受けたら、**マージ前に manual_overrides の該当エントリを
+  突き合わせて削除する**こと
 
 ---
 
@@ -118,10 +133,19 @@ node 02_assign_prefecture.mjs
 # out/02_unresolved.json が出たら海上・境界誤差等の座標。個別に manual_overrides.json で
 # 修正するか、レビューして無視する
 
-# 3. 都道府県別JSONを生成（manual_overrides.json の exclude/フィールド上書きもここで適用）
+# 3. 都道府県別JSONを生成（manual_overrides.json の exclude/フィールド上書き、
+#    manual_additions.json のユーザー追加スポット（source: "user"）もここで適用）
 node 03_build_spots_json.mjs
 # out/03_removed.json … 前回あって今回のOSM抽出に無くなったスポット（削除はせず維持される。
-# 施設の実際の廃止か、OSM側の一時的な欠落かをレビューする）
+# 施設の実際の廃止か、OSM側の一時的な欠落かをレビューする）。
+# "dropped": true の行は manual_additions から削除されたユーザー追加スポットで、
+# こちらは維持されず掲載から外れる（意図した取り下げかだけ確認する）
+# out/03_dup_candidates.json … ユーザー追加スポット（user/）と他スポットの近接重複候補
+# （200m以内、または名前類似かつ1km以内）。手動追加した施設が後からOSMに登録されると
+# osm_id が別キーになり二重掲載になるため、ここで検知する。同一施設と確認できたら
+# 原則 OSM 側を manual_overrides.json で exclude する（id安定・手動データ維持のため。
+# 逆に OSM 側へ一本化したい場合は manual_additions のエントリを削除するが、id が変わり
+# 手動entryの caution/sns 等は引き継がれない点に注意）
 
 # 4. enrichment（URL死活 → スニペット抽出 → Gemini判定 → 反映）
 node 05_check_urls.mjs
@@ -141,7 +165,8 @@ node 08_apply.mjs                  # dry-run。反映件数と out/08_review.jso
   `manual_overrides.json` に `"caution": "..."` として追記する。
   「ドッグランあり」等の**設備紹介文はcautionではない**ので載せない
 
-manual_overrides.json を更新したら、**03 → 08 --write の順で反映し直す**:
+manual_overrides.json（または manual_additions.json — ユーザー追加スポットの受け口。
+CONTRIBUTING.md 参照）を更新したら、**03 → 08 --write の順で反映し直す**:
 
 ```bash
 node 03_build_spots_json.mjs       # exclude/caution を反映（既存の08結果は消える）

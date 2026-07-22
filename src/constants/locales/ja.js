@@ -38,16 +38,9 @@ export const GUIDES_MESSAGES = {
 }
 
 export const FOOTER_MESSAGES = {
-    DESCRIPTION: '行政公表情報をもとに、全国の保護犬・保護猫団体を探せるサイトです。',
-    CONTENT: 'コンテンツ',
-    ORGANIZATIONS: '団体を探す',
-    MAP: '地図から探す',
-    SPOTS: 'お出かけスポットを探す',
-    WEATHER: 'おさんぽ予報を見る',
     OSM_ATTRIBUTION: '地図・スポットデータ © OpenStreetMap contributors (ODbL)',
     OSM_COPYRIGHT_URL: 'https://www.openstreetmap.org/copyright',
     COPYRIGHT: 'わんだーネット All Rights Reserved.',
-    LEGAL: '法的情報',
     PRIVACY_POLICY: 'プライバシーポリシー',
     TERMS_OF_SERVICE: '利用規約',
     X_URL: 'https://x.com/yasuch',
@@ -60,7 +53,6 @@ export const HOME_MESSAGES = {
         `掲載 ${prefectureCount}都道府県 / ${organizationCount}団体`,
     HERO_SELECT_LABEL: '都道府県から探す',
     HERO_SELECT_PLACEHOLDER: '都道府県を選択',
-    HERO_MAP_LINK: '🗾 地図から探す',
     HERO_ALL_LINK: '全国から探す',
     UPCOMING_TITLE: '今後追加予定',
     UPCOMING_BADGE: '準備中',

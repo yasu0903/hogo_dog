@@ -3,136 +3,39 @@
 .footer {
   background-color: var(--color-footer-bg);
   color: #f5efe6;
-  padding-top: 2.5rem;
+  padding: 1.5rem 2rem;
 }
 
+/* ロゴ / リーガルリンク / SNS を1行に収めるスリム構成 */
 .content {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem 4rem;
-  padding: 0 2rem 2rem;
-}
-
-.logoSection {
-  flex: 1 1 300px;
-  max-width: 380px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem 2rem;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 0.8rem;
-}
-
-.logo::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50px;
-  height: 2px;
-  background-color: var(--color-primary);
-}
-
-.tagline {
-  color: #cfc4b5;
-  line-height: 1.6;
-}
-
-.linkSection {
-  flex: 0 1 auto;
-}
-
-.linkSection h3 {
   font-size: 1.1rem;
-  margin-bottom: 1rem;
-  position: relative;
-  padding-bottom: 0.5rem;
+  font-weight: 700;
 }
 
-.linkSection h3::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 30px;
-  height: 2px;
-  background-color: var(--color-primary);
-}
-
-.linkSection ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.linkSection li {
-  margin-bottom: 0.7rem;
-}
-
-.linkSection a {
-  color: #cfc4b5;
-  text-decoration: none;
-  transition: color 0.2s;
-  position: relative;
-}
-
-.linkSection a:hover {
-  color: var(--color-primary);
-}
-
-.linkSection a::before {
-  content: '›';
-  margin-right: 0.5rem;
-  color: var(--color-primary);
-}
-
-.upcoming {
-  margin-top: 1rem;
-  color: #a3968a;
-  font-size: 0.85rem;
-  line-height: 1.5;
-  max-width: 260px;
-}
-
-/* フッター下部スタイル */
-.bottom {
-  background-color: var(--color-footer-bg-deep);
-  padding: 1.5rem 2rem;
-}
-
-.bottomContent {
-  max-width: 1200px;
-  margin: 0 auto;
+.links {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
 }
 
-.copyright {
-  color: #a3968a;
+.links a {
+  color: #cfc4b5;
   font-size: 0.9rem;
-  margin: 0;
-}
-
-/* OpenStreetMap 帰属表示（ODbL） */
-.attribution {
-  margin: 0.4rem 0 0;
-  font-size: 0.8rem;
-}
-
-.attribution a {
-  color: #a3968a;
   text-decoration: none;
   transition: color 0.2s;
 }
 
-.attribution a:hover {
+.links a:hover {
   color: var(--color-primary);
 }
 
@@ -153,48 +56,53 @@
   color: var(--color-primary);
 }
 
-/* レスポンシブデザイン */
-@media (max-width: 992px) {
-  .content {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .logoSection {
-    /* 縦積み時は flex-basis が高さに効いて余白になるため解除する */
-    flex-basis: auto;
-    max-width: none;
-  }
+/* コピーライト + OpenStreetMap 帰属表示（ODbL） */
+.meta {
+  max-width: 1200px;
+  margin: 0.8rem auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 1.5rem;
 }
 
+.copyright {
+  color: #a3968a;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.attribution {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.attribution a {
+  color: #a3968a;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.attribution a:hover {
+  color: var(--color-primary);
+}
+
+/* レスポンシブデザイン */
 @media (max-width: 480px) {
   .footer {
-    padding-top: 2rem;
-  }
-
-  .content {
-    padding: 0 1rem 1.5rem;
-    gap: 1.5rem;
-  }
-
-  .logo {
-    font-size: 1.3rem;
-  }
-
-  .bottomContent {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .social {
-    margin-top: 0.5rem;
-  }
-
-  .bottom {
     padding: 1.2rem 1rem;
   }
 
-  .copyright {
-    font-size: 0.8rem;
+  .content {
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+  }
+
+  .meta {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    text-align: center;
   }
 }

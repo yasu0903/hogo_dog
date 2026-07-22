@@ -70,7 +70,6 @@
   margin-top: 1rem;
 }
 
-.heroMapLink,
 .heroAllLink {
   display: inline-flex;
   align-items: center;
@@ -85,7 +84,6 @@
   transition: background-color 0.2s, color 0.2s;
 }
 
-.heroMapLink:hover,
 .heroAllLink:hover {
   background-color: var(--color-primary);
   color: white;

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
+import JapanTileMap from '../../components/organizations/JapanTileMap';
 import styles from './Home.module.css';
 import { HOME_MESSAGES } from '../../constants/locales/ja';
 import { fetchPrefectures, fetchOrganizations, getAreas } from '../../services/api';
@@ -10,6 +11,9 @@ import { fetchPrefectures, fetchOrganizations, getAreas } from '../../services/a
 const Home = () => {
   const navigate = useNavigate();
   const [prefectures, setPrefectures] = useState([]);
+  // タイルマップは掲載0の県もグレー表示するため、セレクタ用と別に全県を保持する
+  const [allPrefectures, setAllPrefectures] = useState([]);
+  const [counts, setCounts] = useState({});
   const [areas, setAreas] = useState([]);
   const [stats, setStats] = useState(null);
 
@@ -27,6 +31,10 @@ const Home = () => {
         const visiblePrefs = prefsData.filter(pref => visibleIds.has(pref.id));
 
         setPrefectures(visiblePrefs);
+        setAllPrefectures(prefsData);
+        setCounts(Object.fromEntries(
+          orgsData.map(org => [org.id, org.listedCount || 0])
+        ));
         setAreas(getAreas(visiblePrefs));
         setStats({
           prefectureCount: listedPrefs.length,
@@ -81,9 +89,6 @@ const Home = () => {
                 ))}
               </select>
               <div className={styles.heroLinks}>
-                <Link to="/organizations?view=map" className={styles.heroMapLink}>
-                  {HOME_MESSAGES.HERO_MAP_LINK}
-                </Link>
                 <Link to="/organizations" className={styles.heroAllLink}>
                   {HOME_MESSAGES.HERO_ALL_LINK}
                 </Link>
@@ -98,7 +103,18 @@ const Home = () => {
           )}
         </section>
 
-        {/* 2. 今後追加予定（準備中: リンクは置かない。予告項目が無いときは非表示）
+        {/* 2. 都道府県タイルマップ（クリックで県別一覧へ。地図から探すリンクの実物置き換え） */}
+        {allPrefectures.length > 0 && (
+          <section className={styles.section}>
+            <JapanTileMap
+              prefectures={allPrefectures}
+              counts={counts}
+              onSelect={(prefId) => navigate(`/organizations/${prefId}`)}
+            />
+          </section>
+        )}
+
+        {/* 3. 今後追加予定（準備中: リンクは置かない。予告項目が無いときは非表示）
             ※お出かけ・おさんぽ導線はヘッダーnavに集約（ホームの重複タイルは削除） */}
         {HOME_MESSAGES.UPCOMING_ITEMS.length > 0 && (
           <section className={styles.section}>

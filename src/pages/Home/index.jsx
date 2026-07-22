@@ -98,20 +98,8 @@ const Home = () => {
           )}
         </section>
 
-        {/* 2. おでかけ・おさんぽサポート（Heroのピル型リンクと同じ視覚言語で控えめに） */}
-        <section className={styles.toolsSection}>
-          <span className={styles.toolsLabel}>{HOME_MESSAGES.TOOLS_SECTION_LABEL}</span>
-          <div className={styles.toolsLinks}>
-            <Link to="/spots" className={styles.toolPill}>
-              {HOME_MESSAGES.SPOTS_SECTION_ICON} {HOME_MESSAGES.SPOTS_SECTION_TITLE}
-            </Link>
-            <Link to="/weather" className={styles.toolPill}>
-              {HOME_MESSAGES.WEATHER_SECTION_ICON} {HOME_MESSAGES.WEATHER_SECTION_TITLE}
-            </Link>
-          </div>
-        </section>
-
-        {/* 3. 今後追加予定（準備中: リンクは置かない。予告項目が無いときは非表示） */}
+        {/* 2. 今後追加予定（準備中: リンクは置かない。予告項目が無いときは非表示）
+            ※お出かけ・おさんぽ導線はヘッダーnavに集約（ホームの重複タイルは削除） */}
         {HOME_MESSAGES.UPCOMING_ITEMS.length > 0 && (
           <section className={styles.section}>
             <div className={styles.upcomingStrip}>

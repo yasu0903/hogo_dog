@@ -14,7 +14,9 @@ export const HEADER_MESSAGES = {
     NAV_GUIDES: 'はじめての里親',
     NAV_SPOTS: 'お出かけスポット',
     NAV_WEATHER: 'おさんぽ予報',
-    NAV_FAVORITES: '♥ お気に入り'
+    NAV_FAVORITES: '♥ お気に入り',
+    MENU_OPEN: 'メニューを開く',
+    MENU_CLOSE: 'メニューを閉じる'
 }
 
 export const GUIDES_MESSAGES = {
@@ -60,11 +62,6 @@ export const HOME_MESSAGES = {
     HERO_SELECT_PLACEHOLDER: '都道府県を選択',
     HERO_MAP_LINK: '🗾 地図から探す',
     HERO_ALL_LINK: '全国から探す',
-    TOOLS_SECTION_LABEL: 'おでかけ・おさんぽサポート',
-    SPOTS_SECTION_TITLE: 'ペットお出かけ情報',
-    SPOTS_SECTION_ICON: '🐾',
-    WEATHER_SECTION_TITLE: 'おさんぽ予報',
-    WEATHER_SECTION_ICON: '☀️',
     UPCOMING_TITLE: '今後追加予定',
     UPCOMING_BADGE: '準備中',
     // 予告する機能ができたらここに追加（空配列のときは帯を表示しない）

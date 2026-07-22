@@ -67,28 +67,114 @@
   color: var(--color-primary);
 }
 
+/* ハンバーガーボタン（PCでは非表示、モバイルで表示） */
+.menuToggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--color-ink);
+  flex-shrink: 0;
+}
+
+.menuIcon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+}
+
+.menuIcon span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: currentColor;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+/* 開いている時は×印に */
+.menuIconOpen span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menuIconOpen span:nth-child(2) {
+  opacity: 0;
+}
+
+.menuIconOpen span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.overlay {
+  display: none;
+}
+
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.6rem;
+    /* 縦積みにせず「ハンバーガー＋ロゴ」の1行を維持 */
+    justify-content: flex-start;
+    gap: 0.5rem;
     padding: 0.8rem 1.5rem;
   }
 
   .logo {
     font-size: 1.3rem;
-    justify-content: center;
   }
 
   .tagline {
     display: none;
   }
 
+  .menuToggle {
+    display: flex;
+    order: -1; /* ロゴより前＝左端に配置 */
+    margin-left: -0.5rem; /* アイコンの余白ぶんを詰めて左端に寄せる */
+  }
+
+  .overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 200;
+  }
+
+  /* nav を左からのドロワーに */
   .nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.6rem 1.2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: min(78vw, 300px);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 4.5rem 0 2rem;
+    background-color: var(--color-surface);
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.12);
+    transform: translateX(-100%);
+    transition: transform 0.28s ease;
+    z-index: 210;
+    overflow-y: auto;
+  }
+
+  .navOpen {
+    transform: translateX(0);
+  }
+
+  .navLink {
+    padding: 0.9rem 1.6rem;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--color-border);
   }
 }
 
@@ -99,13 +185,5 @@
 
   .logo {
     font-size: 1.2rem;
-  }
-
-  .nav {
-    gap: 0.5rem 1rem;
-  }
-
-  .navLink {
-    font-size: 0.85rem;
   }
 }

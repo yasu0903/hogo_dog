@@ -17,7 +17,6 @@
 /* 1. ヒーロー */
 .hero {
   background: linear-gradient(160deg, var(--color-primary-soft) 0%, var(--color-bg) 70%);
-  border-bottom: 1px solid var(--color-border);
   padding: 4rem 1.5rem 3rem;
   display: flex;
   flex-direction: column;
@@ -111,50 +110,7 @@
   text-align: center;
 }
 
-/* 2. おでかけ・おさんぽサポート（Hero直下の全幅帯。Heroのピル型リンクと同じ視覚言語） */
-.toolsSection {
-  width: 100%;
-  background-color: var(--color-surface-alt);
-  border-bottom: 1px solid var(--color-border);
-  padding: 2rem 1.5rem 2.5rem;
-  text-align: center;
-}
-
-.toolsLabel {
-  display: block;
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--color-ink);
-  margin-bottom: 1rem;
-}
-
-.toolsLinks {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.8rem;
-}
-
-.toolPill {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.5rem 1.2rem;
-  border: 1px solid var(--color-primary);
-  border-radius: 999px;
-  color: var(--color-primary);
-  background-color: var(--color-surface);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-.toolPill:hover {
-  background-color: var(--color-primary);
-  color: white;
-}
-
-/* 3. 今後追加予定（準備中: 説明文もリンクも置かない、控えめな帯） */
+/* 2. 今後追加予定（準備中: 説明文もリンクも置かない、控えめな帯） */
 .upcomingStrip {
   display: inline-flex;
   align-items: center;
@@ -209,10 +165,6 @@
   .section {
     padding-top: 2.5rem;
   }
-
-  .toolsSection {
-    padding: 1.8rem 1.2rem 2.2rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -233,9 +185,5 @@
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-
-  .toolsSection {
-    padding: 1.5rem 1rem 2rem;
   }
 }

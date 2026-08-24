@@ -26,6 +26,28 @@
   パイプラインを回すとユーザー貢献分を巻き戻すことになる
 - 反映後は `npm run validate:data` も実行する（PR CI と同じスキーマ・整合性検証）
 
+### 死活チェックの判定（verdict）と link_broken の付与条件
+
+`02_check_urls.py` は各URLを5段階で判定し、`out/url_status.json` に `verdict` として記録する。
+**`link_broken` を自動で付けてよいのは `broken` だけ**（`linkcheck_apply.py` / `05_apply.py` 共通）。
+
+| verdict | 条件 | org JSON への反映 |
+| --- | --- | --- |
+| `ok` | 2xx / 3xx | `last_verified` 更新・`link_broken` 削除 |
+| `broken` | 404 / 410 等、または名前解決失敗 | `link_broken: true` 付与・`last_verified` 更新 |
+| `blocked` | 401 / 403 / 429 | **変更しない**（要目視） |
+| `unstable` | 5xx / タイムアウト / 接続エラー（再試行後） | **変更しない**（要目視） |
+| `review` | Instagram 等（`BOT_HOSTILE_HOSTS`）で 404 等 | **変更しない**（要目視） |
+
+- `blocked` / `unstable` / `review` は「アクセスできなかった」だけで、サイトが死んでいる証拠ではない。
+  生きているリンクを画面から消す事故（`link_broken` はカードと詳細ページからリンクを消す）を
+  防ぐため、`link_broken` も `last_verified` も書き換えない
+  （確認できていないものを「確認済み」にしない）
+- 判定不能分は `out/linkcheck_review.json` と PR本文・ジョブサマリに出るので、**人が目視する**。
+  実際に死んでいた場合は下記の `manual_overrides.json` に `link_broken: true` を書いて確定させる
+- 同一ホストへの並行アクセスはレート制限（429）を誘発するため、チェックはホスト単位で
+  直列化して間隔を空ける。全件で数分かかるのは正常
+
 ### manual_overrides の手動確定値に関する規約（特に link_broken）
 
 - `scripts/enrichment/manual_overrides.json` に `link_broken` 等の手動確定値を書くときは、

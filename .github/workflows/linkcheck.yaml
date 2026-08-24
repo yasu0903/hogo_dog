@@ -35,6 +35,11 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+
       - name: Install dependencies
         run: pip install -r scripts/enrichment/requirements.txt
 
@@ -43,8 +48,20 @@ jobs:
 
       - name: Apply liveness results (link_broken / last_verified only)
         run: |
+          # tee にパイプするため pipefail 必須(無いと apply の失敗が tee の成功で隠れる)
+          set -o pipefail
           python3 scripts/enrichment/linkcheck_apply.py \
-            ${{ inputs.dry_run && '' || '--write' }}
+            ${{ inputs.dry_run && '' || '--write' }} | tee /tmp/linkcheck_apply.log
+
+      # リンク切れ確定分と「判定不能・要目視」分をジョブサマリとPR本文に出す。
+      # 判定不能(blocked/unstable/review)は org JSON を変更していないので、
+      # 人が確認して必要なら manual_overrides.json で確定させる。
+      - name: Build review summary
+        run: python3 scripts/enrichment/linkcheck_report.py /tmp/linkcheck_apply.log /tmp/pr_body.md
+
+      - name: Validate data
+        run: |
+          node scripts/validate_data.mjs
 
       # 差分があれば PR を自動作成する。⚠️ 自動 commit / merge はしない
       # (リンク切れ→非掲載は編集判断。必ず人がレビューしてからマージする)。
@@ -56,15 +73,7 @@ jobs:
           base: develop
           commit-message: 'chore: 月次リンクチェック反映 (link_broken / last_verified)'
           title: '月次リンクチェック: 死活・最終確認日の更新'
-          body: |
-            `02_check_urls.py` の死活チェック結果を `linkcheck_apply.py` で反映しました。
-            変更は各団体JSONの `link_broken` / `last_verified` の2値のみです。
-
-            ⚠️ **リンク切れ→非掲載は編集判断です。マージ前に差分を必ずレビューしてください。**
-            - `link_broken: true` が付いた団体 = 今回アクセスできなかったURL
-            - `link_broken` が消えた団体 = 復活を確認(手動確定分は維持)
-
-            Actions ログの「Apply liveness results」ステップにリンク切れ一覧が出力されています。
+          body-path: /tmp/pr_body.md
           labels: |
             automated
             data

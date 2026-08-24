@@ -76,17 +76,21 @@ def main():
             j = judgments.get(key, {})
 
             # --- 死活チェック結果 ---
-            if st:
+            # verdict が ok / broken(確定)のときだけ書き戻す。blocked / unstable /
+            # review は「アクセスできなかった」だけで死んでいる証拠ではないので、
+            # link_broken も last_verified も触らない(02_check_urls.py 参照)。
+            verdict = st and (st.get("verdict") or ("ok" if st["ok"] else "broken"))
+            if st and verdict in ("ok", "broken"):
                 org["last_verified"] = today
                 stats["last_verified"] += 1
                 dirty = True
-                if not st["ok"]:
+                if verdict == "broken":
                     if not org.get("link_broken"):
                         org["link_broken"] = True
                         stats["link_broken"] += 1
                 elif org.pop("link_broken", None):
                     pass  # 復活したので削除
-                if st["ok"] and st.get("redirected") and \
+                if verdict == "ok" and st.get("redirected") and \
                         scheme_only_redirect(org["url"], st["final_url"]):
                     org["url"] = st["final_url"].rstrip("/") + (
                         "/" if org["url"].endswith("/") else "")

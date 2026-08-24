@@ -48,6 +48,8 @@ jobs:
 
       - name: Apply liveness results (link_broken / last_verified only)
         run: |
+          # tee にパイプするため pipefail 必須(無いと apply の失敗が tee の成功で隠れる)
+          set -o pipefail
           python3 scripts/enrichment/linkcheck_apply.py \
             ${{ inputs.dry_run && '' || '--write' }} | tee /tmp/linkcheck_apply.log
 

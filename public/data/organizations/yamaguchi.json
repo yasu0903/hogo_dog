@@ -16,7 +16,8 @@
             "caution": "現在、シェルターの収容可能数が限界のため、基本的には引き取りのご相談は受けておりません。",
             "note": "",
             "sns": [],
-            "last_verified": "2026-07-19"
+            "last_verified": "2026-09-01",
+            "link_broken": true
         },
         {
             "id": 2,
@@ -32,7 +33,7 @@
             "caution": "",
             "note": "",
             "sns": [],
-            "last_verified": "2026-07-19"
+            "last_verified": "2026-09-01"
         },
         {
             "id": 3,
@@ -48,7 +49,7 @@
             "caution": "",
             "note": "",
             "sns": [],
-            "last_verified": "2026-07-19"
+            "last_verified": "2026-09-01"
         }
     ]
 }

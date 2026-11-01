@@ -16,7 +16,7 @@
             "caution": "シェルターや保護施設を有していないため、動物を預かることはできません。",
             "note": "",
             "sns": [],
-            "last_verified": "2026-09-01"
+            "last_verified": "2026-11-01"
         },
         {
             "id": 2,
@@ -72,7 +72,7 @@
             "caution": "",
             "note": "",
             "sns": [],
-            "last_verified": "2026-09-01"
+            "last_verified": "2026-11-01"
         },
         {
             "id": 6,
@@ -87,7 +87,7 @@
             "caution": "",
             "note": "",
             "sns": [],
-            "last_verified": "2026-09-01"
+            "last_verified": "2026-11-01"
         },
         {
             "id": 7,
@@ -100,7 +100,7 @@
             "caution": "",
             "note": "",
             "sns": [],
-            "last_verified": "2026-09-01"
+            "last_verified": "2026-11-01"
         },
         {
             "id": 8,
@@ -127,7 +127,7 @@
             "caution": "",
             "note": "",
             "sns": [],
-            "last_verified": "2026-09-01"
+            "last_verified": "2026-11-01"
         }
     ]
 }
